@@ -43,14 +43,16 @@ const App = () => (
           Show some love and be the first to hear about upcoming gigs. We'll respect your privacy and promise not to spam you.
         </p>
         <form id="signup-lg" action="" method="post">
-          <label htmlFor="signup-lg-email">Email</label>
-          <input type="email" id="signup-lg-email" required />
+          <label htmlFor="signup-lg-email">
+            Email
+            <input type="email" id="signup-lg-email" required />
+          </label>
           <button type="submit">Sign up</button>
         </form>
 
         {/* socket */}
         &copy; 2018 Labrysinthe
-    </footer>
+      </footer>
     </div>
   </Router>
 );
