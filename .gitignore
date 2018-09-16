@@ -1,6 +1,9 @@
 # dependencies
 /node_modules
 
+# development
+/snippets
+
 # testing
 /coverage
 
