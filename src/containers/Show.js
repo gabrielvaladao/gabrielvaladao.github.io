@@ -1,5 +1,5 @@
-import React from 'react'
-import { withRouteData, Link } from 'react-static'
+import React from 'react';
+import { withRouteData, Link } from 'react-static';
 
 export default withRouteData(({ show }) => (
   <div>
@@ -8,4 +8,4 @@ export default withRouteData(({ show }) => (
     <h3>{show.title}</h3>
     <p>{show.body}</p>
   </div>
-))
+));

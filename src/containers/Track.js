@@ -1,5 +1,5 @@
-import React from 'react'
-import { withRouteData, Link } from 'react-static'
+import React from 'react';
+import { withRouteData, Link } from 'react-static';
 
 export default withRouteData(({ track }) => (
 
@@ -11,4 +11,4 @@ export default withRouteData(({ track }) => (
     <p>{track.body}</p>
 
   </div>
-))
+));

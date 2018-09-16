@@ -1,5 +1,5 @@
-import React from 'react'
-import { withRouteData, Link } from 'react-static'
+import React from 'react';
+import { withRouteData, Link } from 'react-static';
 
 export default withRouteData(({ pressReleases }) => (
   <div>
@@ -14,4 +14,4 @@ export default withRouteData(({ pressReleases }) => (
       ))}
     </ul>
   </div>
-))
+));
