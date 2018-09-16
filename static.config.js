@@ -5,15 +5,14 @@ export default {
     title: 'React Static',
   }),
   getRoutes: async () => {
-
     const { data: shows } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts'
+      'https://jsonplaceholder.typicode.com/posts',
     );
     const { data: tracks } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts'
+      'https://jsonplaceholder.typicode.com/posts',
     );
     const { data: pressReleases } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts'
+      'https://jsonplaceholder.typicode.com/posts',
     );
 
     return [
