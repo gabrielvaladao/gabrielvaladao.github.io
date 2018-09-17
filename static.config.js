@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Contentful from './src/Contentful';
 
 export default {
   getSiteData: () => ({
@@ -14,6 +15,9 @@ export default {
     const { data: pressReleases } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts',
     );
+
+    /* TODO remove debugging log */
+    console.log(Contentful.bio);
 
     return [
       {
