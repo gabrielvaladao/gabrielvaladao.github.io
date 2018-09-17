@@ -10,7 +10,9 @@
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
+    "ajv": "^6.5.3",
     "axios": "^0.16.2",
+    "contentful": "^7.0.3",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-hot-loader": "^4.3.8",
