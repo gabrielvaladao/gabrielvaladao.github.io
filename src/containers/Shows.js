@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouteData, Link } from 'react-static';
-
+// TODO: use <section>s for Upcoming / Previous
 export default withRouteData(({ shows }) => (
   <div>
     <h1>Shows</h1>

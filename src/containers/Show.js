@@ -2,8 +2,9 @@ import React from 'react';
 import { withRouteData, Link } from 'react-static';
 
 export default () => (
-  <div className="show">
-    <h3>Electronic Events Experience Exchange (EEEE Party!!!!)</h3>
+  // TODO: I want these attributes to be applied to the <li> element where they live (see Shows.js)
+  <div className="show" aria-labelledby="show-title">
+    <h3 id="show-title">Electronic Events Experience Exchange (EEEE Party!!!!)</h3>
     <p className="when">
       <span className="when-primary">4 NOV</span>
       <br />
