@@ -1,4 +1,11 @@
 import React from 'react';
+import { Link } from 'react-static';
+
+/*
+  TODO: Does Link support 'title' attributes?
+  Should I use them here, or should I use
+  aria-label and/or aria-tooltip?
+*/
 
 export default () => (
   <React.Fragment>
@@ -10,7 +17,7 @@ export default () => (
     <p>
       Labrysinthe is Natalia Lincoln, who took the scenic route to psytrance -- first through classical training, then joining gothic/apocalyptic folk band Unto Ashes (NYC) as premium purveyor of keyboards, vocals, and gloom.
       Natalia moved to Berlin in 2008 to taste the delightfully twisted freakquencies of electronic psychedelica, at which point Labrysinthe was born into this world that could neither spell her name nor name her spell.
-      Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin and with Nica Iliuchina (now Reality Test). She is an original member of the <a href="https://soundcloud.com/strength_in_numbers" title="SoundCloud">Strength in Numbers</a> beat collective in Berlin.
+      Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin and with Nica Iliuchina (now Reality Test). She is an original member of the <Link to="https://soundcloud.com/strength_in_numbers" aria-label="Listen to Strength in Numbers on SoundCloud" title="SoundCloud">Strength in Numbers</Link> beat collective in Berlin.
     </p>
   </React.Fragment>
 );
