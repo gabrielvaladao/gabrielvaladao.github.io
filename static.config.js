@@ -2,6 +2,7 @@ import axios from 'axios';
 import Contentful from './src/Contentful';
 
 export default {
+  plugins: ['react-static-plugin-styled-components'],
   getSiteData: () => ({
     title: 'React Static',
   }),
