@@ -32,7 +32,7 @@ export default {
         }),
         children: shows.map(show => ({
           path: `/show/${show.id}`,
-          component: 'src/containers/Show',
+          component: 'src/components/Show',
           getData: () => ({
             show,
           }),
@@ -46,7 +46,7 @@ export default {
         }),
         children: tracks.map(track => ({
           path: `/track/${track.id}`,
-          component: 'src/containers/Track',
+          component: 'src/components/Track',
           getData: () => ({
             track,
           }),
@@ -64,7 +64,7 @@ export default {
         }),
         children: pressReleases.map(pressRelease => ({
           path: `/pressRelease/${pressRelease.id}`,
-          component: 'src/containers/PressRelease',
+          component: 'src/components/PressRelease',
           getData: () => ({
             pressRelease,
           }),

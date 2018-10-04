@@ -13,17 +13,5 @@ export default withRouteData(({ tracks }) => (
         </li>
       ))}
     </ul>
-
-    {/* collection */}
-
-    <h2>Delicious Monster EP</h2>
-
-    {/* track */}
-
-    <h3>Far and Away</h3>
-    {/* Placeholder: SOUNDCLOUD EMBED GOES HERE */}
-    <a className="cta">Download on Beatport</a>
-
-
   </div>
 ));
