@@ -1,3 +1,19 @@
+/*
+  TODO: Any styles that live here by the time we're done are candidates for theming: 
+  https://www.styled-components.com/docs/advanced#theming
+*/
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0,0,0,0);
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -19,27 +35,6 @@ img {
   max-width: 100%;
 }
 
-nav {
-  width: 100%;
-  background: #108db8;
-}
-
-nav a {
-  color: white;
-  padding: 1rem;
-  display: inline-block;
-}
-
 .content {
   padding: none;
-}
-
-/*=== HOME ===*/
-/* #home-header:before {
-  content: url("labrysinthe-bg,jpg");
-} */
-#home-header {
-  min-height: 2048px;
-  background: #070707 url('labrysinthe-bg.jpg') center top no-repeat;
-  background-size: cover;
 }
