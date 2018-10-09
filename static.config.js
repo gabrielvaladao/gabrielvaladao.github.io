@@ -4,7 +4,7 @@ import Contentful from './src/Contentful';
 export default {
   plugins: ['react-static-plugin-styled-components'],
   getSiteData: () => ({
-    title: 'React Static',
+    title: 'Labrysinthe',
   }),
   getRoutes: async () => {
     const { data: shows } = await axios.get(

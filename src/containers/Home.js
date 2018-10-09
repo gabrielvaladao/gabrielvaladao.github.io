@@ -1,11 +1,9 @@
 import React from 'react';
 import { withSiteData } from 'react-static';
 
-import logoImg from '../logo.png';
-
 export default withSiteData(() => (
   <div>
-    <h1 style={{ textAlign: 'center' }}>Welcome to</h1>
-    <img src={logoImg} alt="" />
+    <span class="site-tagline">Enter the...</span>
+    <h1 class="site-title">Labrysinthe</h1>
   </div>
 ));

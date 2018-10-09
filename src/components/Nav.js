@@ -111,7 +111,7 @@ export default () => (
       aria-label="Open the main menu"
     >
       <span className="sr-only">Open the main menu</span>
-      <span aria-hidden="true">=</span>
+      <span aria-hidden="true">Menu</span>
     </MenuToggle>
 
     <MainMenu
