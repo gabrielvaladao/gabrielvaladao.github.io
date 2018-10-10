@@ -1,12 +1,6 @@
 import React from 'react';
 import { withRouteData, Link } from 'react-static';
 
-/*
-  TODO: Does Link support 'title' attributes?
-  Should I use them here, or should I use
-  aria-label and/or aria-tooltip?
-*/
-
 /* TODO: Show logic:
   A show has one of two states: Upcoming or Previous.
   A show's state is changed to Previous on the day after its end date. (currentDate.value === (show.endDate + 1).value).

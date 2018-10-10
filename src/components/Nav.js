@@ -3,12 +3,6 @@ import { Link } from 'react-static';
 import styled from 'styled-components';
 import MainMenuUL from './MainMenuUL';
 
-/*
-  TODO: Does Link support 'title' attributes?
-  Should I use them here, or should I use
-  aria-label and/or aria-tooltip?
-*/
-
 /* TODO: use icons for nav buttons */
 
 const MenuToggle = styled(Link)`

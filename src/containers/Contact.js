@@ -1,12 +1,6 @@
 import React from 'react';
 import { Link } from 'react-static';
 
-/*
-  TODO: Does Link support 'title' attributes?
-  Should I use them here, or should I use
-  aria-label and/or aria-tooltip?
-*/
-
 export default () => (
   <React.Fragment>
     <h1>Contact</h1>

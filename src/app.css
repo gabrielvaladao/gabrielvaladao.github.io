@@ -3,6 +3,15 @@
   https://www.styled-components.com/docs/advanced#theming
 */
 
+@font-face {
+  font-family: 'raincoatregular';
+  src: url('./fonts/typodermic_-_raincoat-regular-webfont.woff2') format('woff2'),
+       url('./fonts/typodermic_-_raincoat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .sr-only {
   position: absolute;
   overflow: hidden;
@@ -14,21 +23,64 @@
   clip: rect(0,0,0,0);
 }
 
+header {
+  background-color: #08000f;
+  color: #fefdff;
+  display: flex;
+  align-items: center; 
+}
+
+/*
+  padding-left on logo is slightly less than on main,
+  allowing the curved left edge to comfortably spill over.
+*/
+.logo {
+  padding: 3rem 2.5rem 2rem 3.75rem;
+}
+.site-title {
+  font-family: 'raincoatregular', sans-serif;
+  text-transform: uppercase;
+  display: inline;
+  margin:0;
+}
+
+.callout {
+  font-family: 'Sweater School Semibold', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.35;
+  letter-spacing: 0.02ch;
+}
+
+main {
+  padding: 2rem 4rem 4rem 4rem;
+}
+
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-    'Lucida Grande', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  background-color: #08000f;
+  color: #eeedef;
+  font-family: 'Sweater School Regular', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.02ch;
   margin: 0;
   padding: 0;
 }
 
+h1 { margin-top: 0; }
+
+.alpha {
+  color: lightgreen;
+}
+
 a {
   text-decoration: none;
-  color: #108db8;
+  color: #88e8b8;
   font-weight: bold;
+}
+
+a:hover {
+  border-bottom: 2px #88e8b8 solid;
 }
 
 img {

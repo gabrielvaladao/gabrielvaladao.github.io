@@ -2,11 +2,6 @@ import React from 'react';
 import { withRouteData, Link } from 'react-static';
 
 /*
-  TODO: Does Link support 'title' attributes?
-  Should I use them here, or should I use
-  aria-label and/or aria-tooltip?
-*/
-/*
   TODO: I want to use the releaseDate info
   to sort the tracks, but not display it
 */
