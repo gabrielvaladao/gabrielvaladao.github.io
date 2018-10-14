@@ -12,7 +12,7 @@ import { withRouteData, Link } from 'react-static';
 
 export default () => (
   // TODO: I want these attributes to be applied to the <li> element where they live (see Shows.js)
-  <div className="show" aria-labelledby="show-title">
+  <article aria-labelledby="show-title">
     <h3 id="show-title">Electronic Events Experience Exchange (EEEE&nbsp;Party!!!!)</h3>
     <p className="host">
       Hosted by <Link to="http://www.fractalportal.com/">Fractal Portal</Link>
@@ -34,7 +34,7 @@ export default () => (
     <Link to="https://www.facebook.com/events/351769011903873/" aria-labelledby="show-title">Facebook event</Link>
     <br />
     <Link to="#hypothetical" aria-labelledby="show-title">Get tickets</Link>
-  </div>
+  </article>
 );
 
 // TODO: remove or adapt. The following code shows placeholder data
