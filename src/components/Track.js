@@ -7,29 +7,24 @@ import { withRouteData, Link } from 'react-static';
   Pass it to parent.
 */
 
+/*
+TODO: PARSE IFRAMES (a11y)
+- Give each li a unique key generated from track title (Music) - a11y
+- Give each iframe a unique title generated from track title (Track) - console warning
+- JSX-ify attribs, eg. frameBorder - console warning
+*/
 
-export default () => (
-  /*
-    TODO: I want these attributes to be applied
-    to the <li> element where they live (see Music.js)
-  */
+/* TODO: reconsider conditional for rendering optional elements (e.g. cta) */
+
+export default ({ title, soundCloudEmbed, cta }) => (
   <article aria-labelledby="track-title">
-    <h3 id="track-title">Delicious Monster EP - Previews</h3>
-    <iframe title="delicious-monster-ep-previews" width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343832514&color=%23ffaa88&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
-    <Link className="cta" to="https://www.beatport.com/release/delicious-monster/2106224" aria-labelledby="track-title">Download on Beatport</Link>
+
+    <h3 id="track-title">{title}</h3>
+
+    {soundCloudEmbed}
+
+    {cta && cta.text && cta.url
+      && <Link className="cta" to={cta.url} aria-labelledby="track-title">{cta.text}</Link>
+    }
   </article>
 );
-
-// TODO: remove or adapt. The following code shows placeholder data
-/*
-export default withRouteData(({ track }) => (
-  <div>
-    <Link to="/music/">{'<'} Back</Link>
-    <br />
-    <h3>{track.title}</h3>
-
-    <p>{track.body}</p>
-
-  </div>
-));
-*/
