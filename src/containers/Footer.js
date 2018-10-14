@@ -1,9 +1,9 @@
 import React from 'react';
-import MainMenuUL from '../components/MainMenuUL';
+import Nav from '../components/Nav';
 
 export default () => (
   <footer role="contentinfo">
-    <MainMenuUL />
+    <Nav />
 
     {/* signup form (large) */}
     <h2>Sign up</h2>

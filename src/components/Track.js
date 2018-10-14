@@ -3,7 +3,8 @@ import { withRouteData, Link } from 'react-static';
 
 /*
   TODO: I want to use the releaseDate info
-  to sort the tracks, but not display it
+  to sort the tracks, but not display it.
+  Pass it to parent.
 */
 
 
