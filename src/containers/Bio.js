@@ -5,14 +5,9 @@ export default () => (
   <React.Fragment>
     <h1>Bio</h1>
     <p className="callout">
-      Labrysinthe is committed to the institution of psytrance and stands for better machines, brighter knowledge, bolder music, and the blissful ecstacies of the beat.
+      Labrysinthe is voluntarily committed to the institution of psytrance and stands for better machines, brighter knowledge, bolder music, and the blissful ecstacies of the beat.
     </p>
     <div className="bodyText">
-      {/* <p>
-        <span className="alpha">a</span>bcdefghijklmnopqrstuvwxyz
-        <span className="alpha">a</span>bcdefghijklmnopqrstuvwxyz
-        <span className="alpha">a</span>bcdefghijklmnopqrstuvwxyz
-      </p> */}
       <p>
         Labrysinthe is Natalia Lincoln, who took the scenic route to psytrance -- first through classical training, then joining gothic/apocalyptic folk band Unto Ashes (NYC) as premium purveyor of keyboards, vocals, and gloom.
       </p>

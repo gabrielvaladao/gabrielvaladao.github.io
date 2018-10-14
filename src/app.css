@@ -45,20 +45,19 @@ header {
 }
 
 .callout {
-  font-family: 'Sweater School Semibold', sans-serif;
   font-size: 1.2em;
-  line-height: 1.35;
+  line-height: 1.25;
   letter-spacing: 0.02ch;
 }
 
 main {
-  padding: 2rem 4rem 4rem 4rem;
+  padding: 1.2rem 4rem 4rem 4rem;
 }
 
 body {
   background-color: #08000f;
   color: #eeedef;
-  font-family: 'Sweater School Regular', sans-serif;
+  font-family: sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.35;
