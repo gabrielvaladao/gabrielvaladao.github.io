@@ -5,7 +5,7 @@ import SiteTitle from '../components/SiteTitle';
 
 export default withSiteData(() => (
   <div>
-    <span className="site-tagline">Enter the...</span>
+    <span className="site-tagline">Enter the... </span>
     <SiteTitle />
   </div>
 ));

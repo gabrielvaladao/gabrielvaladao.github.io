@@ -9,42 +9,27 @@ import { withRouteData, Link } from 'react-static';
 
 /* TODO: remove placeholder link to get tickets */
 
-
-export default () => (
+export default ({ title, host, when, venue, fbEventUrl }) => (
   // TODO: I want these attributes to be applied to the <li> element where they live (see Shows.js)
   <article aria-labelledby="show-title">
-    <h3 id="show-title">Electronic Events Experience Exchange (EEEE&nbsp;Party!!!!)</h3>
+    <h3 id="show-title">{title}</h3>
     <p className="host">
-      Hosted by <Link to="http://www.fractalportal.com/">Fractal Portal</Link>
+      Hosted by <Link to={host.url}>{host.name}</Link>
     </p>
     <div className="when">
-      <span className="day">Saturday</span>
+      <span className="day">{when.start.day}</span>
       <br />
-      <span className="date">4 NOV</span>
+      <span className="date">{when.start.date}</span>
       <br />
-      <span className="year">2017</span>
+      <span className="year">{when.start.year}</span>
     </div>
     <div className="where">
-      <Link to="https://www.facebook.com/Velvet-Monkey-erlebnisgastronomie-1823655237858506/" id="venue-name">Velvet Monkeys Club</Link>
+      <Link to={venue.url} id="venue-name">{venue.name}</Link>
       <br />
-      Herzbergstraße 53b, 10365 Berlin
+      {venue.address}
       <br />
-      <Link to="https://goo.gl/maps/CkDUTdspCkL2" aria-labelledby="venue-name">Google Maps</Link>
+      <Link to={venue.gMapsUrl} aria-labelledby="venue-name">Google Maps</Link>
     </div>
-    <Link to="https://www.facebook.com/events/351769011903873/" aria-labelledby="show-title">Facebook event</Link>
-    <br />
-    <Link to="#hypothetical" aria-labelledby="show-title">Get tickets</Link>
+    <Link to={fbEventUrl} aria-labelledby="show-title">Facebook event</Link>
   </article>
 );
-
-// TODO: remove or adapt. The following code shows placeholder data
-/*
-export default withRouteData(({ show }) => (
-  <div>
-    <Link to="/shows/">{'<'} Back</Link>
-    <br />
-    <h3>{show.title}</h3>
-    <p>{show.body}</p>
-  </div>
-));
-*/
