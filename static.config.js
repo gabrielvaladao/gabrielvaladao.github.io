@@ -58,20 +58,6 @@ export default {
         component: 'src/containers/Bio',
       },
       {
-        path: '/press',
-        component: 'src/containers/Press',
-        getData: () => ({
-          pressReleases,
-        }),
-        children: pressReleases.map(pressRelease => ({
-          path: `/pressRelease/${pressRelease.id}`,
-          component: 'src/components/PressRelease',
-          getData: () => ({
-            pressRelease,
-          }),
-        })),
-      },
-      {
         path: '/contact',
         component: 'src/containers/Contact',
       },

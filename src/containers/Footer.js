@@ -1,9 +1,9 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Menu from '../components/Menu';
 
 export default () => (
   <footer role="contentinfo">
-    <Nav />
+    <nav><Menu /></nav>
 
     {/* signup form (large) */}
     <h2>Sign up</h2>

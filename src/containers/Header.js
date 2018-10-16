@@ -3,7 +3,7 @@ import { NavLink } from 'react-static';
 import styled from 'styled-components';
 
 import SiteTitle from '../components/SiteTitle';
-import Nav from '../components/Nav';
+import Menu from '../components/Menu';
 import logoImg from '../images/logo-header-90x104.png';
 
 const Wrapper = styled.header`
@@ -33,6 +33,6 @@ export default () => (
       <Logo src={logoImg} alt="Labrysinthe's logo, a maze-like labrys axe." width="90px" height="104px" className="logo" />
       <SiteTitle />
     </StyledNavLink>
-    <Nav />
+    <nav><Menu /></nav>
   </Wrapper>
 );
