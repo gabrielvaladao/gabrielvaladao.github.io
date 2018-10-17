@@ -1,33 +1,26 @@
 import React from 'react';
-import { withRouteData, Link } from 'react-static';
+import { withRouteData } from 'react-static';
+import styled from 'styled-components';
+
 import PressRelease from '../components/PressRelease';
+
+const Ul = styled.ul`
+  padding-left: 0;
+`;
+
+const Li = styled.li`
+  list-style-type: none;
+`;
+
 
 /* TODO: aria-sort: date, descending */
 
-export default withRouteData(({ pressReleases }) => (
+export default withRouteData(() => (
   <div>
     <h1>Press</h1>
-    <ul>
-      <li><PressRelease /></li>
-      <li><PressRelease /></li>
-    </ul>
+    <Ul>
+      <Li><PressRelease /></Li>
+      <Li><PressRelease /></Li>
+    </Ul>
   </div>
 ));
-
-// TODO: remove or adapt. The following code shows placeholder data
-/* 
-export default withRouteData(({ pressReleases }) => (
-  <div>
-    <h1>Press</h1>
-    <br />
-    All Press Releases:
-    <ul>
-      {pressReleases.map(pressRelease => (
-        <li key={pressRelease.id}>
-          <Link to={`/press/pressRelease/${pressRelease.id}/`}>{pressRelease.title}</Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-));
-*/

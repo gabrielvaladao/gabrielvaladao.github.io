@@ -1,6 +1,16 @@
 import React from 'react';
 import { withRouteData } from 'react-static';
+import styled from 'styled-components';
 import Show from '../components/Show';
+
+const Ul = styled.ul`
+  padding-left: 0;
+`;
+
+const Li = styled.li`
+  list-style-type: none;
+`;
+
 
 export default withRouteData(() => (
   <div>
@@ -9,14 +19,14 @@ export default withRouteData(() => (
     {/* Show this conditionally:
     <section aria-labelledby="shows-upcoming">
       <h2 id="shows-upcoming">Upcoming shows</h2>
-      <ul>
-        <li></li>
-      </ul>
+      <Ul>
+        <Li></Li>
+      </Ul>
     </section> */}
     <section aria-labelledby="shows-previous">
       <h2 id="shows-previous">Previous shows</h2>
-      <ul>
-        <li>
+      <Ul>
+        <Li>
           <Show
             title="Electronic Events Experience Exchange (EEEE&nbsp;Party!!!!)"
             host={{
@@ -38,8 +48,8 @@ export default withRouteData(() => (
             }}
             fbEventUrl="https://www.facebook.com/events/351769011903873/"
           />
-        </li>
-      </ul>
+        </Li>
+      </Ul>
     </section>
   </div>
 ));
