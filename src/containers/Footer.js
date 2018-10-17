@@ -1,22 +1,13 @@
 import React from 'react';
 import Menu from '../components/Menu';
+import SignUpForm from '../components/SignUpForm';
 
 export default () => (
   <footer role="contentinfo">
-    <nav><Menu /></nav>
 
-    {/* signup form (large) */}
-    <h2>Sign up</h2>
-    <p>
-      Show some love and be the first to hear about upcoming gigs. We'll respect your privacy and promise not to spam you.
-    </p>
-    <form id="signup-lg" action="" method="post">
-      <label htmlFor="signup-lg-email">
-        Email
-        <input type="email" id="signup-lg-email" required />
-      </label>
-      <button type="submit">Sign up</button>
-    </form>
+    <SignUpForm />
+
+    <nav><Menu /></nav>
 
     {/* socket */}
     &copy; 2018 Labrysinthe
