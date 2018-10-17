@@ -1,17 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  border: #88e8b8 solid 1px;
-`;
-
 const Callout = styled.p`
   font-size: 1em;
 `;
 
 export default () => (
 
-  <Wrapper id="mc_embed_signup">
+  <div id="mc_embed_signup">
     <form action="https://fb.us16.list-manage.com/subscribe/post?u=4075336e0f256e14e1da4ad74&amp;id=cea2bf53fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
       <div id="mc_embed_signup_scroll">
         <h2>Sign up</h2>
@@ -32,25 +28,5 @@ export default () => (
         </div>
       </div>
     </form>
-  </Wrapper>
+  </div>
 );
-
-{/* 
-export default () => (
-  <Wrapper>
-    <h2>Sign up</h2>
-    <Callout>
-      Be the first to hear about upcoming gigs and music.
-    </Callout>
-    <BodyText>
-      Only relevant news, no spam.
-    </BodyText>
-    <form id="signup-lg" action="" method="post">
-      <label htmlFor="signup-lg-email">
-        Email
-        <input type="email" id="signup-lg-email" required />
-      </label>
-      <button type="submit">Sign up</button>
-    </form>
-  </Wrapper>
-); */}

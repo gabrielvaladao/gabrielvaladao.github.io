@@ -8,17 +8,33 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   list-style-type: none;
+  display: inline-block;
+  margin-left: 2em;
+  &:first-child {
+    margin-left: 0;
+  }
+`;
+
+const Address = styled.address`
+  display: inline;
+  font-style: inherit;
 `;
 
 export default () => (
   <React.Fragment>
     <h1>Contact</h1>
-    <address>
+    For booking and inquiries, email{' '}
+    <Address>
       <Link to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</Link>
-    </address>
+    </Address>
 
     {/* TODO: generate socials from data */}
     <Ul>
+      <Li>
+        <Link to="https://www.beatport.com/artist/labrysinthe/640674" title="Beatport">
+          <span className="icon-beatport">Beaport</span>
+        </Link>
+      </Li>
       <Li>
         <Link to="https://soundcloud.com/labrysinthe" title="SoundCloud">
           <span className="icon-soundcloud">SoundCloud</span>
