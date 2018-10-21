@@ -1,6 +1,6 @@
-/*
-  TODO: Any styles that live here by the time we're done are candidates for theming: 
-  https://www.styled-components.com/docs/advanced#theming
+/** 
+ * Keep @font-face declaration in this file
+ * Until you can get it working in App.js injectGlobal
 */
 
 @font-face {
@@ -12,7 +12,11 @@
 
 }
 
-* { margin: 0; padding: 0;  }
+/**
+ * TODO: By the time we're done, any styles that still
+ * live in this file are candidates for theming:
+ * https://www.styled-components.com/docs/advanced#theming
+ */
 
 .sr-only {
   position: absolute;
