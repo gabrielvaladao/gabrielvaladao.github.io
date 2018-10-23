@@ -15,38 +15,9 @@
 /**
  * font-size for the html element is defined in App.js.
  * This is the basis for rems and rhythm in the global layout.
- */
-
-/**
- * The following presets are suited to body text.
- * For now, the values must be applied manually, both
- * in this file below and in App.js where indicated.
- */
-
-/**
- * Preset 1: Josefin Sans Light
  *
- * App.js > injectGlobal > html { font-size: 25px }
- * lineHeight = 1.2rem
- * letterSpacing = -0.04ch
- * base {
- *   fontFamily: josefinSans,
- *   fontWeight: light,
- *   ...
- * },
- */
-
-/**
- * Preset 2: Lato Light
- *
- * App.js > injectGlobal > html { font-size: 24px }
- * lineHeight = 1.35rem
- * letterSpacing = 0
- * base {
- *   fontFamily: lato,
- *   fontWeight: light,
- *   ...
- * },
+ * See end of file for some preset typography configs that
+ * work well for body type in either Josefin Sans or Lato.
  */
 
 const josefinSans = '"Josefin Sans", sans-serif';
@@ -104,3 +75,35 @@ export default () => (
     },
   }
 );
+
+/**
+ * The following presets are suited to body text.
+ * For now, the values must be applied manually, both
+ * above in this file and in App.js where indicated.
+ */
+
+/**
+ * Preset 1: Josefin Sans Light
+ *
+ * App.js > injectGlobal > html { font-size: 25px }
+ * lineHeight = 1.2rem
+ * letterSpacing = -0.04ch
+ * base {
+ *   fontFamily: josefinSans,
+ *   fontWeight: light,
+ *   ...
+ * },
+ */
+
+/**
+ * Preset 2: Lato Light
+ *
+ * App.js > injectGlobal > html { font-size: 24px }
+ * lineHeight = 1.35rem
+ * letterSpacing = 0
+ * base {
+ *   fontFamily: lato,
+ *   fontWeight: light,
+ *   ...
+ * },
+ */
