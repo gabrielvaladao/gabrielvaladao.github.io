@@ -1,5 +1,8 @@
 import React from 'react';
-import { withRouteData, Link } from 'react-static';
+import { withRouteData } from 'react-static';
+//
+import StyledLink from '../elements/StyledLink';
+import H3 from '../elements/H3';
 
 /*
   TODO: I want to use the releaseDate info
@@ -19,12 +22,12 @@ TODO: PARSE IFRAMES (a11y)
 export default ({ title, soundCloudEmbed, cta }) => (
   <article aria-labelledby="track-title">
 
-    <h3 id="track-title">{title}</h3>
+    <H3 id="track-title">{title}</H3>
 
     {soundCloudEmbed}
 
     {cta && cta.text && cta.url
-      && <Link className="cta" to={cta.url} aria-labelledby="track-title">{cta.text}</Link>
+      && <StyledLink className="cta" to={cta.url} aria-labelledby="track-title">{cta.text}</StyledLink>
     }
   </article>
 );

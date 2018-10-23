@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-static';
 import styled from 'styled-components';
+//
+import StyledLink from '../elements/StyledLink';
+import H1 from '../elements/H1';
 
 const Ul = styled.ul`
   padding-left: 0;
@@ -22,38 +24,38 @@ const Address = styled.address`
 
 export default () => (
   <React.Fragment>
-    <h1>Contact</h1>
+    <H1>Contact</H1>
     For booking and inquiries, email{' '}
     <Address>
-      <Link to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</Link>
+      <StyledLink to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</StyledLink>
     </Address>
 
     {/* TODO: generate socials from data */}
     <Ul>
       <Li>
-        <Link to="https://www.beatport.com/artist/labrysinthe/640674" title="Beatport">
+        <StyledLink to="https://www.beatport.com/artist/labrysinthe/640674" title="Beatport">
           <span className="icon-beatport">Beaport</span>
-        </Link>
+        </StyledLink>
       </Li>
       <Li>
-        <Link to="https://soundcloud.com/labrysinthe" title="SoundCloud">
+        <StyledLink to="https://soundcloud.com/labrysinthe" title="SoundCloud">
           <span className="icon-soundcloud">SoundCloud</span>
-        </Link>
+        </StyledLink>
       </Li>
       <Li>
-        <Link to="https://www.facebook.com/labrysinthe/" title="Facebook">
+        <StyledLink to="https://www.facebook.com/labrysinthe/" title="Facebook">
           <span className="icon-facebook">Facebook</span>
-        </Link>
+        </StyledLink>
       </Li>
       <Li>
-        <Link to="https://twitter.com/labrysinthe" title="Twitter">
+        <StyledLink to="https://twitter.com/labrysinthe" title="Twitter">
           <span className="icon-twitter">Twitter</span>
-        </Link>
+        </StyledLink>
       </Li>
       <Li>
-        <Link to="https://www.instagram.com/labrysinthe/" title="Instagram">
+        <StyledLink to="https://www.instagram.com/labrysinthe/" title="Instagram">
           <span className="icon-instagram">Instagram</span>
-        </Link>
+        </StyledLink>
       </Li>
     </Ul>
   </React.Fragment>

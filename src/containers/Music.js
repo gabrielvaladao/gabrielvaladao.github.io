@@ -1,8 +1,10 @@
 import React from 'react';
-import { withRouteData, Link } from 'react-static';
+import { withRouteData } from 'react-static';
 import styled from 'styled-components';
-
+//
 import Track from '../components/Track';
+import StyledLink from '../elements/StyledLink';
+import H1 from '../elements/H1';
 
 const Ul = styled.ul`
   padding-left: 0;
@@ -14,8 +16,8 @@ const Li = styled.li`
 
 export default withRouteData(() => (
   <div>
-    <h1>Music</h1>
-    <p>High quality downloads are available on <Link to="https://www.beatport.com/artist/labrysinthe/640674/tracks">Labrysinthe's Beatport</Link></p>
+    <H1>Music</H1>
+    <p>High quality downloads are available on <StyledLink to="https://www.beatport.com/artist/labrysinthe/640674/tracks">Labrysinthe's Beatport</StyledLink></p>
     <Ul>
       <Li>
         <Track

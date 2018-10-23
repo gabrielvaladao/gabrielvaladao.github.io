@@ -48,20 +48,6 @@ body {
   font-size: 1.2em;
 }
 
-a {
-  text-decoration: none;
-  color: #6fdfdf;
-}
-
-a:hover {
-  border-bottom: 2px #6fdfdf solid;
-}
-
-a:active {
-  color: #1f9f9f;
-  border-bottom: 2px #1f9f9f solid;
-}
-
 img {
   max-width: 100%;
 }

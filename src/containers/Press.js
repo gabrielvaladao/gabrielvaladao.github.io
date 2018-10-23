@@ -1,8 +1,9 @@
 import React from 'react';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
-
+//
 import PressRelease from '../components/PressRelease';
+import H1 from '../elements/H1';
 
 const Ul = styled.ul`
   padding-left: 0;
@@ -17,7 +18,7 @@ const Li = styled.li`
 
 export default withRouteData(() => (
   <div>
-    <h1>Press</h1>
+    <H1>Press</H1>
     <Ul>
       <Li><PressRelease /></Li>
       <Li><PressRelease /></Li>

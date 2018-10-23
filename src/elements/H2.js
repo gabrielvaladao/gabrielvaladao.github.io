@@ -10,6 +10,6 @@ const H2 = styled.h2`
   margin-bottom: ${props => props.theme.type.calc.h2.marginBottom};
 `;
 
-export default ({ children }) => (
-  <H2>{children}</H2>
+export default props => (
+  <H2 {...props}>{props.children}</H2>
 );

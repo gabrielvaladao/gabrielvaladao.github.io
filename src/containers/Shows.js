@@ -2,6 +2,9 @@ import React from 'react';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
 import Show from '../components/Show';
+//
+import H1 from '../elements/H1';
+import H2 from '../elements/H2';
 
 const Ul = styled.ul`
   padding-left: 0;
@@ -14,17 +17,21 @@ const Li = styled.li`
 
 export default withRouteData(() => (
   <div>
-    <h1>Shows</h1>
+    <H1>Shows</H1>
     <br />
-    {/* Show this conditionally:
+    {/* Show conditionally:
+    ...
     <section aria-labelledby="shows-upcoming">
-      <h2 id="shows-upcoming">Upcoming shows</h2>
+      <H2 id="shows-upcoming">Upcoming shows</H2>
       <Ul>
         <Li></Li>
       </Ul>
-    </section> */}
+    </section>
+    ...
+    I only want H2#shows-previous to be visible if there are also upcoming ones to distinguish from(which means the aria-labelledby="shows-previous" attrib on its parent section should also change).
+    */}
     <section aria-labelledby="shows-previous">
-      <h2 id="shows-previous">Previous shows</h2>
+      <H2 id="shows-previous">Previous shows</H2>
       <Ul>
         <Li>
           <Show

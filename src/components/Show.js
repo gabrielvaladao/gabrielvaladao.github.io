@@ -1,6 +1,9 @@
 import React from 'react';
-import { withRouteData, Link } from 'react-static';
+import { withRouteData } from 'react-static';
 import styled from 'styled-components';
+//
+import StyledLink from '../elements/StyledLink';
+import H3 from '../elements/H3';
 
 /* TODO: Show logic:
   A show has one of two states: Upcoming or Previous.
@@ -30,7 +33,7 @@ const Where = styled.div`
   grid-column: 2;
 `;
 
-const Cta = styled(Link)`
+const Cta = styled(StyledLink)`
   grid-row: 1 / 3;
   grid-column: 3;
 `;
@@ -39,9 +42,9 @@ export default ({ title, host, when, venue, fbEventUrl }) => (
   // TODO: I want these attributes to be applied to the <li> element where they live (see Shows.js)
   <Wrapper aria-labelledby="show-title">
     <Header>
-      <h3 id="show-title">{title}</h3>
+      <H3 id="show-title">{title}</H3>
       <p className="host">
-        Hosted by <Link to={host.url}>{host.name}</Link>
+        Hosted by <StyledLink to={host.url}>{host.name}</StyledLink>
       </p>
     </Header>
     <When>
@@ -52,11 +55,11 @@ export default ({ title, host, when, venue, fbEventUrl }) => (
       <span className="year">{when.start.year}</span>
     </When>
     <Where>
-      <Link to={venue.url} id="venue-name">{venue.name}</Link>
+      <StyledLink to={venue.url} id="venue-name">{venue.name}</StyledLink>
       <br />
       {venue.address}
       <br />
-      <Link to={venue.gMapsUrl} aria-labelledby="venue-name">Google Maps</Link>
+      <StyledLink to={venue.gMapsUrl} aria-labelledby="venue-name">Google Maps</StyledLink>
     </Where>
     <Cta to={fbEventUrl} aria-labelledby="show-title">Facebook event</Cta>
   </Wrapper>
