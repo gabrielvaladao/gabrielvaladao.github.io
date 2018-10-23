@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+//
+import H2 from '../elements/H2';
 
 const Callout = styled.p`
   font-size: 1em;
@@ -10,7 +12,7 @@ export default () => (
   <div id="mc_embed_signup">
     <form action="https://fb.us16.list-manage.com/subscribe/post?u=4075336e0f256e14e1da4ad74&amp;id=cea2bf53fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
       <div id="mc_embed_signup_scroll">
-        <h2>Sign up</h2>
+        <H2>Sign up</H2>
         <Callout>
           Be the first to hear about upcoming gigs and music.
         </Callout>

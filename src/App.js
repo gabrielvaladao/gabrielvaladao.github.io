@@ -16,7 +16,7 @@ import Footer from './containers/Footer';
 /* eslint-disable-next-line */
 injectGlobal`
   ${styledNormalize}
-  html { font-size: 25px; }
+  html { font-size: 24px; }
 `;
 
 const BaseStyles = styled.div`
@@ -24,6 +24,7 @@ const BaseStyles = styled.div`
   font-weight: ${props => props.theme.type.base.fontWeight};
   font-size: ${props => props.theme.type.base.fontSize};
   line-height: ${props => props.theme.type.base.lineHeight};
+  letter-spacing: ${props => props.theme.type.base.letterSpacing};
 `;
 
 const App = () => (
