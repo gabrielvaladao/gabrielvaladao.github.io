@@ -19,7 +19,7 @@ import './styles/social-icons.css';
 injectGlobal`
   * { padding: 0; margin: 0; }
   ${styledNormalize}
-  html { font-size: 22px; }
+  html { font-size: 25px; }
 `;
 
 const BaseStyles = styled.div`
