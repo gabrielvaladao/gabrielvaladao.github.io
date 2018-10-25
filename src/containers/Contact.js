@@ -43,6 +43,13 @@ export default () => (
         </StyledLink>
       </Li>
       <Li>
+        <StyledLink to="https://open.spotify.com/artist/4YkYhnarkLP5K1l55l5Y3e" title="Spotify">
+          <span className="icon-spotify">Spotify</span>
+        </StyledLink>
+      </Li>
+    </Ul>
+    <Ul>
+      <Li>
         <StyledLink to="https://www.facebook.com/labrysinthe/" title="Facebook">
           <span className="icon-facebook">Facebook</span>
         </StyledLink>

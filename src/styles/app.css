@@ -5,11 +5,10 @@
 
 @font-face {
   font-family: 'raincoatregular';
-  src: url('./fonts/typodermic_-_raincoat-regular-webfont.woff2') format('woff2'),
-       url('./fonts/typodermic_-_raincoat-regular-webfont.woff') format('woff');
+  src: url('../fonts/typodermic_-_raincoat-regular-webfont.woff2') format('woff2'),
+       url('../fonts/typodermic_-_raincoat-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 /**

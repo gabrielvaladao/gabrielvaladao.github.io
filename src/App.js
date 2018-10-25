@@ -8,15 +8,18 @@ import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import styledNormalize from 'styled-normalize';
 //
 import Header from './containers/Header';
-import theme from './Theme';
-import './app.css';
 import Footer from './containers/Footer';
+//
+import theme from './styles/Theme';
+import './styles/app.css';
+import './styles/social-icons.css';
 //
 
 /* eslint-disable-next-line */
 injectGlobal`
+  * { padding: 0; margin: 0; }
   ${styledNormalize}
-  html { font-size: 24px; }
+  html { font-size: 22px; }
 `;
 
 const BaseStyles = styled.div`
