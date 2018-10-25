@@ -4,8 +4,10 @@ import styled from 'styled-components';
 //
 import StyledLink from '../elements/StyledLink';
 import H3 from '../elements/H3';
+import Small from '../elements/Small';
+import Smaller from '../elements/Smaller';
 
-/* TODO: Show logic:
+/* TODO: Show logic
   A show has one of two states: Upcoming or Previous.
   A show's state is changed to Previous on the day after its end date. (currentDate.value === (show.endDate + 1).value).
   When a show's state is Previous, hide ticket link. Keep facebook link.
@@ -18,22 +20,36 @@ const Wrapper = styled.article`
 `;
 
 const Header = styled.header`
-  padding: 0;
+  padding: 0 ${props => props.theme.space.half};
   grid-row: 1;
   grid-column: 2;
 `;
 
 const When = styled.div`
+  padding: 0 ${props => props.theme.space.half};
   grid-row: 1 / 3;
   grid-column: 1;
 `;
 
-const Where = styled.div`
+const Day = styled(Small)`
+  margin-bottom: 0;
+  display: inline-block;
+`;
+
+// TODO: complete
+// const StartDate = styled.strong`
+//   font-family: ${props => props.theme.type....}
+//   font-weight: ${ props => props.theme.type....}
+// `;
+
+const Where = styled(Small)`
+  padding: 0 ${props => props.theme.space.half};
   grid-row: 2;
   grid-column: 2;
 `;
 
 const Cta = styled(StyledLink)`
+  padding: 0 ${ props => props.theme.space.half};
   grid-row: 1 / 3;
   grid-column: 3;
 `;
@@ -43,24 +59,23 @@ export default ({ title, host, when, venue, fbEventUrl }) => (
   <Wrapper aria-labelledby="show-title">
     <Header>
       <H3 id="show-title">{title}</H3>
-      <p className="host">
+      <Small>
         Hosted by <StyledLink to={host.url}>{host.name}</StyledLink>
-      </p>
+      </Small>
     </Header>
     <When>
-      <span className="day">{when.start.day}</span>
+      <Day>{when.start.day}</Day>
       <br />
-      <span className="date">{when.start.date}</span>
+      {/* TODO: <StartDate>{when.start.date}</StartDate> */}
+      <strong>{when.start.date}</strong>
       <br />
       <span className="year">{when.start.year}</span>
     </When>
     <Where>
       <StyledLink to={venue.url} id="venue-name">{venue.name}</StyledLink>
-      <br />
-      {venue.address}
-      <br />
+      <p>{venue.address}</p>
       <StyledLink to={venue.gMapsUrl} aria-labelledby="venue-name">Google Maps</StyledLink>
     </Where>
-    <Cta to={fbEventUrl} aria-labelledby="show-title">Facebook event</Cta>
+    <Cta to={fbEventUrl} aria-labelledby="show-title"><Small>Facebook event</Small></Cta>
   </Wrapper>
 );
