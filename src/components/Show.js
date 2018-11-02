@@ -2,8 +2,8 @@ import React from 'react';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLink from '../elements/StyledLink';
 import H3 from '../elements/H3';
+import StyledLink from '../elements/StyledLink';
 import Small from '../elements/Small';
 import Smaller from '../elements/Smaller';
 
@@ -49,33 +49,34 @@ const Where = styled(Small)`
 `;
 
 const Cta = styled(StyledLink)`
-  padding: 0 ${ props => props.theme.space.half};
+  padding: 0 ${props => props.theme.space.half};
   grid-row: 1 / 3;
   grid-column: 3;
 `;
 
-export default ({ title, host, when, venue, fbEventUrl }) => (
-  // TODO: I want these attributes to be applied to the <li> element where they live (see Shows.js)
+export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venueUrl, venueName, venueAddress, venueGMapsUrl, fbEventUrl, ...props }) => (
   <Wrapper aria-labelledby="show-title">
     <Header>
       <H3 id="show-title">{title}</H3>
       <Small>
-        Hosted by <StyledLink to={host.url}>{host.name}</StyledLink>
+        Hosted by <StyledLink to={hostUrl}>{hostName}</StyledLink>
       </Small>
     </Header>
     <When>
-      <Day>{when.start.day}</Day>
+      <Day>{startDay}</Day>
       <br />
-      {/* TODO: <StartDate>{when.start.date}</StartDate> */}
-      <strong>{when.start.date}</strong>
+      {/* TODO: <StartDate>{startDate}</StartDate> */}
+      <strong>{startDate}</strong>
       <br />
-      <span className="year">{when.start.year}</span>
+      <span className="year">{startYear}</span>
     </When>
     <Where>
-      <StyledLink to={venue.url} id="venue-name">{venue.name}</StyledLink>
-      <p>{venue.address}</p>
-      <StyledLink to={venue.gMapsUrl} aria-labelledby="venue-name">Google Maps</StyledLink>
+      <StyledLink to={venueUrl} id="venue-name">{venueName}</StyledLink>
+      <p>{venueAddress}</p>
+      <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">Google Maps</StyledLink>
     </Where>
-    <Cta to={fbEventUrl} aria-labelledby="show-title"><Small>Facebook event</Small></Cta>
+    <Cta to={fbEventUrl} aria-labelledby="show-title">
+      <Small>Facebook event</Small>
+    </Cta>
   </Wrapper>
 );

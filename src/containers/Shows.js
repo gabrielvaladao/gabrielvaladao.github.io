@@ -1,11 +1,11 @@
 import React from 'react';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
-import Show from '../components/Show';
 //
 import H1 from '../elements/H1';
 import H2 from '../elements/H2';
-
+import Show from '../components/Show';
+//
 const Ul = styled.ul`
   padding-left: 0;
 `;
@@ -13,7 +13,6 @@ const Ul = styled.ul`
 const Li = styled.li`
   list-style-type: none;
 `;
-
 
 export default withRouteData(() => (
   <div>
@@ -36,23 +35,15 @@ export default withRouteData(() => (
         <Li>
           <Show
             title="Electronic Events Experience Exchange (EEEE&nbsp;Party!!!!)"
-            host={{
-              name: 'Fractal Portal',
-              url: 'http://www.fractalportal.com/',
-            }}
-            when={{
-              start: {
-                day: 'Saturday',
-                date: '4 NOV',
-                year: '2017',
-              },
-            }}
-            venue={{
-              name: 'Velvet Monkeys Club',
-              url: 'https://www.facebook.com/Velvet-Monkey-erlebnisgastronomie-1823655237858506/',
-              address: 'Herzbergstraße 53b, 10365 Berlin',
-              gMapsUrl: 'https://goo.gl/maps/CkDUTdspCkL2',
-            }}
+            hostName="Fractal Portal"
+            hostUrl="http://www.fractalportal.com/"
+            startDay="Saturday"
+            startDate="4 NOV"
+            startYear="2017"
+            venueName="Velvet Monkeys Club"
+            venueUrl="https://www.facebook.com/Velvet-Monkey-erlebnisgastronomie-1823655237858506/"
+            venueAddress="Herzbergstraße 53b, 10365 Berlin"
+            venueGMapsUrl="https://goo.gl/maps/CkDUTdspCkL2"
             fbEventUrl="https://www.facebook.com/events/351769011903873/"
           />
         </Li>
