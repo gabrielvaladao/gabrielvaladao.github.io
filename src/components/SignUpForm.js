@@ -1,32 +1,93 @@
 import React from 'react';
-import styled from 'styled-components';
 //
 import H2 from '../elements/H2';
 import BodyText from '../elements/BodyText';
-import InputText from './InputText';
-import Button from './Button';
 
-export default () => (
-  <form action="">
-    <H2>Sign up</H2>
-    <BodyText>
-      Be the first to hear about upcoming gigs and music.
-    </BodyText>
+function encode(data) {
+  return Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+}
 
-    {/* ESLint expects an input element instead of an InputText component which returns an input */}
-    {/* eslint-disable-next-line */}
-    <label htmlFor="input-email">
-      Email:{' '}
-      <InputText type="email" value="" id="input-email" placeholder="email address" required />
-    </label>
+export default class SignUpForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-    {/* Mailchimp spam decoy. Real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
-    <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-      <input type="text" name="b_4075336e0f256e14e1da4ad74_cea2bf53fe" tabIndex="-1" value="" />
-    </div>
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
 
-    <div className="clear">
-      <Button type="submit" value="Sign up" name="sign-up" id="mc-embedded-subscribe" className="button" />
-    </div>
-  </form>
-);
+  handleSubmit(e) {
+    e.preventDefault();
+    // if (isEmail(this.state.user_email)) {
+    const form = e.target;
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(this.showThanks())
+      .catch(error => alert(error));
+    // }
+  }
+
+  showThanks() {
+    alert(JSON.stringify(this.state));
+    if (typeof document !== 'undefined') {
+      document.querySelector('#mc-sign-up').setAttribute('hidden', 'true');
+      document.querySelector('#thanks').removeAttribute('hidden');
+    }
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <div id="mc-sign-up">
+          <H2>Sign up</H2>
+          <BodyText>
+            Be the first to hear about upcoming gigs and music.
+          </BodyText>
+          <form
+            name="mc_sign_up"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={this.handleSubmit}
+          >
+            <div style={{ display: 'none' }}>
+              <label htmlFor="bot-field">Spam catcher. Do not fill:
+                <input id="bot-field" name="bot-field" form-name="mcSignUp" onChange={this.handleChange} />
+              </label>
+            </div>
+
+            <label htmlFor="email">
+              <input type="email" id="email" name="user_email" required onChange={this.handleChange} />
+            </label>
+
+            <button type="submit">Sign up</button>
+
+          </form>
+        </div>
+
+        <div id="thanks" hidden>
+          <H2>Thanks!</H2>
+          <BodyText>
+            <p>
+              You've been added to the mailing list.
+            </p>
+            <p>
+              Please check your email and confirm your address. You'll be in the loop as soon as Labrysinthe drops anything shiny.
+            </p>
+          </BodyText>
+        </div>
+      </React.Fragment>
+    );
+  }
+}
