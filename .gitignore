@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # assets
-/fonts
-*.jpg
-*.png
+# /fonts
+# *.jpg
+# *.png
