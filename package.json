@@ -21,7 +21,8 @@
     "react-static": "^5.9.12",
     "react-static-plugin-styled-components": "^1.0.6",
     "styled-components": "^3.4.9",
-    "styled-normalize": "^8.0.2"
+    "styled-normalize": "^8.0.2",
+    "validator": "^10.8.0"
   },
   "devDependencies": {
     "eslint": "^5.6.1",

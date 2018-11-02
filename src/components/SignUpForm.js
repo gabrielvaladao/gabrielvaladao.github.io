@@ -1,4 +1,5 @@
 import React from 'react';
+import isEmail from 'validator/lib/isEmail';
 //
 import H2 from '../elements/H2';
 import BodyText from '../elements/BodyText';
