@@ -24,20 +24,20 @@ export default class SignUpForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    // if (isEmail(this.state.user_email)) {
-    const form = e.target;
+    if (isEmail(this.state.user_email)) {
+      const form = e.target;
 
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
-    })
-      .then(this.showThanks())
-      .catch(error => alert(error));
-    // }
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...this.state,
+        }),
+      })
+        .then(this.showThanks())
+        .catch(error => alert(error));
+    }
   }
 
   showThanks() {
