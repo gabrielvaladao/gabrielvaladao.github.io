@@ -1,8 +1,15 @@
 import React from 'react';
 import isEmail from 'validator/lib/isEmail';
+import styled from 'styled-components';
 //
 import H2 from '../elements/H2';
 import BodyText from '../elements/BodyText';
+
+const ErrorMessage = styled.div`
+  /* TODO use a margin from theme sizes */
+  margin-top: 0.5em;
+  color: crimson;
+`;
 
 function encode(data) {
   return Object.keys(data)
@@ -19,6 +26,9 @@ export default class SignUpForm extends React.Component {
   }
 
   handleChange(e) {
+    if (typeof document !== 'undefined') {
+      document.querySelector('#error').setAttribute('hidden', 'true');
+    }
     this.setState({ [e.target.name]: e.target.value });
   }
 
@@ -37,6 +47,10 @@ export default class SignUpForm extends React.Component {
       })
         .then(this.showThanks())
         .catch(error => alert(error));
+    } else {
+      if (typeof document !== 'undefined') {
+        document.querySelector('#error').removeAttribute('hidden');
+      }
     }
   }
 
@@ -69,14 +83,27 @@ export default class SignUpForm extends React.Component {
             </div>
 
             <label htmlFor="email">
-              <input type="email" id="email" name="user_email" required onChange={this.handleChange} />
+              <input
+                type="email"
+                id="email"
+                name="user_email"
+                onChange={this.handleChange}
+                required
+              />
             </label>
 
             <button type="submit">Sign up</button>
 
           </form>
         </div>
-
+        <ErrorMessage id="error" hidden>
+          <BodyText>
+            <p>
+              {/* TODO: Variable error message */}
+              <strong>Error</strong> Please enter a valid email address<br />
+            </p>
+          </BodyText>
+        </ErrorMessage>
         <div id="thanks" hidden>
           <H2>Thanks!</H2>
           <BodyText>
