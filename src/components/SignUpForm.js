@@ -26,14 +26,16 @@ export default class SignUpForm extends React.Component {
   }
 
   handleChange(e) {
-    if (typeof document !== 'undefined') {
-      document.querySelector('#error').setAttribute('hidden', 'true');
-    }
     this.setState({ [e.target.name]: e.target.value });
   }
 
   handleSubmit(e) {
     e.preventDefault();
+
+    if (typeof document !== 'undefined') {
+      document.querySelector('#error').setAttribute('hidden', 'true');
+    }
+
     if (isEmail(this.state.user_email)) {
       const form = e.target;
 
@@ -55,7 +57,7 @@ export default class SignUpForm extends React.Component {
   }
 
   showThanks() {
-    alert(JSON.stringify(this.state));
+    // alert(JSON.stringify(this.state));
     if (typeof document !== 'undefined') {
       document.querySelector('#mc-sign-up').setAttribute('hidden', 'true');
       document.querySelector('#thanks').removeAttribute('hidden');
