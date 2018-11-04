@@ -36,7 +36,7 @@ export default class SignUpForm extends React.Component {
       document.querySelector('#error').setAttribute('hidden', 'true');
     }
 
-    if (isEmail(this.state.user_email)) {
+    if (this.state.user_email && isEmail(this.state.user_email)) {
       const form = e.target;
 
       fetch('/', {
