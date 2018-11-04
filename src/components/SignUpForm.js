@@ -4,6 +4,7 @@ import styled from 'styled-components';
 //
 import H2 from '../elements/H2';
 import BodyText from '../elements/BodyText';
+import Button from './Button';
 
 const ErrorMessage = styled.div`
   /* TODO use a margin from theme sizes */
@@ -95,7 +96,7 @@ export default class SignUpForm extends React.Component {
               />
             </label>
 
-            <button type="submit">Sign up</button>
+            <Button type="submit">Sign up</Button>
 
           </form>
         </div>

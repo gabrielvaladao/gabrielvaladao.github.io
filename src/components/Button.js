@@ -11,10 +11,14 @@ const Button = styled.button`
   text-transform: uppercase;
   letter-spacing: -0.1ch;
   padding: 0.2em 0.5em;
+  &:active {
+    background-color: #1f9f9f;
+    color: #fff;
+  }
 `;
 
 export default props => (
   <Button {...props}>
-    <Small>{props.value}</Small>
+    <Small>{props.children}</Small>
   </Button>
 );
