@@ -75,6 +75,7 @@ export default class SignUpForm extends React.Component {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
+            noValidate
           >
             <div style={{ display: 'none' }}>
               <label htmlFor="bot-field">Spam catcher. Do not fill:
