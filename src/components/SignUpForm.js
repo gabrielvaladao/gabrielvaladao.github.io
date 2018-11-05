@@ -33,35 +33,41 @@ export default class SignUpForm extends React.Component {
   handleSubmit(e) {
     /* Suppress redirect */
     e.preventDefault();
+    try {
+      if (this.state.user_email && isEmail(this.state.user_email)) {
+        const form = e.target;
 
-    if (typeof document !== 'undefined') {
-      document.querySelector('#error').setAttribute('hidden', 'true');
-    }
-
-    if (this.state.user_email && isEmail(this.state.user_email)) {
-      const form = e.target;
-
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({
-          'form-name': form.getAttribute('name'),
-          ...this.state,
-        }),
-      })
-        .then(this.showThanks())
-        .catch(error => alert(error));
-    } else {
-      if (typeof document !== 'undefined') {
-        document.querySelector('#error').removeAttribute('hidden');
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': form.getAttribute('name'),
+            ...this.state,
+          }),
+        })
+          .then(() => this.showThanks())
+          .catch(error => this.showError(error));
+      } else {
+        throw new Error('Please enter a valid email address');
       }
+    } catch (error) {
+      this.showError(error);
     }
   }
 
   showThanks() {
     if (typeof document !== 'undefined') {
       document.querySelector('#mc-sign-up').setAttribute('hidden', 'true');
+      document.querySelector('#error').setAttribute('hidden', 'true');
       document.querySelector('#thanks').removeAttribute('hidden');
+    }
+  }
+
+  showError(error) {
+    if (typeof document !== 'undefined') {
+      const errorMessage = document.querySelector('#error');
+      errorMessage.textContent = error;
+      document.querySelector('#error').removeAttribute('hidden');
     }
   }
 
@@ -101,8 +107,7 @@ export default class SignUpForm extends React.Component {
           </form>
         </div>
         <ErrorMessage id="error" hidden>
-          {/* TODO: Variable error message */}
-          <strong>Error</strong>Please enter a valid email address<br />
+          Error: Please try again later
         </ErrorMessage>
         <div id="thanks" hidden>
           <H2>Thanks!</H2>
