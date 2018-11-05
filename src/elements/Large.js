@@ -3,9 +3,6 @@ import styled from 'styled-components';
 //
 const Large = styled.span`
   font-size: ${props => props.theme.type.large.fontSize};
-  margin-top: ${props => props.theme.type.large.marginTop};
-  margin-top: ${props => props.theme.type.large.marginTop};
-  margin-bottom: ${props => props.theme.type.large.marginBottom};
 `;
 
 export default props => (

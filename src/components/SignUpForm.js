@@ -6,8 +6,8 @@ import H2 from '../elements/H2';
 import BodyText from '../elements/BodyText';
 import Button from './Button';
 
-const ErrorMessage = styled.div`
-  /* TODO use a margin from theme sizes */
+/* TODO use a margin from theme sizes */
+const ErrorMessage = styled(BodyText)`
   margin-top: 0.5em;
   color: crimson;
 `;
@@ -101,22 +101,16 @@ export default class SignUpForm extends React.Component {
           </form>
         </div>
         <ErrorMessage id="error" hidden>
-          <BodyText>
-            <p>
-              {/* TODO: Variable error message */}
-              <strong>Error</strong> Please enter a valid email address<br />
-            </p>
-          </BodyText>
+          {/* TODO: Variable error message */}
+          <strong>Error</strong>Please enter a valid email address<br />
         </ErrorMessage>
         <div id="thanks" hidden>
           <H2>Thanks!</H2>
           <BodyText>
-            <p>
-              You've been added to the mailing list.
-            </p>
-            <p>
-              Please check your email and confirm your address. You'll be in the loop as soon as Labrysinthe drops anything shiny.
-            </p>
+            You've been added to the mailing list.
+          </BodyText>
+          <BodyText>
+            Please check your email and confirm your address. You'll be in the loop as soon as Labrysinthe drops anything shiny.
           </BodyText>
         </div>
       </React.Fragment>
