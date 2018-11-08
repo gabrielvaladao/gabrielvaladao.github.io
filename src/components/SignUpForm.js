@@ -102,6 +102,8 @@ export default class SignUpForm extends React.Component {
               />
             </label>
 
+            <div data-netlify-recaptcha />
+
             <Button type="submit">Sign up</Button>
 
           </form>
