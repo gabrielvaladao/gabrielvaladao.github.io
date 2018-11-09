@@ -3,11 +3,11 @@ import isEmail from 'validator/lib/isEmail';
 import styled from 'styled-components';
 //
 import H2 from '../elements/H2';
-import BodyText from '../elements/BodyText';
+import P from '../elements/P';
 import Button from './Button';
 
 /* TODO use a margin from theme sizes */
-const ErrorMessage = styled(BodyText)`
+const ErrorMessage = styled(P)`
   margin-top: 0.5em;
   color: crimson;
 `;
@@ -76,9 +76,9 @@ export default class SignUpForm extends React.Component {
       <React.Fragment>
         <div id="mc-sign-up">
           <H2>Sign up</H2>
-          <BodyText>
+          <P>
             Be the first to hear about upcoming gigs and music.
-          </BodyText>
+          </P>
           <form
             name="mc_sign_up"
             data-netlify="true"
@@ -111,12 +111,12 @@ export default class SignUpForm extends React.Component {
         </ErrorMessage>
         <div id="thanks" hidden>
           <H2>Thanks!</H2>
-          <BodyText>
+          <P>
             You've been added to the mailing list.
-          </BodyText>
-          <BodyText>
+          </P>
+          <P>
             Please check your email and confirm your address. You'll be in the loop as soon as Labrysinthe drops anything shiny.
-          </BodyText>
+          </P>
         </div>
       </React.Fragment>
     );

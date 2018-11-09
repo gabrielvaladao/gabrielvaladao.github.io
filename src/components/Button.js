@@ -3,8 +3,6 @@ import { Link } from 'react-static';
 //
 import styled from 'styled-components';
 //
-import Small from '../elements/Small';
-
 /* TODO: calculate padding based on Theme */
 const Button = styled.button`
   text-align: center;
@@ -15,6 +13,10 @@ const Button = styled.button`
     background-color: #1f9f9f;
     color: #fff;
   }
+`;
+
+const Small = styled.span`
+  font-size: ${props => props.theme.type.small.fontSize};
 `;
 
 export default props => (

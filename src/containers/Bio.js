@@ -2,12 +2,12 @@ import React from 'react';
 //
 import StyledLink from '../elements/StyledLink';
 import H1 from '../elements/H1';
-import BodyText from '../elements/BodyText';
+import P from '../elements/P';
 
 export default () => (
   <React.Fragment>
     <H1>Bio</H1>
-    <BodyText>
+    <P>
       <p>
         Labrysinthe is Natalia Lincoln, who took the scenic route to psytrance -- first through classical training, then joining gothic/apocalyptic folk band Unto Ashes (NYC) as premium purveyor of keyboards, vocals, and gloom.
       </p>
@@ -17,6 +17,6 @@ export default () => (
       <p>
         Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin and with Nica Iliuchina (now Reality Test). She is an original member of the <StyledLink to="https://soundcloud.com/strength_in_numbers" aria-label="Listen to Strength in Numbers on SoundCloud" title="SoundCloud">Strength in Numbers</StyledLink> beat collective in Berlin.
       </p>
-    </BodyText>
+    </P>
   </React.Fragment>
 );

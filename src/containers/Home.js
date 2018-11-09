@@ -1,9 +1,13 @@
 import React from 'react';
 import { withSiteData } from 'react-static';
+import styled from 'styled-components';
 //
-import Large from '../elements/Large';
-import BodyText from '../elements/BodyText';
+import P from '../elements/P';
 import StyledLink from '../elements/StyledLink';
+
+const Large = styled.span`
+  font-size: ${props => props.theme.type.large.fontSize};
+`;
 
 export default withSiteData(() => (
   <div>
@@ -11,8 +15,8 @@ export default withSiteData(() => (
       New EP <strong>Fire Loves Sugar</strong> coming soon!<br />
       <StyledLink to="./music">Listen to the teaser</StyledLink>
     </Large>
-    <BodyText>
+    <P>
       Labrysinthe is voluntarily committed to the institution of psytrance and stands for better machines, brighter knowledge, bolder music, and the blissful ecstacies of the beat.
-    </BodyText>
+    </P>
   </div>
 ));

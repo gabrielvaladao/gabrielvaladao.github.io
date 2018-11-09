@@ -4,7 +4,6 @@ import styled from 'styled-components';
 //
 import H3 from '../elements/H3';
 import StyledLink from '../elements/StyledLink';
-import Small from '../elements/Small';
 import Smaller from '../elements/Smaller';
 
 /* TODO: Show logic
@@ -52,6 +51,10 @@ const Cta = styled(StyledLink)`
   padding: 0 ${props => props.theme.space.half};
   grid-row: 1 / 3;
   grid-column: 3;
+`;
+
+const Small = styled.span`
+  font-size: ${props => props.theme.type.small.fontSize};
 `;
 
 export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venueUrl, venueName, venueAddress, venueGMapsUrl, fbEventUrl, ...props }) => (
