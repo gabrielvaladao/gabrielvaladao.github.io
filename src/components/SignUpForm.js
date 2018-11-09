@@ -6,9 +6,32 @@ import H2 from '../elements/H2';
 import P from '../elements/P';
 import Button from './Button';
 
+const Wrapper = styled.section`
+  text-align: center;
+  padding-bottom: ${props => props.theme.space.two};
+`;
+
+const Label = styled.label`
+  display: block;
+  text-align: left;
+  font-size: ${props => props.theme.type.small.fontSize};
+  width: 30ch;
+  margin: -${props => props.theme.type.small.fontSize} auto 0 auto;
+`;
+
+/* TODO: calculate padding based on Theme */
+const Input = styled.input`
+  text-align: left;
+  letter-spacing: -0.1ch;
+  padding: 0.2em 0.5em;
+  display: block;
+  width: 100%;
+  margin-bottom: ${props => props.theme.space.half};
+`;
+
 /* TODO use a margin from theme sizes */
 const ErrorMessage = styled(P)`
-  margin-top: 0.5em;
+  text-align: left;
   color: crimson;
 `;
 
@@ -73,7 +96,7 @@ export default class SignUpForm extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <Wrapper>
         <div id="mc-sign-up">
           <H2>Sign up</H2>
           <P>
@@ -87,28 +110,31 @@ export default class SignUpForm extends React.Component {
             noValidate
           >
             <div style={{ display: 'none' }}>
-              <label htmlFor="bot-field">Spam catcher. Do not fill:
+              <label htmlFor="bot-field">
+                Spam catcher. Do not fill:
                 <input id="bot-field" name="bot-field" form-name="mcSignUp" onChange={this.handleChange} />
               </label>
             </div>
 
-            <label htmlFor="email">
-              <input
+            <Label htmlFor="email">
+              Email:
+              <Input
                 type="email"
                 id="email"
                 name="user_email"
                 onChange={this.handleChange}
                 required
               />
-            </label>
+              <ErrorMessage id="error" hidden>
+                Error: Please try again later
+              </ErrorMessage>
+            </Label>
+
 
             <Button type="submit">Sign up</Button>
 
           </form>
         </div>
-        <ErrorMessage id="error" hidden>
-          Error: Please try again later
-        </ErrorMessage>
         <div id="thanks" hidden>
           <H2>Thanks!</H2>
           <P>
@@ -118,7 +144,7 @@ export default class SignUpForm extends React.Component {
             Please check your email and confirm your address. You'll be in the loop as soon as Labrysinthe drops anything shiny.
           </P>
         </div>
-      </React.Fragment>
+      </Wrapper>
     );
   }
 }

@@ -53,7 +53,6 @@ export default () => (
         fontWeight: regular,
         fontSize: `${ratio1 * ratio2}em`,
         lineHeight: `${lineHeight * 2}rem`,
-        marginTop: `${lineHeight * 2}rem`,
         marginBottom: `${lineHeight}rem`,
       },
       h3: {
