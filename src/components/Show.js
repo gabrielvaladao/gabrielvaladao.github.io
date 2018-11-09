@@ -4,7 +4,6 @@ import styled from 'styled-components';
 //
 import H3 from '../elements/H3';
 import StyledLink from '../elements/StyledLink';
-import Smaller from '../elements/Smaller';
 
 /* TODO: Show logic
   A show has one of two states: Upcoming or Previous.
@@ -16,6 +15,10 @@ const Wrapper = styled.article`
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   grid-template-rows: max-content max-content;
+`;
+
+const Small = styled.span`
+  font-size: ${props => props.theme.type.small.fontSize};
 `;
 
 const Header = styled.header`
@@ -30,7 +33,8 @@ const When = styled.div`
   grid-column: 1;
 `;
 
-const Day = styled(Small)`
+const Day = styled.span`
+  font-size: ${props => props.theme.type.small.fontSize};
   margin-bottom: 0;
   display: inline-block;
 `;
@@ -41,7 +45,8 @@ const Day = styled(Small)`
 //   font-weight: ${ props => props.theme.type....}
 // `;
 
-const Where = styled(Small)`
+const Where = styled.span`
+  font-size: ${props => props.theme.type.small.fontSize};
   padding: 0 ${props => props.theme.space.half};
   grid-row: 2;
   grid-column: 2;
@@ -51,10 +56,6 @@ const Cta = styled(StyledLink)`
   padding: 0 ${props => props.theme.space.half};
   grid-row: 1 / 3;
   grid-column: 3;
-`;
-
-const Small = styled.span`
-  font-size: ${props => props.theme.type.small.fontSize};
 `;
 
 export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venueUrl, venueName, venueAddress, venueGMapsUrl, fbEventUrl, ...props }) => (

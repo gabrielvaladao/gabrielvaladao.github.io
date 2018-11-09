@@ -3,7 +3,6 @@ import { Link } from 'react-static';
 //
 import styled from 'styled-components';
 //
-import Small from '../elements/Small';
 
 /* TODO: calculate padding based on Theme */
 const Input = styled.input`
