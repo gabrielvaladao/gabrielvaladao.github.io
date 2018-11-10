@@ -89,6 +89,7 @@ export default () => (
       },
     },
     space: {
+      quarter: `${lineHeight / 4}rem`,
       half: `${lineHeight / 2}rem`,
       one: `${lineHeight}rem`,
       two: `${lineHeight * 2}rem`,

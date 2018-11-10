@@ -11,28 +11,60 @@ const Wrapper = styled.section`
   padding-bottom: ${props => props.theme.space.two};
 `;
 
-const Label = styled.label`
-  display: block;
+/* TODO: calculate ch values and max-width based on Theme */
+const Form = styled.form`
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) min-content;
+  grid-template-rows: min-content min-content minmax(0, min-content);
+  column-gap: 1ch;
+  margin: 0 auto;
+  max-width: 400px;
   text-align: left;
-  font-size: ${props => props.theme.type.small.fontSize};
-  width: 30ch;
-  margin: -${props => props.theme.type.small.fontSize} auto 0 auto;
 `;
 
-/* TODO: calculate padding based on Theme */
+const Label = styled.label`
+  font-size: ${props => props.theme.type.small.fontSize};
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+`;
+
+/**
+ * TODO: calculate padding based on Theme
+ * Use same padding for Button
+ * */
 const Input = styled.input`
-  text-align: left;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  border: 0;
   letter-spacing: -0.1ch;
-  padding: 0.2em 0.5em;
-  display: block;
-  width: 100%;
-  margin-bottom: ${props => props.theme.space.half};
+  padding: 0.2rem 0.5rem;
+  box-sizing: border-box;
+  height: ${props => props.theme.space.one};
+`;
+
+const Submit = styled(Button)`
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: inline-block;
+  box-sizing: border-box;
+  height: ${props => props.theme.space.one};
 `;
 
 /* TODO use a margin from theme sizes */
-const ErrorMessage = styled(P)`
-  text-align: left;
+const ErrorMessage = styled.p`
+  visibility: hidden;
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  font-size: ${props => props.theme.type.small.fontSize};
   color: crimson;
+  margin: ${props => props.theme.space.quarter} 0;
+  white-space: normal;
+`;
+
+const Thanks = styled.div`
+  P {
+    text-align: left;
+  }
 `;
 
 function encode(data) {
@@ -81,16 +113,20 @@ export default class SignUpForm extends React.Component {
   showThanks() {
     if (typeof document !== 'undefined') {
       document.querySelector('#mc-sign-up').setAttribute('hidden', 'true');
-      document.querySelector('#error').setAttribute('hidden', 'true');
+      document.querySelector('#error').style.visibility = 'hidden';
+      document.querySelector('#error').style.position = 'absolute';
       document.querySelector('#thanks').removeAttribute('hidden');
     }
   }
 
   showError(error) {
+    console.log('show error');
     if (typeof document !== 'undefined') {
+      console.log('document true');
       const errorMessage = document.querySelector('#error');
       errorMessage.textContent = error;
-      document.querySelector('#error').removeAttribute('hidden');
+      document.querySelector('#error').style.position = 'relative';
+      document.querySelector('#error').style.visibility = 'visible';
     }
   }
 
@@ -98,11 +134,11 @@ export default class SignUpForm extends React.Component {
     return (
       <Wrapper>
         <div id="mc-sign-up">
-          <H2>Sign up</H2>
+          <H2>Newsletter</H2>
           <P>
-            Be the first to hear about upcoming gigs and music.
+            Be the first to hear about upcoming gigs and fresh music.
           </P>
-          <form
+          <Form
             name="mc_sign_up"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
@@ -116,26 +152,21 @@ export default class SignUpForm extends React.Component {
               </label>
             </div>
 
-            <Label htmlFor="email">
-              Email:
-              <Input
-                type="email"
-                id="email"
-                name="user_email"
-                onChange={this.handleChange}
-                required
-              />
-              <ErrorMessage id="error" hidden>
-                Error: Please try again later
-              </ErrorMessage>
-            </Label>
+            <Label htmlFor="email">Email:</Label>
+            <Input
+              type="email"
+              id="email"
+              name="user_email"
+              onChange={this.handleChange}
+              required
+            />
+            <ErrorMessage id="error" />
 
+            <Submit type="submit">Sign&nbsp;up</Submit>
 
-            <Button type="submit">Sign up</Button>
-
-          </form>
+          </Form>
         </div>
-        <div id="thanks" hidden>
+        <Thanks id="thanks" hidden>
           <H2>Thanks!</H2>
           <P>
             You've been added to the mailing list.
@@ -143,7 +174,7 @@ export default class SignUpForm extends React.Component {
           <P>
             Please check your email and confirm your address. You'll be in the loop as soon as Labrysinthe drops anything shiny.
           </P>
-        </div>
+        </Thanks>
       </Wrapper>
     );
   }

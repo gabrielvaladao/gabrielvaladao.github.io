@@ -1,26 +1,26 @@
 import React from 'react';
-import { Link } from 'react-static';
 //
 import styled from 'styled-components';
 //
-/* TODO: calculate padding based on Theme */
+
+/**
+ * TODO: calculate padding based on Theme
+ * Use same padding for SignUpForm > Input
+ * */
 const Button = styled.button`
+  font-size: ${props => props.theme.type.small.fontSize};
+  height: ${props => props.theme.space.one};
   text-align: center;
-  text-transform: uppercase;
   letter-spacing: -0.1ch;
-  padding: 0.2em 0.5em;
+  padding: 0.2rem 0.5rem 0.3rem 0.5rem;
   &:active {
     background-color: #1f9f9f;
     color: #fff;
   }
 `;
 
-const Small = styled.span`
-  font-size: ${props => props.theme.type.small.fontSize};
-`;
-
 export default props => (
   <Button {...props}>
-    <Small>{props.children}</Small>
+    {props.children}
   </Button>
 );
