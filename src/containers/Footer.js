@@ -1,11 +1,11 @@
 import React from 'react';
 import Menu from '../components/Menu';
-import SignUpForm from '../components/SignUpForm';
+import Newsletter from '../components/Newsletter';
 
 export default () => (
   <footer role="contentinfo">
 
-    <SignUpForm />
+    <Newsletter />
 
     <nav><Menu /></nav>
 

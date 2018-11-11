@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 /**
  * TODO: calculate padding based on Theme
- * Use same padding for SignUpForm > Input
+ * Use same padding for Newsletter > Input
  * */
 const Button = styled.button`
   font-size: ${props => props.theme.type.small.fontSize};

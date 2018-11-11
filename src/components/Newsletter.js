@@ -93,7 +93,7 @@ function encode(data) {
     .join('&');
 }
 
-export default class SignUpForm extends React.Component {
+export default class Newsletter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
