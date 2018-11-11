@@ -14,12 +14,17 @@ const Wrapper = styled.section`
 /* TODO: calculate ch values and max-width based on Theme */
 const Form = styled.form`
   display: grid;
-  grid-template-columns: minmax(min-content, 1fr) min-content;
+  grid-template-columns: minmax(6ch, 1fr) min-content;
   grid-template-rows: min-content min-content minmax(0, min-content);
-  column-gap: 1ch;
+  column-gap: 0.5ch;
   margin: 0 auto;
   max-width: 400px;
   text-align: left;
+
+  @media (min-width: 576px) {
+    grid-template-columns: min-content minmax(6ch, 1fr) min-content;
+    grid-template-rows: min-content minmax(0, min-content);
+  }
 `;
 
 const Label = styled.label`
@@ -40,6 +45,11 @@ const Input = styled.input`
   padding: 0.2rem 0.5rem;
   box-sizing: border-box;
   height: ${props => props.theme.space.one};
+
+  @media (min-width: 576px) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
 `;
 
 const Submit = styled(Button)`
@@ -48,6 +58,11 @@ const Submit = styled(Button)`
   display: inline-block;
   box-sizing: border-box;
   height: ${props => props.theme.space.one};
+
+  @media (min-width: 576px) {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+  }
 `;
 
 /* TODO use a margin from theme sizes */
@@ -59,6 +74,11 @@ const ErrorMessage = styled.p`
   color: crimson;
   margin: ${props => props.theme.space.quarter} 0;
   white-space: normal;
+
+  @media (min-width: 576px) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+  }
 `;
 
 const Thanks = styled.div`
