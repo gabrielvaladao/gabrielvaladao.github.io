@@ -13,30 +13,50 @@ import StyledLink from '../elements/StyledLink';
 
 const Wrapper = styled.article`
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  grid-template-rows: max-content max-content;
-`;
 
-const Small = styled.span`
-  font-size: ${props => props.theme.type.small.fontSize};
+  grid-template-rows: fit-content(100%) minmax(min-content, max-content) minmax(min-content, max-content) min-content;
+  grid-template-columns: 1fr;
+  
+  @media (min-width: 576px) {
+    grid-template-rows: max-content max-content;
+    grid-template-columns: max-content 1fr max-content;
+  }
 `;
 
 const Header = styled.header`
-  padding: 0 ${props => props.theme.space.half};
-  grid-row: 1;
-  grid-column: 2;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  padding: 0;
+
+  @media (min-width: 576px) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    padding: 0 ${props => props.theme.space.half};
+  }
 `;
 
 const When = styled.div`
-  padding: 0 ${props => props.theme.space.half};
-  grid-row: 1 / 3;
-  grid-column: 1;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  
+  * {
+    display: inline-block;
+  }
+
+  @media (min-width: 576px) {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    padding: 0 ${props => props.theme.space.half};
+    
+    * {
+      display: block;
+    }
+  }
 `;
 
 const Day = styled.span`
   font-size: ${props => props.theme.type.small.fontSize};
   margin-bottom: 0;
-  display: inline-block;
 `;
 
 // TODO: complete
@@ -47,15 +67,29 @@ const Day = styled.span`
 
 const Where = styled.span`
   font-size: ${props => props.theme.type.small.fontSize};
-  padding: 0 ${props => props.theme.space.half};
-  grid-row: 2;
-  grid-column: 2;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+
+  @media (min-width: 576px) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    padding: 0 ${props => props.theme.space.half};
+  }
 `;
 
 const Cta = styled(StyledLink)`
-  padding: 0 ${props => props.theme.space.half};
-  grid-row: 1 / 3;
-  grid-column: 3;
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+
+  @media (min-width: 576px) {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    padding: 0 ${props => props.theme.space.half};
+  }
+`;
+
+const Small = styled.span`
+  font-size: ${props => props.theme.type.small.fontSize};
 `;
 
 export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venueUrl, venueName, venueAddress, venueGMapsUrl, fbEventUrl, ...props }) => (
@@ -68,10 +102,8 @@ export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venu
     </Header>
     <When>
       <Day>{startDay}</Day>
-      <br />
       {/* TODO: <StartDate>{startDate}</StartDate> */}
       <strong>{startDate}</strong>
-      <br />
       <span className="year">{startYear}</span>
     </When>
     <Where>
