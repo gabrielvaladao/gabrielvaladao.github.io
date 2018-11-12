@@ -19,7 +19,7 @@ const Wrapper = styled.article`
   
   @media (min-width: 576px) {
     grid-template-rows: max-content max-content;
-    grid-template-columns: max-content 1fr minmax(min-content, max-content);
+    grid-template-columns: max-content 1fr minmax(min-content, max-content) minmax(min-content, max-content);
   }
 `;
 
@@ -80,15 +80,17 @@ const Where = styled.span`
 `;
 
 const Cta = styled(StyledLink)`
+  text-align: center;
+  display: grid;
+  align-items: center;
+
   grid-row: 4 / 5;
   &:only-of-type {
     grid-column: 1 / 3;
-    text-align: center;
   }
 
   @media (min-width: 576px) {
     grid-row: 1 / 3;
-    grid-column: 3 / 4;
     padding: 0 ${props => props.theme.space.half};
 
     &:only-of-type {
@@ -124,7 +126,10 @@ export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venu
       <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">Google Maps</StyledLink>
     </Where>
     <Cta to={fbEventUrl} aria-labelledby="show-title">
-      <Small>Facebook event</Small>
+      <Small>Facebook</Small>
+    </Cta>
+    <Cta to={fbEventUrl} aria-labelledby="show-title">
+      <Small>Tickets</Small>
     </Cta>
   </Wrapper>
 );
