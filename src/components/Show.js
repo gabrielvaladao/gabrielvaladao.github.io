@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
 //
-import H3 from '../elements/H3';
+import H4 from '../elements/H4';
 import StyledLink from '../elements/StyledLink';
 
 /* TODO: Show logic
@@ -19,7 +19,7 @@ const Wrapper = styled.article`
   
   @media (min-width: 576px) {
     grid-template-rows: max-content max-content;
-    grid-template-columns: max-content 1fr max-content;
+    grid-template-columns: max-content 1fr minmax(min-content, max-content);
   }
 `;
 
@@ -67,6 +67,8 @@ const Day = styled.span`
 
 const Where = styled.span`
   font-size: ${props => props.theme.type.small.fontSize};
+  line-height: ${props => props.theme.type.small.lineHeight};
+
   grid-row: 3 / 4;
   grid-column: 1 / 2;
 
@@ -92,19 +94,22 @@ const Small = styled.span`
   font-size: ${props => props.theme.type.small.fontSize};
 `;
 
+const Smaller = styled.span`
+  font-size: ${props => props.theme.type.smaller.fontSize};
+`;
+
 export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venueUrl, venueName, venueAddress, venueGMapsUrl, fbEventUrl, ...props }) => (
   <Wrapper aria-labelledby="show-title">
     <Header>
-      <H3 id="show-title">{title}</H3>
-      <Small>
+      <H4 id="show-title">{title}</H4>
+      <Smaller>
         Hosted by <StyledLink to={hostUrl}>{hostName}</StyledLink>
-      </Small>
+      </Smaller>
     </Header>
     <When>
       <Day>{startDay}</Day>
       {/* TODO: <StartDate>{startDate}</StartDate> */}
       <strong>{startDate}</strong>
-      <span className="year">{startYear}</span>
     </When>
     <Where>
       <StyledLink to={venueUrl} id="venue-name">{venueName}</StyledLink>

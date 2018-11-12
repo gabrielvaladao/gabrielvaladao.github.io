@@ -4,6 +4,7 @@ import styled from 'styled-components';
 //
 import H1 from '../elements/H1';
 import H2 from '../elements/H2';
+import H3 from '../elements/H3';
 import Show from '../components/Show';
 //
 const Ul = styled.ul`
@@ -31,6 +32,7 @@ export default withRouteData(() => (
     */}
     <section aria-labelledby="shows-previous">
       <H2 id="shows-previous">Previous shows</H2>
+      <H3>2017</H3>
       <Ul>
         <Li>
           <Show

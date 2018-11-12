@@ -56,12 +56,17 @@ export default () => (
         marginBottom: `${lineHeight}rem`,
       },
       h3: {
+        fontFamily: josefinSans,
+        fontWeight: regular, /* bold? */
         fontSize: `${ratio2}em`,
         marginTop: 0,
-        marginBottom: 0,
+        marginBottom: `${lineHeight}rem`,
       },
       h4: {
-        fontSize: `${ratio2}em`, /* TODO */
+        fontFamily: josefinSans,
+        fontWeight: semiBold,
+        fontSize: `${(1 / ratio2)}em`,
+        lineHeight: `${lineHeight}rem`,
       },
       h5: {
         fontSize: `${ratio2}em`, /* TODO */
