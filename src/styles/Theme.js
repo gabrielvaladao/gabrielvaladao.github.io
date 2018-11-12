@@ -107,6 +107,10 @@ export default () => (
       one: `${lineHeight}rem`,
       two: `${lineHeight * 2}rem`,
     },
+    icon: {
+      padding: `${1 / ratio1}rem`, /* TODO: in use? or can we change to `${lineHeight / 2}rem` ? */
+      size: `${lineHeight}px`,
+    },
   }
 );
 
