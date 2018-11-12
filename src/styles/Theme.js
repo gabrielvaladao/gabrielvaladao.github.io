@@ -5,7 +5,9 @@
   if (typeof document !== 'undefined') {
     const gFontImport = document.createElement('style');
 
-    gFontImport.innerHTML = "@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Lato:300,400,700');";
+    gFontImport.innerHTML = `
+      @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Lato:300,400,700');
+    `;
 
     const head = document.getElementsByTagName('head')[0];
     head.appendChild(gFontImport);
@@ -63,10 +65,11 @@ export default () => (
         marginBottom: `${lineHeight}rem`,
       },
       h4: {
-        fontFamily: josefinSans,
-        fontWeight: semiBold,
-        fontSize: `${(1 / ratio2)}em`,
+        fontFamily: lato,
+        fontWeight: bold,
+        fontSize: `${ratio2}em`,
         lineHeight: `${lineHeight}rem`,
+        marginBottom: `${lineHeight / 4}rem`,
       },
       h5: {
         fontSize: `${ratio2}em`, /* TODO */
@@ -91,6 +94,11 @@ export default () => (
         fontSize: `${(1 / ratio1)}em`,
         marginTop: 0,
         marginBottom: `${lineHeight}rem`,
+      },
+      compact: {
+        fontFamily: lato,
+        fontWeight: regular,
+        lineHeight: `${lineHeight / ratio2}rem`,
       },
     },
     space: {
