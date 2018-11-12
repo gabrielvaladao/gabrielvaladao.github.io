@@ -4,7 +4,7 @@ import styled from 'styled-components';
 //
 import H2 from '../elements/H2';
 import P from '../elements/P';
-import Button from './Button';
+import Button from '../elements/Button';
 
 const Wrapper = styled.section`
   text-align: center;
@@ -58,6 +58,7 @@ const Submit = styled(Button)`
   display: inline-block;
   box-sizing: border-box;
   height: ${props => props.theme.space.one};
+  text-transform: none;
 
   @media (min-width: 576px) {
     grid-row: 1 / 2;
