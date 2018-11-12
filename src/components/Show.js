@@ -15,7 +15,7 @@ const Wrapper = styled.article`
   display: grid;
 
   grid-template-rows: fit-content(100%) minmax(min-content, max-content) minmax(min-content, max-content) min-content;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   
   @media (min-width: 576px) {
     grid-template-rows: max-content max-content;
@@ -25,7 +25,7 @@ const Wrapper = styled.article`
 
 const Header = styled.header`
   grid-row: 2 / 3;
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
   padding: 0;
 
   @media (min-width: 576px) {
@@ -37,7 +37,7 @@ const Header = styled.header`
 
 const When = styled.div`
   grid-row: 1 / 2;
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
   
   * {
     display: inline-block;
@@ -70,7 +70,7 @@ const Where = styled.span`
   line-height: ${props => props.theme.type.small.lineHeight};
 
   grid-row: 3 / 4;
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
 
   @media (min-width: 576px) {
     grid-row: 2 / 3;
@@ -81,12 +81,19 @@ const Where = styled.span`
 
 const Cta = styled(StyledLink)`
   grid-row: 4 / 5;
-  grid-column: 1 / 2;
+  &:only-of-type {
+    grid-column: 1 / 3;
+    text-align: center;
+  }
 
   @media (min-width: 576px) {
     grid-row: 1 / 3;
     grid-column: 3 / 4;
     padding: 0 ${props => props.theme.space.half};
+
+    &:only-of-type {
+      grid-column: inherit;
+    }
   }
 `;
 
