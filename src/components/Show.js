@@ -15,12 +15,18 @@ import Button from '../elements/Button';
 const Wrapper = styled.article`
   display: grid;
 
-  grid-template-rows: fit-content(100%) minmax(min-content, max-content) minmax(min-content, max-content) min-content;
+  grid-template-rows: fit-content(100%) minmax(min-content, max-content) minmax(
+      min-content,
+      max-content
+    ) min-content;
   grid-template-columns: 1fr 1fr;
-  
+
   @media (min-width: 576px) {
     grid-template-rows: max-content max-content;
-    grid-template-columns: max-content 1fr minmax(min-content, max-content) minmax(min-content, max-content);
+    grid-template-columns: max-content 1fr minmax(min-content, max-content) minmax(
+        min-content,
+        max-content
+      );
   }
 `;
 
@@ -48,7 +54,7 @@ const When = styled.div`
   grid-row: 1 / 2;
   grid-column: 1 / 3;
   font-size: ${props => props.theme.type.base.fontSize};
-  
+
   * {
     display: inline-block;
   }
@@ -57,7 +63,7 @@ const When = styled.div`
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     padding: 0 ${props => props.theme.space.half};
-    
+
     * {
       display: block;
     }
@@ -66,7 +72,7 @@ const When = styled.div`
 
 const Day = styled.span`
   margin-bottom: 0;
-  
+
   &::after {
     content: ',\00a0';
   }
@@ -79,7 +85,6 @@ const Day = styled.span`
 `;
 
 const StartDate = styled.span`
-
   @media (min-width: 576px) {
     font-size: ${props => props.theme.type.large.fontSize};
   }
@@ -95,7 +100,7 @@ const Where = styled.p`
   grid-column: 1 / 3;
   margin-bottom: ${props => props.theme.space.half};
 
-  @media(min-width: 576px) {
+  @media (min-width: 576px) {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     padding: 0 ${props => props.theme.space.half};
@@ -114,7 +119,7 @@ const Cta = styled(StyledLink)`
     grid-column: 1 / 3;
   }
 
-  @media(min-width: 576px) {
+  @media (min-width: 576px) {
     grid-row: 1 / 3;
     padding: 0 ${props => props.theme.space.half};
 
@@ -124,7 +129,20 @@ const Cta = styled(StyledLink)`
   }
 `;
 
-export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venueUrl, venueName, venueAddress, venueGMapsUrl, fbEventUrl, ...props }) => (
+export default ({
+  title,
+  hostUrl,
+  hostName,
+  startDay,
+  startDate,
+  startYear,
+  venueUrl,
+  venueName,
+  venueAddress,
+  venueGMapsUrl,
+  fbEventUrl,
+  ...props
+}) => (
   <Wrapper aria-labelledby="show-title">
     <Header>
       <H4 id="show-title">{title}</H4>
@@ -137,9 +155,13 @@ export default ({ title, hostUrl, hostName, startDay, startDate, startYear, venu
       <StartDate>{startDate}</StartDate>
     </When>
     <Where>
-      <StyledLink to={venueUrl} id="venue-name">{venueName}</StyledLink>
+      <StyledLink to={venueUrl} id="venue-name">
+        {venueName}
+      </StyledLink>
       <p>{venueAddress}</p>
-      <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">Google Maps</StyledLink>
+      <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">
+        Google Maps
+      </StyledLink>
     </Where>
     <Cta to={fbEventUrl} aria-labelledby="show-title">
       <Button>Facebook</Button>

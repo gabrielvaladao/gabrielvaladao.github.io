@@ -10,6 +10,4 @@ const H1 = styled.h1`
   margin-bottom: ${props => props.theme.type.h1.marginBottom};
 `;
 
-export default props => (
-  <H1 {...props}>{props.children}</H1>
-);
+export default props => <H1 {...props}>{props.children}</H1>;
