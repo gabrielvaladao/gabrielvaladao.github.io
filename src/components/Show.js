@@ -15,10 +15,9 @@ import Button from '../elements/Button';
 const Wrapper = styled.article`
   display: grid;
 
-  grid-template-rows: fit-content(100%) minmax(min-content, max-content) minmax(
-      min-content,
-      max-content
-    ) min-content;
+  grid-template-rows:
+    fit-content(100%) minmax(min-content, max-content) minmax(min-content, max-content)
+    min-content;
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: 576px) {
