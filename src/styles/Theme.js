@@ -12,7 +12,7 @@
     const head = document.getElementsByTagName('head')[0];
     head.appendChild(gFontImport);
   }
-}());
+})();
 
 /**
  * font-size for the html element is defined in App.js.
@@ -36,83 +36,78 @@ const letterSpacing = -0.04; /* ch */
 const ratio1 = 1.618; /* Golden section based on modularscale.com */
 const ratio2 = 1.2; /* Minor third based on modularscale.com */
 
-export default () => (
-  {
-    type: {
-      base: {
-        fontFamily: josefinSans,
-        fontWeight: light,
-        fontSize: '1em',
-        lineHeight: `${lineHeight}rem`,
-        letterSpacing: `${letterSpacing}ch`,
-      },
-      h1: {
-        fontFamily: josefinSans,
-        fontSize: `${ratio1 * 2}em`,
-      },
-      h2: {
-        fontFamily: josefinSans,
-        fontWeight: regular,
-        fontSize: `${ratio1 * ratio2}em`,
-        lineHeight: `${lineHeight * 2}rem`,
-        marginBottom: `${lineHeight}rem`,
-      },
-      h3: {
-        fontFamily: josefinSans,
-        fontWeight: regular, /* bold? */
-        fontSize: `${ratio2}em`,
-        marginTop: 0,
-        marginBottom: `${lineHeight}rem`,
-      },
-      h4: {
-        fontFamily: lato,
-        fontWeight: bold,
-        fontSize: `${ratio2}em`,
-        lineHeight: `${lineHeight}rem`,
-        marginBottom: `${lineHeight / 4}rem`,
-      },
-      h5: {
-        fontSize: `${ratio2}em`, /* TODO */
-      },
-      h6: {
-        fontSize: `${ratio2}em`, /* TODO */
-      },
-      strong: {
-        fontWeight: semiBold, bold,
-      },
-      large: {
-        fontSize: `${ratio2}em`,
-        marginTop: `${lineHeight * 2}rem`,
-        marginBottom: `${lineHeight}rem`,
-      },
-      small: {
-        fontSize: `${(1 / ratio2)}em`,
-        marginTop: 0,
-        marginBottom: `${lineHeight}rem`,
-      },
-      smaller: {
-        fontSize: `${(1 / ratio1)}em`,
-        marginTop: 0,
-        marginBottom: `${lineHeight}rem`,
-      },
-      compact: {
-        fontFamily: lato,
-        fontWeight: regular,
-        lineHeight: `${lineHeight / ratio2}rem`,
-      },
+export default () => ({
+  type: {
+    base: {
+      fontFamily: josefinSans,
+      fontWeight: light,
+      fontSize: '1em',
+      lineHeight: `${lineHeight}rem`,
+      letterSpacing: `${letterSpacing}ch`
     },
-    space: {
-      quarter: `${lineHeight / 4}rem`,
-      half: `${lineHeight / 2}rem`,
-      one: `${lineHeight}rem`,
-      two: `${lineHeight * 2}rem`,
+    h1: {
+      fontFamily: josefinSans,
+      fontSize: `${ratio1 * 2}em`
     },
-    icon: {
-      padding: `${1 / ratio1}rem`, /* TODO: in use? or can we change to `${lineHeight / 2}rem` ? */
-      size: `${lineHeight}px`,
+    h2: {
+      fontFamily: josefinSans,
+      fontWeight: regular,
+      fontSize: `${ratio1 * ratio2}em`,
+      lineHeight: `${lineHeight * 2}rem`,
+      marginBottom: `${lineHeight}rem`
     },
+    h3: {
+      fontFamily: josefinSans,
+      fontWeight: regular /* bold? */,
+      fontSize: `${ratio2}em`,
+      marginTop: 0,
+      marginBottom: `${lineHeight}rem`
+    },
+    h4: {
+      fontFamily: lato,
+      fontWeight: bold,
+      fontSize: `${ratio2}em`,
+      lineHeight: `${lineHeight}rem`,
+      marginBottom: `${lineHeight / 4}rem`
+    },
+    h5: {
+      fontSize: `${ratio2}em` /* TODO */
+    },
+    h6: {
+      fontSize: `${ratio2}em` /* TODO */
+    },
+    strong: {
+      fontWeight: semiBold,
+      bold
+    },
+    large: {
+      fontSize: `${ratio2}em`,
+      marginTop: `${lineHeight * 2}rem`,
+      marginBottom: `${lineHeight}rem`
+    },
+    small: {
+      fontSize: `${1 / ratio2}em`,
+      marginTop: 0,
+      marginBottom: `${lineHeight}rem`
+    },
+    smaller: {
+      fontSize: `${1 / ratio1}em`,
+      marginTop: 0,
+      marginBottom: `${lineHeight}rem`
+    },
+    compact: {
+      fontFamily: lato,
+      fontWeight: regular,
+      lineHeight: `${lineHeight / ratio2}rem`
+    }
+  },
+  space: {
+    quarter: `${lineHeight / 4}rem`,
+    half: `${lineHeight / 2}rem`,
+    one: `${lineHeight}rem`,
+    two: `${lineHeight * 2}rem`
   }
-);
+});
 
 /**
  * The following presets are suited to body text.
