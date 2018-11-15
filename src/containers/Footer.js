@@ -1,14 +1,15 @@
 import React from 'react';
 import Menu from '../components/Menu';
 import Newsletter from '../components/Newsletter';
+import Socials from '../components/Socials';
 
 export default () => (
   <footer role="contentinfo">
-
     <Newsletter />
-
-    <nav><Menu /></nav>
-
+    <Socials />
+    <nav>
+      <Menu />
+    </nav>
     {/* socket */}
     &copy; 2018 Labrysinthe
   </footer>
