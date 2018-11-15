@@ -2,6 +2,7 @@ import React from 'react';
 import isEmail from 'validator/lib/isEmail';
 import styled from 'styled-components';
 //
+import H1 from '../elements/H1';
 import H2 from '../elements/H2';
 import P from '../elements/P';
 import Button from '../elements/Button';
@@ -83,7 +84,7 @@ const ErrorMessage = styled.p`
 `;
 
 const Thanks = styled.div`
-  P {
+  p {
     text-align: left;
   }
 `;
@@ -118,8 +119,8 @@ export default class Newsletter extends React.Component {
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({
             'form-name': form.getAttribute('name'),
-            ...this.state,
-          }),
+            ...this.state
+          })
         })
           .then(() => this.showThanks())
           .catch(error => this.showError(error));
@@ -155,10 +156,8 @@ export default class Newsletter extends React.Component {
     return (
       <Wrapper>
         <div id="mc-sign-up">
-          <H2>Newsletter</H2>
-          <P>
-            Be the first to hear about upcoming gigs and fresh music.
-          </P>
+          <H1>Newsletter</H1>
+          <P>Be the first to hear about upcoming gigs and fresh music.</P>
           <Form
             name="mc_sign_up"
             data-netlify="true"
@@ -169,7 +168,12 @@ export default class Newsletter extends React.Component {
             <div style={{ display: 'none' }}>
               <label htmlFor="bot-field">
                 Spam catcher. Do not fill:
-                <input id="bot-field" name="bot-field" form-name="mcSignUp" onChange={this.handleChange} />
+                <input
+                  id="bot-field"
+                  name="bot-field"
+                  form-name="mcSignUp"
+                  onChange={this.handleChange}
+                />
               </label>
             </div>
 
@@ -184,14 +188,11 @@ export default class Newsletter extends React.Component {
             <ErrorMessage id="error" />
 
             <Submit type="submit">Sign&nbsp;up</Submit>
-
           </Form>
         </div>
         <Thanks id="thanks" hidden>
           <H2>Thanks!</H2>
-          <P>
-            You've been added to the mailing list.
-          </P>
+          <P>You've been added to the mailing list.</P>
           <P>
             Please check your email and confirm your address. You'll be in the loop as soon as Labrysinthe drops anything shiny.
           </P>
