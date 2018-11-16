@@ -15,8 +15,17 @@ const Ul = styled.ul`
   padding-left: 0;
 `;
 
+/**
+ * There's a production bug whereby the list discs
+ * show up intermittently and mess with layout.
+ * The following rule:
+ *   list-style-position: outside
+ * should ideally not be necessary but it might
+ * help the layout in buggy cases.
+ */
 const Li = styled.li`
   list-style-type: none;
+  list-style-position: outside;
 `;
 
 export default withRouteData(() => (
