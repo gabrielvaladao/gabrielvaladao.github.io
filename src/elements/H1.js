@@ -7,8 +7,6 @@ const H1 = styled.h1`
   font-weight: ${props => props.theme.type.h1.fontWeight};
   font-size: ${props => props.theme.type.h1.fontSize};
   line-height: ${props => props.theme.type.h1.lineHeight};
-  margin-top: ${props => props.theme.type.h1.marginTop};
-  margin-bottom: ${props => props.theme.type.h1.marginBottom};
 `;
 
 export default props => <H1 {...props}>{props.children}</H1>;

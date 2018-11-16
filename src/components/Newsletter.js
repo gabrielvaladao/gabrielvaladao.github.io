@@ -4,12 +4,15 @@ import styled from 'styled-components';
 //
 import H1 from '../elements/H1';
 import H2 from '../elements/H2';
-import P from '../elements/P';
 import Button from '../elements/Button';
 
 const Wrapper = styled.section`
   text-align: center;
   padding-bottom: ${props => props.theme.space.two};
+`;
+
+const P = styled.p`
+  margin-bottom: ${props => props.theme.space.one};
 `;
 
 /* TODO: calculate ch values and max-width based on Theme */
@@ -59,7 +62,7 @@ const Submit = styled(Button)`
   display: inline-block;
   box-sizing: border-box;
   height: ${props => props.theme.space.one};
-  text-transform: none;
+  padding: ${props => props.theme.space.quarter};
 
   @media (min-width: 576px) {
     grid-row: 1 / 2;
@@ -187,14 +190,17 @@ export default class Newsletter extends React.Component {
             />
             <ErrorMessage id="error" />
 
-            <Submit type="submit">Sign&nbsp;up</Submit>
+            <Submit type="submit">
+              <span>Sign&nbsp;up</span>
+            </Submit>
           </Form>
         </div>
         <Thanks id="thanks" hidden>
           <H2>Thanks!</H2>
           <P>You've been added to the mailing list.</P>
           <P>
-            Please check your email and confirm your address. You'll be in the loop as soon as Labrysinthe drops anything shiny.
+            Please check your email and confirm your address. You'll be in the loop as soon as
+            Labrysinthe drops anything shiny.
           </P>
         </Thanks>
       </Wrapper>

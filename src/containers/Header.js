@@ -12,10 +12,13 @@ const Wrapper = styled.header`
 `;
 
 const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
   display: flex;
   align-items: center;
   color: inherit;
-  &:hover { border: none; }
+  &:hover {
+    border: none;
+  }
 `;
 
 /*
@@ -30,9 +33,17 @@ const Logo = styled.img`
 export default () => (
   <Wrapper>
     <StyledNavLink to="/">
-      <Logo src={logoImg} alt="Labrysinthe's logo, a maze-like labrys axe." width="90px" height="104px" className="logo" />
+      <Logo
+        src={logoImg}
+        alt="Labrysinthe's logo, a maze-like labrys axe."
+        width="90px"
+        height="104px"
+        className="logo"
+      />
       <SiteTitle />
     </StyledNavLink>
-    <nav><Menu /></nav>
+    <nav>
+      <Menu />
+    </nav>
   </Wrapper>
 );

@@ -10,7 +10,6 @@ export default () => (
     <nav>
       <Menu />
     </nav>
-    {/* socket */}
     &copy; 2018 Labrysinthe
   </footer>
 );

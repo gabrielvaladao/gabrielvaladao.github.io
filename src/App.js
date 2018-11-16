@@ -34,7 +34,6 @@ const App = () => (
   <Router>
     <ThemeProvider theme={theme}>
       <BaseStyles>
-
         <Header />
 
         <main className="content">
@@ -42,7 +41,6 @@ const App = () => (
         </main>
 
         <Footer />
-
       </BaseStyles>
     </ThemeProvider>
   </Router>

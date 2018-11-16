@@ -7,7 +7,12 @@ export default () => (
   <div>
     <H1>404</H1>
     <p>
-      The page you are trying to access is not of this dimension. Please try another link or head <StyledLink exact to="/">Home</StyledLink>
+      The page you are trying to access is not of this dimension.
+      <br />
+      Please try another link or head{' '}
+      <StyledLink exact to="/">
+        Home
+      </StyledLink>
     </p>
   </div>
 );

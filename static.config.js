@@ -4,18 +4,12 @@ import Contentful from './src/Contentful';
 export default {
   plugins: ['react-static-plugin-styled-components'],
   getSiteData: () => ({
-    title: 'Labrysinthe',
+    title: 'Labrysinthe'
   }),
   getRoutes: async () => {
-    const { data: shows } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts',
-    );
-    const { data: tracks } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts',
-    );
-    const { data: pressReleases } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts',
-    );
+    const { data: shows } = await axios.get('https://jsonplaceholder.typicode.com/posts');
+    const { data: tracks } = await axios.get('https://jsonplaceholder.typicode.com/posts');
+    const { data: pressReleases } = await axios.get('https://jsonplaceholder.typicode.com/posts');
 
     /* TODO remove debugging log */
     console.log(Contentful.bio);
@@ -23,48 +17,48 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/Home',
+        component: 'src/containers/Home'
       },
       {
         path: '/shows',
         component: 'src/containers/Shows',
         getData: () => ({
-          shows,
+          shows
         }),
         children: shows.map(show => ({
           path: `/show/${show.id}`,
           component: 'src/components/Show',
           getData: () => ({
-            show,
-          }),
-        })),
+            show
+          })
+        }))
       },
       {
         path: '/music',
         component: 'src/containers/Music',
         getData: () => ({
-          tracks,
+          tracks
         }),
         children: tracks.map(track => ({
           path: `/track/${track.id}`,
           component: 'src/components/Track',
           getData: () => ({
-            track,
-          }),
-        })),
+            track
+          })
+        }))
       },
       {
         path: '/bio',
-        component: 'src/containers/Bio',
+        component: 'src/containers/Bio'
       },
       {
         path: '/contact',
-        component: 'src/containers/Contact',
+        component: 'src/containers/Contact'
       },
       {
         is404: true,
-        component: 'src/containers/404',
-      },
+        component: 'src/containers/404'
+      }
     ];
-  },
+  }
 };

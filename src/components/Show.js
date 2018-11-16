@@ -14,6 +14,7 @@ import Button from '../elements/Button';
 
 const Wrapper = styled.article`
   display: grid;
+  font-family: ${props => props.theme.type.compact.fontFamily};
 
   grid-template-rows:
     fit-content(100%) minmax(min-content, max-content) minmax(min-content, max-content)
@@ -89,7 +90,7 @@ const StartDate = styled.span`
   }
 `;
 
-const Where = styled.p`
+const Where = styled.div`
   font-size: ${props => props.theme.type.small.fontSize};
   font-family: ${props => props.theme.type.compact.fontFamily};
   font-weight: ${props => props.theme.type.compact.fontWeight};
@@ -128,6 +129,7 @@ const Cta = styled(StyledLink)`
   }
 `;
 
+/* TODO: Refactor data structure */
 export default ({
   title,
   hostUrl,
@@ -138,8 +140,11 @@ export default ({
   venueUrl,
   venueName,
   venueAddress,
+  venueAddress2,
   venueGMapsUrl,
   fbEventUrl,
+  ctaText,
+  ctaUrl,
   ...props
 }) => (
   <Wrapper aria-labelledby="show-title">
@@ -162,11 +167,15 @@ export default ({
         Google Maps
       </StyledLink>
     </Where>
-    <Cta to={fbEventUrl} aria-labelledby="show-title">
-      <Button>Facebook</Button>
-    </Cta>
-    <Cta to={fbEventUrl} aria-labelledby="show-title">
-      <Button>Tickets</Button>
-    </Cta>
+    {fbEventUrl && (
+      <Cta to={fbEventUrl} aria-labelledby="show-title">
+        <Button>FACEBOOK</Button>
+      </Cta>
+    )}
+    {ctaUrl && (
+      <Cta to={ctaUrl} aria-labelledby="show-title">
+        <Button>{ctaText}</Button>
+      </Cta>
+    )}
   </Wrapper>
 );

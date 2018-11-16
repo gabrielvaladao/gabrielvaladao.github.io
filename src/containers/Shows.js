@@ -7,6 +7,10 @@ import H2 from '../elements/H2';
 import H3 from '../elements/H3';
 import Show from '../components/Show';
 //
+const Section = styled.section`
+  margin-top: ${props => props.theme.space.one};
+`;
+
 const Ul = styled.ul`
   padding-left: 0;
 `;
@@ -18,19 +22,36 @@ const Li = styled.li`
 export default withRouteData(() => (
   <div>
     <H1>Shows</H1>
-    <br />
     {/* Show conditionally:
-    ...
-    <section aria-labelledby="shows-upcoming">
+    ... */}
+    <Section aria-labelledby="shows-upcoming">
       <H2 id="shows-upcoming">Upcoming shows</H2>
       <Ul>
-        <Li></Li>
+        <Li>
+          <Show
+            title="PMS - The L-Night party"
+            hostName="L-Night"
+            hostUrl="https://www.meetup.com/en-AU/Lnightberlin/"
+            startDay="Saturday"
+            startDate="15 DEC"
+            startYear="2018"
+            venueName="Hausprojekt K9"
+            venueUrl="http://www.kinzig9.de/"
+            venueAddress="Kinzigstraße 9, 10247 Berlin
+            Entrance through Café Liberación"
+            venueGMapsUrl="https://www.google.com/maps/place/Kinzig9/@52.5137004,13.4663543,15z/data=!4m5!3m4!1s0x0:0x5eb804e91e785a6b!8m2!3d52.5137004!4d13.4663543"
+            fbEventUrl="https://www.facebook.com/events/192580104960799/"
+            ctaText="TICKETS (Free)"
+            ctaUrl="https://www.eventbrite.com.au/e/pms-the-l-night-party-tickets-52068345824"
+          />
+        </Li>
       </Ul>
-    </section>
-    ...
+    </Section>
+
+    {/* ...
     I only want H2#shows-previous to be visible if there are also upcoming ones to distinguish from(which means the aria-labelledby="shows-previous" attrib on its parent section should also change).
     */}
-    <section aria-labelledby="shows-previous">
+    <Section aria-labelledby="shows-previous">
       <H2 id="shows-previous">Previous shows</H2>
       <H3>2017</H3>
       <Ul>
@@ -50,6 +71,6 @@ export default withRouteData(() => (
           />
         </Li>
       </Ul>
-    </section>
+    </Section>
   </div>
 ));

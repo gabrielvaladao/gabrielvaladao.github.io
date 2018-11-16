@@ -6,10 +6,6 @@ const H3 = styled.h3`
   font-weight: ${props => props.theme.type.h3.fontWeight};
   font-size: ${props => props.theme.type.h3.fontSize};
   line-height: ${props => props.theme.type.h3.lineHeight};
-  margin-top: ${props => props.theme.type.h3.marginTop};
-  margin-bottom: ${props => props.theme.type.h3.marginBottom};
 `;
 
-export default props => (
-  <H3 {...props}>{props.children}</H3>
-);
+export default props => <H3 {...props}>{props.children}</H3>;

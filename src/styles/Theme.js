@@ -54,35 +54,27 @@ export default () => ({
       fontWeight: regular,
       fontSize: `${ratio1 * ratio2}em`,
       lineHeight: `${lineHeight * 2}rem`,
+      marginTop: `${lineHeight}rem`,
       marginBottom: `${lineHeight}rem`
     },
     h3: {
       fontFamily: josefinSans,
-      fontWeight: regular /* bold? */,
+      fontWeight: regular,
       fontSize: `${ratio2}em`,
-      marginTop: 0,
-      marginBottom: `${lineHeight}rem`
+      marginTop: `${lineHeight / 4}rem`,
+      marginBottom: `${lineHeight / 4}rem`
     },
     h4: {
       fontFamily: lato,
       fontWeight: bold,
       fontSize: `${ratio2}em`,
       lineHeight: `${lineHeight}rem`,
+      marginTop: `${lineHeight / 4}rem`,
       marginBottom: `${lineHeight / 4}rem`
-    },
-    h5: {
-      fontSize: `${ratio2}em` /* TODO */
-    },
-    h6: {
-      fontSize: `${ratio2}em` /* TODO */
-    },
-    strong: {
-      fontWeight: semiBold,
-      bold
     },
     large: {
       fontSize: `${ratio2}em`,
-      marginTop: `${lineHeight * 2}rem`,
+      marginTop: `${lineHeight}rem`,
       marginBottom: `${lineHeight}rem`
     },
     small: {

@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import StyledLink from '../elements/StyledLink';
 
 const Wrapper = styled.ul`
-  margin-top: ${props => props.theme.space.one};
-  padding-left: 0;
+  padding: ${props => props.theme.space.one} 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -39,6 +38,7 @@ const Icon = styled(StyledLink)`
 `;
 
 /* TODO: generate socials from data */
+/* TODO: each Social to be its own component */
 export default () => (
   <Wrapper>
     <Li>

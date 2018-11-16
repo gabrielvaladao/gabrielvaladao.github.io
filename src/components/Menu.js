@@ -22,24 +22,16 @@ export default () => (
       </NavLink>
     </Li>
     <Li>
-      <NavLink to="/shows">
-        Shows
-      </NavLink>
+      <NavLink to="/shows">Shows</NavLink>
     </Li>
     <Li>
-      <NavLink to="/music">
-        Music
-      </NavLink>
+      <NavLink to="/music">Music</NavLink>
     </Li>
     <Li>
-      <NavLink to="/bio">
-        Bio
-      </NavLink>
+      <NavLink to="/bio">Bio</NavLink>
     </Li>
     <Li>
-      <NavLink to="/contact">
-        Contact
-      </NavLink>
+      <NavLink to="/contact">Contact</NavLink>
     </Li>
   </Ul>
 );

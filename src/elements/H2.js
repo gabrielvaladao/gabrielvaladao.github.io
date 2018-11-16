@@ -6,10 +6,6 @@ const H2 = styled.h2`
   font-weight: ${props => props.theme.type.h2.fontWeight};
   font-size: ${props => props.theme.type.h2.fontSize};
   line-height: ${props => props.theme.type.h2.lineHeight};
-  margin-top: ${props => props.theme.type.h2.marginTop};
-  margin-bottom: ${props => props.theme.type.h2.marginBottom};
 `;
 
-export default props => (
-  <H2 {...props}>{props.children}</H2>
-);
+export default props => <H2 {...props}>{props.children}</H2>;

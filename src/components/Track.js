@@ -1,8 +1,10 @@
 import React from 'react';
 import { withRouteData } from 'react-static';
+import styled from 'styled-components';
 //
 import StyledLink from '../elements/StyledLink';
 import H3 from '../elements/H3';
+//
 
 /*
   TODO: I want to use the releaseDate info
@@ -17,17 +19,20 @@ TODO: PARSE IFRAMES (a11y)
 - JSX-ify attribs, eg. frameBorder - console warning
 */
 
-/* TODO: reconsider conditional for rendering optional elements (e.g. cta) */
+const StyledH3 = styled(H3)`
+  margin-bottom: ${props => props.theme.type.h3.marginBottom};
+`;
 
 export default ({ title, soundCloudEmbed, cta }) => (
   <article aria-labelledby="track-title">
-
-    <H3 id="track-title">{title}</H3>
+    <StyledH3 id="track-title">{title}</StyledH3>
 
     {soundCloudEmbed}
 
-    {cta && cta.text && cta.url
-      && <StyledLink className="cta" to={cta.url} aria-labelledby="track-title">{cta.text}</StyledLink>
-    }
+    {cta && (
+      <StyledLink className="cta" to={cta.url} aria-labelledby="track-title">
+        {cta.text}
+      </StyledLink>
+    )}
   </article>
 );
