@@ -25,9 +25,13 @@ injectGlobal`
   * { padding: 0; margin: 0; }
   ${styledNormalize}
   html {
-    font-size: 25px;
+    font-size: 20px;
     background-color: #08000f;
-    color: #eeedef;
+    color: #eeedef; 
+    
+    @media (min-width: 576px) {
+      font-size: 25px; 
+    }
   }
 `;
 
@@ -44,7 +48,11 @@ const StyledHeader = styled(Header)`
 `;
 
 const Main = styled.main`
-  padding: 1.2rem 4rem 2rem 4rem;
+  padding: 1.2rem 2rem 2rem 2rem;
+
+  @media (min-width: 576px) {
+    padding: 1.2rem 4rem 2rem 4rem;
+  }
 `;
 
 const StyledFooter = styled(Footer)`
