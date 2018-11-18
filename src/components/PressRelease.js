@@ -1,15 +1,20 @@
 import React from 'react';
 import { withRouteData } from 'react-static';
+import styled from 'styled-components';
 //
 import StyledLink from '../elements/StyledLink';
 import H2 from '../elements/H2';
+
+const Callout = styled.p`
+  font-size: 1.2em;
+`;
 
 export default withRouteData(({ pressRelease }) => (
   <article aria-labelledby="#headline">
     <img src="https://i1.sndcdn.com/artworks-000268886459-ilgws3-t500x500.jpg" max-height="500px" width="500px" max-width="100%" alt="Cover art showing a swirling psychedelic vortex behind Labrysinthe's logo, a maze-like labrys axe." />
     <H2 id="headline">Labrysinthe launches psytrance EP (title) on (date) at (party) at (venue)</H2>
     <span className="release-date">Date</span>
-    <p className="callout">Psy-sorceress Labrysinthe will play (date) at (party) at (venue), (part of town) to conincide with the release of (EP).</p>
+    <Callout>Psy-sorceress Labrysinthe will play (date) at (party) at (venue), (part of town) to conincide with the release of (EP).</Callout>
 
     {/* Commented out to test list view that'll have a 'Read more' link
     

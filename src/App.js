@@ -7,19 +7,28 @@ import Routes from 'react-static-routes';
 import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import styledNormalize from 'styled-normalize';
 //
-import Header from './containers/Header';
-import Footer from './containers/Footer';
-//
 import theme from './styles/Theme';
 import './styles/app.css';
 import './styles/social-icons.css';
 //
+import Header from './containers/Header';
+import Footer from './containers/Footer';
+//
+import Home from './containers/Home';
+import Shows from './containers/Shows';
+import Music from './containers/Music';
+import Bio from './containers/Bio';
+import Contact from './containers/Contact';
 
 /* eslint-disable-next-line */
 injectGlobal`
   * { padding: 0; margin: 0; }
   ${styledNormalize}
-  html { font-size: 25px; }
+  html {
+    font-size: 25px;
+    background-color: #08000f;
+    color: #eeedef;
+  }
 `;
 
 const BaseStyles = styled.div`
@@ -30,17 +39,33 @@ const BaseStyles = styled.div`
   letter-spacing: ${props => props.theme.type.base.letterSpacing};
 `;
 
+const StyledHeader = styled(Header)`
+  padding: 0 4rem 0 4rem;
+`;
+
+const Main = styled.main`
+  padding: 1.2rem 4rem 2rem 4rem;
+`;
+
+const StyledFooter = styled(Footer)`
+  padding: 0 4rem 0 4rem;
+`;
+
 const App = () => (
   <Router>
     <ThemeProvider theme={theme}>
       <BaseStyles>
-        <Header />
+        <StyledHeader />
 
-        <main className="content">
-          <Routes />
-        </main>
+        <Main className="content">
+          <Home />
+          <Shows />
+          <Music />
+          <Bio />
+          <Contact />
+        </Main>
 
-        <Footer />
+        <StyledFooter />
       </BaseStyles>
     </ThemeProvider>
   </Router>

@@ -27,30 +27,3 @@
   border: 0;
   clip: rect(0,0,0,0);
 }
-
-main {
-  padding: 1.2rem 4rem 2rem 4rem;
-  max-width: 40rem;
-}
-
-header,
-footer {
-  padding: 0 4rem 0 4rem;
-}
-
-body {
-  background-color: #08000f;
-  color: #eeedef;
-}
-
-.callout {
-  font-size: 1.2em;
-}
-
-img {
-  max-width: 100%;
-}
-
-.content {
-  padding: none;
-}
