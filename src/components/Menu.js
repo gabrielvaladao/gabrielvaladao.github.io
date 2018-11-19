@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const Ul = styled.ul`
   padding-left: 0;
-  max-width: 40rem;
 `;
 
 const Li = styled.li`
