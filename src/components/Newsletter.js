@@ -76,7 +76,7 @@ const ErrorMessage = styled.p`
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   font-size: ${props => props.theme.type.small.fontSize};
-  color: crimson;
+  color: ${props => props.theme.color.error};
   margin: ${props => props.theme.space.quarter} 0;
   white-space: normal;
 

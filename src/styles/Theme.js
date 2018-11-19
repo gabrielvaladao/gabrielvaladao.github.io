@@ -37,6 +37,23 @@ const ratio1 = 1.618; /* Golden section based on modularscale.com */
 const ratio2 = 1.2; /* Minor third based on modularscale.com */
 
 export default () => ({
+  /* TODO: color variations should be calculated, not constant */
+  color: {
+    brandWhite: `rgba(238, 237, 239, 1)`,
+    brandBlack: `rgba(8, 0, 15, 1)`,
+    primary: `rgba(111, 223, 223, 1)`,
+    primaryDark: `rgba(31, 159, 159, 1)`,
+    primaryLight: `rgba()`,
+    error: `crimson`,
+    white: `rgba(255,255,255,1)`
+  },
+  space: {
+    quarter: `${lineHeight / 4}rem`,
+    half: `${lineHeight / 2}rem`,
+    one: `${lineHeight}rem`,
+    two: `${lineHeight * 2}rem`,
+    six: `${lineHeight * 6}rem`
+  },
   type: {
     primary: {
       fontFamily: primary,
@@ -92,13 +109,6 @@ export default () => ({
       marginTop: 0,
       marginBottom: `${lineHeight}rem`
     }
-  },
-  space: {
-    quarter: `${lineHeight / 4}rem`,
-    half: `${lineHeight / 2}rem`,
-    one: `${lineHeight}rem`,
-    two: `${lineHeight * 2}rem`,
-    six: `${lineHeight * 6}rem`
   }
 });
 

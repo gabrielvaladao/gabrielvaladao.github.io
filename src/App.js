@@ -20,17 +20,25 @@ import Music from './containers/Music';
 import Bio from './containers/Bio';
 import Contact from './containers/Contact';
 
+/**
+ * Global styles
+ *
+ * font-size: Must be set on html element to serve as basis for rem units.
+ * background-color: Must be set on html element for full-bleed effect.
+ * color: Must be set on same element as background-color to ensure contrast.
+ *
+ * Colors here should match those set in Theme.js
+ * (for now these must be updated manually)
+ */
+
 /* eslint-disable-next-line */
 injectGlobal`
   * { padding: 0; margin: 0; }
   ${styledNormalize}
   html {
     font-size: 20px;
-    background-color: #08000f;
-    color: #eeedef;
-
-    width: 100vw;
-    overflow: scroll;
+    background-color: rgb(8, 0, 15);
+    color: rgb(238, 237, 239);
     
     @media (min-width: 576px) {
       font-size: 25px;

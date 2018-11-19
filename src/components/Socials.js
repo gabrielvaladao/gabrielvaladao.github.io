@@ -27,13 +27,13 @@ const Icon = styled(StyledLink)`
   opacity: 0.9;
 
   &:hover {
-    background: #6fdfdf;
-    color: #fff;
+    background: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.white};
   }
 
   &:active {
-    background: #1f9f9f;
-    color: #fff;
+    background: ${props => props.theme.color.primaryDark};
+    color: ${props => props.theme.color.white};
   }
 `;
 

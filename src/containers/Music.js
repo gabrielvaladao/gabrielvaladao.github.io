@@ -15,6 +15,11 @@ const Li = styled.li`
   margin-top: ${props => props.theme.space.one};
 `;
 
+/**
+ * TODO: Create iframe Component from track ID.
+ * For user-friendliness, let client paste in a full embed code.
+ * App should extract the track ID and apply brand color to play button.
+ */
 export default withRouteData(() => (
   <div id="music">
     <H1>Music</H1>

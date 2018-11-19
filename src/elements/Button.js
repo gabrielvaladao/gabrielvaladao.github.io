@@ -17,14 +17,14 @@ const Button = styled.button`
   text-align: center;
   letter-spacing: -0.1ch;
   padding: 0.2rem 0.5rem 0.3rem 0.5rem;
-  background-color: #08000f;
-  color: #eeedef;
-  border: 2px solid #6fdfdf;
+  background-color: ${props => props.theme.color.brandBlack};
+  color: ${props => props.theme.color.white};
+  border: 2px solid ${props => props.theme.color.primary};
   border-radius: 3px;
 
   &:active {
-    background-color: #1f9f9f;
-    color: #fff;
+    background-color: ${props => props.theme.color.primaryDark};
+    color: ${props => props.theme.color.white};
   }
 `;
 

@@ -20,21 +20,17 @@ const SiteTitle = styled(H1)`
 `;
 
 const Wrapper = styled.header`
-  background-color: #08000f;
-  color: #fefdff;
-  position: relative;
   top: 0;
 `;
 
 const Nav = styled.nav`
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1rem;
 `;
 
 const Ul = styled.ul`
   padding-left: 0;
-  padding-right: 1rem;
 `;
 
 const Li = styled.li`
