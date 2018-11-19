@@ -13,7 +13,7 @@ const P = styled.p`
 `;
 
 export default () => (
-  <React.Fragment>
+  <div id="bio">
     <H1>Bio</H1>
     <P>
       Labrysinthe is Natalia Lincoln, who took the scenic route to psytrance -- first through
@@ -37,5 +37,5 @@ export default () => (
       </StyledLink>{' '}
       beat collective in Berlin.
     </P>
-  </React.Fragment>
+  </div>
 );

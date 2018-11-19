@@ -18,6 +18,7 @@ const P = styled.p`
   }
 `;
 
+/* NB: The nav anchor #home is applied to the Header component */
 export default withSiteData(() => (
   <div>
     <Large>

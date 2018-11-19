@@ -4,12 +4,12 @@ import Newsletter from '../components/Newsletter';
 import Socials from '../components/Socials';
 
 export default () => (
-  <footer role="contentinfo">
+  <footer id="newsletter">
     <Newsletter />
     <Socials />
     <nav>
       <Menu />
     </nav>
-    &copy; 2018 Labrysinthe
+    <div role="contentinfo">&copy; 2018 Labrysinthe</div>
   </footer>
 );

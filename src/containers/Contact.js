@@ -14,7 +14,7 @@ const Address = styled.address`
 `;
 
 export default () => (
-  <React.Fragment>
+  <div id="contact">
     <H1>Contact</H1>
     <P>
       For booking and inquiries, email{' '}
@@ -22,5 +22,5 @@ export default () => (
         <StyledLink to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</StyledLink>
       </Address>
     </P>
-  </React.Fragment>
+  </div>
 );

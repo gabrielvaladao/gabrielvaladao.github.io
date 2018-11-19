@@ -1,47 +1,35 @@
 import React from 'react';
 import { NavLink } from 'react-static';
 import styled from 'styled-components';
-
-import SiteTitle from '../components/SiteTitle';
+//
+import H1 from '../elements/H1';
 import Menu from '../components/Menu';
-import logoImg from '../images/logo-header-90x104.png';
 
 const Wrapper = styled.header`
   background-color: #08000f;
   color: #fefdff;
 `;
 
-const StyledNavLink = styled(NavLink)`
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: inherit;
-  &:hover {
-    border: none;
+const SiteTitle = styled(H1)`
+  font-family: 'raincoatregular', sans-serif;
+  letter-spacing: 0.12ch;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-size: ${props => props.theme.type.h3.fontSize};
+
+  @media (min-width: 576px) {
+    font-size: ${props => props.theme.type.h2.fontSize};
+  }
+
+  @media (min-width: 768px) {
+    font-size: ${props => props.theme.type.h1.fontSize};
   }
 `;
 
-/*
-  margin-left on logo allows the curved left edge to spill over.
-*/
-const Logo = styled.img`
-  margin-left: -0.25rem;
-  padding: 3rem 2.5rem 2rem 0;
-  display: inline-block;
-`;
-
 export default () => (
-  <Wrapper>
-    <StyledNavLink to="/">
-      <Logo
-        src={logoImg}
-        alt="Labrysinthe's logo, a maze-like labrys axe."
-        width="90px"
-        height="104px"
-        className="logo"
-      />
-      <SiteTitle />
-    </StyledNavLink>
+  <Wrapper id="home">
+    <SiteTitle>Labrysinthe</SiteTitle>
     <nav>
       <Menu />
     </nav>
