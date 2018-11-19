@@ -9,8 +9,8 @@ const Ul = styled.ul`
 const Li = styled.li`
   font-size: 0.9em;
   padding-right: 1rem;
-  text-align: right;
-  display: inline;
+  text-align: center;
+  /* display: inline; */
 `;
 
 export default () => (
