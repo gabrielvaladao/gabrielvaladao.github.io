@@ -8,6 +8,7 @@ import styled from 'styled-components';
  * Use same padding for Newsletter > Input
  * */
 const Button = styled.button`
+  -webkit-appearance: none;
   font-family: ${props => props.theme.type.compact.fontFamily};
   font-size: ${props => props.theme.type.small.fontSize};
   text-align: center;
