@@ -34,7 +34,7 @@ export default withRouteData(() => (
     {/* Show conditionally:
     ... */}
     <Section aria-labelledby="shows-upcoming">
-      <H2 id="shows-upcoming">Upcoming shows</H2>
+      <H2 id="shows-upcoming">Upcoming</H2>
       <Ul>
         <Li>
           <Show
@@ -61,7 +61,7 @@ export default withRouteData(() => (
     I only want H2#shows-previous to be visible if there are also upcoming ones to distinguish from(which means the aria-labelledby="shows-previous" attrib on its parent section should also change).
     */}
     <Section aria-labelledby="shows-previous">
-      <H2 id="shows-previous">Previous shows</H2>
+      <H2 id="shows-previous">Previous</H2>
       <H3>2017</H3>
       <Ul>
         <Li>
