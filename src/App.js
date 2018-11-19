@@ -27,10 +27,13 @@ injectGlobal`
   html {
     font-size: 20px;
     background-color: #08000f;
-    color: #eeedef; 
+    color: #eeedef;
+
+    width: 100vw;
+    overflow: scroll;
     
     @media (min-width: 576px) {
-      font-size: 25px; 
+      font-size: 25px;
     }
   }
 `;
