@@ -163,6 +163,7 @@ export default ({
         {venueName}
       </StyledLink>
       <p>{venueAddress}</p>
+      {venueAddress2 && <p>{venueAddress2}</p>}
       <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">
         Google Maps
       </StyledLink>
