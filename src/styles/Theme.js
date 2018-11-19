@@ -22,8 +22,8 @@
  * work well for body type in either Josefin Sans or Lato.
  */
 
-const josefinSans = '"Josefin Sans", sans-serif';
-const lato = 'Lato, sans-serif';
+const primary = '"Josefin Sans", sans-serif';
+const secondary = 'Lato, sans-serif';
 
 const light = 300;
 const regular = 400;
@@ -39,18 +39,18 @@ const ratio2 = 1.2; /* Minor third based on modularscale.com */
 export default () => ({
   type: {
     base: {
-      fontFamily: josefinSans,
+      fontFamily: primary,
       fontWeight: light,
       fontSize: '1em',
       lineHeight: `${lineHeight}rem`,
       letterSpacing: `${letterSpacing}ch`
     },
     h1: {
-      fontFamily: josefinSans,
+      fontFamily: primary,
       fontSize: `${ratio1 * 2}em`
     },
     h2: {
-      fontFamily: josefinSans,
+      fontFamily: primary,
       fontWeight: regular,
       fontSize: `${ratio1 * ratio2}em`,
       lineHeight: `${lineHeight * 2}rem`,
@@ -58,14 +58,14 @@ export default () => ({
       marginBottom: `${lineHeight}rem`
     },
     h3: {
-      fontFamily: josefinSans,
+      fontFamily: primary,
       fontWeight: regular,
       fontSize: `${ratio2}em`,
       marginTop: `${lineHeight / 4}rem`,
       marginBottom: `${lineHeight / 4}rem`
     },
     h4: {
-      fontFamily: lato,
+      fontFamily: secondary,
       fontWeight: bold,
       fontSize: `${ratio2}em`,
       lineHeight: `${lineHeight}rem`,
@@ -88,7 +88,7 @@ export default () => ({
       marginBottom: `${lineHeight}rem`
     },
     compact: {
-      fontFamily: lato,
+      fontFamily: secondary,
       fontWeight: regular,
       lineHeight: `${lineHeight / ratio2}rem`
     }
@@ -114,7 +114,7 @@ export default () => ({
  * lineHeight = 1.2rem
  * letterSpacing = -0.04ch
  * base {
- *   fontFamily: josefinSans,
+ *   fontFamily: primary,
  *   fontWeight: light,
  *   ...
  * },
@@ -127,7 +127,7 @@ export default () => ({
  * lineHeight = 1.35rem
  * letterSpacing = 0
  * base {
- *   fontFamily: lato,
+ *   fontFamily: secondary,
  *   fontWeight: light,
  *   ...
  * },
