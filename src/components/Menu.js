@@ -10,7 +10,7 @@ const Li = styled.li`
   font-size: 0.9em;
   padding-right: 1rem;
   text-align: center;
-  /* display: inline; */
+  list-style-type: none;
 `;
 
 export default () => (
