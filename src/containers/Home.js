@@ -6,6 +6,7 @@ import StyledLink from '../elements/StyledLink';
 
 const Large = styled.span`
   font-size: ${props => props.theme.type.large.fontSize};
+  text-align: center;
   display: inline-block;
   margin-bottom: ${props => props.theme.type.large.marginBottom};
 `;
@@ -22,7 +23,9 @@ const P = styled.p`
 export default withSiteData(() => (
   <div>
     <Large>
-      New EP <strong>Fire Loves Sugar</strong> coming soon!
+      New EP coming soon!
+      <br />
+      <strong>Fire Loves Sugar</strong>
       <br />
       <StyledLink to="./music">Listen to the teaser</StyledLink>
     </Large>
