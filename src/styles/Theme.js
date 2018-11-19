@@ -6,7 +6,7 @@
     const gFontImport = document.createElement('style');
 
     gFontImport.innerHTML = `
-      @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Lato:300,400,700');
+      @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600,700');
     `;
 
     const head = document.getElementsByTagName('head')[0];
@@ -19,16 +19,16 @@
  * This is the basis for rems and rhythm in the global layout.
  *
  * See end of file for some preset typography configs that
- * work well for body type in either Josefin Sans or Lato.
+ * work well for body type in either Josefin Sans or Montserrat.
  */
 
 const primary = '"Josefin Sans", sans-serif';
-const secondary = 'Lato, sans-serif';
+const secondary = 'Montserrat, sans-serif';
 
 const light = 300;
 const regular = 400;
-const semiBold = 600; /* Josefin Sans only */
-const bold = 700; /* Lato only */
+const semiBold = 600;
+const bold = 700; /* not available for Josefin Sans */
 
 const lineHeight = 1.2; /* rem for global vertical rhythm */
 const letterSpacing = -0.04; /* ch */
@@ -38,12 +38,17 @@ const ratio2 = 1.2; /* Minor third based on modularscale.com */
 
 export default () => ({
   type: {
-    base: {
+    primary: {
       fontFamily: primary,
       fontWeight: light,
       fontSize: '1em',
       lineHeight: `${lineHeight}rem`,
       letterSpacing: `${letterSpacing}ch`
+    },
+    secondary: {
+      fontFamily: secondary,
+      fontWeight: regular,
+      lineHeight: `${ratio1 / lineHeight}rem`
     },
     h1: {
       fontFamily: primary,
@@ -66,7 +71,7 @@ export default () => ({
     },
     h4: {
       fontFamily: secondary,
-      fontWeight: bold,
+      fontWeight: semiBold,
       fontSize: `${ratio2}em`,
       lineHeight: `${lineHeight}rem`,
       marginTop: `${lineHeight / 4}rem`,
@@ -86,11 +91,6 @@ export default () => ({
       fontSize: `${1 / ratio1}em`,
       marginTop: 0,
       marginBottom: `${lineHeight}rem`
-    },
-    compact: {
-      fontFamily: secondary,
-      fontWeight: regular,
-      lineHeight: `${lineHeight / ratio2}rem`
     }
   },
   space: {
@@ -121,14 +121,14 @@ export default () => ({
  */
 
 /**
- * Preset 2: Lato Light
+ * Preset 2: Montserrat
  *
  * App.js > injectGlobal > html { font-size: 22px }
  * lineHeight = 1.35rem
- * letterSpacing = 0
+ * letterSpacing = -0.04ch
  * base {
  *   fontFamily: secondary,
- *   fontWeight: light,
+ *   fontWeight: regular,
  *   ...
  * },
  */

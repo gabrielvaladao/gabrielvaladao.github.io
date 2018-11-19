@@ -14,7 +14,7 @@ import Button from '../elements/Button';
 
 const Wrapper = styled.article`
   display: grid;
-  font-family: ${props => props.theme.type.compact.fontFamily};
+  font-family: ${props => props.theme.type.secondary.fontFamily};
 
   grid-template-rows:
     fit-content(100%) minmax(min-content, max-content) minmax(min-content, max-content)
@@ -44,16 +44,16 @@ const Header = styled.header`
 
 const Host = styled.p`
   font-size: ${props => props.theme.type.small.fontSize};
-  font-family: ${props => props.theme.type.compact.fontFamily};
-  font-weight: ${props => props.theme.type.compact.fontWeight};
-  line-height: ${props => props.theme.type.compact.lineHeight};
+  font-family: ${props => props.theme.type.secondary.fontFamily};
+  font-weight: ${props => props.theme.type.secondary.fontWeight};
+  line-height: ${props => props.theme.type.secondary.lineHeight};
   margin-bottom: ${props => props.theme.space.half};
 `;
 
 const When = styled.div`
   grid-row: 1 / 2;
   grid-column: 1 / 3;
-  font-size: ${props => props.theme.type.base.fontSize};
+  font-size: ${props => props.theme.type.primary.fontSize};
 
   * {
     display: inline-block;
@@ -92,9 +92,9 @@ const StartDate = styled.span`
 
 const Where = styled.div`
   font-size: ${props => props.theme.type.small.fontSize};
-  font-family: ${props => props.theme.type.compact.fontFamily};
-  font-weight: ${props => props.theme.type.compact.fontWeight};
-  line-height: ${props => props.theme.type.compact.lineHeight};
+  font-family: ${props => props.theme.type.secondary.fontFamily};
+  font-weight: ${props => props.theme.type.secondary.fontWeight};
+  line-height: ${props => props.theme.type.secondary.lineHeight};
 
   grid-row: 3 / 4;
   grid-column: 1 / 3;

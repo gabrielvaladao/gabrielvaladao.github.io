@@ -4,10 +4,9 @@ import styled from 'styled-components';
 //
 import StyledLink from '../elements/StyledLink';
 
-const Large = styled.span`
+const Large = styled.p`
   font-size: ${props => props.theme.type.large.fontSize};
   text-align: center;
-  display: inline-block;
   margin-bottom: ${props => props.theme.type.large.marginBottom};
 `;
 

@@ -39,11 +39,11 @@ injectGlobal`
 `;
 
 const BaseStyles = styled.div`
-  font-family: ${props => props.theme.type.base.fontFamily};
-  font-weight: ${props => props.theme.type.base.fontWeight};
-  font-size: ${props => props.theme.type.base.fontSize};
-  line-height: ${props => props.theme.type.base.lineHeight};
-  letter-spacing: ${props => props.theme.type.base.letterSpacing};
+  font-family: ${props => props.theme.type.primary.fontFamily};
+  font-weight: ${props => props.theme.type.primary.fontWeight};
+  font-size: ${props => props.theme.type.primary.fontSize};
+  line-height: ${props => props.theme.type.primary.lineHeight};
+  letter-spacing: ${props => props.theme.type.primary.letterSpacing};
 `;
 
 const StyledHeader = styled(Header)`

@@ -5,7 +5,7 @@ const H3 = styled.h3`
   font-family: ${props => props.theme.type.h3.fontFamily};
   font-weight: ${props => props.theme.type.h3.fontWeight};
   line-height: ${props => props.theme.type.h3.lineHeight};
-  font-size: ${props => props.theme.type.base.fontSize};
+  font-size: ${props => props.theme.type.primary.fontSize};
 
   @media (min-width: 768px) {
     font-size: ${props => props.theme.type.h3.fontSize};

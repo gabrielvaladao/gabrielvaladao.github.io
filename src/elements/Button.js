@@ -12,7 +12,7 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   -webkit-appearance: none;
-  font-family: ${props => props.theme.type.compact.fontFamily};
+  font-family: ${props => props.theme.type.secondary.fontFamily};
   font-size: ${props => props.theme.type.small.fontSize};
   text-align: center;
   letter-spacing: -0.1ch;
