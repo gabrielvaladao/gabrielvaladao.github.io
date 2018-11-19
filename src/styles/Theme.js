@@ -38,6 +38,15 @@ const ratio2 = 1.2; /* Minor third based on modularscale.com */
 
 export default () => ({
   /* TODO: color variations should be calculated, not constant */
+  border: {
+    radius: {
+      small: `3px`
+    },
+    size: {
+      thin: `1px`,
+      base: `2px`
+    }
+  },
   color: {
     brandWhite: `rgba(238, 237, 239, 1)`,
     brandBlack: `rgba(8, 0, 15, 1)`,

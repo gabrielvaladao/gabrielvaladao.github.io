@@ -7,7 +7,6 @@ import styled from 'styled-components';
  * TODO:
  *  - Calculate padding based on Theme
  *  - Use same padding for Newsletter > Input
- *  - Define border-radius in Theme
  * */
 
 const Button = styled.button`
@@ -19,12 +18,25 @@ const Button = styled.button`
   padding: 0.2rem 0.5rem 0.3rem 0.5rem;
   background-color: ${props => props.theme.color.brandBlack};
   color: ${props => props.theme.color.white};
-  border: 2px solid ${props => props.theme.color.primary};
-  border-radius: 3px;
+  border: solid ${props => props.theme.border.size.base} ${props => props.theme.color.primary};
+  border-radius: ${props => props.theme.border.radius.small};
+
+  &:hover {
+    background-color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.white};
+    cursor: pointer;
+  }
 
   &:active {
     background-color: ${props => props.theme.color.primaryDark};
     color: ${props => props.theme.color.white};
+  }
+
+  a,
+  a:hover,
+  a:active {
+    color: ${props => props.theme.color.white};
+    border: none;
   }
 `;
 

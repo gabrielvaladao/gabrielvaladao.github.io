@@ -18,8 +18,8 @@ const P = styled.p`
 /* TODO: calculate ch values and max-width based on Theme */
 const Form = styled.form`
   display: grid;
-  grid-template-columns: minmax(6ch, 1fr) min-content;
-  grid-template-rows: min-content min-content minmax(0, min-content);
+  grid-template-columns: min-content 1fr max-content;
+  grid-template-rows: min-content minmax(0, min-content);
   column-gap: 0.5ch;
   margin: 0 auto;
   max-width: 400px;
@@ -32,9 +32,10 @@ const Form = styled.form`
 `;
 
 const Label = styled.label`
-  font-size: ${props => props.theme.type.small.fontSize};
   grid-row: 1 / 2;
   grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
 `;
 
 /**
@@ -42,13 +43,12 @@ const Label = styled.label`
  * Use same padding for Button
  * */
 const Input = styled.input`
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
   border: 0;
   letter-spacing: -0.1ch;
   padding: 0.2rem 0.5rem;
   box-sizing: border-box;
-  height: ${props => props.theme.space.one};
 
   @media (min-width: 576px) {
     grid-row: 1 / 2;
@@ -57,11 +57,10 @@ const Input = styled.input`
 `;
 
 const Submit = styled(Button)`
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
   display: inline-block;
   box-sizing: border-box;
-  height: ${props => props.theme.space.one};
   padding: ${props => props.theme.space.quarter};
 
   @media (min-width: 576px) {
@@ -73,8 +72,8 @@ const Submit = styled(Button)`
 /* TODO use a margin from theme sizes */
 const ErrorMessage = styled.p`
   visibility: hidden;
-  grid-row: 3 / 4;
-  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
   font-size: ${props => props.theme.type.small.fontSize};
   color: ${props => props.theme.color.error};
   margin: ${props => props.theme.space.quarter} 0;

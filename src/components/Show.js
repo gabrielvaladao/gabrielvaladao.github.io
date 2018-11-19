@@ -108,7 +108,7 @@ const Where = styled.div`
   }
 `;
 
-const Cta = styled(StyledLink)`
+const Cta = styled(Button)`
   text-align: center;
   display: grid;
   align-items: center;
@@ -169,13 +169,17 @@ export default ({
       </StyledLink>
     </Where>
     {fbEventUrl && (
-      <Cta to={fbEventUrl} aria-labelledby="show-title">
-        <Button>FACEBOOK</Button>
+      <Cta>
+        <StyledLink to={fbEventUrl} aria-labelledby="show-title">
+          FACEBOOK
+        </StyledLink>
       </Cta>
     )}
     {ctaUrl && (
-      <Cta to={ctaUrl} aria-labelledby="show-title">
-        <Button>{ctaText}</Button>
+      <Cta>
+        <StyledLink to={ctaUrl} aria-labelledby="show-title">
+          {ctaText}
+        </StyledLink>
       </Cta>
     )}
   </Wrapper>
