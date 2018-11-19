@@ -6,6 +6,22 @@ import H1 from '../elements/H1';
 import Menu from '../components/Menu';
 import Button from '../elements/Button';
 
+const SiteTitle = styled(H1)`
+  font-family: 'raincoatregular', sans-serif;
+  letter-spacing: 0.12ch;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: ${props => props.theme.type.h2.fontSize};
+
+  /* @media (min-width: 576px) {
+    font-size: ${props => props.theme.type.h2.fontSize};
+  }
+ */
+  @media (min-width: 768px) {
+    font-size: ${props => props.theme.type.h1.fontSize};
+  }
+`;
+
 const Wrapper = styled.header`
   background-color: #08000f;
   color: #fefdff;
@@ -34,5 +50,6 @@ export default () => (
         </Li>
       </Ul>
     </nav>
+    <SiteTitle>Labrysinthe</SiteTitle>
   </Wrapper>
 );
