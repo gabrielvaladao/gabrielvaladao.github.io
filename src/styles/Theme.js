@@ -97,7 +97,8 @@ export default () => ({
     quarter: `${lineHeight / 4}rem`,
     half: `${lineHeight / 2}rem`,
     one: `${lineHeight}rem`,
-    two: `${lineHeight * 2}rem`
+    two: `${lineHeight * 2}rem`,
+    six: `${lineHeight * 6}rem`
   }
 });
 
