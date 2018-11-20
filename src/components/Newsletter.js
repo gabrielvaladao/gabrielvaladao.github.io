@@ -18,14 +18,14 @@ const P = styled.p`
 /* TODO: calculate ch values and max-width based on Theme */
 const Form = styled.form`
   display: grid;
-  grid-template-columns: min-content 1fr max-content;
+  grid-template-columns: min-content minmax(0, 1fr) max-content;
   grid-template-rows: min-content minmax(0, min-content);
   column-gap: 0.5ch;
   margin: 0 auto;
-  max-width: 400px;
   text-align: left;
 
   @media (min-width: 576px) {
+    max-width: 500px;
     grid-template-columns: min-content minmax(6ch, 1fr) min-content;
     grid-template-rows: min-content minmax(0, min-content);
   }
