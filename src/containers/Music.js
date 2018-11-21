@@ -21,7 +21,7 @@ const Li = styled.li`
  * App should extract the track ID and apply brand color to play button.
  */
 export default withRouteData(() => (
-  <div id="music">
+  <section id="music">
     <H1>Music</H1>
     <p>
       Select downloads are available on{' '}
@@ -95,5 +95,5 @@ export default withRouteData(() => (
         />
       </Li>
     </Ul>
-  </div>
+  </section>
 ));

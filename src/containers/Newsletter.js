@@ -8,7 +8,6 @@ import Button from '../elements/Button';
 
 const Wrapper = styled.section`
   text-align: center;
-  padding-bottom: ${props => props.theme.space.two};
 `;
 
 const P = styled.p`
@@ -156,7 +155,7 @@ export default class Newsletter extends React.Component {
 
   render() {
     return (
-      <Wrapper>
+      <Wrapper id={this.props.id}>
         <div id="mc-sign-up">
           <H1>Newsletter</H1>
           <P>Be the first to hear about upcoming gigs and fresh music.</P>

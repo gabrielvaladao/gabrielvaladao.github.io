@@ -27,6 +27,7 @@ const Nav = styled.nav`
   position: absolute;
   top: 1rem;
   right: 1rem;
+  padding: ${props => props.theme.space.one} 0 0 0;
 `;
 
 const Ul = styled.ul`

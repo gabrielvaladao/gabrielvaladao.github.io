@@ -19,6 +19,7 @@ import Shows from './containers/Shows';
 import Music from './containers/Music';
 import Bio from './containers/Bio';
 import Contact from './containers/Contact';
+import Newsletter from './containers/Newsletter';
 
 /**
  * Global styles
@@ -37,12 +38,17 @@ injectGlobal`
   ${styledNormalize}
   html {
     font-size: 20px;
-    background-color: rgb(8, 0, 15);
+    /* background-color: rgb(8, 0, 15); */
+    background-color: rgba(8, 0, 15, 1);
     color: rgb(238, 237, 239);
     
     @media (min-width: 576px) {
       font-size: 25px;
     }
+  }
+
+  body {
+    margin-top: -1rem;
   }
 `;
 
@@ -82,6 +88,7 @@ const App = () => (
           <Music />
           <Bio />
           <Contact />
+          <Newsletter id="newsletter" />
         </Main>
 
         <StyledFooter />

@@ -20,7 +20,7 @@ const P = styled.p`
 
 /* NB: The nav anchor #home is applied to the Header component */
 export default withSiteData(() => (
-  <div>
+  <section>
     <Large>
       New EP coming soon!
       <br />
@@ -32,5 +32,5 @@ export default withSiteData(() => (
       Labrysinthe is voluntarily committed to the institution of psytrance and stands for better
       machines, brighter knowledge, bolder music, and the blissful ecstacies of the beat.
     </P>
-  </div>
+  </section>
 ));

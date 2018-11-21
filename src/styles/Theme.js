@@ -50,6 +50,7 @@ export default () => ({
   color: {
     brandWhite: `rgba(238, 237, 239, 1)`,
     brandBlack: `rgba(8, 0, 15, 1)`,
+    brandGray: `rgba(8, 0, 15, 0.7)`,
     primary: `rgba(111, 223, 223, 1)`,
     primaryDark: `rgba(31, 159, 159, 1)`,
     primaryLight: `rgba()`,
@@ -61,6 +62,7 @@ export default () => ({
     half: `${lineHeight / 2}rem`,
     one: `${lineHeight}rem`,
     two: `${lineHeight * 2}rem`,
+    three: `${lineHeight * 3}rem`,
     six: `${lineHeight * 6}rem`
   },
   type: {

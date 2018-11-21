@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import StyledLink from '../elements/StyledLink';
 
 const Wrapper = styled.ul`
-  padding: ${props => props.theme.space.one} 0;
+  padding: 0 0 ${props => props.theme.space.one} 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;

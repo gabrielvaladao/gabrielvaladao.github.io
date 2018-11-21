@@ -29,7 +29,7 @@ const Li = styled.li`
 `;
 
 export default withRouteData(() => (
-  <div id="shows">
+  <section id="shows">
     <H1>Shows</H1>
     {/* Show conditionally:
     ... */}
@@ -81,5 +81,5 @@ export default withRouteData(() => (
         </Li>
       </Ul>
     </Section>
-  </div>
+  </section>
 ));
