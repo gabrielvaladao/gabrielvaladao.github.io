@@ -74,7 +74,7 @@ export default withRouteData(({ id, ...props }) => (
             />
           ]}
           cta={{
-            text: 'Download on Beatport',
+            text: 'Download full EP on Beatport',
             url: 'https://www.beatport.com/release/delicious-monster/2106224'
           }}
         />
