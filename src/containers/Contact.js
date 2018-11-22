@@ -13,8 +13,8 @@ const Address = styled.address`
   font-style: inherit;
 `;
 
-export default () => (
-  <section id="contact">
+export default ({ id, ...props }) => (
+  <section id={id}>
     <H1>Contact</H1>
     <Info>
       For booking and inquiries, email{' '}
