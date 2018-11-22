@@ -12,7 +12,8 @@ const Wrapper = styled.section`
 `;
 
 const SiteTitle = styled(H1)`
-  padding-top: ${props => props.theme.space.six};
+  padding-top: ${props => props.theme.space.eight};
+  padding-bottom: ${props => props.theme.space.one};
   font-family: 'raincoatregular', sans-serif;
   letter-spacing: 0.06ch;
   text-transform: uppercase;
@@ -33,14 +34,18 @@ const Large = styled.p`
   font-size: ${props => props.theme.type.large.fontSize};
   text-align: center;
   margin-bottom: ${props => props.theme.type.large.marginBottom};
+  position: relative;
+  z-index: 1;
 `;
 
 const Logo = styled.img`
-  /* margin-top: -${props => props.theme.space.two}; */
+  margin-top: -${props => props.theme.space.three};
   margin-left: 50%;
   transform: translateX(-50%);
   display: block;
-  /* padding-top: ${props => props.theme.space.one}; */
+  padding-top: ${props => props.theme.space.one};
+  position: relative;
+  z-index: -99999;
 `;
 
 export default withSiteData(() => (

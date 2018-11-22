@@ -67,7 +67,7 @@ export default () => ({
     one: `${lineHeight}rem`,
     two: `${lineHeight * 2}rem`,
     three: `${lineHeight * 3}rem`,
-    six: `${lineHeight * 6}rem`
+    eight: `${lineHeight * 8}rem`
   },
   type: {
     primary: {
