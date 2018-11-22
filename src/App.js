@@ -71,15 +71,15 @@ const Main = styled.main`
 `;
 
 const PaddedDiv = styled.div`
-  padding: 1.2rem 2rem 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
 
   @media (min-width: 576px) {
-    padding: 1.2rem 4rem 2rem 4rem;
+    padding: 0 4rem 2rem 4rem;
   }
 `;
 
 const StyledFooter = styled(Footer)`
-  padding: 0 4rem 0 4rem;
+  padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two};
 `;
 
 const App = () => (

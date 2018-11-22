@@ -51,12 +51,15 @@ export default () => ({
     brandBlack: `rgba(8, 0, 15, 1)`,
     brandWhite: `rgba(238, 237, 239, 1)`,
     overlayDark: `rgba(8, 0, 15, 0.7)`,
+    overlayMedium: `rgba(255, 255, 255, 0.04)`,
     overlayLight: `rgba(255, 255, 255, 0.15)`,
+    overlayLighter: `rgba(255, 255, 255, 0.7)`,
     primary: `rgba(111, 223, 223, 1)`,
     primaryDark: `rgba(31, 159, 159, 1)`,
     primaryLight: `rgba()`,
     error: `crimson`,
-    white: `rgba(255,255,255,1)`
+    white: `rgba(255,255,255,1)`,
+    black: `rgba(0,0,0,1)`
   },
   icon: {
     fontSize: `${ratio1}em`

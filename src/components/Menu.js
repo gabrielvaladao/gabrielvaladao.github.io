@@ -7,33 +7,54 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  font-size: 0.9em;
-  padding-right: 1rem;
   text-align: center;
   list-style-type: none;
+
+  font-size: ${props => props.theme.type.large.fontSize};
+  font-family: ${props => props.theme.type.primary.fontFamily};
+  font-weight: ${props => props.theme.type.primary.fontWeight};
+  line-height: ${props => props.theme.type.primary.lineHeight};
+  padding: ${props => props.theme.space.half} 0;
+
+  &:hover {
+    color: ${props => props.theme.color.white};
+    background-color: ${props => props.theme.color.overlayLight};
+  }
+`;
+
+const StyledNavLink = styled(NavLink)`
+  color: ${props => props.theme.color.brandWhite};
+  text-decoration: none;
+
+  &:active {
+    color: ${props => props.theme.color.overlayLighter};
+    border-style: solid;
+    border-width: 0 0 ${props => props.theme.border.size.base} 0;
+    border-color: ${props => props.theme.color.overlayLighter};
+  }
 `;
 
 export default () => (
   <Ul>
     <Li>
-      <NavLink exact to="/#home">
+      <StyledNavLink exact to="/#home">
         Home
-      </NavLink>
+      </StyledNavLink>
     </Li>
     <Li>
-      <NavLink to="/#shows">Shows</NavLink>
+      <StyledNavLink to="/#shows">Shows</StyledNavLink>
     </Li>
     <Li>
-      <NavLink to="/#music">Music</NavLink>
+      <StyledNavLink to="/#music">Music</StyledNavLink>
     </Li>
     <Li>
-      <NavLink to="/#bio">Bio</NavLink>
+      <StyledNavLink to="/#bio">Bio</StyledNavLink>
     </Li>
     <Li>
-      <NavLink to="/#contact">Contact</NavLink>
+      <StyledNavLink to="/#contact">Contact</StyledNavLink>
     </Li>
     <Li>
-      <NavLink to="/#newsletter">Newsletter</NavLink>
+      <StyledNavLink to="/#newsletter">Newsletter</StyledNavLink>
     </Li>
   </Ul>
 );

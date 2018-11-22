@@ -7,7 +7,7 @@ import Socials from '../components/Socials';
 import logo from '../images/logo-color-90x102.png';
 //
 const Footer = styled.footer`
-  padding: 0 2rem ${props => props.theme.space.one} 2rem;
+  padding: 0 0 ${props => props.theme.space.one} 0;
 
   @media (min-width: 576px) {
     padding: 1.2rem 4rem 2rem 4rem;
@@ -15,15 +15,20 @@ const Footer = styled.footer`
 `;
 
 const Nav = styled.nav`
-  li {
-    padding-right: 0;
-  }
+  padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
+  background-color: ${props => props.theme.color.overlayMedium};
+  border-top: solid 1px ${props => props.theme.color.overlayLight};
+  border-bottom: solid 1px ${props => props.theme.color.black};
+  width: 150%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 const Logo = styled.img`
   margin: 0 auto;
   display: block;
-  padding-top: ${props => props.theme.space.one};
+  padding-top: ${props => props.theme.space.two};
 `;
 
 const Socket = styled.p`

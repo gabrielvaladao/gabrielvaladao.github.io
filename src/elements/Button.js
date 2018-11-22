@@ -18,7 +18,9 @@ const Button = styled.button`
   padding: 0.3rem 0.5rem;
   background-color: ${props => props.theme.color.brandBlack};
   color: ${props => props.theme.color.white};
-  border: solid ${props => props.theme.border.size.base} ${props => props.theme.color.primary};
+  border-style: solid;
+  border-width: ${props => props.theme.border.size.base};
+  border-color: ${props => props.theme.color.primary};
   border-radius: ${props => props.theme.border.radius.small};
 
   &:hover {
