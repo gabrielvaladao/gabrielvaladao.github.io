@@ -11,11 +11,11 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   -webkit-appearance: none;
-  font-family: ${props => props.theme.type.secondary.fontFamily};
+  font-family: ${props => props.theme.type.primary.fontFamily};
   font-size: ${props => props.theme.type.small.fontSize};
   text-align: center;
-  letter-spacing: -0.1ch;
-  padding: 0.2rem 0.5rem 0.3rem 0.5rem;
+  letter-spacing: -0.03ch;
+  padding: 0.3rem 0.5rem;
   background-color: ${props => props.theme.color.brandBlack};
   color: ${props => props.theme.color.white};
   border: solid ${props => props.theme.border.size.base} ${props => props.theme.color.primary};
@@ -29,6 +29,7 @@ const Button = styled.button`
 
   &:active {
     background-color: ${props => props.theme.color.primaryDark};
+    border-color: ${props => props.theme.color.primaryDark};
     color: ${props => props.theme.color.white};
   }
 
