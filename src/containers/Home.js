@@ -1,5 +1,5 @@
 import React from 'react';
-import { withSiteData } from 'react-static';
+import { withSiteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
 import H1 from '../elements/H1';
@@ -36,11 +36,11 @@ const Large = styled.p`
 `;
 
 const Logo = styled.img`
-  margin-top: -${props => props.theme.space.three};
+  /* margin-top: -${props => props.theme.space.two}; */
   margin-left: 50%;
   transform: translateX(-50%);
   display: block;
-  padding-top: ${props => props.theme.space.one};
+  /* padding-top: ${props => props.theme.space.one}; */
 `;
 
 export default withSiteData(() => (
@@ -52,7 +52,7 @@ export default withSiteData(() => (
       <br />
       <strong>Fire Loves Sugar</strong>
       <br />
-      <StyledLink to="./music">Listen to the teaser</StyledLink>
+      <StyledLink to="./#music">Listen to the teaser</StyledLink>
     </Large>
 
     <Logo src={logo} alt="Labrysinthe's logo, a maze-like labrys axe." height="650" width="auto" />
