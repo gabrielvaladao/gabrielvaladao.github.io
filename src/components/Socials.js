@@ -19,7 +19,7 @@ const Li = styled.li`
 `;
 
 const Icon = styled(StyledLink)`
-  font-size: ${props => props.theme.type.h2.fontSize};
+  font-size: ${props => props.theme.icon.fontSize};
   text-align: center;
   border-radius: 50%;
   border-bottom: none;
@@ -29,6 +29,7 @@ const Icon = styled(StyledLink)`
   &:hover {
     background: ${props => props.theme.color.primary};
     color: ${props => props.theme.color.white};
+    border-bottom: none;
   }
 
   &:active {

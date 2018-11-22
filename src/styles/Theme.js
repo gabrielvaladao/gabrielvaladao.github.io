@@ -57,6 +57,9 @@ export default () => ({
     error: `crimson`,
     white: `rgba(255,255,255,1)`
   },
+  icon: {
+    fontSize: `${ratio1}em`
+  },
   space: {
     quarter: `${lineHeight / 4}rem`,
     half: `${lineHeight / 2}rem`,
