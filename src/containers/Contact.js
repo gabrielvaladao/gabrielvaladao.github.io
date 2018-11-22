@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import H1 from '../elements/H1';
 import StyledLink from '../elements/StyledLink';
 //
-const P = styled.p`
+const Info = styled.div`
   text-align: center;
 `;
 
@@ -16,11 +16,11 @@ const Address = styled.address`
 export default () => (
   <section id="contact">
     <H1>Contact</H1>
-    <P>
+    <Info>
       For booking and inquiries, email{' '}
       <Address>
         <StyledLink to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</StyledLink>
       </Address>
-    </P>
+    </Info>
   </section>
 );

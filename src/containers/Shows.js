@@ -28,8 +28,8 @@ const Li = styled.li`
   list-style-position: outside;
 `;
 
-export default withRouteData(() => (
-  <section id="shows">
+export default withRouteData(({ id, ...props }) => (
+  <section id={id}>
     <H1>Shows</H1>
     {/* Show conditionally:
     ... */}

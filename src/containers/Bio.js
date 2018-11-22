@@ -12,8 +12,8 @@ const P = styled.p`
   }
 `;
 
-export default () => (
-  <section id="bio">
+export default ({ id, ...props }) => (
+  <section id={id}>
     <H1>Bio</H1>
     <P>
       Labrysinthe is Natalia Lincoln, who took the scenic route to psytrance -- first through

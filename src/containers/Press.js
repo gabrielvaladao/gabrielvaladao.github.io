@@ -13,15 +13,18 @@ const Li = styled.li`
   list-style-type: none;
 `;
 
-
 /* TODO: aria-sort: date, descending */
 
-export default withRouteData(() => (
-  <div>
+export default withRouteData(({ id, ...props }) => (
+  <section id={id}>
     <H1>Press</H1>
     <Ul>
-      <Li><PressRelease /></Li>
-      <Li><PressRelease /></Li>
+      <Li>
+        <PressRelease />
+      </Li>
+      <Li>
+        <PressRelease />
+      </Li>
     </Ul>
-  </div>
+  </section>
 ));

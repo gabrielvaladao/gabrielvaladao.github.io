@@ -82,12 +82,12 @@ const App = () => (
       <BaseStyles>
         <StyledHeader />
 
-        <Main className="content">
-          <Home />
-          <Shows />
-          <Music />
-          <Bio />
-          <Contact />
+        <Main>
+          <Home id="home" />
+          <Shows id="shows" />
+          <Music id="music" />
+          <Bio id="bio" />
+          <Contact id="contact" />
           <Newsletter id="newsletter" />
         </Main>
 

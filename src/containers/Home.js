@@ -19,8 +19,8 @@ const P = styled.p`
 `;
 
 /* NB: The nav anchor #home is applied to the Header component */
-export default withSiteData(() => (
-  <section>
+export default withSiteData(({ id, ...props }) => (
+  <section id={id}>
     <Large>
       New EP coming soon!
       <br />

@@ -20,8 +20,8 @@ const Li = styled.li`
  * For user-friendliness, let client paste in a full embed code.
  * App should extract the track ID and apply brand color to play button.
  */
-export default withRouteData(() => (
-  <section id="music">
+export default withRouteData(({ id, ...props }) => (
+  <section id={id}>
     <H1>Music</H1>
     <p>
       Select downloads are available on{' '}
