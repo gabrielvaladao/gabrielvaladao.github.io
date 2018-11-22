@@ -9,10 +9,14 @@ import Button from '../elements/Button';
 const SiteTitle = styled(H1)`
   padding-top: ${props => props.theme.space.six};
   font-family: 'raincoatregular', sans-serif;
-  letter-spacing: 0.08ch;
+  letter-spacing: 0.06ch;
   text-transform: uppercase;
   text-align: center;
   font-size: ${props => props.theme.type.h2.fontSize};
+
+  @media (min-width: 576px) {
+    letter-spacing: 0.12ch;
+  }
 
   @media (min-width: 768px) {
     font-size: ${props => props.theme.type.h1.fontSize};
