@@ -5,8 +5,12 @@ import styled from 'styled-components';
 import H1 from '../elements/H1';
 import StyledLink from '../elements/StyledLink';
 //
-import logo from '../images/logo-header-90x104.png';
+import logo from '../images/logo-color-665x750.png';
 //
+const Wrapper = styled.section`
+  overflow: hidden;
+`;
+
 const SiteTitle = styled(H1)`
   padding-top: ${props => props.theme.space.six};
   font-family: 'raincoatregular', sans-serif;
@@ -39,9 +43,8 @@ const Logo = styled.img`
   padding-top: ${props => props.theme.space.one};
 `;
 
-/* NB: The nav anchor #home is applied to the Header component */
 export default withSiteData(() => (
-  <section>
+  <Wrapper>
     <SiteTitle>Labrysinthe</SiteTitle>
 
     <Large>
@@ -53,5 +56,5 @@ export default withSiteData(() => (
     </Large>
 
     <Logo src={logo} alt="Labrysinthe's logo, a maze-like labrys axe." height="650" width="auto" />
-  </section>
+  </Wrapper>
 ));

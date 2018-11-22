@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Menu from '../components/Menu';
 import Socials from '../components/Socials';
 //
-import logo from '../images/logo-header-90x104.png';
+import logo from '../images/logo-color-90x102.png';
 //
 const Footer = styled.footer`
   padding: 0 2rem ${props => props.theme.space.one} 2rem;
