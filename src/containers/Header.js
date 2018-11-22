@@ -2,28 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-static';
 import styled from 'styled-components';
 //
-import H1 from '../elements/H1';
 import Menu from '../components/Menu';
 import Button from '../elements/Button';
-
-const SiteTitle = styled(H1)`
-  padding-top: ${props => props.theme.space.six};
-  font-family: 'raincoatregular', sans-serif;
-  letter-spacing: 0.06ch;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: ${props => props.theme.type.h2.fontSize};
-
-  @media (min-width: 576px) {
-    letter-spacing: 0.12ch;
-  }
-
-  @media (min-width: 768px) {
-    font-size: ${props => props.theme.type.h1.fontSize};
-    letter-spacing: 0.12ch;
-  }
-`;
-
+//
 const Wrapper = styled.header`
   top: 0;
 `;
@@ -70,6 +51,5 @@ export default () => (
         </ResponsiveLi>
       </Ul>
     </Nav>
-    <SiteTitle>Labrysinthe</SiteTitle>
   </Wrapper>
 );

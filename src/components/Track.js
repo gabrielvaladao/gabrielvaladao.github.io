@@ -19,6 +19,12 @@ TODO: PARSE IFRAMES (a11y)
 - JSX-ify attribs, eg. frameBorder - console warning
 */
 
+const Background = styled.div`
+  iframe {
+    background-color: ${props => props.theme.color.overlayLight};
+  }
+`;
+
 const StyledH3 = styled(H3)`
   margin-bottom: ${props => props.theme.type.h3.marginBottom};
 `;
@@ -27,7 +33,7 @@ export default ({ title, soundCloudEmbed, cta }) => (
   <article aria-labelledby="track-title">
     <StyledH3 id="track-title">{title}</StyledH3>
 
-    {soundCloudEmbed}
+    <Background>{soundCloudEmbed}</Background>
 
     {cta && (
       <StyledLink className="cta" to={cta.url} aria-labelledby="track-title">

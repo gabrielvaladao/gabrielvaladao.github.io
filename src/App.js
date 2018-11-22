@@ -65,11 +65,13 @@ const StyledHeader = styled(Header)`
 `;
 
 const Main = styled.main`
-  padding: 1.2rem 2rem 2rem 2rem;
-
   & > section {
     padding-bottom: ${props => props.theme.space.one};
   }
+`;
+
+const PaddedDiv = styled.div`
+  padding: 1.2rem 2rem 2rem 2rem;
 
   @media (min-width: 576px) {
     padding: 1.2rem 4rem 2rem 4rem;
@@ -84,15 +86,17 @@ const App = () => (
   <Router>
     <ThemeProvider theme={theme}>
       <BaseStyles>
-        <StyledHeader />
+        <StyledHeader id="home" />
 
         <Main>
-          <Home id="home" />
-          <Shows id="shows" />
-          <Music id="music" />
-          <Bio id="bio" />
-          <Contact id="contact" />
-          <Newsletter id="newsletter" />
+          <Home />
+          <PaddedDiv>
+            <Shows id="shows" />
+            <Music id="music" />
+            <Bio id="bio" />
+            <Contact id="contact" />
+            <Newsletter id="newsletter" />
+          </PaddedDiv>
         </Main>
 
         <StyledFooter />

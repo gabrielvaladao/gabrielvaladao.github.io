@@ -4,6 +4,11 @@ import styled from 'styled-components';
 import StyledLink from '../elements/StyledLink';
 import H1 from '../elements/H1';
 //
+const Large = styled.p`
+  font-size: ${props => props.theme.type.large.fontSize};
+  margin-bottom: ${props => props.theme.type.large.marginBottom};
+`;
+
 const P = styled.p`
   margin-bottom: ${props => props.theme.space.one};
 
@@ -15,6 +20,10 @@ const P = styled.p`
 export default ({ id, ...props }) => (
   <section id={id}>
     <H1>Bio</H1>
+    <Large>
+      Labrysinthe is voluntarily committed to the institution of psytrance and stands for better
+      machines, brighter knowledge, bolder music, and the blissful ecstacies of the beat.
+    </Large>
     <P>
       Labrysinthe is Natalia Lincoln, who took the scenic route to psytrance -- first through
       classical training, then joining gothic/apocalyptic folk band Unto Ashes (NYC) as premium
