@@ -67,6 +67,10 @@ const StyledHeader = styled(Header)`
 const Main = styled.main`
   padding: 1.2rem 2rem 2rem 2rem;
 
+  & > section {
+    padding-bottom: ${props => props.theme.space.one};
+  }
+
   @media (min-width: 576px) {
     padding: 1.2rem 4rem 2rem 4rem;
   }
