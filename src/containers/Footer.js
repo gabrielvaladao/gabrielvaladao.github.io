@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import Menu from '../components/Menu';
 import Socials from '../components/Socials';
 //
-import logo from '../images/logo-color-90x102.png';
+import smColorLogo from '../images/logo-color-90x102.png';
+import smWhiteLogo from '../images/logo-white-90x104.png';
 //
 const Footer = styled.footer`
   padding: 0 0 ${props => props.theme.space.one} 0;
@@ -43,7 +44,7 @@ export default () => (
       <Menu />
     </Nav>
     <Logo
-      src={logo}
+      src={smWhiteLogo}
       alt="Labrysinthe's logo, a maze-like labrys axe."
       height="104px"
       width="90px"

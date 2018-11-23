@@ -5,7 +5,8 @@ import styled from 'styled-components';
 import H1 from '../elements/H1';
 import StyledLink from '../elements/StyledLink';
 //
-import logo from '../images/logo-color-665x750.png';
+import lgColorLogo from '../images/logo-color-665x750.png';
+import xlColorLogo from '../images/logo-color-1326x1496.png';
 //
 const Wrapper = styled.section`
   overflow: hidden;
@@ -22,6 +23,8 @@ const SiteTitle = styled(H1)`
 
   @media (min-width: 576px) {
     letter-spacing: 0.12ch;
+    padding-top: ${props => props.theme.space.ten};
+    padding-bottom: ${props => props.theme.space.two};
   }
 
   @media (min-width: 768px) {
@@ -60,6 +63,11 @@ export default withSiteData(() => (
       <StyledLink to="./#music">Listen to the teaser</StyledLink>
     </Large>
 
-    <Logo src={logo} alt="Labrysinthe's logo, a maze-like labrys axe." height="650" width="auto" />
+    <Logo
+      src={xlColorLogo}
+      /* srcSet={`${small} 300w, ${medium} 768w, ${large} 1280w`} */
+      alt="Labrysinthe's logo, a maze-like labrys axe." height="1496"
+      width="auto"
+    />
   </Wrapper>
 ));
