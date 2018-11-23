@@ -71,7 +71,8 @@ export default () => ({
     two: `${lineHeight * 2}rem`,
     three: `${lineHeight * 3}rem`,
     eight: `${lineHeight * 8}rem`,
-    ten: `${lineHeight * 10}rem`
+    ten: `${lineHeight * 10}rem`,
+    golden: `${lineHeight * ratio1 * 12}rem`
   },
   type: {
     primary: {

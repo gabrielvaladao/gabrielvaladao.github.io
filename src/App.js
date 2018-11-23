@@ -72,6 +72,8 @@ const Main = styled.main`
 
 const PaddedDiv = styled.div`
   padding: 0 2rem 2rem 2rem;
+  margin: 0 auto;
+  max-width: ${props => props.theme.space.golden};
 
   @media (min-width: 576px) {
     padding: 0 4rem 2rem 4rem;
