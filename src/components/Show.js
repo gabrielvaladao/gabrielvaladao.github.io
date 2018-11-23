@@ -33,7 +33,7 @@ const When = styled.p`
   }
 `;
 
-const Foo = styled.p`
+const Where = styled.div`
   font-size: ${props => props.theme.type.small.fontSize};
   font-family: ${props => props.theme.type.secondary.fontFamily};
   font-weight: ${props => props.theme.type.secondary.fontWeight};
@@ -101,7 +101,7 @@ export default ({
         Hosted by <StyledLink to={hostUrl}>{hostName}</StyledLink>
       </p>
     </Host>
-    <Foo>
+    <Where>
       <StyledLink to={venueUrl} id="venue-name">
         {venueName}
       </StyledLink>
@@ -117,7 +117,7 @@ export default ({
       <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">
         Google Maps
       </StyledLink>
-    </Foo>
+    </Where>
     <CtaList>
       {fbEventUrl && (
         <Li>
