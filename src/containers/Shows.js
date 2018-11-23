@@ -38,11 +38,10 @@ export default withRouteData(({ id, ...props }) => (
       <Ul>
         <Li>
           <Show
-            title="PMS - The L-Night party"
+            title="PMS&mdash;The L-Night party"
             hostName="L-Night"
             hostUrl="https://www.meetup.com/en-AU/Lnightberlin/"
-            startDay="Saturday"
-            startDate="15 DEC"
+            startDate="Saturday, 15 DEC"
             startYear="2018"
             venueName="Hausprojekt K9"
             venueUrl="http://www.kinzig9.de/"
@@ -69,8 +68,7 @@ export default withRouteData(({ id, ...props }) => (
             title="Electronic Events Experience Exchange (EEEE&nbsp;Party!!!!)"
             hostName="Fractal Portal"
             hostUrl="http://www.fractalportal.com/"
-            startDay="Saturday"
-            startDate="4 NOV"
+            startDate="Saturday, 4 NOV"
             startYear="2017"
             venueName="Velvet Monkeys Club"
             venueUrl="https://www.facebook.com/Velvet-Monkey-erlebnisgastronomie-1823655237858506/"

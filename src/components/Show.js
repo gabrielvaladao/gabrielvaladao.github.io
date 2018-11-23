@@ -13,33 +13,7 @@ import Button from '../elements/Button';
 */
 
 const Wrapper = styled.article`
-  display: grid;
   font-family: ${props => props.theme.type.secondary.fontFamily};
-
-  grid-template-rows:
-    fit-content(100%) minmax(min-content, max-content) minmax(min-content, max-content)
-    min-content;
-  grid-template-columns: 1fr 1fr;
-
-  @media (min-width: 576px) {
-    grid-template-rows: max-content max-content;
-    grid-template-columns: max-content 1fr minmax(min-content, max-content) minmax(
-        min-content,
-        max-content
-      );
-  }
-`;
-
-const Header = styled.header`
-  grid-row: 2 / 3;
-  grid-column: 1 / 3;
-  padding: 0;
-
-  @media (min-width: 576px) {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    padding: 0 ${props => props.theme.space.half};
-  }
 `;
 
 const Host = styled.p`
@@ -50,86 +24,126 @@ const Host = styled.p`
   margin-bottom: ${props => props.theme.space.half};
 `;
 
-const When = styled.div`
-  grid-row: 1 / 2;
-  grid-column: 1 / 3;
-  font-size: ${props => props.theme.type.primary.fontSize};
+const When = styled.p`
+  font-size: ${props => props.theme.type.large.fontSize};
+  margin-bottom: ${props => props.theme.space.quarter};
 
   * {
     display: inline-block;
   }
-
-  @media (min-width: 576px) {
-    grid-row: 1 / 3;
-    grid-column: 1 / 2;
-    padding: 0 ${props => props.theme.space.half};
-
-    * {
-      display: block;
-    }
-  }
 `;
 
-const Day = styled.span`
-  margin-bottom: 0;
-
-  &::after {
-    content: ',\00a0';
-  }
-
-  @media (min-width: 576px) {
-    &::after {
-      content: '';
-    }
-  }
-`;
-
-const StartDate = styled.span`
-  @media (min-width: 576px) {
-    font-size: ${props => props.theme.type.large.fontSize};
-  }
-`;
-
-const Where = styled.div`
+const Where = styled.p`
   font-size: ${props => props.theme.type.small.fontSize};
   font-family: ${props => props.theme.type.secondary.fontFamily};
   font-weight: ${props => props.theme.type.secondary.fontWeight};
   line-height: ${props => props.theme.type.secondary.lineHeight};
-
-  grid-row: 3 / 4;
-  grid-column: 1 / 3;
   margin-bottom: ${props => props.theme.space.half};
-
-  @media (min-width: 576px) {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    padding: 0 ${props => props.theme.space.half};
-    margin-bottom: 0;
-  }
 `;
 
-const Cta = styled(Button)`
-  text-align: center;
-  display: grid;
-  align-items: center;
+const CtaList = styled.ol`
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+`;
 
-  grid-row: 4 / 5;
+const Li = styled.li`
+  text-align: center;
+  display: inline-block;
+  width: 50%;
 
   &:only-of-type {
-    grid-column: 1 / 3;
+    width: 100%;
   }
 
-  @media (min-width: 576px) {
-    grid-row: 1 / 3;
-    padding: 0 ${props => props.theme.space.half};
+  &:first-of-type:not(:only-of-type) {
+    button {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
 
-    &:only-of-type {
-      grid-column: inherit;
+  &:last-of-type:not(:only-of-type) {
+    button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
 `;
 
+const Cta = styled(Button)`
+  width: 100%;
+  height: 100%;
+`;
+
 /* TODO: Refactor data structure */
+export default ({
+  title,
+  hostUrl,
+  hostName,
+  startDate,
+  venueUrl,
+  venueName,
+  venueAddress,
+  venueAddress2,
+  venueGMapsUrl,
+  fbEventUrl,
+  ctaText,
+  ctaUrl,
+  ...props
+}) => (
+  <Wrapper aria-labelledby="show-title">
+    <When>{startDate}</When>
+    <H4 id="show-title">{title}</H4>
+    <Host>
+      <p>
+        Hosted by <StyledLink to={hostUrl}>{hostName}</StyledLink>
+      </p>
+    </Host>
+    <Where>
+      <StyledLink to={venueUrl} id="venue-name">
+        {venueName}
+      </StyledLink>
+      <br />
+      {venueAddress}
+      {venueAddress2 && (
+        <React.Fragment>
+          <br />
+          <span>{venueAddress2}</span>
+        </React.Fragment>
+      )}
+      <br />
+      <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">
+        Google Maps
+      </StyledLink>
+    </Where>
+    <CtaList>
+      {fbEventUrl && (
+        <Li>
+          <Cta>
+            <StyledLink to={fbEventUrl} aria-labelledby="show-title">
+              FACEBOOK
+            </StyledLink>
+          </Cta>
+        </Li>
+      )}
+      {ctaUrl && (
+        <Li>
+          <Cta>
+            <StyledLink to={ctaUrl} aria-labelledby="show-title">
+              {ctaText}
+            </StyledLink>
+          </Cta>
+        </Li>
+      )}
+    </CtaList>
+  </Wrapper>
+);
+
+/* ORIGINAL MARKUP WITH GRID */
+
+/*
 export default ({
   title,
   hostUrl,
@@ -184,3 +198,4 @@ export default ({
     )}
   </Wrapper>
 );
+ */

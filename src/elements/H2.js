@@ -6,6 +6,7 @@ const H2 = styled.h2`
   font-weight: ${props => props.theme.type.h2.fontWeight};
   line-height: ${props => props.theme.type.h2.lineHeight};
   font-size: ${props => props.theme.type.h3.fontSize};
+  margin-bottom: ${props => props.theme.space.half};
 
   @media (min-width: 768px) {
     font-size: ${props => props.theme.type.h2.fontSize};

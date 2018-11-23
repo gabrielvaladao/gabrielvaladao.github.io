@@ -6,6 +6,7 @@ const H4 = styled.h4`
   font-weight: ${props => props.theme.type.h4.fontWeight};
   line-height: ${props => props.theme.type.h4.lineHeight};
   font-size: ${props => props.theme.type.primary.fontSize};
+  margin-bottom: ${props => props.theme.space.quarter};
 
   @media (min-width: 768px) {
     font-size: ${props => props.theme.type.h4.fontSize};

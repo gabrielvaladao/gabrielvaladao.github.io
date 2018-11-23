@@ -85,7 +85,7 @@ export default () => ({
     secondary: {
       fontFamily: secondary,
       fontWeight: regular,
-      lineHeight: `${ratio1 / lineHeight}rem`
+      lineHeight: `${ratio2 / lineHeight}rem`
     },
     h1: {
       fontFamily: primary,
