@@ -33,12 +33,12 @@ const When = styled.p`
   }
 `;
 
-const Where = styled.p`
+const Foo = styled.p`
   font-size: ${props => props.theme.type.small.fontSize};
   font-family: ${props => props.theme.type.secondary.fontFamily};
   font-weight: ${props => props.theme.type.secondary.fontWeight};
   line-height: ${props => props.theme.type.secondary.lineHeight};
-  margin-bottom: ${props => props.theme.space.half};
+  padding-bottom: ${props => props.theme.space.half};
 `;
 
 const CtaList = styled.ol`
@@ -101,7 +101,7 @@ export default ({
         Hosted by <StyledLink to={hostUrl}>{hostName}</StyledLink>
       </p>
     </Host>
-    <Where>
+    <Foo>
       <StyledLink to={venueUrl} id="venue-name">
         {venueName}
       </StyledLink>
@@ -117,7 +117,7 @@ export default ({
       <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">
         Google Maps
       </StyledLink>
-    </Where>
+    </Foo>
     <CtaList>
       {fbEventUrl && (
         <Li>
