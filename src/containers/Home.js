@@ -66,7 +66,8 @@ export default withSiteData(() => (
     <Logo
       src={xlColorLogo}
       /* srcSet={`${small} 300w, ${medium} 768w, ${large} 1280w`} */
-      alt="Labrysinthe's logo, a maze-like labrys axe." height="1496"
+      alt=""
+      height="1496"
       width="auto"
     />
   </Wrapper>
