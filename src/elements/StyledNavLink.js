@@ -16,18 +16,4 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-/* const StyledLink = styled(Link)`
-  color: ${props => props.theme.color.primary};
-  text-decoration: none;
-
-  &:hover {
-    border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.primary};
-  }
-
-  &:active {
-    color: ${props => props.theme.color.primaryDark};
-    border-bottom: 2px solid ${props => props.theme.color.primaryDark};
-  }
-`; */
-
 export default props => <StyledNavLink {...props}>{props.children}</StyledNavLink>;
