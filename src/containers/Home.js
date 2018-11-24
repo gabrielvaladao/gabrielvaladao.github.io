@@ -5,8 +5,9 @@ import styled from 'styled-components';
 import H1 from '../elements/H1';
 import StyledLink from '../elements/StyledLink';
 //
-import lgColorLogo from '../images/logo-color-665x750.png';
-import xlColorLogo from '../images/logo-color-1326x1496.png';
+import smColorLogo from '../images/logo-color-550x620.png';
+import mdColorLogo from '../images/logo-color-665x750.png';
+import lgColorLogo from '../images/logo-color-1326x1496.png';
 //
 const Wrapper = styled.section`
   overflow: hidden;
@@ -63,12 +64,10 @@ export default withSiteData(() => (
       <StyledLink to="./#music">Listen to the teaser</StyledLink>
     </Large>
 
-    <Logo
-      src={xlColorLogo}
-      /* srcSet={`${small} 300w, ${medium} 768w, ${large} 1280w`} */
-      alt=""
-      height="1496"
-      width="auto"
-    />
+    <picture>
+      <source media="(min-width: 768px)" srcSet={lgColorLogo} />
+      <source media="(min-width: 576px)" srcSet={mdColorLogo} />
+      <Logo alt="" src={smColorLogo} />
+    </picture>
   </Wrapper>
 ));
