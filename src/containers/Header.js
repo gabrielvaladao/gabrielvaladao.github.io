@@ -42,18 +42,15 @@ const ResponsiveLi = styled(Li)`
 const HeaderNavLink = styled(StyledNavLink)`
   color: ${props => props.theme.color.brandWhite};
   text-decoration: none;
-  padding-bottom: ${props => props.theme.space.quarter}
-  border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
+  padding-bottom: ${props => props.theme.space.quarter};
 
   &:hover {
-    color: ${props => props.theme.color.primaryLight};
-    border-color: ${props => props.theme.color.primaryLight};
-    border-bottom-width: ${props => props.theme.border.size.thick};
+    border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
   }
 
   &:active {
-    color: ${props => props.theme.color.primaryDark};
-    border-color: ${props => props.theme.color.primaryDark};
+    color: ${props => props.theme.color.primaryOverlay};
+    border-color: ${props => props.theme.color.primaryOverlay};
   }
 `;
 
