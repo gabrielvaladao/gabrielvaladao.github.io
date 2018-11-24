@@ -7,6 +7,12 @@ import StyledNavLink from '../elements/StyledNavLink';
 //
 const Wrapper = styled.header`
   top: 0;
+  font-size: ${props => props.theme.type.large.fontSize};
+
+  /* Ignore the base rem size change that otherwise happens at this breakpoint (see App.js) */
+  @media (min-width: 576px) {
+    font-size: ${props => props.theme.type.primary.fontSize};
+  }
 `;
 
 const MiniNav = styled.nav`
