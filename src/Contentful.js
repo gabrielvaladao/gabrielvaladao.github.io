@@ -36,17 +36,15 @@ const Contentful = () => {
 
   const client = c.createClient({
     space: SPACE_ID,
-    accessToken: ACCESS_TOKEN,
+    accessToken: ACCESS_TOKEN
   });
 
   /* Get all data for this space as per Contentful's boilerplate */
 
-
-
   /* Populate public data */
 
-  /* TODO: update placeholder */
-  publicSiteData.bio = { title: 'wheep', tagLine: 'whoa' };
+  /* TODO: WIP - just testing */
+  // publicSiteData.bio = { title: 'wheep', tagLine: 'whoa' };
 
   return publicSiteData;
 };
