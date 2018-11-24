@@ -51,10 +51,10 @@ export default () => (
       <StyledNavLink to="/#bio">Bio</StyledNavLink>
     </Li>
     <Li>
-      <StyledNavLink to="/#contact">Contact</StyledNavLink>
+      <StyledNavLink to="/#newsletter">Newsletter</StyledNavLink>
     </Li>
     <Li>
-      <StyledNavLink to="/#newsletter">Newsletter</StyledNavLink>
+      <StyledNavLink to="/#contact">Contact</StyledNavLink>
     </Li>
   </Ul>
 );

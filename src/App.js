@@ -92,8 +92,8 @@ const App = () => (
             <Shows id="shows" />
             <Music id="music" />
             <Bio id="bio" />
-            <Contact id="contact" />
             <Newsletter id="newsletter" />
+            <Contact id="contact" />
           </PaddedDiv>
         </Main>
 

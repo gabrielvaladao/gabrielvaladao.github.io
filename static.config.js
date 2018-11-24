@@ -52,6 +52,10 @@ export default {
         component: 'src/containers/Bio'
       },
       {
+        path: '/newsletter',
+        component: 'src/containers/Newsletter'
+      },
+      {
         path: '/contact',
         component: 'src/containers/Contact'
       },
