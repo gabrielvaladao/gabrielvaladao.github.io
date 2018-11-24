@@ -18,7 +18,7 @@ const Li = styled.li`
   padding: ${props => props.theme.space.half} 0;
 
   &:hover {
-    color: ${props => props.theme.color.white};
+    color: white;
     background-color: ${props => props.theme.color.overlayLight};
   }
 `;

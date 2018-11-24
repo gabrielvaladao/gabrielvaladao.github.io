@@ -48,6 +48,7 @@ const HeaderNavLink = styled(StyledNavLink)`
   &:hover {
     color: ${props => props.theme.color.primaryLight};
     border-color: ${props => props.theme.color.primaryLight};
+    border-bottom-width: ${props => props.theme.border.size.thick};
   }
 
   &:active {

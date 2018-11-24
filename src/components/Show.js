@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRouteData } from 'react-static';
+import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
 import H4 from '../elements/H4';
-import StyledLink from '../elements/StyledLink';
 import Button from '../elements/Button';
+import StyledLink from '../elements/StyledLink';
 
 /* TODO: Show logic
   A show has one of two states: Upcoming or Previous.
@@ -77,6 +77,11 @@ const Cta = styled(Button)`
   height: 100%;
 `;
 
+const UnstyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
+
 /* TODO: Refactor data structure */
 export default ({
   title,
@@ -122,18 +127,18 @@ export default ({
       {fbEventUrl && (
         <Li>
           <Cta>
-            <StyledLink to={fbEventUrl} aria-labelledby="show-title">
+            <UnstyledLink to={fbEventUrl} aria-labelledby="show-title">
               FACEBOOK
-            </StyledLink>
+            </UnstyledLink>
           </Cta>
         </Li>
       )}
       {ctaUrl && (
         <Li>
           <Cta>
-            <StyledLink to={ctaUrl} aria-labelledby="show-title">
+            <UnstyledLink to={ctaUrl} aria-labelledby="show-title">
               {ctaText}
-            </StyledLink>
+            </UnstyledLink>
           </Cta>
         </Li>
       )}

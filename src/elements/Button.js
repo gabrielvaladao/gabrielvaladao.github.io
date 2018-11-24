@@ -17,7 +17,7 @@ const Button = styled.button`
   letter-spacing: -0.03ch;
   padding: 0.3rem 0.5rem;
   background-color: ${props => props.theme.color.brandBlack};
-  color: ${props => props.theme.color.white};
+  color: white;
   border-style: solid;
   border-width: ${props => props.theme.border.size.base};
   border-color: ${props => props.theme.color.primary};
@@ -25,20 +25,19 @@ const Button = styled.button`
 
   &:hover {
     background-color: ${props => props.theme.color.primary};
-    color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.brandGrayDark};
     cursor: pointer;
   }
 
   &:active {
     background-color: ${props => props.theme.color.primaryDark};
     border-color: ${props => props.theme.color.primaryDark};
-    color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.brandGrayDark};
   }
 
-  a,
   a:hover,
   a:active {
-    color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.brandGrayDark};
     border: none;
   }
 `;
