@@ -56,7 +56,7 @@ export default () => ({
     overlayLighter: `rgba(255, 255, 255, 0.7)`,
     primary: `rgba(111, 223, 223, 1)`,
     primaryDark: `rgba(31, 159, 159, 1)`,
-    primaryLight: `rgba()`,
+    primaryLight: `rgba(132,228,228,1)`,
     error: `crimson`,
     white: `rgba(255,255,255,1)`,
     black: `rgba(0,0,0,1)`

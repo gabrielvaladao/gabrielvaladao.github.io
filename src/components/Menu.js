@@ -1,7 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-static';
 import styled from 'styled-components';
-
+//
+import StyledNavLink from '../elements/StyledNavLink';
+//
 const Ul = styled.ul`
   padding-left: 0;
 `;
@@ -19,18 +20,6 @@ const Li = styled.li`
   &:hover {
     color: ${props => props.theme.color.white};
     background-color: ${props => props.theme.color.overlayLight};
-  }
-`;
-
-const StyledNavLink = styled(NavLink)`
-  color: ${props => props.theme.color.brandWhite};
-  text-decoration: none;
-
-  &:active {
-    color: ${props => props.theme.color.overlayLighter};
-    border-style: solid;
-    border-width: 0 0 ${props => props.theme.border.size.base} 0;
-    border-color: ${props => props.theme.color.overlayLighter};
   }
 `;
 
