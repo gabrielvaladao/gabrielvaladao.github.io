@@ -9,11 +9,23 @@ const Wrapper = styled.header`
   top: 0;
 `;
 
-const Nav = styled.nav`
+const MiniNav = styled.nav`
   position: absolute;
   top: 1rem;
   right: 1rem;
   padding: ${props => props.theme.space.one} 0 0 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const FullNav = styled(MiniNav)`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 `;
 
 const Ul = styled.ul`
@@ -56,15 +68,37 @@ const HeaderNavLink = styled(StyledNavLink)`
 
 export default () => (
   <Wrapper id="home">
-    <Nav>
+    <MiniNav>
       <Ul>
-        <Li>
-          <HeaderNavLink>Menu</HeaderNavLink>
-        </Li>
         <ResponsiveLi>
           <HeaderNavLink to="/#newsletter">Newsletter</HeaderNavLink>
         </ResponsiveLi>
+        <Li>
+          <HeaderNavLink>Menu</HeaderNavLink>
+        </Li>
       </Ul>
-    </Nav>
+    </MiniNav>
+    <FullNav>
+      <Ul>
+        <Li>
+          <HeaderNavLink to="/#home">Home</HeaderNavLink>
+        </Li>
+        <Li>
+          <HeaderNavLink to="/#shows">Shows</HeaderNavLink>
+        </Li>
+        <Li>
+          <HeaderNavLink to="/#music">Music</HeaderNavLink>
+        </Li>
+        <Li>
+          <HeaderNavLink to="/#bio">Bio</HeaderNavLink>
+        </Li>
+        <Li>
+          <HeaderNavLink to="/#newsletter">Newsletter</HeaderNavLink>
+        </Li>
+        <Li>
+          <HeaderNavLink to="/#contact">Contact</HeaderNavLink>
+        </Li>
+      </Ul>
+    </FullNav>
   </Wrapper>
 );
