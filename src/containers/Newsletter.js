@@ -156,8 +156,8 @@ export default class Newsletter extends React.Component {
   render() {
     return (
       <Wrapper id={this.props.id}>
+        <H1>Newsletter</H1>
         <div id="mc-sign-up">
-          <H1>Newsletter</H1>
           <P>Be the first to hear about upcoming gigs and fresh music.</P>
           <Form
             name="mc_sign_up"
