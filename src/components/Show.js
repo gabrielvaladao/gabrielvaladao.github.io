@@ -75,11 +75,11 @@ const Li = styled.li`
 const Cta = styled(Button)`
   width: 100%;
   height: 100%;
-`;
 
-const UnStyledLinkText = styled(Link)`
-  text-decoration: none;
-  color: inherit;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 /* TODO: Refactor data structure */
@@ -134,18 +134,18 @@ export default ({
       {fbEventUrl && (
         <Li>
           <Cta>
-            <UnStyledLinkText to={fbEventUrl} aria-labelledby="show-title">
+            <Link to={fbEventUrl} aria-labelledby="show-title">
               FACEBOOK
-            </UnStyledLinkText>
+            </Link>
           </Cta>
         </Li>
       )}
       {ctaUrl && (
         <Li>
           <Cta>
-            <UnStyledLinkText to={ctaUrl} aria-labelledby="show-title">
+            <Link to={ctaUrl} aria-labelledby="show-title">
               {ctaText}
-            </UnStyledLinkText>
+            </Link>
           </Cta>
         </Li>
       )}

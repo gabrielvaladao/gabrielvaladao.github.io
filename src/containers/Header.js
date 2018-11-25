@@ -3,7 +3,7 @@ import { NavLink } from 'react-static';
 import styled from 'styled-components';
 //
 import Menu from '../components/Menu';
-import StyledNavLink from '../elements/StyledNavLink';
+import StyledNavLinkOuter from '../elements/StyledNavLinkOuter';
 //
 const Wrapper = styled.header`
   top: 0;
@@ -57,18 +57,20 @@ const ResponsiveLi = styled(Li)`
   }
 `;
 
-const HeaderNavLink = styled(StyledNavLink)`
-  color: ${props => props.theme.color.brandWhite};
-  text-decoration: none;
-  padding-bottom: ${props => props.theme.space.quarter};
+const HeaderNavLink = styled(StyledNavLinkOuter)`
+  a {
+    color: ${props => props.theme.color.brandWhite};
+    text-decoration: none;
+    padding-bottom: ${props => props.theme.space.quarter};
 
-  &:hover {
-    border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
-  }
+    &:hover {
+      border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
+    }
 
-  &:active {
-    color: ${props => props.theme.color.primaryOverlay};
-    border-color: ${props => props.theme.color.primaryOverlay};
+    &:active {
+      color: ${props => props.theme.color.primaryOverlay};
+      border-color: ${props => props.theme.color.primaryOverlay};
+    }
   }
 `;
 
@@ -87,22 +89,34 @@ export default () => (
     <FullNav>
       <Ul>
         <Li>
-          <HeaderNavLink to="/#home">Home</HeaderNavLink>
+          <HeaderNavLink>
+            <NavLink to="/#home">Home</NavLink>
+          </HeaderNavLink>
         </Li>
         <Li>
-          <HeaderNavLink to="/#shows">Shows</HeaderNavLink>
+          <HeaderNavLink>
+            <NavLink to="/#shows">Shows</NavLink>
+          </HeaderNavLink>
         </Li>
         <Li>
-          <HeaderNavLink to="/#music">Music</HeaderNavLink>
+          <HeaderNavLink>
+            <NavLink to="/#music">Music</NavLink>
+          </HeaderNavLink>
         </Li>
         <Li>
-          <HeaderNavLink to="/#bio">Bio</HeaderNavLink>
+          <HeaderNavLink>
+            <NavLink to="/#bio">Bio</NavLink>
+          </HeaderNavLink>
         </Li>
         <Li>
-          <HeaderNavLink to="/#newsletter">Newsletter</HeaderNavLink>
+          <HeaderNavLink>
+            <NavLink to="/#newsletter">Newsletter</NavLink>
+          </HeaderNavLink>
         </Li>
         <Li>
-          <HeaderNavLink to="/#contact">Contact</HeaderNavLink>
+          <HeaderNavLink>
+            <NavLink to="/#contact">Contact</NavLink>
+          </HeaderNavLink>
         </Li>
       </Ul>
     </FullNav>

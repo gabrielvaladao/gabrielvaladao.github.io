@@ -1,7 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledNavLink from '../elements/StyledNavLink';
+import StyledNavLinkInner from '../elements/StyledNavLinkInner';
 //
 const Ul = styled.ul`
   padding-left: 0;
@@ -26,24 +27,36 @@ const Li = styled.li`
 export default () => (
   <Ul>
     <Li>
-      <StyledNavLink exact to="/#home">
-        Home
-      </StyledNavLink>
+      <StyledNavLinkInner>
+        <NavLink exact to="/#home">
+          Home
+        </NavLink>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#shows">Shows</StyledNavLink>
+      <StyledNavLinkInner>
+        <NavLink to="/#shows">Shows</NavLink>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#music">Music</StyledNavLink>
+      <StyledNavLinkInner>
+        <NavLink to="/#music">Music</NavLink>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#bio">Bio</StyledNavLink>
+      <StyledNavLinkInner>
+        <NavLink to="/#bio">Bio</NavLink>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#newsletter">Newsletter</StyledNavLink>
+      <StyledNavLinkInner>
+        <NavLink to="/#newsletter">Newsletter</NavLink>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#contact">Contact</StyledNavLink>
+      <StyledNavLinkInner>
+        <NavLink to="/#contact">Contact</NavLink>
+      </StyledNavLinkInner>
     </Li>
   </Ul>
 );
