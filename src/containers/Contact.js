@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-static';
 import styled from 'styled-components';
 //
 import H1 from '../elements/H1';
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 //
 const Info = styled.div`
   text-align: center;
@@ -19,7 +20,9 @@ export default ({ id, ...props }) => (
     <Info>
       For booking and inquiries, email{' '}
       <Address>
-        <StyledLink to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</StyledLink>
+        <StyledLinkText>
+          <Link to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</Link>
+        </StyledLinkText>
       </Address>
     </Info>
   </section>

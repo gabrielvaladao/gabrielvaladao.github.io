@@ -1,9 +1,9 @@
 import React from 'react';
-import { withRouteData } from 'react-static';
+import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
 import Track from '../components/Track';
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 import H1 from '../elements/H1';
 
 const Ul = styled.ul`
@@ -25,9 +25,9 @@ export default withRouteData(({ id, ...props }) => (
     <H1>Music</H1>
     <p>
       Select downloads are available on{' '}
-      <StyledLink to="https://www.beatport.com/artist/labrysinthe/640674/tracks">
-        Beatport
-      </StyledLink>
+      <StyledLinkText>
+        <Link to="https://www.beatport.com/artist/labrysinthe/640674/tracks">Beatport</Link>
+      </StyledLinkText>
     </p>
     <Ul>
       <Li key="fire-loves-sugar-teaser">

@@ -1,9 +1,9 @@
 import React from 'react';
-import { withSiteData } from 'react-static';
+import { withSiteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
 import H1 from '../elements/H1';
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 //
 import smColorLogo from '../images/logo-color-550x620.png';
 import mdColorLogo from '../images/logo-color-665x750.png';
@@ -61,7 +61,9 @@ export default withSiteData(() => (
       <br />
       <strong>Fire Loves Sugar</strong>
       <br />
-      <StyledLink to="./#music">Listen to the teaser</StyledLink>
+      <StyledLinkText>
+        <Link to="./#music">Listen to the teaser</Link>
+      </StyledLinkText>
     </Large>
 
     <picture>

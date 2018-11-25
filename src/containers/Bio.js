@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 import H1 from '../elements/H1';
 //
 const Large = styled.p`
@@ -37,13 +38,15 @@ export default ({ id, ...props }) => (
     <P>
       Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin and with Nica Iliuchina
       (now Reality Test). She is an original member of the{' '}
-      <StyledLink
-        to="https://soundcloud.com/strength_in_numbers"
-        aria-label="Listen to Strength in Numbers on SoundCloud"
-        title="SoundCloud"
-      >
-        Strength in Numbers
-      </StyledLink>{' '}
+      <StyledLinkText>
+        <Link
+          to="https://soundcloud.com/strength_in_numbers"
+          aria-label="Listen to Strength in Numbers on SoundCloud"
+          title="SoundCloud"
+        >
+          Strength in Numbers
+        </Link>
+      </StyledLinkText>{' '}
       beat collective in Berlin.
     </P>
   </section>

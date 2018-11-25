@@ -1,8 +1,8 @@
 import React from 'react';
-import { withRouteData } from 'react-static';
+import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 import H3 from '../elements/H3';
 //
 
@@ -36,9 +36,11 @@ export default ({ title, soundCloudEmbed, cta }) => (
     <Background>{soundCloudEmbed}</Background>
 
     {cta && (
-      <StyledLink className="cta" to={cta.url} aria-labelledby="track-title">
-        {cta.text}
-      </StyledLink>
+      <StyledLinkText>
+        <Link className="cta" to={cta.url} aria-labelledby="track-title">
+          {cta.text}
+        </Link>
+      </StyledLinkText>
     )}
   </article>
 );
