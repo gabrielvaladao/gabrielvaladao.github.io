@@ -18,10 +18,49 @@ const Wrapper = styled.header`
 `;
 
 const MiniNav = styled.nav`
+  /*
+  ORIGINAL BEFORE DRAWER
   position: absolute;
   top: 1rem;
   right: 1rem;
   padding: ${props => props.theme.space.one} 0 0 0;
+  */
+
+  position: absolute;
+  left: 200px;
+  top: 0;
+  height: 100%;
+  overflow-x: visible;
+  overflow-y: scroll;
+  transition: left 0.3s ease,
+              box-shadow 0.3s ease;
+  z-index: 999;
+
+  & li {
+    display: block;
+  }
+
+  /* 
+   * :target for non-JS
+   * aria-expanded="true/false" for JS
+  */
+  &:target,
+  &[aria-expanded="true"] {
+    left: 0;
+    outline: none;
+    box-shadow: 3px 0 12px, rgba(0,0,0,0.25);
+
+    .menu-close {
+      z-index: 1001;
+    }
+
+    ul {
+      position: relative;
+      z-index: 1000;
+    }
+  }
+
+
 
   @media (min-width: 768px) {
     display: none;
@@ -37,7 +76,17 @@ const FullNav = styled(MiniNav)`
 `;
 
 const Ul = styled.ul`
+  /*
+  ORIGINAL BEFORE DRAWER
   padding-left: 0;
+  */
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  box-shadow: -8px 0 8px rgba(0,0,0,0.5);
+  min-height: 100%;
+  width: 200px;
+  
 `;
 
 const Li = styled.li`
@@ -74,10 +123,30 @@ const HeaderNavLink = styled(StyledNavLink)`
   }
 `;
 
+/* TODO: should this button be a navlink, semantically? */
+const MenuToggle = styled(HeaderNavLink)`
+  display: inline-block;
+`;
+
+const MenuClose = styled(HeaderNavLink)`
+  position: absolute;
+  right: 0;
+  top: 0;
+`;
+
 export default () => (
   <Wrapper id="home">
 
-    <HeaderNavLink
+    {/**
+      * TODO:
+      * I want to add menu toggle styles. they are functional. so is navlink.
+      * Apply pretty styles after.
+      * 
+      * I will have to revise the HeaderNavLink definition above for this to work.
+      * Please do this before continuing past --Buttons-- from the original css. 
+      */}
+
+    <MenuToggle
       to="#main-menu"
       id="main-menu-toggle"
       className="menu-toggle"
@@ -87,17 +156,17 @@ export default () => (
       aria-label="Open the main menu"
     >
       <span>Menu</span>
-    </HeaderNavLink>
+    </MenuToggle>
 
     <MiniNav
       id="main-menu"
-      className="main-menu"
+      /* className="main-menu" */
       role="navigation"
       aria-expanded="false"
       aria-label="Main menu"
     >
 
-      <Link
+      <MenuClose
         to="#main-menu-toggle"
         id="main-menu-close"
         className="menu-close"
@@ -107,7 +176,7 @@ export default () => (
         aria-label="Close the main menu"
       >
         <span>Close</span>
-      </Link>
+      </MenuClose>
 
 
       <Ul>
