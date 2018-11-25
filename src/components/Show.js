@@ -102,12 +102,10 @@ export default ({
     <When>{startDate}</When>
     <H4 id="show-title">{title}</H4>
     <Host>
-      <p>
-        Hosted by{' '}
-        <StyledLinkText>
-          <Link to={hostUrl}>{hostName}</Link>
-        </StyledLinkText>
-      </p>
+      Hosted by{' '}
+      <StyledLinkText>
+        <Link to={hostUrl}>{hostName}</Link>
+      </StyledLinkText>
     </Host>
     <Where>
       <StyledLinkText>
