@@ -75,6 +75,22 @@ const HeaderNavLink = styled(StyledNavLink)`
 export default () => (
   <Wrapper id="home">
     <MiniNav>
+
+      <Ul>
+        <Li>
+          <HeaderNavLink>Menu</HeaderNavLink>
+        </Li>
+      </Ul>
+
+    </MiniNav>
+  </Wrapper>
+);
+
+/* original before drawer */
+
+/* export default () => (
+  <Wrapper id="home">
+    <MiniNav>
       <Ul>
         <ResponsiveLi>
           <HeaderNavLink to="/#newsletter">Newsletter</HeaderNavLink>
@@ -107,4 +123,4 @@ export default () => (
       </Ul>
     </FullNav>
   </Wrapper>
-);
+); */
