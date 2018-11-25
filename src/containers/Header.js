@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable prettier/prettier */
 import React from 'react';
-import { NavLink } from 'react-static';
+import { Link, NavLink } from 'react-static';
 import styled from 'styled-components';
 //
 import Menu from '../components/Menu';
@@ -74,13 +76,55 @@ const HeaderNavLink = styled(StyledNavLink)`
 
 export default () => (
   <Wrapper id="home">
-    <MiniNav>
+
+    <HeaderNavLink
+      to="#main-menu"
+      id="main-menu-toggle"
+      className="menu-toggle"
+      role="button"
+      aria-controls="main-menu"
+      aria-expanded="false"
+      aria-label="Open the main menu"
+    >
+      <span>Menu</span>
+    </HeaderNavLink>
+
+    <MiniNav
+      id="main-menu"
+      className="main-menu"
+      role="navigation"
+      aria-expanded="false"
+      aria-label="Main menu"
+    >
+
+      <Link
+        to="#main-menu-toggle"
+        id="main-menu-close"
+        className="menu-close"
+        aria-expanded="false"
+        role="button"
+        aria-controls="main-menu"
+        aria-label="Close the main menu"
+      >
+        <span>Close</span>
+      </Link>
+
 
       <Ul>
-        <Li>
-          <HeaderNavLink>Menu</HeaderNavLink>
-        </Li>
+        <Li><Link to="#home">Home</Link></Li>
+        <Li><Link to="#shows">Shows</Link></Li>
+        <Li><Link to="#music">Music</Link></Li>
+        <Li><Link to="#bio">Bio</Link></Li>
+        <Li><Link to="#press">Press</Link></Li>
+        <Li><Link to="#contact">Contact</Link></Li>
       </Ul>
+
+      <Link
+        to="#main-menu-toggle"
+        className="backdrop"
+        tabindex="-1"
+        hidden
+      />
 
     </MiniNav>
   </Wrapper>
