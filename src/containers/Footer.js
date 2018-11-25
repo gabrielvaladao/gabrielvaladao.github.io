@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Menu from '../components/Menu';
 import Socials from '../components/Socials';
 //
-import smColorLogo from '../images/logo-color-90x102.png';
 import smWhiteLogo from '../images/logo-white-90x104.png';
 //
 const Footer = styled.footer`
@@ -13,17 +12,6 @@ const Footer = styled.footer`
   @media (min-width: 576px) {
     padding: 1.2rem 4rem 2rem 4rem;
   }
-`;
-
-const Nav = styled.nav`
-  padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
-  background-color: ${props => props.theme.color.overlayMedium};
-  border-top: solid 1px ${props => props.theme.color.overlayLight};
-  border-bottom: solid 1px black;
-  width: 150%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 `;
 
 const Logo = styled.img`
@@ -40,9 +28,7 @@ const Socket = styled.p`
 export default () => (
   <Footer>
     <Socials />
-    <Nav>
-      <Menu />
-    </Nav>
+    <Menu />
     <Logo
       src={smWhiteLogo}
       alt="Labrysinthe's logo, a maze-like labrys axe."
