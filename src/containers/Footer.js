@@ -28,7 +28,7 @@ const Socket = styled.p`
 export default () => (
   <Footer>
     <Socials />
-    <Menu />
+    <Menu full />
     <Logo
       src={smWhiteLogo}
       alt="Labrysinthe's logo, a maze-like labrys axe."

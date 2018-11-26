@@ -36,42 +36,69 @@ const Li = styled.li`
     background-color: ${props => props.theme.color.overlayLight};
   }
 `;
+const ResponsiveLi = styled(Li)`
+  display: none;
 
-export default () => (
-  <Nav>
-    <FullMenu>
-      <Li>
-        <StyledNavLinkInner>
-          <NavLink exact to="/#home">
-            Home
-          </NavLink>
-        </StyledNavLinkInner>
-      </Li>
-      <Li>
-        <StyledNavLinkInner>
-          <NavLink to="/#shows">Shows</NavLink>
-        </StyledNavLinkInner>
-      </Li>
-      <Li>
-        <StyledNavLinkInner>
-          <NavLink to="/#music">Music</NavLink>
-        </StyledNavLinkInner>
-      </Li>
-      <Li>
-        <StyledNavLinkInner>
-          <NavLink to="/#bio">Bio</NavLink>
-        </StyledNavLinkInner>
-      </Li>
-      <Li>
-        <StyledNavLinkInner>
-          <NavLink to="/#newsletter">Newsletter</NavLink>
-        </StyledNavLinkInner>
-      </Li>
-      <Li>
-        <StyledNavLinkInner>
-          <NavLink to="/#contact">Contact</NavLink>
-        </StyledNavLinkInner>
-      </Li>
-    </FullMenu>
-  </Nav>
-);
+  @media (min-width: 576px) {
+    display: inline;
+  }
+`;
+
+export default class Menu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { full: this.props.full };
+  }
+  render() {
+    return (
+      <Nav className={this.props.className}>
+        {!this.state.full && (
+          <ul id="short-menu">
+            <ResponsiveLi>
+              <NavLink to="/#newsletter">Newsletter</NavLink>
+            </ResponsiveLi>
+            <Li>
+              <span>Menu</span>
+            </Li>
+          </ul>
+        )}
+        {this.state.full && (
+          <FullMenu>
+            <Li>
+              <StyledNavLinkInner>
+                <NavLink exact to="/#home">
+                  Home
+                </NavLink>
+              </StyledNavLinkInner>
+            </Li>
+            <Li>
+              <StyledNavLinkInner>
+                <NavLink to="/#shows">Shows</NavLink>
+              </StyledNavLinkInner>
+            </Li>
+            <Li>
+              <StyledNavLinkInner>
+                <NavLink to="/#music">Music</NavLink>
+              </StyledNavLinkInner>
+            </Li>
+            <Li>
+              <StyledNavLinkInner>
+                <NavLink to="/#bio">Bio</NavLink>
+              </StyledNavLinkInner>
+            </Li>
+            <Li>
+              <StyledNavLinkInner>
+                <NavLink to="/#newsletter">Newsletter</NavLink>
+              </StyledNavLinkInner>
+            </Li>
+            <Li>
+              <StyledNavLinkInner>
+                <NavLink to="/#contact">Contact</NavLink>
+              </StyledNavLinkInner>
+            </Li>
+          </FullMenu>
+        )}
+      </Nav>
+    );
+  }
+}

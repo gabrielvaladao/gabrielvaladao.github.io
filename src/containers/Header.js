@@ -15,7 +15,7 @@ const Wrapper = styled.header`
   }
 `;
 
-const MiniNav = styled.nav`
+const MenuButton = styled(Menu)`
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -26,7 +26,7 @@ const MiniNav = styled.nav`
   }
 `;
 
-const FullNav = styled(MiniNav)`
+const FullMenu = styled(Menu)`
   display: none;
 
   @media (min-width: 768px) {
@@ -76,49 +76,58 @@ const HeaderNavLink = styled(StyledNavLinkOuter)`
 
 export default () => (
   <Wrapper id="home">
+    <MenuButton />
+    <FullMenu full />
+  </Wrapper>
+);
+/*  ORIGINAL WITH STYLES before refactor
+export default () => (
+  <Wrapper id="home">
     <MiniNav>
       <Ul>
         <ResponsiveLi>
-          <HeaderNavLink to="/#newsletter">Newsletter</HeaderNavLink>
+          <StyledNavLinkOuter>
+            <NavLink to="/#newsletter">Newsletter</NavLink>
+          </StyledNavLinkOuter>
         </ResponsiveLi>
         <Li>
-          <HeaderNavLink>Menu</HeaderNavLink>
+          <StyledNavLinkOuter>Menu</StyledNavLinkOuter>
         </Li>
       </Ul>
     </MiniNav>
     <FullNav>
       <Ul>
         <Li>
-          <HeaderNavLink>
+          <StyledNavLinkOuter>
             <NavLink to="/#home">Home</NavLink>
-          </HeaderNavLink>
+          </StyledNavLinkOuter>
         </Li>
         <Li>
-          <HeaderNavLink>
+          <StyledNavLinkOuter>
             <NavLink to="/#shows">Shows</NavLink>
-          </HeaderNavLink>
+          </StyledNavLinkOuter>
         </Li>
         <Li>
-          <HeaderNavLink>
+          <StyledNavLinkOuter>
             <NavLink to="/#music">Music</NavLink>
-          </HeaderNavLink>
+          </StyledNavLinkOuter>
         </Li>
         <Li>
-          <HeaderNavLink>
+          <StyledNavLinkOuter>
             <NavLink to="/#bio">Bio</NavLink>
-          </HeaderNavLink>
+          </StyledNavLinkOuter>
         </Li>
         <Li>
-          <HeaderNavLink>
+          <StyledNavLinkOuter>
             <NavLink to="/#newsletter">Newsletter</NavLink>
-          </HeaderNavLink>
+          </StyledNavLinkOuter>
         </Li>
         <Li>
-          <HeaderNavLink>
+          <StyledNavLinkOuter>
             <NavLink to="/#contact">Contact</NavLink>
-          </HeaderNavLink>
+          </StyledNavLinkOuter>
         </Li>
       </Ul>
     </FullNav>
   </Wrapper>
-);
+); */
