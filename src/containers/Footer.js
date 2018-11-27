@@ -8,10 +8,6 @@ import smWhiteLogo from '../images/logo-white-90x104.png';
 //
 const Footer = styled.footer`
   padding: 0 0 ${props => props.theme.space.one} 0;
-
-  @media (min-width: 576px) {
-    padding: 1.2rem 4rem 2rem 4rem;
-  }
 `;
 
 const Logo = styled.img`
@@ -28,7 +24,7 @@ const Socket = styled.p`
 export default () => (
   <Footer>
     <Socials />
-    <Menu full />
+    <Menu />
     <Logo
       src={smWhiteLogo}
       alt="Labrysinthe's logo, a maze-like labrys axe."

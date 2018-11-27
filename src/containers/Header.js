@@ -1,12 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-static';
+import { NavLink, Link } from 'react-static';
 import styled from 'styled-components';
 //
 import Menu from '../components/Menu';
 import StyledNavLinkOuter from '../elements/StyledNavLinkOuter';
 //
-const Wrapper = styled.header`
-  top: 0;
+const MainNav = styled.nav`
   font-size: ${props => props.theme.type.large.fontSize};
 
   /* Ignore the base rem size change that otherwise happens at this breakpoint (see App.js) */
@@ -15,7 +14,7 @@ const Wrapper = styled.header`
   }
 `;
 
-const MenuButton = styled(Menu)`
+const MinimalMenu = styled.ol`
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -26,16 +25,56 @@ const MenuButton = styled(Menu)`
   }
 `;
 
-const FullMenu = styled(Menu)`
-  display: none;
+const Drawer = styled.div`
+  background: rgba(32, 8, 40, 0.65);
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  z-index: 999;
+  overflow-x: visible;
+  overflow-y: scroll;
+  transition: left 0.25s ease;
 
-  @media (min-width: 768px) {
-    display: block;
+  &:target,
+  &[aria-expanded='true'] {
+    left: 0;
+    outline: none;
+
+    & + .backdrop {
+      position: absolute;
+      display: block;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      cursor: default;
+    }
+
+    @media (min-width: 576px) {
+      display: none;
+    }
   }
-`;
 
-const Ul = styled.ul`
-  padding-left: 0;
+  @supports (position: fixed) {
+    position: fixed;
+
+    &:target + .backdrop,
+    &[aria-expanded='true'] + .backdrop {
+      position: fixed;
+    }
+  }
+
+  @media (min-width: 576px) {
+    /* Undo positioning of off-canvas menu */
+    background: none;
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+  }
 `;
 
 const Li = styled.li`
@@ -57,7 +96,72 @@ const ResponsiveLi = styled(Li)`
   }
 `;
 
-const HeaderNavLink = styled(StyledNavLinkOuter)`
+const OpenLink = styled(Link)`
+  &:target + .drawer,
+  &[aria-expanded='true'] {
+    transition: left 0.2s ease;
+  }
+
+  @media (min-width: 576px) {
+    display: none;
+  }
+`;
+
+const CloseLink = styled(Link)`
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media (min-width: 576px) {
+    display: none;
+  }
+`;
+
+const StyledMenu = styled(Menu)`
+  margin: 0;
+  padding: 2.5em 0 0;
+  min-height: 100%;
+  width: 200px;
+
+  @media (min-width: 576px) {
+    display: flex;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+`;
+
+const Backdrop = styled(Link)`
+  @media (min-width: 576px) {
+    display: none;
+  }
+`;
+
+export default () => (
+  <MainNav>
+    <MinimalMenu id="short-menu">
+      <ResponsiveLi>
+        <NavLink to="/#newsletter">Newsletter</NavLink>
+      </ResponsiveLi>
+      <Li>
+        <OpenLink to="#menu" id="open" aria-expanded="false">
+          Menu
+        </OpenLink>
+      </Li>
+    </MinimalMenu>
+
+    <Drawer id="menu" className="drawer" aria-expanded="false">
+      <CloseLink to="#open" aria-expanded="false">
+        Close
+      </CloseLink>
+      <StyledMenu />
+    </Drawer>
+    <Backdrop className="backdrop" to="#open" />
+  </MainNav>
+);
+
+/* TODO: remove? Former thing that was in here */
+/* const HeaderNavLink = styled(StyledNavLinkOuter)`
   a {
     color: ${props => props.theme.color.brandWhite};
     text-decoration: none;
@@ -72,62 +176,4 @@ const HeaderNavLink = styled(StyledNavLinkOuter)`
       border-color: ${props => props.theme.color.primaryOverlay};
     }
   }
-`;
-
-export default () => (
-  <Wrapper id="home">
-    <MenuButton />
-    <FullMenu full />
-  </Wrapper>
-);
-/*  ORIGINAL WITH STYLES before refactor
-export default () => (
-  <Wrapper id="home">
-    <MiniNav>
-      <Ul>
-        <ResponsiveLi>
-          <StyledNavLinkOuter>
-            <NavLink to="/#newsletter">Newsletter</NavLink>
-          </StyledNavLinkOuter>
-        </ResponsiveLi>
-        <Li>
-          <StyledNavLinkOuter>Menu</StyledNavLinkOuter>
-        </Li>
-      </Ul>
-    </MiniNav>
-    <FullNav>
-      <Ul>
-        <Li>
-          <StyledNavLinkOuter>
-            <NavLink to="/#home">Home</NavLink>
-          </StyledNavLinkOuter>
-        </Li>
-        <Li>
-          <StyledNavLinkOuter>
-            <NavLink to="/#shows">Shows</NavLink>
-          </StyledNavLinkOuter>
-        </Li>
-        <Li>
-          <StyledNavLinkOuter>
-            <NavLink to="/#music">Music</NavLink>
-          </StyledNavLinkOuter>
-        </Li>
-        <Li>
-          <StyledNavLinkOuter>
-            <NavLink to="/#bio">Bio</NavLink>
-          </StyledNavLinkOuter>
-        </Li>
-        <Li>
-          <StyledNavLinkOuter>
-            <NavLink to="/#newsletter">Newsletter</NavLink>
-          </StyledNavLinkOuter>
-        </Li>
-        <Li>
-          <StyledNavLinkOuter>
-            <NavLink to="/#contact">Contact</NavLink>
-          </StyledNavLinkOuter>
-        </Li>
-      </Ul>
-    </FullNav>
-  </Wrapper>
-); */
+`; */
