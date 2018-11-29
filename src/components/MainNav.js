@@ -3,32 +3,32 @@ import { NavLink, Link } from 'react-static';
 import styled from 'styled-components';
 //
 import Menu from './Menu';
-import StyledNavLinkOuter from '../elements/StyledNavLinkOuter';
 //
 const MainNav = styled.nav`
   font-size: ${props => props.theme.type.large.fontSize};
 
-  /* Ignore the base rem size change that otherwise happens at this breakpoint (see App.js) */
+  /**
+   * Ignore the base rem size change that otherwise
+   * happens at this breakpoint (see App.js)
+   */
   @media (min-width: 576px) {
     font-size: ${props => props.theme.type.primary.fontSize};
   }
 
+  /* MiniNav items, drawer open + close buttons */
   a {
     color: ${props => props.theme.color.brandWhite};
     text-decoration: none;
     padding-bottom: ${props => props.theme.space.quarter};
 
+    /* TODO: don't apply this to close link */
+    &:hover {
+      border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
+    }
+
     &:active {
       color: ${props => props.theme.color.overlayLighter};
       border-color: ${props => props.theme.color.overlayLighter};
-    }
-  }
-
-  @media (min-width: 768px) {
-    a {
-      &:hover {
-        border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
-      }
     }
   }
 `;
@@ -77,6 +77,14 @@ const Drawer = styled.div`
   overflow-y: scroll;
   transition: left 0.25s ease;
 
+  /** 
+   * Close button override. This style doesn't work
+   * in CloseLink below. Needs to be defined here instead.
+   */
+  & > a:hover {
+    border: none;
+  }
+
   &:target {
     left: 0;
     outline: none;
@@ -116,6 +124,51 @@ const Drawer = styled.div`
   }
 `;
 
+const HeaderMenu = styled(Menu)`
+  /* Drawer position */
+  margin: 0;
+  padding: ${props => props.theme.space.three} 0 0;
+  min-height: 100%;
+  width: 200px;
+
+  a:hover {
+    border: none;
+  }
+
+  /* Top position */
+  @media (min-width: 768px) {
+    display: flex;
+    height: auto;
+    width: auto;
+    background: none;
+    justify-content: flex-end;
+
+    li {
+      padding-right: 1ch;
+    }
+
+    li:hover {
+      background: none;
+    }
+
+    a {
+      color: ${props => props.theme.color.brandWhite};
+      text-decoration: none;
+
+      &:hover {
+        border-style: solid;
+        border-width: 0 0 ${props => props.theme.border.size.base} 0;
+        border-color: ${props => props.theme.color.brandWhite};
+      }
+
+      &:active {
+        color: ${props => props.theme.color.overlayLighter};
+        border-color: ${props => props.theme.color.overlayLighter};
+      }
+    }
+  }
+`;
+
 const OpenLink = styled(Link)`
   &:target + .drawer {
     transition: left 0.2s ease;
@@ -126,6 +179,10 @@ const OpenLink = styled(Link)`
   }
 `;
 
+/**
+ * Define styles for CloseLink in Drawer > a above
+ * if they don't work here
+ */
 const CloseLink = styled(Link)`
   position: absolute;
   right: 0.5ch;
@@ -133,22 +190,17 @@ const CloseLink = styled(Link)`
   z-index: 1001;
   font-size: ${props => props.theme.type.h1.fontSize};
 
+  &:hover {
+    color: ${props => props.theme.color.overlayLighter};
+  }
+
+  &:active {
+    color: ${props => props.theme.color.overlayLight};
+    opacity: 0.5;
+  }
+
   @media (min-width: 768px) {
     display: none;
-  }
-`;
-
-const StyledMenu = styled(Menu)`
-  margin: 0;
-  padding: 2.5em 0 0;
-  min-height: 100%;
-  width: 200px;
-
-  @media (min-width: 768px) {
-    display: flex;
-    height: auto;
-    width: auto;
-    background: none;
   }
 `;
 
@@ -182,26 +234,8 @@ export default () => (
       <CloseLink to="#open" role="button" aria-controls="menu" aria-label="Close the main menu">
         &#215;
       </CloseLink>
-      <StyledMenu />
+      <HeaderMenu />
     </Drawer>
     <Backdrop className="backdrop" to="#open" />
   </MainNav>
 );
-
-/* TODO: remove? Former thing that was in here */
-/* const HeaderNavLink = styled(StyledNavLinkOuter)`
-  a {
-    color: ${props => props.theme.color.brandWhite};
-    text-decoration: none;
-    padding-bottom: ${props => props.theme.space.quarter};
-
-    &:hover {
-      border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
-    }
-
-    &:active {
-      color: ${props => props.theme.color.primaryOverlay};
-      border-color: ${props => props.theme.color.primaryOverlay};
-    }
-  }
-`; */

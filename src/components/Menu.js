@@ -2,9 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledNavLinkInner from '../elements/StyledNavLinkInner';
-//
-
 const Ol = styled.ol`
   padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
   background-color: ${props => props.theme.color.overlayMedium};
@@ -32,6 +29,18 @@ const Li = styled.li`
   }
 `;
 
+const A = styled.a`
+  color: ${props => props.theme.color.brandWhite};
+  text-decoration: none;
+
+  &:active {
+    color: ${props => props.theme.color.overlayLighter};
+    /* border-style: solid;
+    border-width: 0 0 ${props => props.theme.border.size.base} 0;
+    border-color: ${props => props.theme.color.overlayLighter}; */
+  }
+`;
+
 /**
  * These need to be <a> elements to avoid
  * auto scroll to top when using <Link> or <NavLink>
@@ -40,34 +49,22 @@ const Li = styled.li`
 export default ({ className, ...props }) => (
   <Ol className={className}>
     <Li>
-      <StyledNavLinkInner>
-        <a href="/#home">Home</a>
-      </StyledNavLinkInner>
+      <A href="/#home">Home</A>
     </Li>
     <Li>
-      <StyledNavLinkInner>
-        <a href="/#shows">Shows</a>
-      </StyledNavLinkInner>
+      <A href="/#shows">Shows</A>
     </Li>
     <Li>
-      <StyledNavLinkInner>
-        <a href="/#music">Music</a>
-      </StyledNavLinkInner>
+      <A href="/#music">Music</A>
     </Li>
     <Li>
-      <StyledNavLinkInner>
-        <a href="/#bio">Bio</a>
-      </StyledNavLinkInner>
+      <A href="/#bio">Bio</A>
     </Li>
     <Li>
-      <StyledNavLinkInner>
-        <a href="/#newsletter">Newsletter</a>
-      </StyledNavLinkInner>
+      <A href="/#newsletter">Newsletter</A>
     </Li>
     <Li>
-      <StyledNavLinkInner>
-        <a href="/#contact">Contact</a>
-      </StyledNavLinkInner>
+      <A href="/#contact">Contact</A>
     </Li>
   </Ol>
 );

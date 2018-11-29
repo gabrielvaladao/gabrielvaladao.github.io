@@ -52,8 +52,8 @@ const Logo = styled.img`
   z-index: -99999;
 `;
 
-export default withSiteData(() => (
-  <Wrapper>
+export default withSiteData(props => (
+  <Wrapper {...props}>
     <SiteTitle>Labrysinthe</SiteTitle>
 
     <Large>
