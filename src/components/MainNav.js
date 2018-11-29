@@ -75,8 +75,7 @@ const Drawer = styled.div`
   overflow-y: scroll;
   transition: left 0.25s ease;
 
-  &:target,
-  &[aria-expanded='true'] {
+  &:target {
     left: 0;
     outline: none;
 
@@ -100,8 +99,7 @@ const Drawer = styled.div`
   @supports (position: fixed) {
     position: fixed;
 
-    &:target + .backdrop,
-    &[aria-expanded='true'] + .backdrop {
+    &:target + .backdrop + .backdrop {
       position: fixed;
     }
   }
@@ -117,8 +115,7 @@ const Drawer = styled.div`
 `;
 
 const OpenLink = styled(Link)`
-  &:target + .drawer,
-  &[aria-expanded='true'] {
+  &:target + .drawer {
     transition: left 0.2s ease;
   }
 
@@ -158,7 +155,7 @@ const Backdrop = styled(Link)`
   }
 `;
 
-/* TODO: add aria-role aria-controls aria-expanded to Open Close and Drawer */
+/* TODO: add role aria-controls aria-expanded to Open Close and Drawer */
 export default () => (
   <MainNav>
     <MiniMenu id="mini-menu">
@@ -166,14 +163,14 @@ export default () => (
         <NavLink to="#newsletter">Newsletter</NavLink>
       </ResponsiveLi>
       <Li>
-        <OpenLink to="#menu" id="open" aria-expanded="false">
+        <OpenLink to="#menu" id="open" role="button" aria-controls="menu">
           Menu
         </OpenLink>
       </Li>
     </MiniMenu>
 
-    <Drawer id="menu" className="drawer" aria-expanded="false">
-      <CloseLink to="#open" aria-expanded="false">
+    <Drawer id="menu" className="drawer">
+      <CloseLink to="#open" role="button" aria-controls="menu">
         Close
       </CloseLink>
       <StyledMenu />
