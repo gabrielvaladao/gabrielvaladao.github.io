@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 
 const Wrapper = styled.ul`
   padding: 0 0 ${props => props.theme.space.two} 0;
@@ -18,13 +19,15 @@ const Li = styled.li`
   margin-right: 0.5ch;
 `;
 
-const Icon = styled(StyledLink)`
+const Icon = styled(Link)`
   font-size: ${props => props.theme.icon.fontSize};
   text-align: center;
   border-radius: 50%;
   border-bottom: none;
   padding: ${props => props.theme.space.half};
   opacity: 0.9;
+  color: ${props => props.theme.color.primary};
+  text-decoration: none;
 
   &:hover {
     background: ${props => props.theme.color.primaryOverlay};
@@ -33,7 +36,7 @@ const Icon = styled(StyledLink)`
   }
 
   &:active {
-    background: ${props => props.theme.color.primaryOverlay};
+    background: ${props => props.theme.color.primaryDark};
     color: white;
   }
 `;

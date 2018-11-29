@@ -1,8 +1,8 @@
 import React from 'react';
-import { withRouteData } from 'react-static';
+import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 import H2 from '../elements/H2';
 
 const Callout = styled.p`
@@ -11,10 +11,19 @@ const Callout = styled.p`
 
 export default withRouteData(({ pressRelease }) => (
   <article aria-labelledby="#headline">
-    <img src="https://i1.sndcdn.com/artworks-000268886459-ilgws3-t500x500.jpg" max-height="500px" width="500px" max-width="100%" alt="Cover art showing a swirling psychedelic vortex behind Labrysinthe's logo, a maze-like labrys axe." />
+    <img
+      src="https://i1.sndcdn.com/artworks-000268886459-ilgws3-t500x500.jpg"
+      max-height="500px"
+      width="500px"
+      max-width="100%"
+      alt="Cover art showing a swirling psychedelic vortex behind Labrysinthe's logo, a maze-like labrys axe."
+    />
     <H2 id="headline">Labrysinthe launches psytrance EP (title) on (date) at (party) at (venue)</H2>
     <span className="release-date">Date</span>
-    <Callout>Psy-sorceress Labrysinthe will play (date) at (party) at (venue), (part of town) to conincide with the release of (EP).</Callout>
+    <Callout>
+      Psy-sorceress Labrysinthe will play (date) at (party) at (venue), (part of town) to conincide
+      with the release of (EP).
+    </Callout>
 
     {/* Commented out to test list view that'll have a 'Read more' link
     
@@ -27,7 +36,16 @@ export default withRouteData(({ pressRelease }) => (
       </p>
     </div> */}
     {/* TODO: This link only to appear on Press list page */}
-    <StyledLink to="" className="read-more" aria-labelledby="headline">Read more</StyledLink>{' / '}
-    <StyledLink to="" className="cta">Buy the EP</StyledLink>
+    <StyledLinkText>
+      <Link to="" className="read-more" aria-labelledby="headline">
+        Read more
+      </Link>
+    </StyledLinkText>
+    {' / '}
+    <StyledLinkText>
+      <Link to="" className="cta">
+        Buy the EP
+      </Link>
+    </StyledLinkText>
   </article>
 ));

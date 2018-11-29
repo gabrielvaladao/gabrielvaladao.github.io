@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-static';
 //
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 import H1 from '../elements/H1';
-
+//
 export default () => (
   <div>
     <H1>404</H1>
@@ -10,9 +11,11 @@ export default () => (
       The page you are trying to access is not of this dimension.
       <br />
       Please try another link or head{' '}
-      <StyledLink exact to="/">
-        Home
-      </StyledLink>
+      <StyledLinkText>
+        <Link exact to="/">
+          Home
+        </Link>
+      </StyledLinkText>
     </p>
   </div>
 );

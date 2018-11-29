@@ -4,7 +4,7 @@ import styled from 'styled-components';
 //
 import H4 from '../elements/H4';
 import Button from '../elements/Button';
-import StyledLink from '../elements/StyledLink';
+import StyledLinkText from '../elements/StyledLinkText';
 
 /* TODO: Show logic
   A show has one of two states: Upcoming or Previous.
@@ -75,11 +75,11 @@ const Li = styled.li`
 const Cta = styled(Button)`
   width: 100%;
   height: 100%;
-`;
 
-const UnstyledLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 /* TODO: Refactor data structure */
@@ -102,14 +102,17 @@ export default ({
     <When>{startDate}</When>
     <H4 id="show-title">{title}</H4>
     <Host>
-      <p>
-        Hosted by <StyledLink to={hostUrl}>{hostName}</StyledLink>
-      </p>
+      Hosted by{' '}
+      <StyledLinkText>
+        <Link to={hostUrl}>{hostName}</Link>
+      </StyledLinkText>
     </Host>
     <Where>
-      <StyledLink to={venueUrl} id="venue-name">
-        {venueName}
-      </StyledLink>
+      <StyledLinkText>
+        <Link to={venueUrl} id="venue-name">
+          {venueName}
+        </Link>
+      </StyledLinkText>
       <br />
       {venueAddress}
       {venueAddress2 && (
@@ -119,26 +122,28 @@ export default ({
         </React.Fragment>
       )}
       <br />
-      <StyledLink to={venueGMapsUrl} aria-labelledby="venue-name">
-        Google Maps
-      </StyledLink>
+      <StyledLinkText>
+        <Link to={venueGMapsUrl} aria-labelledby="venue-name">
+          Google Maps
+        </Link>
+      </StyledLinkText>
     </Where>
     <CtaList>
       {fbEventUrl && (
         <Li>
           <Cta>
-            <UnstyledLink to={fbEventUrl} aria-labelledby="show-title">
+            <Link to={fbEventUrl} aria-labelledby="show-title">
               FACEBOOK
-            </UnstyledLink>
+            </Link>
           </Cta>
         </Li>
       )}
       {ctaUrl && (
         <Li>
           <Cta>
-            <UnstyledLink to={ctaUrl} aria-labelledby="show-title">
+            <Link to={ctaUrl} aria-labelledby="show-title">
               {ctaText}
-            </UnstyledLink>
+            </Link>
           </Cta>
         </Li>
       )}

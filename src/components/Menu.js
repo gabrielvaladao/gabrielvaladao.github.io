@@ -1,10 +1,19 @@
 import React from 'react';
+import { NavLink } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledNavLink from '../elements/StyledNavLink';
+import StyledNavLinkInner from '../elements/StyledNavLinkInner';
 //
-const Ul = styled.ul`
-  padding-left: 0;
+
+const Ol = styled.ol`
+  padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
+  background-color: ${props => props.theme.color.overlayMedium};
+  border-top: solid 1px ${props => props.theme.color.overlayLight};
+  border-bottom: solid 1px black;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 const Li = styled.li`
@@ -23,27 +32,42 @@ const Li = styled.li`
   }
 `;
 
-export default () => (
-  <Ul>
+/**
+ * These need to be <a> elements to avoid
+ * auto scroll to top when using <Link> or <NavLink>
+ */
+
+export default ({ className, ...props }) => (
+  <Ol className={className}>
     <Li>
-      <StyledNavLink exact to="/#home">
-        Home
-      </StyledNavLink>
+      <StyledNavLinkInner>
+        <a href="/#home">Home</a>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#shows">Shows</StyledNavLink>
+      <StyledNavLinkInner>
+        <a href="/#shows">Shows</a>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#music">Music</StyledNavLink>
+      <StyledNavLinkInner>
+        <a href="/#music">Music</a>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#bio">Bio</StyledNavLink>
+      <StyledNavLinkInner>
+        <a href="/#bio">Bio</a>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#newsletter">Newsletter</StyledNavLink>
+      <StyledNavLinkInner>
+        <a href="/#newsletter">Newsletter</a>
+      </StyledNavLinkInner>
     </Li>
     <Li>
-      <StyledNavLink to="/#contact">Contact</StyledNavLink>
+      <StyledNavLinkInner>
+        <a href="/#contact">Contact</a>
+      </StyledNavLinkInner>
     </Li>
-  </Ul>
+  </Ol>
 );
