@@ -7,7 +7,7 @@ import StyledNavLinkInner from '../elements/StyledNavLinkInner';
 
 /* TODO: put styles in a wrapper at some ancestor level */
 
-const Nav = styled.nav`
+const Ol = styled.ol`
   padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
   background-color: ${props => props.theme.color.overlayMedium};
   border-top: solid 1px ${props => props.theme.color.overlayLight};
@@ -20,11 +20,6 @@ const Nav = styled.nav`
   ul {
     padding-left: 0;
   }
-`;
-
-const Ol = styled.ol`
-  list-style-type: none;
-  padding-left: 0;
 `;
 
 const Li = styled.li`
@@ -41,40 +36,47 @@ const Li = styled.li`
     color: white;
     background-color: ${props => props.theme.color.overlayLight};
   }
+
+  /* @media (min-width: 768px) {
+
+  } */
 `;
+
+/**
+ * These need to be <a> elements to avoid
+ * auto scroll to top when using <Link> or <NavLink>
+ */
 
 export default ({ className, ...props }) => (
   <Ol className={className}>
     <Li>
       <StyledNavLinkInner>
-        <NavLink exact to="/#home">
-          Home
-        </NavLink>
+        <a href="/#home">Home</a>
       </StyledNavLinkInner>
     </Li>
     <Li>
       <StyledNavLinkInner>
-        <NavLink to="/#shows">Shows</NavLink>
+        <a href="/#shows">Shows</a>
       </StyledNavLinkInner>
     </Li>
     <Li>
       <StyledNavLinkInner>
-        <NavLink to="/#music">Music</NavLink>
+        <a href="/#music">Music</a>
       </StyledNavLinkInner>
     </Li>
     <Li>
       <StyledNavLinkInner>
-        <NavLink to="/#bio">Bio</NavLink>
+        <a href="/#bio">Bio</a>
       </StyledNavLinkInner>
     </Li>
     <Li>
       <StyledNavLinkInner>
-        <NavLink to="/#newsletter">Newsletter</NavLink>
+        <a href="/#newsletter">Newsletter</a>
       </StyledNavLinkInner>
     </Li>
     <Li>
       <StyledNavLinkInner>
-        <NavLink to="/#contact">Contact</NavLink>
+        <a href="/#contact">Contact</a>
       </StyledNavLinkInner>
     </Li>
   </Ol>
