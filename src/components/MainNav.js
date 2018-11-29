@@ -13,19 +13,21 @@ const MainNav = styled.nav`
     font-size: ${props => props.theme.type.primary.fontSize};
   }
 
+  a {
+    color: ${props => props.theme.color.brandWhite};
+    text-decoration: none;
+    padding-bottom: ${props => props.theme.space.quarter};
+
+    &:active {
+      color: ${props => props.theme.color.overlayLighter};
+      border-color: ${props => props.theme.color.overlayLighter};
+    }
+  }
+
   @media (min-width: 768px) {
     a {
-      color: ${props => props.theme.color.brandWhite};
-      text-decoration: none;
-      padding-bottom: ${props => props.theme.space.quarter};
-
       &:hover {
         border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
-      }
-
-      &:active {
-        color: ${props => props.theme.color.primaryOverlay};
-        border-color: ${props => props.theme.color.primaryOverlay};
       }
     }
   }
@@ -126,9 +128,10 @@ const OpenLink = styled(Link)`
 
 const CloseLink = styled(Link)`
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0.5ch;
+  top: 0.5ch;
   z-index: 1001;
+  font-size: ${props => props.theme.type.h1.fontSize};
 
   @media (min-width: 768px) {
     display: none;
@@ -163,15 +166,21 @@ export default () => (
         <NavLink to="#newsletter">Newsletter</NavLink>
       </ResponsiveLi>
       <Li>
-        <OpenLink to="#menu" id="open" role="button" aria-controls="menu">
+        <OpenLink
+          to="#menu"
+          id="open"
+          role="button"
+          aria-controls="menu"
+          aria-label="Open the main menu"
+        >
           Menu
         </OpenLink>
       </Li>
     </MiniMenu>
 
     <Drawer id="menu" className="drawer">
-      <CloseLink to="#open" role="button" aria-controls="menu">
-        Close
+      <CloseLink to="#open" role="button" aria-controls="menu" aria-label="Close the main menu">
+        &#215;
       </CloseLink>
       <StyledMenu />
     </Drawer>

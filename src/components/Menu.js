@@ -5,21 +5,15 @@ import styled from 'styled-components';
 import StyledNavLinkInner from '../elements/StyledNavLinkInner';
 //
 
-/* TODO: put styles in a wrapper at some ancestor level */
-
 const Ol = styled.ol`
   padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
   background-color: ${props => props.theme.color.overlayMedium};
   border-top: solid 1px ${props => props.theme.color.overlayLight};
   border-bottom: solid 1px black;
-  width: 150%;
+  width: 100%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
-  ul {
-    padding-left: 0;
-  }
 `;
 
 const Li = styled.li`
@@ -36,10 +30,6 @@ const Li = styled.li`
     color: white;
     background-color: ${props => props.theme.color.overlayLight};
   }
-
-  /* @media (min-width: 768px) {
-
-  } */
 `;
 
 /**
