@@ -38,7 +38,7 @@ const MiniMenu = styled.ol`
   top: 1rem;
   right: 1rem;
   padding: ${props => props.theme.space.one} 0 0 0;
-  z-index: 1001;
+  z-index: 999;
   list-style-type: none;
 
   @media (min-width: 768px) {
@@ -62,20 +62,19 @@ const ResponsiveLi = styled(Li)`
 
   @media (min-width: 576px) {
     display: inline;
-    z-index: 1001;
   }
 `;
 
 const Drawer = styled.div`
   background: rgba(32, 8, 40, 0.65);
   position: absolute;
-  left: -200px;
+  right: -60vw;
   top: 0;
   height: 100%;
-  z-index: 999;
+  z-index: 1001;
   overflow-x: visible;
   overflow-y: scroll;
-  transition: left 0.25s ease;
+  transition: right 0.25s ease;
 
   /** 
    * Close button override. This style doesn't work
@@ -86,14 +85,14 @@ const Drawer = styled.div`
   }
 
   &:target {
-    left: 0;
+    right: 0;
     outline: none;
 
     & + .backdrop {
       position: absolute;
       display: block;
       content: '';
-      left: 0;
+      right: 0;
       top: 0;
       width: 100%;
       height: 100%;
@@ -118,7 +117,7 @@ const Drawer = styled.div`
     /* Undo positioning of off-canvas menu */
     background: none;
     position: relative;
-    left: auto;
+    right: auto;
     top: auto;
     height: auto;
   }
@@ -129,7 +128,12 @@ const HeaderMenu = styled(Menu)`
   margin: 0;
   padding: ${props => props.theme.space.three} 0 0;
   min-height: 100%;
-  width: 200px;
+  width: 60vw;
+
+  li {
+    text-align: left;
+    padding-left: ${props => props.theme.space.two};
+  }
 
   a:hover {
     border: none;
@@ -171,7 +175,7 @@ const HeaderMenu = styled(Menu)`
 
 const OpenLink = styled(Link)`
   &:target + .drawer {
-    transition: left 0.2s ease;
+    transition: right 0.2s ease;
   }
 
   @media (min-width: 768px) {
@@ -187,7 +191,7 @@ const CloseLink = styled(Link)`
   position: absolute;
   right: 0.5ch;
   top: 0.5ch;
-  z-index: 1001;
+  z-index: 1002;
   font-size: ${props => props.theme.type.h1.fontSize};
 
   &:hover {
