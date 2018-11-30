@@ -36,7 +36,7 @@ const MainNav = styled.nav`
 
 const MiniMenu = styled.ol`
   position: absolute;
-  top: 1rem;
+  top: -1rem;
   right: 1rem;
   padding: ${props => props.theme.space.one} 0 0 0;
   z-index: 998;
@@ -48,7 +48,6 @@ const MiniMenu = styled.ol`
 `;
 
 const Li = styled.li`
-  font-size: 0.9em;
   text-align: right;
   display: inline;
   padding-right: 1ch;
@@ -162,6 +161,7 @@ const HeaderMenu = styled(Menu)`
   /* Top position */
   @media (min-width: 768px) {
     display: flex;
+    top: -1rem;
     height: auto;
     width: auto;
     background: none;
