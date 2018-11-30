@@ -38,7 +38,7 @@ const MiniMenu = styled.ol`
   top: 1rem;
   right: 1rem;
   padding: ${props => props.theme.space.one} 0 0 0;
-  z-index: 999;
+  z-index: 998;
   list-style-type: none;
 
   @media (min-width: 768px) {
@@ -66,14 +66,16 @@ const ResponsiveLi = styled(Li)`
 `;
 
 const Drawer = styled.div`
-  background: rgba(32, 8, 40, 0.65);
+  background-color: ${props => props.theme.color.overlayDark};
   position: absolute;
   right: -60vw;
+  /* hide box shadow while drawer is closed */
+  box-shadow: 8px 0 8px rgba(0, 0, 0, 0.7);
   top: 0;
   height: 100%;
-  z-index: 1001;
+  z-index: 1000;
   overflow-x: visible;
-  overflow-y: scroll;
+  overflow-y: hidden;
   transition: right 0.25s ease;
 
   /** 
@@ -84,9 +86,14 @@ const Drawer = styled.div`
     border: none;
   }
 
+  & > a:active {
+    color: ${props => props.theme.color.overlayLight};
+  }
+
   &:target {
     right: 0;
     outline: none;
+    box-shadow: -5px 0 12px rgba(0, 0, 0, 0.7);
 
     & + .backdrop {
       position: absolute;
@@ -96,8 +103,9 @@ const Drawer = styled.div`
       top: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.7);
       cursor: default;
+      z-index: 999;
     }
 
     @media (min-width: 768px) {
@@ -108,7 +116,7 @@ const Drawer = styled.div`
   @supports (position: fixed) {
     position: fixed;
 
-    &:target + .backdrop + .backdrop {
+    &:target + .backdrop {
       position: fixed;
     }
   }
@@ -148,6 +156,7 @@ const HeaderMenu = styled(Menu)`
     justify-content: flex-end;
 
     li {
+      padding-left: 0;
       padding-right: 1ch;
     }
 
@@ -191,16 +200,11 @@ const CloseLink = styled(Link)`
   position: absolute;
   right: 0.5ch;
   top: 0.5ch;
-  z-index: 1002;
+  z-index: 1001;
   font-size: ${props => props.theme.type.h1.fontSize};
 
   &:hover {
     color: ${props => props.theme.color.overlayLighter};
-  }
-
-  &:active {
-    color: ${props => props.theme.color.overlayLight};
-    opacity: 0.5;
   }
 
   @media (min-width: 768px) {

@@ -61,7 +61,7 @@ const BaseStyles = styled.div`
 `;
 
 const StyledHeader = styled(Header)`
-  padding: 0 4rem 0 4rem;
+  padding: 0 2rem 0 2rem;
 `;
 
 const Main = styled.main`
@@ -84,10 +84,10 @@ const App = () => (
   <Router>
     <ThemeProvider theme={theme}>
       <BaseStyles>
-        <StyledHeader />
+        <StyledHeader id="home" />
 
         <Main>
-          <Home id="home" />
+          <Home />
           <PaddedDiv>
             <Shows id="shows" />
             <Music id="music" />

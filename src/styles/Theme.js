@@ -52,7 +52,7 @@ export default () => ({
     brandBlack: `rgba(8, 0, 15, 1)`,
     brandGrayDark: `rgba(21, 15, 24, 1)`,
     brandWhite: `rgba(238, 237, 239, 1)`,
-    overlayDark: `rgba(8, 0, 15, 0.7)`,
+    overlayDark: `rgba(8, 0, 15, 0.95)`,
     overlayMedium: `rgba(255, 255, 255, 0.04)`,
     overlayLight: `rgba(255, 255, 255, 0.15)`,
     overlayLighter: `rgba(255, 255, 255, 0.7)`,
