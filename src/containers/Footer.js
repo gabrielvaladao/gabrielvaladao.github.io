@@ -10,6 +10,11 @@ const Footer = styled.footer`
   padding: 0 0 ${props => props.theme.space.one} 0;
 `;
 
+const StyledMenu = styled(Menu)`
+  border-bottom: 1px solid black;
+  padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
+`;
+
 const Logo = styled.img`
   margin: 0 auto;
   display: block;
@@ -24,7 +29,7 @@ const Socket = styled.p`
 export default () => (
   <Footer>
     <Socials />
-    <Menu />
+    <StyledMenu />
     <Logo
       src={smWhiteLogo}
       alt="Labrysinthe's logo, a maze-like labrys axe."

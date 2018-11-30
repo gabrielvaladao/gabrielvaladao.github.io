@@ -71,6 +71,7 @@ export default () => ({
     one: `${lineHeight}rem`,
     two: `${lineHeight * 2}rem`,
     three: `${lineHeight * 3}rem`,
+    four: `${lineHeight * 4}rem`,
     eight: `${lineHeight * 8}rem`,
     ten: `${lineHeight * 10}rem`,
     golden: `${lineHeight * ratio1 * 12}rem`
@@ -90,7 +91,8 @@ export default () => ({
     },
     h1: {
       fontFamily: primary,
-      fontSize: `${ratio1 * 2}em`
+      fontSize: `${ratio1 * 2}em`,
+      lineHeight: `${lineHeight * 3}rem`
     },
     h2: {
       fontFamily: primary,

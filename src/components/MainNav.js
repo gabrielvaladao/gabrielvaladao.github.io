@@ -17,9 +17,10 @@ const MainNav = styled.nav`
 
   /* MiniNav items, drawer open + close buttons */
   a {
+    display: inline-block;
     color: ${props => props.theme.color.brandWhite};
     text-decoration: none;
-    padding-bottom: ${props => props.theme.space.quarter};
+    line-height: ${props => props.theme.type.h2.lineHeight};
 
     /* TODO: don't apply this to close link */
     &:hover {
@@ -68,20 +69,27 @@ const ResponsiveLi = styled(Li)`
 const Drawer = styled.div`
   background-color: ${props => props.theme.color.overlayDark};
   position: absolute;
-  right: -60vw;
+  right: -75vw;
   /* hide box shadow while drawer is closed */
   box-shadow: 8px 0 8px rgba(0, 0, 0, 0.7);
   top: 0;
   height: 100%;
   z-index: 1000;
   overflow-x: visible;
-  overflow-y: hidden;
+  overflow-y: scroll;
   transition: right 0.25s ease;
 
   /** 
    * Close button override. This style doesn't work
    * in CloseLink below. Needs to be defined here instead.
    */
+
+  & > a {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
   & > a:hover {
     border: none;
   }
@@ -128,19 +136,23 @@ const Drawer = styled.div`
     right: auto;
     top: auto;
     height: auto;
+    box-shadow: none;
   }
 `;
 
 const HeaderMenu = styled(Menu)`
   /* Drawer position */
   margin: 0;
-  padding: ${props => props.theme.space.three} 0 0;
   min-height: 100%;
-  width: 60vw;
+  width: 75vw;
 
   li {
     text-align: left;
     padding-left: ${props => props.theme.space.two};
+  }
+
+  li:first-of-type {
+    margin-top: ${props => props.theme.space.four};
   }
 
   a:hover {
@@ -154,10 +166,16 @@ const HeaderMenu = styled(Menu)`
     width: auto;
     background: none;
     justify-content: flex-end;
+    box-shadow: none;
+    padding: ${props => props.theme.space.one};
 
     li {
       padding-left: 0;
       padding-right: 1ch;
+    }
+
+    li:first-of-type {
+      margin-top: 0;
     }
 
     li:hover {
@@ -205,10 +223,6 @@ const CloseLink = styled(Link)`
 
   &:hover {
     color: ${props => props.theme.color.overlayLighter};
-  }
-
-  @media (min-width: 768px) {
-    display: none;
   }
 `;
 

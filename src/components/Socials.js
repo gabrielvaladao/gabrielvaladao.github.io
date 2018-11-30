@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import StyledLinkText from '../elements/StyledLinkText';
 
 const Wrapper = styled.ul`
-  padding: 0 0 ${props => props.theme.space.two} 0;
+  padding: 0 0 ${props => props.theme.space.three} 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;

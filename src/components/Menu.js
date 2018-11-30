@@ -1,12 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-static';
 import styled from 'styled-components';
 //
 const Ol = styled.ol`
-  padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
   background-color: ${props => props.theme.color.overlayMedium};
   border-top: solid 1px ${props => props.theme.color.overlayLight};
-  border-bottom: solid 1px black;
   width: 100%;
   position: relative;
   left: 50%;
