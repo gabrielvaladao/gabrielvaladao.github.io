@@ -185,10 +185,12 @@ const HeaderMenu = styled(Menu)`
     a {
       color: ${props => props.theme.color.brandWhite};
       text-decoration: none;
+      border-style: solid;
+      border-width: 0 0 ${props => props.theme.border.size.base} 0;
+      border-color: rgba(0, 0, 0, 0);
 
       &:hover {
         border-style: solid;
-        border-width: 0 0 ${props => props.theme.border.size.base} 0;
         border-color: ${props => props.theme.color.brandWhite};
       }
 
