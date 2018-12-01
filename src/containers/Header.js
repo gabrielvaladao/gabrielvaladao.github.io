@@ -5,7 +5,6 @@ import styled from 'styled-components';
 //
 import MainNav from '../components/MainNav';
 //
-
 const Header = styled.header`
   position: sticky;
   z-index: 900;

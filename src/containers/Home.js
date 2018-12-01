@@ -24,7 +24,7 @@ const SiteTitle = styled(H1)`
 
   @media (min-width: 576px) {
     letter-spacing: 0.12ch;
-    padding-top: ${props => props.theme.space.ten};
+    padding-top: ${props => props.theme.space.eight};
     padding-bottom: ${props => props.theme.space.two};
   }
 
