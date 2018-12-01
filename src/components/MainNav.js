@@ -157,6 +157,7 @@ const HeaderMenu = styled(Menu)`
     justify-content: flex-end;
     box-shadow: none;
     padding: ${props => props.theme.space.half} 0;
+    font-size: ${props => props.theme.type.smaller.fontSize};
 
     li {
       padding-left: 0;
@@ -193,6 +194,10 @@ const HeaderMenu = styled(Menu)`
         border-color: ${props => props.theme.color.overlayLighter};
       }
     }
+  }
+
+  @media (min-width: 992px) {
+    font-size: ${props => props.theme.type.small.fontSize};
   }
 `;
 
