@@ -3,7 +3,7 @@ import styled from 'styled-components';
 //
 const H1 = styled.h1`
   margin-top: 0;
-  padding-top: ${props => props.theme.space.three};
+  padding-top: ${props => props.theme.space.four};
   text-align: center;
   font-family: ${props => props.theme.type.h1.fontFamily};
   font-weight: ${props => props.theme.type.h1.fontWeight};

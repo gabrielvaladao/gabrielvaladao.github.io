@@ -5,24 +5,13 @@ import styled from 'styled-components';
 import Menu from './Menu';
 //
 const MainNav = styled.nav`
-  font-size: ${props => props.theme.type.large.fontSize};
-
-  /**
-   * Ignore the base rem size change that otherwise
-   * happens at this breakpoint (see App.js)
-   */
-  @media (min-width: 576px) {
-    font-size: ${props => props.theme.type.primary.fontSize};
-  }
-
   /* MiniNav items, drawer open + close buttons */
   a {
     display: inline-block;
     color: ${props => props.theme.color.brandWhite};
     text-decoration: none;
-    line-height: ${props => props.theme.type.h2.lineHeight};
+    line-height: ${props => props.theme.type.primary.lineHeight};
 
-    /* TODO: don't apply this to close link */
     &:hover {
       border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
     }
@@ -36,7 +25,7 @@ const MainNav = styled.nav`
 
 const MiniMenu = styled.ol`
   position: absolute;
-  top: -1rem;
+  top: 0;
   right: 1rem;
   padding: ${props => props.theme.space.one} 0 0 0;
   z-index: 998;
@@ -161,17 +150,21 @@ const HeaderMenu = styled(Menu)`
   /* Top position */
   @media (min-width: 768px) {
     display: flex;
-    top: -1rem;
+    top: 0;
     height: auto;
     width: auto;
     background: none;
     justify-content: flex-end;
     box-shadow: none;
-    padding: ${props => props.theme.space.one};
+    padding: ${props => props.theme.space.half} 0;
 
     li {
       padding-left: 0;
       padding-right: 1ch;
+
+      &:last-child {
+        padding-right: 0;
+      }
     }
 
     li:first-of-type {
@@ -257,7 +250,7 @@ export default () => (
 
     <Drawer id="menu" className="drawer">
       <CloseLink to="#open" role="button" aria-controls="menu" aria-label="Close the main menu">
-        &#215;
+        <span role="img">&#215;</span>
       </CloseLink>
       <HeaderMenu />
     </Drawer>

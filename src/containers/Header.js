@@ -8,10 +8,11 @@ import MainNav from '../components/MainNav';
 
 const Header = styled.header`
   position: sticky;
-  top: 0;
-  background: ${props => props.theme.color.overlayDark};
-  height: ${props => props.theme.space.three};
   z-index: 900;
+  top: 0;
+  height: ${props => props.theme.space.three};
+  background: ${props => props.theme.color.overlayDark};
+  border-bottom: 1px solid ${props => props.theme.color.overlayLight};
 `;
 
 export default props => (

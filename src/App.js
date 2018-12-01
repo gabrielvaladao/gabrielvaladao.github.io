@@ -61,7 +61,7 @@ const BaseStyles = styled.div`
 `;
 
 const StyledHeader = styled(Header)`
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem;
 `;
 
 const Main = styled.main`
