@@ -20,6 +20,10 @@ const Li = styled.li`
  * For user-friendliness, let client paste in a full embed code.
  * App should extract the track ID and apply brand color to play button.
  */
+
+/**
+ * TODO: iframe title attribs have been added by hand to satisfy eslint a11y error. generate these.
+ */
 export default withRouteData(({ id, ...props }) => (
   <section id={id}>
     <H1>Music</H1>
@@ -41,6 +45,7 @@ export default withRouteData(({ id, ...props }) => (
               frameBorder="no"
               allow="autoplay"
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/489549831&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+              title="Fire Loves Sugar (Teaser)"
             />
           ]}
         />
@@ -56,6 +61,7 @@ export default withRouteData(({ id, ...props }) => (
               frameBorder="no"
               allow="autoplay"
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/368663576&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+              title="Shake the Dust (Teaser)"
             />
           ]}
         />
@@ -71,6 +77,7 @@ export default withRouteData(({ id, ...props }) => (
               frameBorder="no"
               allow="autoplay"
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343832514&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+              title="Delicious Monster EP - Previews"
             />
           ]}
           cta={{
@@ -90,6 +97,7 @@ export default withRouteData(({ id, ...props }) => (
               frameBorder="no"
               allow="autoplay"
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/342470222&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+              title="Far and Away"
             />
           ]}
         />

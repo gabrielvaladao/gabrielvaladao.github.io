@@ -39,25 +39,26 @@ const A = styled.a`
  * These need to be <a> elements to avoid
  * auto scroll to top when using <Link> or <NavLink>
  */
+/* TODO: Links + keys were added manually. Generate them from routes.  */
 
 export default ({ className, ...props }) => (
   <Ol className={className}>
-    <Li>
+    <Li key="home">
       <A href="/#home">Home</A>
     </Li>
-    <Li>
+    <Li key="shows">
       <A href="/#shows">Shows</A>
     </Li>
-    <Li>
+    <Li key="music">
       <A href="/#music">Music</A>
     </Li>
-    <Li>
+    <Li key="bio">
       <A href="/#bio">Bio</A>
     </Li>
-    <Li>
+    <Li key="newsletter">
       <A href="/#newsletter">Newsletter</A>
     </Li>
-    <Li>
+    <Li key="contact">
       <A href="/#contact">Contact</A>
     </Li>
   </Ol>

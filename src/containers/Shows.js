@@ -16,12 +16,7 @@ const Ul = styled.ul`
 `;
 
 /**
- * There's a production bug whereby the list discs
- * show up intermittently and mess with layout.
- * The following rule:
- *   list-style-position: outside
- * should ideally not be necessary but it might
- * help the layout in buggy cases.
+ * TODO: Generate keys from data. These have been added manually.
  */
 const Li = styled.li`
   list-style-type: none;
@@ -36,7 +31,7 @@ export default withRouteData(({ id, ...props }) => (
     <Section aria-labelledby="shows-upcoming">
       <H2 id="shows-upcoming">Upcoming</H2>
       <Ul>
-        <Li>
+        <Li key="2018-12-15">
           <Show
             title="PMS&mdash;The L-Night party"
             hostName="L-Night"
@@ -63,7 +58,7 @@ export default withRouteData(({ id, ...props }) => (
       <H2 id="shows-previous">Previous</H2>
       <H3>2017</H3>
       <Ul>
-        <Li>
+        <Li key="2017-11-04">
           <Show
             title="Electronic Events Experience Exchange (EEEE&nbsp;Party!!!!)"
             hostName="Fractal Portal"

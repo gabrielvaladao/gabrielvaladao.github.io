@@ -13,7 +13,8 @@ const MainNav = styled.nav`
     line-height: ${({ theme }) => theme.type.primary.lineHeight};
 
     &:hover {
-      border-bottom: solid ${({ theme }) => theme.border.size.base} ${({ theme }) => theme.color.brandWhite};
+      border-bottom: solid ${({ theme }) => theme.border.size.base}
+        ${({ theme }) => theme.color.brandWhite};
     }
 
     &:active {
@@ -237,10 +238,10 @@ const Backdrop = styled(Link)`
 export default () => (
   <MainNav>
     <MiniMenu id="mini-menu">
-      <ResponsiveLi>
+      <ResponsiveLi key="newsletter">
         <NavLink to="#newsletter">Newsletter</NavLink>
       </ResponsiveLi>
-      <Li>
+      <Li key="open">
         <OpenLink
           to="#menu"
           id="open"
