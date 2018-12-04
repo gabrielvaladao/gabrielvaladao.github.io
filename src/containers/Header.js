@@ -5,7 +5,6 @@ import styled from 'styled-components';
 //
 import MainNav from '../components/MainNav';
 import H1 from '../elements/H1';
-import Waypoint from 'react-waypoint';
 //
 
 /* Conditional styles change on scroll */
@@ -16,7 +15,7 @@ const borderColor = ({ scrolled, theme }) =>
 
 const boxShadow = ({ scrolled }) => (scrolled ? '0 4px 8px rgba(0, 0, 0, 0.7)' : 'none');
 
-const Wrapper = styled.header`
+const Header = styled.header`
   position: sticky;
   z-index: 900;
   top: 0;
@@ -42,22 +41,13 @@ const SiteTitle = styled(H1)`
   }
 `;
 
-export default class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { scrolled: true };
-  }
-
-  render() {
-    return (
-      <Wrapper scrolled={this.state.scrolled} {...this.props}>
-        {this.state.scrolled && (
-          <SiteTitle>
-            <a href="#home">Labrysinthe</a>
-          </SiteTitle>
-        )}
-        <MainNav />
-      </Wrapper>
-    );
-  }
-}
+export default props => (
+  <Header {...props}>
+    {props.scrolled && (
+      <SiteTitle>
+        <a href="#home">Labrysinthe</a>
+      </SiteTitle>
+    )}
+    <MainNav />
+  </Header>
+);

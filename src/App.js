@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 //
 import { Router } from 'react-static';
 import Routes from 'react-static-routes';
+import Waypoint from 'react-waypoint';
 //
 import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import styledNormalize from 'styled-normalize';
@@ -79,28 +80,46 @@ const PaddedDiv = styled.div`
 const StyledFooter = styled(Footer)`
   padding: ${({ theme }) => theme.space.one} 0 ${({ theme }) => theme.space.two};
 `;
+// TODO: try tricky offset
+// topOffset={`{({ theme }) => theme.space.three}`}
 
-const App = () => (
-  <Router>
-    <ThemeProvider theme={theme}>
-      <BaseStyles>
-        <StyledHeader />
+class App extends Component {
+  state = { scrolled: false };
 
-        <Main>
-          <Home id="home" />
-          <PaddedDiv>
-            <Shows id="shows" />
-            <Music id="music" />
-            <Bio id="bio" />
-            <Newsletter id="newsletter" />
-            <Contact id="contact" />
-          </PaddedDiv>
-        </Main>
+  handleScrollDown() {
+    this.setState({ scrolled: true });
+    console.log('on a jet plane');
+  }
 
-        <StyledFooter />
-      </BaseStyles>
-    </ThemeProvider>
-  </Router>
-);
+  handleScrollToTop() {
+    this.setState({ scrolled: false });
+    console.log('back again');
+  }
+
+  render() {
+    return (
+      <Router>
+        <ThemeProvider theme={theme}>
+          <BaseStyles>
+            <StyledHeader scrolled={this.state.scrolled} />
+            <Waypoint onLeave={this.handleScrollDown} onEnter={this.handleScrollToTop} />
+            <Main>
+              <Home id="home" />
+              <PaddedDiv>
+                <Shows id="shows" />
+                <Music id="music" />
+                <Bio id="bio" />
+                <Newsletter id="newsletter" />
+                <Contact id="contact" />
+              </PaddedDiv>
+            </Main>
+
+            <StyledFooter />
+          </BaseStyles>
+        </ThemeProvider>
+      </Router>
+    );
+  }
+}
 
 export default hot(module)(App);
