@@ -11,10 +11,10 @@ import Waypoint from 'react-waypoint';
 /* Conditional styles change on scroll */
 const justifyContent = props => (props.scrolled ? 'space-between' : 'flex-end');
 
-const borderColor = props => (props.scrolled ?props.theme.color.overlayLight : props.theme.color.overlayDark);
+const borderColor = props =>
+  props.scrolled ? props.theme.color.overlayLight : props.theme.color.overlayDark;
 
-const boxShadow = props => (props.scrolled ? 
-  '0 4px 8px rgba(0, 0, 0, 0.7)' : 'none');
+const boxShadow = props => (props.scrolled ? '0 4px 8px rgba(0, 0, 0, 0.7)' : 'none');
 
 const Wrapper = styled.header`
   position: sticky;
@@ -35,19 +35,26 @@ const SiteTitle = styled(H1)`
   text-transform: uppercase;
   text-align: left;
   padding-top: 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export default class Header extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
-    this.state = { scrolled: false };
+    this.state = { scrolled: true };
   }
 
-  render () {
+  render() {
     return (
       <Wrapper scrolled={this.state.scrolled} {...this.props}>
         {this.state.scrolled && (
-          <SiteTitle>Labrysinthe</SiteTitle>
+          <SiteTitle>
+            <a href="#home">Labrysinthe</a>
+          </SiteTitle>
         )}
         <MainNav />
       </Wrapper>

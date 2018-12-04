@@ -84,10 +84,10 @@ const App = () => (
   <Router>
     <ThemeProvider theme={theme}>
       <BaseStyles>
-        <StyledHeader id="home" />
+        <StyledHeader />
 
         <Main>
-          <Home />
+          <Home id="home" />
           <PaddedDiv>
             <Shows id="shows" />
             <Music id="music" />
