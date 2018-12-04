@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 //
 import MainNav from '../components/MainNav';
@@ -15,7 +15,7 @@ const borderColor = ({ scrolled, theme }) =>
 
 const boxShadow = ({ scrolled }) => (scrolled ? '0 4px 8px rgba(0, 0, 0, 0.7)' : 'none');
 
-const Header = styled.header`
+const Wrapper = styled.header`
   position: sticky;
   z-index: 900;
   top: 0;
@@ -41,13 +41,28 @@ const SiteTitle = styled(H1)`
   }
 `;
 
-export default props => (
-  <Header {...props}>
-    {props.scrolled && (
-      <SiteTitle>
-        <a href="#home">Labrysinthe</a>
-      </SiteTitle>
-    )}
-    <MainNav />
-  </Header>
-);
+export default class Header extends Component {
+  componentDidMount() {
+    console.log('So far so good in the Header');
+  }
+
+  componentDidUpdate() {
+    console.log('Is there anybody in the Header?');
+  }
+
+  render() {
+    return (
+      <Wrapper {...this.props}>
+        {(() => {
+          console.log(`scrollin'? ${this.props.scrolled}`);
+        })()}
+        {this.props.scrolled && (
+          <SiteTitle>
+            <a href="#home">Labrysinthe</a>
+          </SiteTitle>
+        )}
+        <MainNav />
+      </Wrapper>
+    );
+  }
+}

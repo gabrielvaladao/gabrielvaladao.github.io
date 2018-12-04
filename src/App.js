@@ -86,14 +86,23 @@ const StyledFooter = styled(Footer)`
 class App extends Component {
   state = { scrolled: false };
 
+  componentDidMount() {
+    console.log('So far so good in the App');
+  }
+
+  componentDidUpdate() {
+    console.log('Is there anybody in the App?');
+  }
+
   handleScrollDown() {
     this.setState({ scrolled: true });
-    console.log('on a jet plane');
+    this.forceUpdate();
+    console.log(`on a jet plane: ${this.state.scrolled}`);
   }
 
   handleScrollToTop() {
     this.setState({ scrolled: false });
-    console.log('back again');
+    console.log(`back again: ${this.state.scrolled}`);
   }
 
   render() {
