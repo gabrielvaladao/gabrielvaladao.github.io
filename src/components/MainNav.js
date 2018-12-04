@@ -8,17 +8,17 @@ const MainNav = styled.nav`
   /* MiniNav items, drawer open + close buttons */
   a {
     display: inline-block;
-    color: ${props => props.theme.color.brandWhite};
+    color: ${({ theme }) => theme.color.brandWhite};
     text-decoration: none;
-    line-height: ${props => props.theme.type.primary.lineHeight};
+    line-height: ${({ theme }) => theme.type.primary.lineHeight};
 
     &:hover {
-      border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.brandWhite};
+      border-bottom: solid ${({ theme }) => theme.border.size.base} ${({ theme }) => theme.color.brandWhite};
     }
 
     &:active {
-      color: ${props => props.theme.color.overlayLighter};
-      border-color: ${props => props.theme.color.overlayLighter};
+      color: ${({ theme }) => theme.color.overlayLighter};
+      border-color: ${({ theme }) => theme.color.overlayLighter};
     }
   }
 `;
@@ -27,7 +27,7 @@ const MiniMenu = styled.ol`
   position: absolute;
   top: 0;
   right: 1rem;
-  padding: ${props => props.theme.space.one} 0 0 0;
+  padding: ${({ theme }) => theme.space.one} 0 0 0;
   z-index: 998;
   list-style-type: none;
 
@@ -55,7 +55,7 @@ const ResponsiveLi = styled(Li)`
 `;
 
 const Drawer = styled.div`
-  background-color: ${props => props.theme.color.overlayDark};
+  background-color: ${({ theme }) => theme.color.overlayDark};
   position: absolute;
   right: -75vw;
   /* hide box shadow while drawer is closed */
@@ -83,7 +83,7 @@ const Drawer = styled.div`
   }
 
   & > a:active {
-    color: ${props => props.theme.color.overlayLight};
+    color: ${({ theme }) => theme.color.overlayLight};
   }
 
   &:target {
@@ -136,11 +136,11 @@ const HeaderMenu = styled(Menu)`
 
   li {
     text-align: left;
-    padding-left: ${props => props.theme.space.two};
+    padding-left: ${({ theme }) => theme.space.two};
   }
 
   li:first-of-type {
-    margin-top: ${props => props.theme.space.four};
+    margin-top: ${({ theme }) => theme.space.four};
   }
 
   a:hover {
@@ -156,8 +156,8 @@ const HeaderMenu = styled(Menu)`
     background: none;
     justify-content: flex-end;
     box-shadow: none;
-    padding: ${props => props.theme.space.half} 0;
-    font-size: ${props => props.theme.type.smaller.fontSize};
+    padding: ${({ theme }) => theme.space.half} 0;
+    font-size: ${({ theme }) => theme.type.smaller.fontSize};
 
     li {
       padding-left: 0;
@@ -177,27 +177,27 @@ const HeaderMenu = styled(Menu)`
     }
 
     a {
-      color: ${props => props.theme.color.brandWhite};
+      color: ${({ theme }) => theme.color.brandWhite};
       text-decoration: none;
       border-style: solid;
-      border-width: 0 0 ${props => props.theme.border.size.base} 0;
+      border-width: 0 0 ${({ theme }) => theme.border.size.base} 0;
       border-color: rgba(0, 0, 0, 0);
 
       &:hover {
         border-style: solid;
-        border-width: 0 0 ${props => props.theme.border.size.base} 0;
-        border-color: ${props => props.theme.color.brandWhite};
+        border-width: 0 0 ${({ theme }) => theme.border.size.base} 0;
+        border-color: ${({ theme }) => theme.color.brandWhite};
       }
 
       &:active {
-        color: ${props => props.theme.color.overlayLighter};
-        border-color: ${props => props.theme.color.overlayLighter};
+        color: ${({ theme }) => theme.color.overlayLighter};
+        border-color: ${({ theme }) => theme.color.overlayLighter};
       }
     }
   }
 
   @media (min-width: 992px) {
-    font-size: ${props => props.theme.type.small.fontSize};
+    font-size: ${({ theme }) => theme.type.small.fontSize};
   }
 `;
 
@@ -220,10 +220,10 @@ const CloseLink = styled(Link)`
   right: 0.5ch;
   top: 0.5ch;
   z-index: 1001;
-  font-size: ${props => props.theme.type.h1.fontSize};
+  font-size: ${({ theme }) => theme.type.h1.fontSize};
 
   &:hover {
-    color: ${props => props.theme.color.overlayLighter};
+    color: ${({ theme }) => theme.color.overlayLighter};
   }
 `;
 

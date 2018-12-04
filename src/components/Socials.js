@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import StyledLinkText from '../elements/StyledLinkText';
 
 const Wrapper = styled.ul`
-  padding: 0 0 ${props => props.theme.space.three} 0;
+  padding: 0 0 ${({ theme }) => theme.space.three} 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -20,23 +20,23 @@ const Li = styled.li`
 `;
 
 const Icon = styled(Link)`
-  font-size: ${props => props.theme.icon.fontSize};
+  font-size: ${({ theme }) => theme.icon.fontSize};
   text-align: center;
   border-radius: 50%;
   border-bottom: none;
-  padding: ${props => props.theme.space.half};
+  padding: ${({ theme }) => theme.space.half};
   opacity: 0.9;
-  color: ${props => props.theme.color.primary};
+  color: ${({ theme }) => theme.color.primary};
   text-decoration: none;
 
   &:hover {
-    background: ${props => props.theme.color.primaryOverlay};
+    background: ${({ theme }) => theme.color.primaryOverlay};
     color: white;
     border-bottom: none;
   }
 
   &:active {
-    background: ${props => props.theme.color.primaryDark};
+    background: ${({ theme }) => theme.color.primaryDark};
     color: white;
   }
 `;

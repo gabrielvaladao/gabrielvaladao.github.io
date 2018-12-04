@@ -6,12 +6,12 @@ import StyledLinkText from '../elements/StyledLinkText';
 import H1 from '../elements/H1';
 //
 const Large = styled.p`
-  font-size: ${props => props.theme.type.large.fontSize};
-  margin-bottom: ${props => props.theme.type.large.marginBottom};
+  font-size: ${({ theme }) => theme.type.large.fontSize};
+  margin-bottom: ${({ theme }) => theme.type.large.marginBottom};
 `;
 
 const P = styled.p`
-  margin-bottom: ${props => props.theme.space.one};
+  margin-bottom: ${({ theme }) => theme.space.one};
 
   &:last-child {
     margin-bottom: 0;

@@ -14,40 +14,40 @@ const Wrapper = styled.section`
 `;
 
 const SiteTitle = styled(H1)`
-  padding-top: ${props => props.theme.space.eight};
-  padding-bottom: ${props => props.theme.space.one};
+  padding-top: ${({ theme }) => theme.space.eight};
+  padding-bottom: ${({ theme }) => theme.space.one};
   font-family: 'raincoatregular', sans-serif;
   letter-spacing: 0.06ch;
   text-transform: uppercase;
   text-align: center;
-  font-size: ${props => props.theme.type.h2.fontSize};
+  font-size: ${({ theme }) => theme.type.h2.fontSize};
 
   @media (min-width: 576px) {
     letter-spacing: 0.12ch;
-    padding-top: ${props => props.theme.space.eight};
-    padding-bottom: ${props => props.theme.space.two};
+    padding-top: ${({ theme }) => theme.space.eight};
+    padding-bottom: ${({ theme }) => theme.space.two};
   }
 
   @media (min-width: 768px) {
-    font-size: ${props => props.theme.type.h1.fontSize};
+    font-size: ${({ theme }) => theme.type.h1.fontSize};
     letter-spacing: 0.12ch;
   }
 `;
 
 const Large = styled.p`
-  font-size: ${props => props.theme.type.large.fontSize};
+  font-size: ${({ theme }) => theme.type.large.fontSize};
   text-align: center;
-  margin-bottom: ${props => props.theme.type.large.marginBottom};
+  margin-bottom: ${({ theme }) => theme.type.large.marginBottom};
   position: relative;
   z-index: 1;
 `;
 
 const Logo = styled.img`
-  margin-top: -${props => props.theme.space.three};
+  margin-top: -${({ theme }) => theme.space.three};
   margin-left: 50%;
   transform: translateX(-50%);
   display: block;
-  padding-top: ${props => props.theme.space.one};
+  padding-top: ${({ theme }) => theme.space.one};
   position: relative;
   z-index: -99999;
 `;

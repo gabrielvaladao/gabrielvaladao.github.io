@@ -11,15 +11,15 @@ const Li = styled.li`
   text-align: center;
   list-style-type: none;
 
-  font-size: ${props => props.theme.type.large.fontSize};
-  font-family: ${props => props.theme.type.primary.fontFamily};
-  font-weight: ${props => props.theme.type.primary.fontWeight};
-  line-height: ${props => props.theme.type.primary.lineHeight};
-  padding: ${props => props.theme.space.half} 0;
+  font-size: ${({ theme }) => theme.type.large.fontSize};
+  font-family: ${({ theme }) => theme.type.primary.fontFamily};
+  font-weight: ${({ theme }) => theme.type.primary.fontWeight};
+  line-height: ${({ theme }) => theme.type.primary.lineHeight};
+  padding: ${({ theme }) => theme.space.half} 0;
 
   &:hover {
     color: white;
-    background-color: ${props => props.theme.color.overlayLight};
+    background-color: ${({ theme }) => theme.color.overlayLight};
   }
 `;
 

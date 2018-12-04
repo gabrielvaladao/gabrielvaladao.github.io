@@ -13,20 +13,20 @@ import StyledLinkText from '../elements/StyledLinkText';
 */
 
 const Wrapper = styled.article`
-  font-family: ${props => props.theme.type.secondary.fontFamily};
+  font-family: ${({ theme }) => theme.type.secondary.fontFamily};
 `;
 
 const Host = styled.p`
-  font-size: ${props => props.theme.type.small.fontSize};
-  font-family: ${props => props.theme.type.secondary.fontFamily};
-  font-weight: ${props => props.theme.type.secondary.fontWeight};
-  line-height: ${props => props.theme.type.secondary.lineHeight};
-  margin-bottom: ${props => props.theme.space.half};
+  font-size: ${({ theme }) => theme.type.small.fontSize};
+  font-family: ${({ theme }) => theme.type.secondary.fontFamily};
+  font-weight: ${({ theme }) => theme.type.secondary.fontWeight};
+  line-height: ${({ theme }) => theme.type.secondary.lineHeight};
+  margin-bottom: ${({ theme }) => theme.space.half};
 `;
 
 const When = styled.p`
-  font-size: ${props => props.theme.type.large.fontSize};
-  margin-bottom: ${props => props.theme.space.quarter};
+  font-size: ${({ theme }) => theme.type.large.fontSize};
+  margin-bottom: ${({ theme }) => theme.space.quarter};
 
   * {
     display: inline-block;
@@ -34,11 +34,11 @@ const When = styled.p`
 `;
 
 const Where = styled.div`
-  font-size: ${props => props.theme.type.small.fontSize};
-  font-family: ${props => props.theme.type.secondary.fontFamily};
-  font-weight: ${props => props.theme.type.secondary.fontWeight};
-  line-height: ${props => props.theme.type.secondary.lineHeight};
-  padding-bottom: ${props => props.theme.space.half};
+  font-size: ${({ theme }) => theme.type.small.fontSize};
+  font-family: ${({ theme }) => theme.type.secondary.fontFamily};
+  font-weight: ${({ theme }) => theme.type.secondary.fontWeight};
+  line-height: ${({ theme }) => theme.type.secondary.lineHeight};
+  padding-bottom: ${({ theme }) => theme.space.half};
 `;
 
 const CtaList = styled.ol`

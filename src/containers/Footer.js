@@ -7,23 +7,23 @@ import Socials from '../components/Socials';
 import smWhiteLogo from '../images/logo-white-90x104.png';
 //
 const Footer = styled.footer`
-  padding: 0 0 ${props => props.theme.space.one} 0;
+  padding: 0 0 ${({ theme }) => theme.space.one} 0;
 `;
 
 const StyledMenu = styled(Menu)`
   border-bottom: 1px solid black;
-  padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two} 0;
+  padding: ${({ theme }) => theme.space.one} 0 ${({ theme }) => theme.space.two} 0;
 `;
 
 const Logo = styled.img`
   margin: 0 auto;
   display: block;
-  padding-top: ${props => props.theme.space.two};
+  padding-top: ${({ theme }) => theme.space.two};
 `;
 
 const Socket = styled.p`
   text-align: center;
-  padding-top: ${props => props.theme.space.one};
+  padding-top: ${({ theme }) => theme.space.one};
 `;
 /* TODO: (C) current year */
 export default () => (

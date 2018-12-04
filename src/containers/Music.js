@@ -12,7 +12,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   list-style-type: none;
-  margin-top: ${props => props.theme.space.one};
+  margin-top: ${({ theme }) => theme.space.one};
 `;
 
 /**

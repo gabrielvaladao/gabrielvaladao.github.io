@@ -8,7 +8,7 @@ import H3 from '../elements/H3';
 import Show from '../components/Show';
 //
 const Section = styled.section`
-  margin-top: ${props => props.theme.space.one};
+  margin-top: ${({ theme }) => theme.space.one};
 `;
 
 const Ul = styled.ul`

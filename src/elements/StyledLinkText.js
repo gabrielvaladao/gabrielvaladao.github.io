@@ -4,16 +4,16 @@ import styled from 'styled-components';
 //
 const StyledLinkText = styled.span`
   a {
-    color: ${props => props.theme.color.primary};
+    color: ${({ theme }) => theme.color.primary};
     text-decoration: none;
 
     &:hover {
-      border-bottom: solid ${props => props.theme.border.size.base} ${props => props.theme.color.primary};
+      border-bottom: solid ${({ theme }) => theme.border.size.base} ${({ theme }) => theme.color.primary};
     }
 
     &:active {
-      color: ${props => props.theme.color.primaryDark};
-      border-bottom: 2px solid ${props => props.theme.color.primaryDark};
+      color: ${({ theme }) => theme.color.primaryDark};
+      border-bottom: 2px solid ${({ theme }) => theme.color.primaryDark};
     }
   }
 `;

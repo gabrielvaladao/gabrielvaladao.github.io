@@ -53,11 +53,11 @@ injectGlobal`
 `;
 
 const BaseStyles = styled.div`
-  font-family: ${props => props.theme.type.primary.fontFamily};
-  font-weight: ${props => props.theme.type.primary.fontWeight};
-  font-size: ${props => props.theme.type.primary.fontSize};
-  line-height: ${props => props.theme.type.primary.lineHeight};
-  letter-spacing: ${props => props.theme.type.primary.letterSpacing};
+  font-family: ${({ theme }) => theme.type.primary.fontFamily};
+  font-weight: ${({ theme }) => theme.type.primary.fontWeight};
+  font-size: ${({ theme }) => theme.type.primary.fontSize};
+  line-height: ${({ theme }) => theme.type.primary.lineHeight};
+  letter-spacing: ${({ theme }) => theme.type.primary.letterSpacing};
 `;
 
 const StyledHeader = styled(Header)`
@@ -66,18 +66,18 @@ const StyledHeader = styled(Header)`
 
 const Main = styled.main`
   & > section {
-    padding-bottom: ${props => props.theme.space.one};
+    padding-bottom: ${({ theme }) => theme.space.one};
   }
 `;
 
 const PaddedDiv = styled.div`
   padding: 0 2rem 2rem 2rem;
   margin: 0 auto;
-  max-width: ${props => props.theme.space.golden};
+  max-width: ${({ theme }) => theme.space.golden};
 `;
 
 const StyledFooter = styled(Footer)`
-  padding: ${props => props.theme.space.one} 0 ${props => props.theme.space.two};
+  padding: ${({ theme }) => theme.space.one} 0 ${({ theme }) => theme.space.two};
 `;
 
 const App = () => (

@@ -11,7 +11,7 @@ const Wrapper = styled.section`
 `;
 
 const P = styled.p`
-  margin-bottom: ${props => props.theme.space.one};
+  margin-bottom: ${({ theme }) => theme.space.one};
 `;
 
 /* TODO: calculate ch values and max-width based on Theme */
@@ -60,7 +60,7 @@ const Submit = styled(Button)`
   grid-column: 3 / 4;
   display: inline-block;
   box-sizing: border-box;
-  padding: ${props => props.theme.space.quarter};
+  padding: ${({ theme }) => theme.space.quarter};
 
   @media (min-width: 576px) {
     grid-row: 1 / 2;
@@ -73,9 +73,9 @@ const ErrorMessage = styled.p`
   visibility: hidden;
   grid-row: 2 / 3;
   grid-column: 2 / 4;
-  font-size: ${props => props.theme.type.small.fontSize};
-  color: ${props => props.theme.color.error};
-  margin: ${props => props.theme.space.quarter} 0;
+  font-size: ${({ theme }) => theme.type.small.fontSize};
+  color: ${({ theme }) => theme.color.error};
+  margin: ${({ theme }) => theme.space.quarter} 0;
   white-space: normal;
 
   @media (min-width: 576px) {

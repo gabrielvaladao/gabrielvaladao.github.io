@@ -21,12 +21,12 @@ TODO: PARSE IFRAMES (a11y)
 
 const Background = styled.div`
   iframe {
-    background-color: ${props => props.theme.color.overlayLight};
+    background-color: ${({ theme }) => theme.color.overlayLight};
   }
 `;
 
 const StyledH3 = styled(H3)`
-  margin-bottom: ${props => props.theme.type.h3.marginBottom};
+  margin-bottom: ${({ theme }) => theme.type.h3.marginBottom};
 `;
 
 export default ({ title, soundCloudEmbed, cta }) => (
