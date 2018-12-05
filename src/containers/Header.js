@@ -30,6 +30,10 @@ const Wrapper = styled.header`
   box-shadow: ${boxShadow};
   transition: box-shadow 0.5s ease-in-out;
   padding: 0 ${({ theme }) => theme.space.one};
+
+  @media (min-width: 992px) {
+    padding: 0 ${({ theme }) => theme.space.two};
+  }
 `;
 
 const SiteTitle = styled(H1)`
