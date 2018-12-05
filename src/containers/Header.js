@@ -16,7 +16,7 @@ const boxShadow = ({ scrolled }) => (scrolled ? '0 4px 8px rgba(0, 0, 0, 0.7)' :
 
 const opacity = ({ scrolled }) => (scrolled ? 1 : 0);
 
-const marginTop = ({ scrolled }) => (scrolled ? '0' : '-1em');
+const marginTop = ({ scrolled }) => (scrolled ? '0' : '-0.5em');
 
 const Wrapper = styled.header`
   position: sticky;
@@ -42,7 +42,7 @@ const SiteTitle = styled(H1)`
   padding-top: 0;
   opacity: ${opacity};
   margin-top: ${marginTop};
-  transition: opacity 0.5s ease-in-out, margin-top 0.4s ease-in-out;
+  transition: opacity 0.5s ease-in-out, margin-top 0.2s ease-in-out;
 
   a {
     text-decoration: none;
