@@ -46,10 +46,15 @@ const Logo = styled.img`
   margin-top: -${({ theme }) => theme.space.three};
   margin-left: 50%;
   transform: translateX(-50%);
+  min-width: 140%;
   display: block;
   padding-top: ${({ theme }) => theme.space.one};
   position: relative;
   z-index: -99999;
+
+  @media (min-width: 992px) {
+    min-width: 0;
+  }
 `;
 
 export default withSiteData(props => (
