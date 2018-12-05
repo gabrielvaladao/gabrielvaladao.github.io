@@ -45,7 +45,7 @@ const Icon = styled(Link)`
 /* TODO: each Social to be its own component */
 export default () => (
   <Wrapper>
-    <Li>
+    <Li key="beatport">
       <Icon
         to="https://www.beatport.com/artist/labrysinthe/640674"
         title="Beatport"
@@ -54,7 +54,7 @@ export default () => (
         aria-label="Beaport"
       />
     </Li>
-    <Li>
+    <Li key="soundcloud">
       <Icon
         to="https://soundcloud.com/labrysinthe"
         title="SoundCloud"
@@ -63,7 +63,7 @@ export default () => (
         aria-label="SoundCloud"
       />
     </Li>
-    <Li>
+    <Li key="spotify">
       <Icon
         to="https://open.spotify.com/artist/4YkYhnarkLP5K1l55l5Y3e"
         title="Spotify"
@@ -72,7 +72,7 @@ export default () => (
         aria-label="Spotify"
       />
     </Li>
-    <Li>
+    <Li key="facebook">
       <Icon
         to="https://www.facebook.com/labrysinthe/"
         title="Facebook"
@@ -81,7 +81,7 @@ export default () => (
         aria-label="Facebook"
       />
     </Li>
-    <Li>
+    <Li key="twitter">
       <Icon
         to="https://twitter.com/labrysinthe"
         title="Twitter"
@@ -90,7 +90,7 @@ export default () => (
         aria-label="Twitter"
       />
     </Li>
-    <Li>
+    <Li key="instagram">
       <Icon
         to="https://www.instagram.com/labrysinthe/"
         title="Instagram"
