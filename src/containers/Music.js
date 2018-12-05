@@ -15,6 +15,8 @@ const Li = styled.li`
   margin-top: ${({ theme }) => theme.space.one};
 `;
 
+/* Known bug with SoundCloud embeds: unique key prop error */
+
 /**
  * TODO: Create iframe Component from track ID.
  * For user-friendliness, let client paste in a full embed code.
