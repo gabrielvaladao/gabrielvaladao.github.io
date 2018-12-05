@@ -3,7 +3,6 @@ import { hot } from 'react-hot-loader';
 //
 import { Router } from 'react-static';
 import Routes from 'react-static-routes';
-import Waypoint from 'react-waypoint';
 //
 import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import styledNormalize from 'styled-normalize';
@@ -13,7 +12,6 @@ import './styles/app.css';
 import './styles/social-icons.css';
 //
 import Scroller from './containers/Scroller';
-import Header from './containers/Header';
 import Footer from './containers/Footer';
 //
 import Home from './containers/Home';
@@ -40,7 +38,6 @@ injectGlobal`
   ${styledNormalize}
   html {
     font-size: 20px;
-    /* background-color: rgb(8, 0, 15); */
     background-color: rgba(8, 0, 15, 1);
     color: rgb(238, 237, 239);
     
@@ -62,10 +59,6 @@ const BaseStyles = styled.div`
   letter-spacing: ${({ theme }) => theme.type.primary.letterSpacing};
 `;
 
-const StyledHeader = styled(Header)`
-  padding: 0 2rem;
-`;
-
 const Main = styled.main`
   & > section {
     padding-bottom: ${({ theme }) => theme.space.one};
@@ -81,8 +74,6 @@ const PaddedDiv = styled.div`
 const StyledFooter = styled(Footer)`
   padding: ${({ theme }) => theme.space.one} 0 ${({ theme }) => theme.space.two};
 `;
-// TODO: try tricky offset
-// topOffset={`{({ theme }) => theme.space.three}`}
 
 class App extends Component {
   render() {
@@ -90,20 +81,19 @@ class App extends Component {
       <Router>
         <ThemeProvider theme={theme}>
           <BaseStyles>
-            <Scroller>
-              <Main>
-                <Home id="home" />
-                <PaddedDiv>
-                  <Shows id="shows" />
-                  <Music id="music" />
-                  <Bio id="bio" />
-                  <Newsletter id="newsletter" />
-                  <Contact id="contact" />
-                </PaddedDiv>
-              </Main>
+            <Scroller />
+            <Main>
+              <Home id="home" />
+              <PaddedDiv>
+                <Shows id="shows" />
+                <Music id="music" />
+                <Bio id="bio" />
+                <Newsletter id="newsletter" />
+                <Contact id="contact" />
+              </PaddedDiv>
+            </Main>
 
-              <StyledFooter />
-            </Scroller>
+            <StyledFooter />
           </BaseStyles>
         </ThemeProvider>
       </Router>
