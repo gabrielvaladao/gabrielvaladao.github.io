@@ -72,7 +72,7 @@ export default () => ({
     two: `${lineHeight * 2}rem`,
     three: `${lineHeight * 3}rem`,
     four: `${lineHeight * 4}rem`,
-    eight: `${lineHeight * 8}rem`,
+    six: `${lineHeight * 6}rem`,
     ten: `${lineHeight * 10}rem`,
     golden: `${lineHeight * ratio1 * 12}rem`
   },

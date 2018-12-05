@@ -14,7 +14,7 @@ const Wrapper = styled.section`
 `;
 
 const SiteTitle = styled(H1)`
-  padding-top: ${({ theme }) => theme.space.eight};
+  padding-top: ${({ theme }) => theme.space.four};
   padding-bottom: ${({ theme }) => theme.space.one};
   font-family: 'raincoatregular', sans-serif;
   letter-spacing: 0.06ch;
@@ -24,13 +24,16 @@ const SiteTitle = styled(H1)`
 
   @media (min-width: 576px) {
     letter-spacing: 0.12ch;
-    padding-top: ${({ theme }) => theme.space.eight};
     padding-bottom: ${({ theme }) => theme.space.two};
   }
 
   @media (min-width: 768px) {
     font-size: ${({ theme }) => theme.type.h1.fontSize};
     letter-spacing: 0.12ch;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: ${({ theme }) => theme.space.six};
   }
 `;
 
