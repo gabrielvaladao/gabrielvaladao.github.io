@@ -59,12 +59,6 @@ const BaseStyles = styled.div`
   letter-spacing: ${({ theme }) => theme.type.primary.letterSpacing};
 `;
 
-const Main = styled.main`
-  & > section {
-    padding-bottom: ${({ theme }) => theme.space.one};
-  }
-`;
-
 const PaddedDiv = styled.div`
   padding: 0 2rem 2rem 2rem;
   margin: 0 auto;
@@ -82,7 +76,7 @@ class App extends Component {
         <ThemeProvider theme={theme}>
           <BaseStyles>
             <Scroller />
-            <Main>
+            <main>
               <Home id="home" />
               <PaddedDiv>
                 <Shows id="shows" />
@@ -91,7 +85,7 @@ class App extends Component {
                 <Newsletter id="newsletter" />
                 <Contact id="contact" />
               </PaddedDiv>
-            </Main>
+            </main>
 
             <StyledFooter />
           </BaseStyles>
