@@ -157,6 +157,7 @@ const HeaderMenu = styled(Menu)`
     background: none;
     justify-content: flex-end;
     box-shadow: none;
+    border-top: none;
     padding: ${({ theme }) => theme.space.half} 0;
     font-size: ${({ theme }) => theme.type.smaller.fontSize};
 
