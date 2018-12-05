@@ -28,12 +28,9 @@ const SiteTitle = styled(H1)`
   }
 
   @media (min-width: 768px) {
+    padding-top: ${({ theme }) => theme.space.six};
     font-size: ${({ theme }) => theme.type.h1.fontSize};
     letter-spacing: 0.12ch;
-  }
-
-  @media (min-width: 768px) {
-    padding-top: ${({ theme }) => theme.space.six};
   }
 `;
 
