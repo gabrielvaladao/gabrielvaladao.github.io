@@ -11,7 +11,7 @@ import theme from './styles/Theme';
 import './styles/app.css';
 import './styles/social-icons.css';
 //
-import Scroller from './containers/Scroller';
+import Scroller from './components/Scroller';
 import Footer from './containers/Footer';
 //
 import Home from './containers/Home';
