@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Waypoint from 'react-waypoint';
-import Header from '../containers/Header';
-
-const StyledHeader = styled(Header)`
-  padding: 0 2rem;
-`;
+import Header from './Header';
 
 class Scroller extends Component {
   constructor(props) {
@@ -27,7 +23,7 @@ class Scroller extends Component {
   render() {
     return (
       <React.Fragment>
-        <StyledHeader scrolled={this.state.scrolled} />
+        <Header scrolled={this.state.scrolled} />
         <Waypoint onPositionChange={this.handleScroll} />
         {this.props.children}
       </React.Fragment>

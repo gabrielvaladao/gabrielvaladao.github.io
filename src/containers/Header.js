@@ -29,6 +29,7 @@ const Wrapper = styled.header`
   border-bottom: 1px solid ${borderColor};
   box-shadow: ${boxShadow};
   transition: box-shadow 0.5s ease-in-out;
+  padding: 0 ${({ theme }) => theme.space.one};
 `;
 
 const SiteTitle = styled(H1)`
