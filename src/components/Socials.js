@@ -90,7 +90,7 @@ export default () => (
         aria-label="Twitter"
       />
     </Li>
-    <Li key="instagram">
+    {/* <Li key="instagram">
       <Icon
         to="https://www.instagram.com/labrysinthe/"
         title="Instagram"
@@ -98,6 +98,6 @@ export default () => (
         role="img"
         aria-label="Instagram"
       />
-    </Li>
+    </Li> */}
   </Wrapper>
 );
