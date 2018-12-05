@@ -85,13 +85,6 @@ const StyledFooter = styled(Footer)`
 // topOffset={`{({ theme }) => theme.space.three}`}
 
 class App extends Component {
-  componentDidMount() {
-    console.log('So far so good in the App');
-  }
-
-  componentDidUpdate() {
-    console.log('Is there anybody in the App?');
-  }
   render() {
     return (
       <Router>

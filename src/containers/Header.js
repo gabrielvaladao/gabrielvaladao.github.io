@@ -42,20 +42,9 @@ const SiteTitle = styled(H1)`
 `;
 
 export default class Header extends Component {
-  componentDidMount() {
-    console.log('So far so good in the Header');
-  }
-
-  componentDidUpdate() {
-    console.log('Is there anybody in the Header?');
-  }
-
   render() {
     return (
       <Wrapper {...this.props}>
-        {(() => {
-          console.log(`scrollin'? ${this.props.scrolled}`);
-        })()}
         {this.props.scrolled && (
           <SiteTitle>
             <a href="#home">Labrysinthe</a>

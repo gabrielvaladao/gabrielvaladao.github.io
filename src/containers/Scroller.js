@@ -8,24 +8,21 @@ const StyledHeader = styled(Header)`
 `;
 
 class Scroller extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleScrollDown = this.handleScrollDown.bind(this);
+    this.handleScrollToTop = this.handleScrollToTop.bind(this);
+  }
+
   state = { scrolled: false };
-
-  componentDidMount() {
-    console.log('So far so good in the Scroller');
-  }
-
-  componentDidUpdate() {
-    console.log('Is there anybody in the Scroller?');
-  }
 
   handleScrollDown() {
     this.setState({ scrolled: true });
-    console.log(`on a jet plane: ${this.state.scrolled}`);
   }
 
   handleScrollToTop() {
     this.setState({ scrolled: false });
-    console.log(`back again: ${this.state.scrolled}`);
   }
 
   render() {
