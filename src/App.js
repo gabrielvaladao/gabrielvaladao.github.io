@@ -12,6 +12,7 @@ import theme from './styles/Theme';
 import './styles/app.css';
 import './styles/social-icons.css';
 //
+import Scroller from './containers/Scroller';
 import Header from './containers/Header';
 import Footer from './containers/Footer';
 //
@@ -84,8 +85,6 @@ const StyledFooter = styled(Footer)`
 // topOffset={`{({ theme }) => theme.space.three}`}
 
 class App extends Component {
-  state = { scrolled: false };
-
   componentDidMount() {
     console.log('So far so good in the App');
   }
@@ -93,37 +92,25 @@ class App extends Component {
   componentDidUpdate() {
     console.log('Is there anybody in the App?');
   }
-
-  handleScrollDown() {
-    this.setState({ scrolled: true });
-    this.forceUpdate();
-    console.log(`on a jet plane: ${this.state.scrolled}`);
-  }
-
-  handleScrollToTop() {
-    this.setState({ scrolled: false });
-    console.log(`back again: ${this.state.scrolled}`);
-  }
-
   render() {
     return (
       <Router>
         <ThemeProvider theme={theme}>
           <BaseStyles>
-            <StyledHeader scrolled={this.state.scrolled} />
-            <Waypoint onLeave={this.handleScrollDown} onEnter={this.handleScrollToTop} />
-            <Main>
-              <Home id="home" />
-              <PaddedDiv>
-                <Shows id="shows" />
-                <Music id="music" />
-                <Bio id="bio" />
-                <Newsletter id="newsletter" />
-                <Contact id="contact" />
-              </PaddedDiv>
-            </Main>
+            <Scroller>
+              <Main>
+                <Home id="home" />
+                <PaddedDiv>
+                  <Shows id="shows" />
+                  <Music id="music" />
+                  <Bio id="bio" />
+                  <Newsletter id="newsletter" />
+                  <Contact id="contact" />
+                </PaddedDiv>
+              </Main>
 
-            <StyledFooter />
+              <StyledFooter />
+            </Scroller>
           </BaseStyles>
         </ThemeProvider>
       </Router>
