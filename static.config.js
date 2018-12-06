@@ -75,6 +75,7 @@ export default {
   Document: ({ Html, Head, Body, children }) => (
     <Html lang="en-US">
       <Head>
+        <title>Labrysinthe</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"
@@ -90,7 +91,15 @@ export default {
         <meta property="og:url" content="https://elated-leavitt-544c11.netlify.com/" />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <title>Labrysinthe</title>
+        {/* Favicons */}
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#08000F" />
+        <meta name="msapplication-TileColor" content="#603cba" />
+        <meta name="theme-color" content="#fbf4ff" />
       </Head>
       <Body>{children}</Body>
     </Html>
