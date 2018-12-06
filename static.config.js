@@ -80,7 +80,7 @@ export default {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
         />
-        {/* Facebook thumbnail */}
+        {/* Facebook + Twitter thumbnails */}
         <meta property="og:title" content="Labrysinthe" />
         <meta property="og:description" content="Fire Loves Sugar &mdash; New EP coming soon!" />
         <meta
@@ -88,14 +88,6 @@ export default {
           content="https://elated-leavitt-544c11.netlify.com/website-thumbnail.png"
         />
         <meta property="og:url" content="https://elated-leavitt-544c11.netlify.com/" />
-
-        {/* Twitter thumbnail */}
-        <meta name="twitter:title" content="Labrysinthe" />
-        <meta name="twitter:description" content="Fire Loves Sugar &mdash; New EP coming soon!" />
-        <meta
-          name="twitter:image"
-          content=" https://elated-leavitt-544c11.netlify.com/website-thumbnail.png"
-        />
         <meta name="twitter:card" content="summary_large_image" />
 
         <title>Labrysinthe</title>
