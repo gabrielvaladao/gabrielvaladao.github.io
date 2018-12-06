@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import Waypoint from 'react-waypoint';
-import Header from './Header';
+import Header from '../containers/Header';
 
 class Scroller extends Component {
   constructor(props) {
