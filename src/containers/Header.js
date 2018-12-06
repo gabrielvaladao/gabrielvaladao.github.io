@@ -54,7 +54,7 @@ const SiteTitle = styled(H1)`
   }
 `;
 
-export default class Header extends Component {
+class Header extends Component {
   render() {
     return (
       <Wrapper {...this.props}>
@@ -66,3 +66,5 @@ export default class Header extends Component {
     );
   }
 }
+
+export default Header;

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 //
 import Menu from './Menu';
 //
-const MainNav = styled.nav`
+const Wrapper = styled.nav`
   /* MiniNav items, drawer open + close buttons */
   a {
     display: inline-block;
@@ -13,8 +13,7 @@ const MainNav = styled.nav`
     line-height: ${({ theme }) => theme.type.primary.lineHeight};
 
     &:hover {
-      border-bottom: solid ${({ theme }) => theme.border.size.base}
-        ${({ theme }) => theme.color.brandWhite};
+      border-bottom: solid ${({ theme }) => theme.border.size.base} ${({ theme }) => theme.color.brandWhite};
     }
 
     &:active {
@@ -236,8 +235,8 @@ const Backdrop = styled(Link)`
 `;
 
 /* TODO: add role aria-controls aria-expanded to Open Close and Drawer */
-export default () => (
-  <MainNav>
+const MainNav = () => (
+  <Wrapper>
     <MiniMenu id="mini-menu">
       <ResponsiveLi key="newsletter">
         <NavLink to="#newsletter">Newsletter</NavLink>
@@ -262,5 +261,7 @@ export default () => (
       <HeaderMenu />
     </Drawer>
     <Backdrop className="backdrop" to="#open" />
-  </MainNav>
+  </Wrapper>
 );
+
+export default MainNav;

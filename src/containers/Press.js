@@ -15,7 +15,7 @@ const Li = styled.li`
 
 /* TODO: aria-sort: date, descending */
 
-export default withRouteData(({ id, ...props }) => (
+const Press = ({ id, ...props }) => (
   <section id={id}>
     <H1>Press</H1>
     <Ul>
@@ -27,4 +27,6 @@ export default withRouteData(({ id, ...props }) => (
       </Li>
     </Ul>
   </section>
-));
+);
+
+export default withRouteData(Press);

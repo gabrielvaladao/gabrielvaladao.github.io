@@ -14,7 +14,7 @@ const Address = styled.address`
   font-style: inherit;
 `;
 
-export default ({ id, ...props }) => (
+const Contact = ({ id, ...props }) => (
   <section id={id}>
     <H1>Contact</H1>
     <Info>
@@ -27,3 +27,5 @@ export default ({ id, ...props }) => (
     </Info>
   </section>
 );
+
+export default Contact;

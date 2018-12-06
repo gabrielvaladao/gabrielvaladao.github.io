@@ -4,7 +4,7 @@ import { Link } from 'react-static';
 import StyledLinkText from '../elements/StyledLinkText';
 import H1 from '../elements/H1';
 //
-export default () => (
+const NotFound = () => (
   <div>
     <H1>404</H1>
     <p>
@@ -19,3 +19,5 @@ export default () => (
     </p>
   </div>
 );
+
+export default NotFound;

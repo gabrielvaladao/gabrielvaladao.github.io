@@ -9,7 +9,7 @@ const Callout = styled.p`
   font-size: 1.2em;
 `;
 
-export default withRouteData(({ pressRelease }) => (
+const PressRelease = ({ pressRelease }) => (
   <article aria-labelledby="#headline">
     <img
       src="https://i1.sndcdn.com/artworks-000268886459-ilgws3-t500x500.jpg"
@@ -48,4 +48,6 @@ export default withRouteData(({ pressRelease }) => (
       </Link>
     </StyledLinkText>
   </article>
-));
+);
+
+export default withRouteData(PressRelease);

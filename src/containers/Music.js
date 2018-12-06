@@ -26,7 +26,7 @@ const Li = styled.li`
 /**
  * TODO: iframe title attribs have been added by hand to satisfy eslint a11y error. generate these.
  */
-export default withRouteData(({ id, ...props }) => (
+const Music = ({ id, ...props }) => (
   <section id={id}>
     <H1>Music</H1>
     <p>
@@ -106,4 +106,6 @@ export default withRouteData(({ id, ...props }) => (
       </Li>
     </Ul>
   </section>
-));
+);
+
+export default withRouteData(Music);

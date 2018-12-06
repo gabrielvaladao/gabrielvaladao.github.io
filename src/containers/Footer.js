@@ -6,7 +6,7 @@ import Socials from '../components/Socials';
 //
 import smWhiteLogo from '../images/logo-white-90x104.png';
 //
-const Footer = styled.footer`
+const Wrapper = styled.footer`
   padding: 0 0 ${({ theme }) => theme.space.one} 0;
 `;
 
@@ -26,8 +26,8 @@ const Socket = styled.p`
   padding-top: ${({ theme }) => theme.space.one};
 `;
 /* TODO: (C) current year */
-export default () => (
-  <Footer>
+const Footer = () => (
+  <Wrapper>
     <Socials />
     <StyledMenu />
     <Logo
@@ -37,5 +37,7 @@ export default () => (
       width="90px"
     />
     <Socket role="contentinfo">&copy; 2018 Labrysinthe</Socket>
-  </Footer>
+  </Wrapper>
 );
+
+export default Footer;

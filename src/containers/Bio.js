@@ -18,7 +18,7 @@ const P = styled.p`
   }
 `;
 
-export default ({ id, ...props }) => (
+const Bio = ({ id, ...props }) => (
   <section id={id}>
     <H1>Bio</H1>
     <Large>
@@ -51,3 +51,5 @@ export default ({ id, ...props }) => (
     </P>
   </section>
 );
+
+export default Bio;

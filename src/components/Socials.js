@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLinkText from '../elements/StyledLinkText';
 
 const Wrapper = styled.ul`
   padding: 0 0 ${({ theme }) => theme.space.three} 0;
@@ -43,7 +42,7 @@ const Icon = styled(Link)`
 
 /* TODO: generate socials from data */
 /* TODO: each Social to be its own component */
-export default () => (
+const Socials = () => (
   <Wrapper>
     <Li key="beatport">
       <Icon
@@ -101,3 +100,5 @@ export default () => (
     </Li> */}
   </Wrapper>
 );
+
+export default Socials;

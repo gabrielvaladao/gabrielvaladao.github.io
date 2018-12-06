@@ -96,7 +96,7 @@ function encode(data) {
     .join('&');
 }
 
-export default class Newsletter extends React.Component {
+class Newsletter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -205,3 +205,5 @@ export default class Newsletter extends React.Component {
     );
   }
 }
+
+export default Newsletter;

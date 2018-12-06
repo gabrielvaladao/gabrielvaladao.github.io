@@ -57,7 +57,7 @@ const Logo = styled.img`
   }
 `;
 
-export default withSiteData(props => (
+const Home = props => (
   <Wrapper {...props}>
     <SiteTitle>Labrysinthe</SiteTitle>
 
@@ -77,4 +77,6 @@ export default withSiteData(props => (
       <Logo alt="" src={smColorLogo} />
     </picture>
   </Wrapper>
-));
+);
+
+export default withSiteData(Home);

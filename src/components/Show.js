@@ -83,7 +83,7 @@ const Cta = styled(Button)`
 `;
 
 /* TODO: Refactor data structure */
-export default ({
+const Show = ({
   title,
   hostUrl,
   hostName,
@@ -150,3 +150,5 @@ export default ({
     </CtaList>
   </Wrapper>
 );
+
+export default Show;

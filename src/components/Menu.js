@@ -41,7 +41,7 @@ const A = styled.a`
  */
 /* TODO: Links + keys were added manually. Generate them from routes.  */
 
-export default ({ className, ...props }) => (
+const Menu = ({ className, ...props }) => (
   <Ol className={className}>
     <Li key="home">
       <A href="/#home">Home</A>
@@ -63,3 +63,5 @@ export default ({ className, ...props }) => (
     </Li>
   </Ol>
 );
+
+export default Menu;

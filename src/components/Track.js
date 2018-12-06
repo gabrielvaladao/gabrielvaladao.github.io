@@ -29,7 +29,7 @@ const StyledH3 = styled(H3)`
   margin-bottom: ${({ theme }) => theme.type.h3.marginBottom};
 `;
 
-export default ({ title, soundCloudEmbed, cta }) => (
+const Track = ({ title, soundCloudEmbed, cta }) => (
   <article aria-labelledby="track-title">
     <StyledH3 id="track-title">{title}</StyledH3>
 
@@ -44,3 +44,5 @@ export default ({ title, soundCloudEmbed, cta }) => (
     )}
   </article>
 );
+
+export default Track;
