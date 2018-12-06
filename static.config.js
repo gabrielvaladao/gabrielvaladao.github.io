@@ -1,7 +1,14 @@
+import React from 'react';
 import axios from 'axios';
 import Contentful from './src/Contentful';
 
 export default {
+  /**
+   *  Enable bundleAnalyzer to check the pkg size footprint
+   *  of a production/staging build
+   */
+  // bundleAnalyzer: true,
+
   plugins: ['react-static-plugin-styled-components'],
   getSiteData: () => ({
     title: 'Labrysinthe'
@@ -64,5 +71,30 @@ export default {
         component: 'src/containers/404'
       }
     ];
-  }
+  },
+  Document: ({ Html, Head, Body, children }) => (
+    <Html lang="en-US">
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+        />
+        {/* Facebook thumbnail */}
+        <meta property="og:title" content="Labrysinthe" />
+        <meta property="og:description" content="Fire Loves Sugar &mdash; New EP coming soon!" />
+        <meta property="og:image" content="./public/website-thumbnail.png" />
+        <meta property="og:url" content="https://elated-leavitt-544c11.netlify.com" />
+
+        {/* Twitter thumbnail */}
+        <meta name="twitter:title" content="Labrysinthe" />
+        <meta name="twitter:description" content="Fire Loves Sugar &mdash; New EP coming soon!" />
+        <meta name="twitter:image" content=" ./public/website-thumbnail.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <title>Labrysinthe</title>
+      </Head>
+      <Body>{children}</Body>
+    </Html>
+  )
 };
