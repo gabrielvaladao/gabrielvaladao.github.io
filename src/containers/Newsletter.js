@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import isEmail from 'validator/lib/isEmail';
 import styled from 'styled-components';
 //
@@ -154,8 +155,9 @@ class Newsletter extends React.Component {
   }
 
   render() {
+    const { id } = this.props;
     return (
-      <Wrapper id={this.props.id}>
+      <Wrapper id={id}>
         <H1>Newsletter</H1>
         <div id="mc-sign-up">
           <P>Be the first to hear about upcoming gigs and fresh music.</P>
@@ -205,5 +207,9 @@ class Newsletter extends React.Component {
     );
   }
 }
+
+Newsletter.propTypes = {
+  id: PropTypes.string
+};
 
 export default Newsletter;

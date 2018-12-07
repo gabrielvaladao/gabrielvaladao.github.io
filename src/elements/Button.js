@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 //
 import styled from 'styled-components';
 //
@@ -9,7 +10,7 @@ import styled from 'styled-components';
  *  - Use same padding for Newsletter > Input
  * */
 
-const Button = styled.button`
+const Wrapper = styled.button`
   -webkit-appearance: none;
   font-family: ${({ theme }) => theme.type.primary.fontFamily};
   font-size: ${({ theme }) => theme.type.small.fontSize};
@@ -42,4 +43,10 @@ const Button = styled.button`
   }
 `;
 
-export default props => <Button {...props}>{props.children}</Button>;
+const Button = props => <Wrapper {...props}>{props.children}</Wrapper>;
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default Button;

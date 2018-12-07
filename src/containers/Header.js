@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable prettier/prettier */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 //
 import MainNav from '../components/MainNav';
@@ -56,9 +57,10 @@ const SiteTitle = styled(H1)`
 
 class Header extends Component {
   render() {
+    const { scrolled } = this.props;
     return (
-      <Wrapper {...this.props}>
-        <SiteTitle {...this.props}>
+      <Wrapper scrolled={scrolled}>
+        <SiteTitle scrolled={scrolled}>
           <a href="#home">Labrysinthe</a>
         </SiteTitle>
         <MainNav />
@@ -66,5 +68,9 @@ class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  scrolled: PropTypes.bool
+};
 
 export default Header;

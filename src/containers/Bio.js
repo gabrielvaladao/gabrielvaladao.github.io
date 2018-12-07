@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 //
@@ -18,7 +19,7 @@ const P = styled.p`
   }
 `;
 
-const Bio = ({ id, ...props }) => (
+const Bio = ({ id }) => (
   <section id={id}>
     <H1>Bio</H1>
     <Large>
@@ -51,5 +52,9 @@ const Bio = ({ id, ...props }) => (
     </P>
   </section>
 );
+
+Bio.propTypes = {
+  id: PropTypes.string
+};
 
 export default Bio;

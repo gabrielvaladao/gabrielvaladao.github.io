@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 //
 const Ol = styled.ol`
@@ -36,12 +37,21 @@ const A = styled.a`
 `;
 
 /**
- * These need to be <a> elements to avoid
+ * Important:
+ * <a> elements are used here to avoid
  * auto scroll to top when using <Link> or <NavLink>
  */
-/* TODO: Links + keys were added manually. Generate them from routes.  */
 
-const Menu = ({ className, ...props }) => (
+/**
+ * Important:
+ * className is included as a prop because
+ * the styling of this component is determined by the parent.
+ * This is so different styles can be applied when this component
+ * appears in different locations (e.g. footer, nav drawer) */
+
+/* TODO: Links + keys were added manually. Generate them from routes. */
+
+const Menu = ({ className }) => (
   <Ol className={className}>
     <Li key="home">
       <A href="/#home">Home</A>
@@ -63,5 +73,9 @@ const Menu = ({ className, ...props }) => (
     </Li>
   </Ol>
 );
+
+Menu.propTypes = {
+  className: PropTypes.string
+}
 
 export default Menu;

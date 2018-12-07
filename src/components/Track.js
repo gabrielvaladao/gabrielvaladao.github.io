@@ -1,5 +1,6 @@
 import React from 'react';
-import { withRouteData, Link } from 'react-static';
+import PropTypes from 'prop-types';
+import { Link } from 'react-static';
 import styled from 'styled-components';
 //
 import StyledLinkText from '../elements/StyledLinkText';
@@ -44,5 +45,15 @@ const Track = ({ title, soundCloudEmbed, cta }) => (
     )}
   </article>
 );
+
+/* TODO: soundCloudEmbed is expected to be an array with exactly one object */
+Track.propTypes = {
+  title: PropTypes.string.isRequired,
+  soundCloudEmbed: PropTypes.arrayOf(PropTypes.object).isRequired,
+  cta: PropTypes.shape({
+    text: PropTypes.string,
+    url: PropTypes.string
+  })
+}
 
 export default Track;

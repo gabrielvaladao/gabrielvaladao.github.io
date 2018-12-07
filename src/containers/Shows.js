@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
 //
@@ -23,7 +24,7 @@ const Li = styled.li`
   list-style-position: outside;
 `;
 
-const Shows = ({ id, ...props }) => (
+const Shows = ({ id }) => (
   <section id={id}>
     <H1>Shows</H1>
     {/* Show conditionally:
@@ -76,5 +77,9 @@ const Shows = ({ id, ...props }) => (
     </Section>
   </section>
 );
+
+Shows.propTypes = {
+  id: PropTypes.string
+};
 
 export default withRouteData(Shows);

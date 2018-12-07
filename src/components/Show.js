@@ -1,16 +1,11 @@
-import React from 'react';
-import { withRouteData, Link } from 'react-static';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-static';
 import styled from 'styled-components';
 //
 import H4 from '../elements/H4';
 import Button from '../elements/Button';
 import StyledLinkText from '../elements/StyledLinkText';
-
-/* TODO: Show logic
-  A show has one of two states: Upcoming or Previous.
-  A show's state is changed to Previous on the day after its end date. (currentDate.value === (show.endDate + 1).value).
-  When a show's state is Previous, hide ticket link. Keep facebook link.
-*/
 
 const Wrapper = styled.article`
   font-family: ${({ theme }) => theme.type.secondary.fontFamily};
@@ -82,73 +77,101 @@ const Cta = styled(Button)`
   }
 `;
 
-/* TODO: Refactor data structure */
-const Show = ({
-  title,
-  hostUrl,
-  hostName,
-  startDate,
-  venueUrl,
-  venueName,
-  venueAddress,
-  venueAddress2,
-  venueGMapsUrl,
-  fbEventUrl,
-  ctaText,
-  ctaUrl,
-  ...props
-}) => (
-  <Wrapper aria-labelledby="show-title">
-    <When>{startDate}</When>
-    <H4 id="show-title">{title}</H4>
-    <Host>
-      Hosted by{' '}
-      <StyledLinkText>
-        <Link to={hostUrl}>{hostName}</Link>
-      </StyledLinkText>
-    </Host>
-    <Where>
-      <StyledLinkText>
-        <Link to={venueUrl} id="venue-name">
-          {venueName}
-        </Link>
-      </StyledLinkText>
-      <br />
-      {venueAddress}
-      {venueAddress2 && (
-        <React.Fragment>
+/* TODO: Show logic
+  A show has one of two states: Upcoming or Previous.
+  A show's state is changed to Previous on the day after its end date. (currentDate.value === (show.endDate + 1).value).
+  When a show's state is Previous, hide ticket link. Keep facebook link.
+*/
+
+class Show extends Component {
+  render() {
+    /* TODO: Refactor data structure */
+    const {
+      title,
+      hostUrl,
+      hostName,
+      startDate,
+      venueUrl,
+      venueName,
+      venueAddress,
+      venueAddress2,
+      venueGMapsUrl,
+      fbEventUrl,
+      ctaText,
+      ctaUrl
+    } = this.props;
+    return (
+      <Wrapper aria-labelledby="show-title">
+        <When>{startDate}</When>
+        <H4 id="show-title">{title}</H4>
+        {/* TODO: conditionally render Host */}
+        <Host>
+          Hosted by{' '}
+          <StyledLinkText>
+            <Link to={hostUrl}>{hostName}</Link>
+          </StyledLinkText>
+        </Host>
+        <Where>
+          <StyledLinkText>
+            <Link to={venueUrl} id="venue-name">
+              {venueName}
+            </Link>
+          </StyledLinkText>
           <br />
-          <span>{venueAddress2}</span>
-        </React.Fragment>
-      )}
-      <br />
-      <StyledLinkText>
-        <Link to={venueGMapsUrl} aria-labelledby="venue-name">
-          Google Maps
-        </Link>
-      </StyledLinkText>
-    </Where>
-    <CtaList>
-      {fbEventUrl && (
-        <Li>
-          <Cta>
-            <Link to={fbEventUrl} aria-labelledby="show-title">
-              FACEBOOK
+          {venueAddress}
+          {venueAddress2 && (
+            <React.Fragment>
+              <br />
+              <span>{venueAddress2}</span>
+            </React.Fragment>
+          )}
+          <br />
+          <StyledLinkText>
+            <Link to={venueGMapsUrl} aria-labelledby="venue-name">
+              Google Maps
             </Link>
-          </Cta>
-        </Li>
-      )}
-      {ctaUrl && (
-        <Li>
-          <Cta>
-            <Link to={ctaUrl} aria-labelledby="show-title">
-              {ctaText}
-            </Link>
-          </Cta>
-        </Li>
-      )}
-    </CtaList>
-  </Wrapper>
-);
+          </StyledLinkText>
+        </Where>
+        <CtaList>
+          {fbEventUrl && (
+            <Li>
+              <Cta>
+                <Link to={fbEventUrl} aria-labelledby="show-title">
+                  FACEBOOK
+                </Link>
+              </Cta>
+            </Li>
+          )}
+          {ctaUrl && (
+            <Li>
+              <Cta>
+                <Link to={ctaUrl} aria-labelledby="show-title">
+                  {ctaText}
+                </Link>
+              </Cta>
+            </Li>
+          )}
+        </CtaList>
+      </Wrapper>
+    );
+  }
+}
+
+/* TODO: Refactor data structure */
+/* TODO: check this matches Contentful content model */
+Show.propTypes = {
+  title: PropTypes.string.isRequired,
+  hostUrl: PropTypes.string,
+  hostName: PropTypes.string,
+  startDate: PropTypes.string.isRequired,
+  venueUrl: PropTypes.string,
+  venueName: PropTypes.string.isRequired,
+  venueAddress: PropTypes.string,
+  venueAddress2: PropTypes.string,
+  venueGMapsUrl: PropTypes.string,
+  fbEventUrl: PropTypes.string,
+  ctaText: PropTypes.string,
+  ctaUrl: PropTypes.string
+};
 
 export default Show;

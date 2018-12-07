@@ -40,8 +40,7 @@ const Icon = styled(Link)`
   }
 `;
 
-/* TODO: generate socials from data */
-/* TODO: each Social to be its own component */
+/* TODO: generate socials from data and include PropTypes */
 const Socials = () => (
   <Wrapper>
     <Li key="beatport">

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withSiteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
@@ -57,8 +58,8 @@ const Logo = styled.img`
   }
 `;
 
-const Home = props => (
-  <Wrapper {...props}>
+const Home = ({ id }) => (
+  <Wrapper id={id}>
     <SiteTitle>Labrysinthe</SiteTitle>
 
     <Large>
@@ -78,5 +79,9 @@ const Home = props => (
     </picture>
   </Wrapper>
 );
+
+Home.propTypes = {
+  id: PropTypes.string
+};
 
 export default withSiteData(Home);

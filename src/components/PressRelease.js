@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //

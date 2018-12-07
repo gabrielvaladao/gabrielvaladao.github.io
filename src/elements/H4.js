@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 //
-const H4 = styled.h4`
+const Wrapper = styled.h4`
   font-family: ${({ theme }) => theme.type.h4.fontFamily};
   font-weight: ${({ theme }) => theme.type.h4.fontWeight};
   line-height: ${({ theme }) => theme.type.h4.lineHeight};
@@ -13,4 +14,10 @@ const H4 = styled.h4`
   }
 `;
 
-export default props => <H4 {...props}>{props.children}</H4>;
+const H4 = props => <Wrapper {...props}>{props.children}</Wrapper>;
+
+H4.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default H4;

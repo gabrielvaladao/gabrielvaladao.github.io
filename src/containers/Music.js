@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
@@ -26,7 +27,7 @@ const Li = styled.li`
 /**
  * TODO: iframe title attribs have been added by hand to satisfy eslint a11y error. generate these.
  */
-const Music = ({ id, ...props }) => (
+const Music = ({ id }) => (
   <section id={id}>
     <H1>Music</H1>
     <p>
@@ -107,5 +108,9 @@ const Music = ({ id, ...props }) => (
     </Ul>
   </section>
 );
+
+Music.propTypes = {
+  id: PropTypes.string
+};
 
 export default withRouteData(Music);

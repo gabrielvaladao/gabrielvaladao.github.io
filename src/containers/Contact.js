@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 //
@@ -14,7 +15,7 @@ const Address = styled.address`
   font-style: inherit;
 `;
 
-const Contact = ({ id, ...props }) => (
+const Contact = ({ id }) => (
   <section id={id}>
     <H1>Contact</H1>
     <Info>
@@ -27,5 +28,9 @@ const Contact = ({ id, ...props }) => (
     </Info>
   </section>
 );
+
+Contact.propTypes = {
+  id: PropTypes.string
+};
 
 export default Contact;

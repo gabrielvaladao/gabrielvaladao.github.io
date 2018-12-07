@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
 //
@@ -15,7 +16,7 @@ const Li = styled.li`
 
 /* TODO: aria-sort: date, descending */
 
-const Press = ({ id, ...props }) => (
+const Press = ({ id }) => (
   <section id={id}>
     <H1>Press</H1>
     <Ul>
@@ -28,5 +29,9 @@ const Press = ({ id, ...props }) => (
     </Ul>
   </section>
 );
+
+Press.propTypes = {
+  id: PropTypes.string
+};
 
 export default withRouteData(Press);

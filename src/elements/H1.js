@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 //
-const H1 = styled.h1`
+const Wrapper = styled.h1`
   margin-top: 0;
   padding-top: ${({ theme }) => theme.space.three};
   text-align: center;
@@ -15,4 +16,10 @@ const H1 = styled.h1`
   }
 `;
 
-export default props => <H1 {...props}>{props.children}</H1>;
+const H1 = props => <Wrapper {...props}>{props.children}</Wrapper>;
+
+H1.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default H1;

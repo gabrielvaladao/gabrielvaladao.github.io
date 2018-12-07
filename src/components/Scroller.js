@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Waypoint from 'react-waypoint';
 import Header from '../containers/Header';
 
@@ -20,14 +21,19 @@ class Scroller extends Component {
   }
 
   render() {
+    const { children } = this.props;
     return (
       <React.Fragment>
         <Header scrolled={this.state.scrolled} />
         <Waypoint onPositionChange={this.handleScroll} />
-        {this.props.children}
+        {children}
       </React.Fragment>
     );
   }
 }
+
+Scroller.propTypes = {
+  children: PropTypes.element
+};
 
 export default Scroller;
