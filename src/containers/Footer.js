@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 //
 import Menu from '../components/Menu';
@@ -12,7 +11,10 @@ const Wrapper = styled.footer`
 `;
 
 const StyledMenu = styled(Menu)`
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black;
+  border-top: solid 1px ${({ theme }) => theme.color.overlayLight}; */
+  border-bottom: 1px solid ${({ theme }) => theme.color.overlayMedium};
+  border-top: solid 1px black;
   padding: ${({ theme }) => theme.space.one} 0 ${({ theme }) => theme.space.two} 0;
 `;
 

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 //
 const Ol = styled.ol`
   background-color: ${({ theme }) => theme.color.overlayMedium};
-  border-top: solid 1px ${({ theme }) => theme.color.overlayLight};
   width: 100%;
   position: relative;
   left: 50%;
