@@ -35,10 +35,6 @@ const Wrapper = styled.section`
 
 const P = styled.p`
   margin-bottom: ${({ theme }) => theme.space.one};
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
 `;
 
 /* TODO: calculate ch values and max-width based on Theme */
@@ -121,6 +117,10 @@ const GenericErrorMessage = styled(ErrorMessage)`
 const Thanks = styled.div`
   p {
     text-align: left;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 `;
 
