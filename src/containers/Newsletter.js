@@ -113,22 +113,21 @@ class Newsletter extends React.Component {
     /* Suppress redirect */
     e.preventDefault();
     try {
-      if (this.state.user_email && isEmail(this.state.user_email)) {
-        const form = e.target;
-
-        fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: encode({
-            'form-name': form.getAttribute('name'),
-            ...this.state
-          })
-        })
-          .then(() => this.showThanks())
-          .catch(error => this.showError(error));
-      } else {
+      if (!this.state.user_email || !isEmail(this.state.user_email)) {
         throw new Error('Please enter a valid email address');
       }
+      const form = e.target;
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...this.state
+        })
+      })
+        .then(() => this.showThanks())
+        .catch(error => this.showError(error));
     } catch (error) {
       this.showError(error);
     }
