@@ -24,7 +24,7 @@ const Bio = ({ id }) => (
     <H1>Bio</H1>
     <Large>
       Labrysinthe is voluntarily committed to the institution of psytrance and stands for better
-      machines, brighter knowledge, bolder music, and the blissful ecstacies of the beat.
+      machines, brighter knowledge, bolder music, and the blissful ecstasies of the beat.
     </Large>
     <P>
       Labrysinthe is Natalia Lincoln, who took the scenic route to psytrance -- first through
