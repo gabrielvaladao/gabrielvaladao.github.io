@@ -193,7 +193,7 @@ class Newsletter extends React.Component {
 
   resetErrors() {
     if (typeof document !== 'undefined') {
-      /* un-invalidate the inputs */
+      /* reset any inputs previously marked as invalid */
       const inputs = document.querySelectorAll('.input');
       for (const input of inputs) {
         input.setAttribute('aria-invalid', 'false');
