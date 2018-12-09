@@ -18,7 +18,8 @@ const P = styled.p`
 
 /* TODO: calculate ch values and max-width based on Theme */
 const Form = styled.form`
-  display: grid;
+  /* TODO: remove previous grid styles */
+  display: block;
   grid-template-columns: min-content minmax(0, 1fr) max-content;
   grid-template-rows: min-content minmax(0, min-content);
   column-gap: 0.5ch;
