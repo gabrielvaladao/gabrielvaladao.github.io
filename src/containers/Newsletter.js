@@ -6,6 +6,7 @@ import styled from 'styled-components';
 //
 import H1 from '../elements/H1';
 import H2 from '../elements/H2';
+import Placeholder from '../elements/Placeholder';
 import Button from '../elements/Button';
 
 /* UTILITIES */
@@ -44,6 +45,7 @@ const Form = styled.form`
   grid-template-columns: minmax(0, min-content) minmax(0, min-content);
   grid-template-rows: repeat(6, min-content);
   grid-column-gap: 1ch;
+  grid-row-gap: 0.5ch;
 
   /* This is what Google generates automatically */
   max-width: 304px;
@@ -58,6 +60,8 @@ const Form = styled.form`
 const Label = styled.label`
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
 `;
 
 /**
@@ -67,12 +71,13 @@ const Label = styled.label`
 const Input = styled.input`
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  border-radius: 3px;
+  border-radius: ${({ theme }) => theme.border.radius.small};
+  border: 0;
   letter-spacing: -0.1ch;
   padding: 0.2rem 0.5rem;
 `;
 
-const StyledReCAPTCHA = styled(ReCAPTCHA)`
+const StyledPlaceholder = styled(Placeholder)`
   grid-column: 1 / 3;
   grid-row: 3 / 4;
   margin: 0 auto;
@@ -88,8 +93,6 @@ const ErrorMessage = styled.p`
   display: none;
   font-size: ${({ theme }) => theme.type.small.fontSize};
   color: ${({ theme }) => theme.color.error};
-  margin: ${({ theme }) => theme.space.quarter} 0;
-  text-align: left;
   white-space: normal;
 `;
 
@@ -244,13 +247,14 @@ class Newsletter extends React.Component {
               required
             />
             <EmailErrorMessage id="email-error" className="error-msg" />
-
-            <StyledReCAPTCHA
-              id="recaptcha"
-              className="input"
-              sitekey="6LdrhHkUAAAAAAWeHoi6gPJV6DiLoU3Cn9OptAWF"
-              onChange={this.handleReCAPTCHA}
-            />
+            <StyledPlaceholder>
+              <ReCAPTCHA
+                id="recaptcha"
+                className="input"
+                sitekey="6LdrhHkUAAAAAAWeHoi6gPJV6DiLoU3Cn9OptAWF"
+                onChange={this.handleReCAPTCHA}
+              />
+            </StyledPlaceholder>
             <ReCAPTCHAErrorMessage id="recaptcha-error" className="error-msg" />
 
             <GenericErrorMessage id="error" className="error-msg" />

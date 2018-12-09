@@ -5,6 +5,7 @@ import styled from 'styled-components';
 //
 import StyledLinkText from '../elements/StyledLinkText';
 import H3 from '../elements/H3';
+import Placeholder from '../elements/Placeholder';
 //
 
 /*
@@ -20,12 +21,6 @@ TODO: PARSE IFRAMES (a11y)
 - JSX-ify attribs, eg. frameBorder - console warning
 */
 
-const Background = styled.div`
-  iframe {
-    background-color: ${({ theme }) => theme.color.overlayLight};
-  }
-`;
-
 const StyledH3 = styled(H3)`
   margin-bottom: ${({ theme }) => theme.type.h3.marginBottom};
 `;
@@ -34,7 +29,7 @@ const Track = ({ title, soundCloudEmbed, cta }) => (
   <article aria-labelledby="track-title">
     <StyledH3 id="track-title">{title}</StyledH3>
 
-    <Background>{soundCloudEmbed}</Background>
+    <Placeholder>{soundCloudEmbed}</Placeholder>
 
     {cta && (
       <StyledLinkText>
@@ -54,6 +49,6 @@ Track.propTypes = {
     text: PropTypes.string,
     url: PropTypes.string
   })
-}
+};
 
 export default Track;
