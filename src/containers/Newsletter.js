@@ -104,11 +104,16 @@ class Newsletter extends React.Component {
     super(props);
     this.state = {};
     this.handleChange = this.handleChange.bind(this);
+    this.handleRecaptcha = this.handleRecaptcha.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
+  }
+
+  handleRecaptcha(response) {
+    this.setState({ 'g-recaptcha-response': response });
   }
 
   handleSubmit(e) {
@@ -117,6 +122,9 @@ class Newsletter extends React.Component {
     try {
       if (!this.state.user_email || !isEmail(this.state.user_email)) {
         throw new Error('Please enter a valid email address');
+      }
+      if (!this.state['g-recaptcha-response']) {
+        throw new Error("Please check the box to confirm you're human");
       }
       const form = e.target;
 
@@ -166,6 +174,7 @@ class Newsletter extends React.Component {
             name="mc_sign_up"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha
             onSubmit={this.handleSubmit}
             noValidate
           >
@@ -190,6 +199,12 @@ class Newsletter extends React.Component {
               required
             />
             <ErrorMessage id="error" />
+
+            <ReCAPTCHA
+              ref="recaptcha"
+              sitekey="6LdrhHkUAAAAAAWeHoi6gPJV6DiLoU3Cn9OptAWF"
+              onChange={this.handleRecaptcha}
+            />
 
             <Submit type="submit">
               <span>Sign&nbsp;up</span>
