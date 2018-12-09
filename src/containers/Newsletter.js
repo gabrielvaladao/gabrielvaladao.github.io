@@ -18,7 +18,7 @@ class EmailError extends Error {
 
 class ReCAPTCHAError extends Error {
   name = 'ReCAPTCHAError';
-  message = "Please check the box to confirm you're human";
+  message = "Please check the box if you're human";
 }
 
 /* Encode data for the form's POST resquest */
@@ -38,11 +38,10 @@ const P = styled.p`
   margin-bottom: ${({ theme }) => theme.space.one};
 `;
 
-/* TODO: calculate ch values and max-width based on Theme */
 const Form = styled.form`
   display: grid;
   margin: 0 auto;
-  grid-template-columns: minmax(0, min-content) minmax(0, min-content);
+  grid-template-columns: minmax(0, min-content) minmax(0, 1fr);
   grid-template-rows: repeat(6, min-content);
   grid-column-gap: 1ch;
   grid-row-gap: 0.5ch;
