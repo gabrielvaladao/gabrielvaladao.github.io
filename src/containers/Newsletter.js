@@ -49,9 +49,9 @@ const Form = styled.form`
   max-width: 304px;
 
   /* TODO: do we need this? */
-  @media (min-width: 576px) {
+  /* @media (min-width: 576px) {
     max-width: 500px;
-  }
+  } */
 `;
 
 /* TODO: width is hacky. do this with box-sizing or borders */
