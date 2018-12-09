@@ -48,10 +48,10 @@ const Form = styled.form`
   /* This is what Google generates automatically */
   max-width: 304px;
 
-  /* TODO: do we need this? */
-  /* @media (min-width: 576px) {
-    max-width: 500px;
-  } */
+  @media (min-width: 576px) {
+    grid-template-columns: minmax(0, min-content) minmax(min-content, 1fr);
+    max-width: inherit;
+  }
 `;
 
 /* TODO: width is hacky. do this with box-sizing or borders */
@@ -249,7 +249,7 @@ class Newsletter extends React.Component {
             <GenericErrorMessage id="error" className="error-msg" />
 
             <Submit type="submit">
-              <span>Sign&nbsp;up</span>
+              <span>SIGN&nbsp;UP</span>
             </Submit>
           </Form>
         </div>
