@@ -139,6 +139,7 @@ class Newsletter extends React.Component {
 
   handleSubmit(e) {
     /* Suppress redirect */
+    this.hideErrors();
     e.preventDefault();
     try {
       if (!this.state.user_email || !isEmail(this.state.user_email)) {
@@ -189,6 +190,15 @@ class Newsletter extends React.Component {
     }
   }
 
+  hideErrors() {
+    if (typeof document !== 'undefined') {
+      const list = document.querySelectorAll('.error-msg');
+      for (let el of list) {
+        el.style.visibility = 'hidden';
+      }
+    }
+  }
+
   render() {
     const { id } = this.props;
     return (
@@ -224,15 +234,15 @@ class Newsletter extends React.Component {
               onChange={this.handleChange}
               required
             />
-            <EmailErrorMessage id="email-error" />
+            <EmailErrorMessage id="email-error" className="error-msg" />
 
             <StyledReCAPTCHA
               sitekey="6LdrhHkUAAAAAAWeHoi6gPJV6DiLoU3Cn9OptAWF"
               onChange={this.handleReCAPTCHA}
             />
-            <ReCAPTCHAErrorMessage id="recaptcha-error" />
+            <ReCAPTCHAErrorMessage id="recaptcha-error" className="error-msg" />
 
-            <GenericErrorMessage id="error" />
+            <GenericErrorMessage id="error" className="error-msg" />
 
             <Submit type="submit">
               <span>Sign&nbsp;up</span>
