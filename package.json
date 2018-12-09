@@ -22,6 +22,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-google-recaptcha": "^1.0.5",
     "react-hot-loader": "^4.3.12",
     "react-router": "^4.2.0",
     "react-static": "^5.9.12",
