@@ -67,12 +67,9 @@ const Label = styled.label`
 const Input = styled.input`
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  /* border: 1px solid #d3d3d3; */
   border-radius: 3px;
   letter-spacing: -0.1ch;
   padding: 0.2rem 0.5rem;
-  /* margin-left: 1ch; */
-  /* flex-grow: 1; */
 `;
 
 const StyledReCAPTCHA = styled(ReCAPTCHA)`
@@ -82,15 +79,13 @@ const StyledReCAPTCHA = styled(ReCAPTCHA)`
 `;
 
 const Submit = styled(Button)`
-  /* display: inline-block; */
-  /* flex-grow: 1; */
   grid-column: 1 / 3;
   grid-row: 5 / 6;
   padding: ${({ theme }) => theme.space.quarter};
 `;
 
 const ErrorMessage = styled.p`
-  visibility: hidden;
+  display: none;
   font-size: ${({ theme }) => theme.type.small.fontSize};
   color: ${({ theme }) => theme.color.error};
   margin: ${({ theme }) => theme.space.quarter} 0;
@@ -143,7 +138,7 @@ class Newsletter extends React.Component {
 
   handleSubmit(e) {
     /* Suppress redirect */
-    this.hideErrors();
+    this.resetErrors();
     e.preventDefault();
     try {
       if (!this.state.user_email || !isEmail(this.state.user_email)) {
@@ -172,7 +167,7 @@ class Newsletter extends React.Component {
   displayThanks() {
     if (typeof document !== 'undefined') {
       document.querySelector('#mc-sign-up').setAttribute('hidden', 'true');
-      document.querySelector('#error').style.visibility = 'hidden';
+      document.querySelector('#error').style.display = 'none';
       document.querySelector('#error').style.position = 'absolute';
       document.querySelector('#thanks').removeAttribute('hidden');
     }
@@ -182,23 +177,32 @@ class Newsletter extends React.Component {
     if (typeof document !== 'undefined') {
       let errorMessage;
       if (error.name === 'EmailError') {
+        document.querySelector('#email').setAttribute('aria-invalid', 'true');
         errorMessage = document.querySelector('#email-error');
       } else if (error.name === 'ReCAPTCHAError') {
+        document.querySelector('#recaptcha').setAttribute('aria-invalid', 'true');
         errorMessage = document.querySelector('#recaptcha-error');
       } else {
         errorMessage = document.querySelector('#error');
       }
       errorMessage.textContent = `Error: ${error.message}`;
       errorMessage.style.position = 'relative';
-      errorMessage.style.visibility = 'visible';
+      errorMessage.style.display = 'block';
     }
   }
 
-  hideErrors() {
+  resetErrors() {
     if (typeof document !== 'undefined') {
-      const list = document.querySelectorAll('.error-msg');
-      for (const el of list) {
-        el.style.visibility = 'hidden';
+      /* un-invalidate the inputs */
+      const inputs = document.querySelectorAll('.input');
+      for (const input of inputs) {
+        input.setAttribute('aria-invalid', 'false');
+      }
+
+      /* hide error messages */
+      const messages = document.querySelectorAll('.error-msg');
+      for (const msg of messages) {
+        msg.style.display = 'none';
       }
     }
   }
@@ -235,12 +239,15 @@ class Newsletter extends React.Component {
               type="email"
               id="email"
               name="user_email"
+              className="input"
               onChange={this.handleChange}
               required
             />
             <EmailErrorMessage id="email-error" className="error-msg" />
 
             <StyledReCAPTCHA
+              id="recaptcha"
+              className="input"
               sitekey="6LdrhHkUAAAAAAWeHoi6gPJV6DiLoU3Cn9OptAWF"
               onChange={this.handleReCAPTCHA}
             />
