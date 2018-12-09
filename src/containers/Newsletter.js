@@ -35,6 +35,10 @@ const Wrapper = styled.section`
 
 const P = styled.p`
   margin-bottom: ${({ theme }) => theme.space.one};
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 /* TODO: calculate ch values and max-width based on Theme */
@@ -184,7 +188,7 @@ class Newsletter extends React.Component {
       } else {
         errorMessage = document.querySelector('#error');
       }
-      errorMessage.textContent = error;
+      errorMessage.textContent = `Error: ${error.message}`;
       errorMessage.style.position = 'relative';
       errorMessage.style.visibility = 'visible';
     }
@@ -193,7 +197,7 @@ class Newsletter extends React.Component {
   hideErrors() {
     if (typeof document !== 'undefined') {
       const list = document.querySelectorAll('.error-msg');
-      for (let el of list) {
+      for (const el of list) {
         el.style.visibility = 'hidden';
       }
     }
