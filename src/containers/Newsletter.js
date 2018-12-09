@@ -265,7 +265,7 @@ class Newsletter extends React.Component {
           <P>You've been added to the mailing list.</P>
           <P>
             Please check your email and confirm your address. You'll be in the loop as soon as
-            Labrysinthe drops anything shiny.
+            Labrysinthe drops new shiny.
           </P>
         </Thanks>
       </Wrapper>
