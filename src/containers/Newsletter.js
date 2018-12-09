@@ -143,11 +143,16 @@ class Newsletter extends React.Component {
     this.resetErrors();
     e.preventDefault();
     try {
+      const errors = [];
       if (!this.state.user_email || !isEmail(this.state.user_email)) {
-        throw new EmailError();
+        errors.push(new EmailError());
       }
       if (!this.state['g-recaptcha-response']) {
-        throw new ReCAPTCHAError();
+        errors.push(new ReCAPTCHAError());
+      }
+      /* After testing all inputs, raise all errors at once */
+      if (errors.length > 0) {
+        throw errors;
       }
       const form = e.target;
 
@@ -161,8 +166,11 @@ class Newsletter extends React.Component {
       })
         .then(() => this.displayThanks())
         .catch(error => this.displayError(error));
-    } catch (error) {
-      this.displayError(error);
+    } catch (errors) {
+      errors.map(err => {
+        this.displayError(err);
+        return err;
+      });
     }
   }
 
