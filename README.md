@@ -8,6 +8,7 @@ It's built on the following tech:
 
 - [React Static](https://react-static.js.org) + 'basic' template
 - [Styled Components](https://www.styled-components.com/) with theming
+- [react-waypoint](http://brigade.github.io/react-waypoint/) inspired by [Waypoints](http://imakewebthings.com/waypoints/)
 - [Netlify](https://www.netlify.com/)
 - [MailChimp](https://mailchimp.com/)
 - [Zapier](https://zapier.com/)
