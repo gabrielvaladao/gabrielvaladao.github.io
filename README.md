@@ -1,18 +1,25 @@
-# WIP - Musician's portfolio built on React Static
+# Musician's portfolio built on React Static
 
-*** **This repo is currently in development and changing frequently** ***
+This website is being crafted to be robust and extensible as a prototype for similar portfolio sites in future. Improvements are ongoing.
 
-This website is being designed and built as a reusable template for similar portfolio sites in future.
+It's temporarily hosted at [https://elated-leavitt-544c11.netlify.com/](https://elated-leavitt-544c11.netlify.com/)
 
 It's built on the following tech:
 
 - [React Static](https://react-static.js.org) + 'basic' template
 - [Styled Components](https://www.styled-components.com/) with theming
-- [Contentful CMS](https://www.contentful.com/) (planned for future release)
+- [Netlify](https://www.netlify.com/)
+- [MailChimp](https://mailchimp.com/)
+- [Zapier](https://zapier.com/)
+- [Google ReCAPTCHA](https://developers.google.com/recaptcha/)
+- [validator](https://github.com/chriso/validator.js)
 
 Dev dependencies include:
 
-- [Jest](https://jestjs.io/)
-- [ESLint + Prettier + Airbnb config](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a) (customized)
+- [Prettier](https://prettier.io/) + [ESLint](https://eslint.org/) with customised [Airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) ([Style guide](https://github.com/airbnb/javascript)).
+- [stylelint](https://stylelint.io/)
 
-A **very in-progress** staging build is hosted on [Netlify](https://elated-leavitt-544c11.netlify.com/)
+Roadmapped for future releases:
+
+- [Jest](https://jestjs.io/)
+- [Contentful](https://www.contentful.com/)
