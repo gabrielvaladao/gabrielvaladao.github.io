@@ -20,7 +20,7 @@ Dev dependencies include:
 - [Prettier](https://prettier.io/) + [ESLint](https://eslint.org/) with customised [Airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) ([Style guide](https://github.com/airbnb/javascript)).
 - [stylelint](https://stylelint.io/)
 
-Roadmapped for future releases:
+Coming soon:
 
 - [react-testing-library](https://github.com/kentcdodds/react-testing-library) with [Jest](https://jestjs.io/)
 - [Contentful](https://www.contentful.com/)
