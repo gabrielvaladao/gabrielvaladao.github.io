@@ -59,6 +59,11 @@ const ErrorMessageStyles = css`
   font-size: ${({ theme }) => theme.type.small.fontSize};
   color: ${({ theme }) => theme.color.error};
   white-space: normal;
+
+  @media (min-width: 576px) {
+    text-align: left;
+    white-space: nowrap;
+  }
 `;
 
 const EmailErrorMessageStyles = css`
