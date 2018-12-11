@@ -240,10 +240,9 @@ class Newsletter extends React.Component {
         </div>
         <Thanks id="thanks" hidden>
           <H2>Thanks!</H2>
-          <P>You've been added to the mailing list.</P>
           <P>
-            Please check your email and confirm your address. You'll be in the loop as soon as
-            Labrysinthe drops new shiny.
+            You've been added to the mailing list. You'll be in the loop as soon as Labrysinthe
+            drops anything new and shiny.
           </P>
         </Thanks>
       </Wrapper>
