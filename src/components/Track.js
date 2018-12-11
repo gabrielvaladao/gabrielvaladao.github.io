@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLinkText from '../elements/StyledLinkText';
-import H3 from '../elements/H3';
-import Placeholder from '../elements/Placeholder';
-//
+import H3 from '../common/H3';
+import Placeholder from '../common/Placeholder';
+import TextLink from '../common/TextLink';
+import { TrackH3Styles } from './Track-styles';
 
 /*
   TODO: I want to use the releaseDate info
@@ -21,22 +21,22 @@ TODO: PARSE IFRAMES (a11y)
 - JSX-ify attribs, eg. frameBorder - console warning
 */
 
-const StyledH3 = styled(H3)`
-  margin-bottom: ${({ theme }) => theme.type.h3.marginBottom};
+const TrackH3 = styled(H3)`
+  ${TrackH3Styles}
 `;
 
 const Track = ({ title, soundCloudEmbed, cta }) => (
   <article aria-labelledby="track-title">
-    <StyledH3 id="track-title">{title}</StyledH3>
+    <TrackH3 id="track-title">{title}</TrackH3>
 
     <Placeholder>{soundCloudEmbed}</Placeholder>
 
     {cta && (
-      <StyledLinkText>
+      <TextLink>
         <Link className="cta" to={cta.url} aria-labelledby="track-title">
           {cta.text}
         </Link>
-      </StyledLinkText>
+      </TextLink>
     )}
   </article>
 );

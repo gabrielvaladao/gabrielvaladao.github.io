@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 //
-import H1 from '../elements/H1';
-import StyledLinkText from '../elements/StyledLinkText';
+import H1 from '../common/H1';
+import TextLink from '../common/TextLink';
+import { ContactInfoStyles, AddressStyles } from './Contact-styles';
 //
 const Info = styled.div`
-  text-align: center;
+  ${ContactInfoStyles}
 `;
 
 const Address = styled.address`
-  display: inline;
-  font-style: inherit;
+  ${AddressStyles}
 `;
 
 const Contact = ({ id }) => (
@@ -21,9 +21,9 @@ const Contact = ({ id }) => (
     <Info>
       For booking and inquiries, email{' '}
       <Address>
-        <StyledLinkText>
+        <TextLink>
           <Link to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</Link>
-        </StyledLinkText>
+        </TextLink>
       </Address>
     </Info>
   </section>

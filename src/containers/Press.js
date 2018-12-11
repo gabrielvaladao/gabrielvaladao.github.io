@@ -4,14 +4,15 @@ import { withRouteData } from 'react-static';
 import styled from 'styled-components';
 //
 import PressRelease from '../components/PressRelease';
-import H1 from '../elements/H1';
+import H1 from '../common/H1';
+import { UlStyles, LiStyles } from './Press-styles';
 
 const Ul = styled.ul`
-  padding-left: 0;
+  ${UlStyles}
 `;
 
 const Li = styled.li`
-  list-style-type: none;
+  ${LiStyles}
 `;
 
 /* TODO: aria-sort: date, descending */

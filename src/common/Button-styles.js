@@ -1,8 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-//
-import styled from 'styled-components';
-//
+import { css } from 'styled-components';
 
 /**
  * TODO:
@@ -10,7 +6,7 @@ import styled from 'styled-components';
  *  - Use same padding for Newsletter > Input
  * */
 
-const Wrapper = styled.button`
+const ButtonStyles = css`
   -webkit-appearance: none;
   font-family: ${({ theme }) => theme.type.primary.fontFamily};
   font-size: ${({ theme }) => theme.type.small.fontSize};
@@ -43,10 +39,4 @@ const Wrapper = styled.button`
   }
 `;
 
-const Button = props => <Wrapper {...props}>{props.children}</Wrapper>;
-
-Button.propTypes = {
-  children: PropTypes.node.isRequired
-};
-
-export default Button;
+export default ButtonStyles;

@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLinkText from '../elements/StyledLinkText';
-import H2 from '../elements/H2';
+import H2 from '../common/H2';
+import TextLink from '../common/TextLink';
+import LargeStyles from './PressRelease-styles';
 
-const Callout = styled.p`
-  font-size: 1.2em;
+const Large = styled.p`
+  ${LargeStyles}
 `;
 
 const PressRelease = ({ pressRelease }) => (
@@ -21,10 +22,10 @@ const PressRelease = ({ pressRelease }) => (
     />
     <H2 id="headline">Labrysinthe launches psytrance EP (title) on (date) at (party) at (venue)</H2>
     <span className="release-date">Date</span>
-    <Callout>
+    <Large>
       Psy-sorceress Labrysinthe will play (date) at (party) at (venue), (part of town) to conincide
       with the release of (EP).
-    </Callout>
+    </Large>
 
     {/* Commented out to test list view that'll have a 'Read more' link
     
@@ -37,17 +38,17 @@ const PressRelease = ({ pressRelease }) => (
       </p>
     </div> */}
     {/* TODO: This link only to appear on Press list page */}
-    <StyledLinkText>
+    <TextLink>
       <Link to="" className="read-more" aria-labelledby="headline">
         Read more
       </Link>
-    </StyledLinkText>
+    </TextLink>
     {' / '}
-    <StyledLinkText>
+    <TextLink>
       <Link to="" className="cta">
         Buy the EP
       </Link>
-    </StyledLinkText>
+    </TextLink>
   </article>
 );
 

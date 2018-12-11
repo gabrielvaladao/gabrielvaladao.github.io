@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 //
+import PlaceholderStyles from './Placeholder-styles';
+
 const Wrapper = styled.div`
-  iframe {
-    border-radius: ${({ theme }) => theme.border.radius.small};
-    background-color: ${({ theme }) => theme.color.overlayLight};
-  }
+  ${PlaceholderStyles}
 `;
 
 const Placeholder = props => <Wrapper {...props}>{props.children}</Wrapper>;

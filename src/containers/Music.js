@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
+import H1 from '../common/H1';
+import TextLink from '../common/TextLink';
 import Track from '../components/Track';
-import StyledLinkText from '../elements/StyledLinkText';
-import H1 from '../elements/H1';
+import { UlStyles, LiStyles } from './Music-styles';
 
 const Ul = styled.ul`
-  padding-left: 0;
+  ${UlStyles}
 `;
 
 const Li = styled.li`
-  list-style-type: none;
-  margin-top: ${({ theme }) => theme.space.one};
+  ${LiStyles}
 `;
 
 /* Known bug with SoundCloud embeds: unique key prop error */
@@ -32,9 +32,9 @@ const Music = ({ id }) => (
     <H1>Music</H1>
     <p>
       Select downloads are available on{' '}
-      <StyledLinkText>
+      <TextLink>
         <Link to="https://www.beatport.com/artist/labrysinthe/640674/tracks">Beatport</Link>
-      </StyledLinkText>
+      </TextLink>
     </p>
     <Ul>
       <Li key="fire-loves-sugar-teaser">

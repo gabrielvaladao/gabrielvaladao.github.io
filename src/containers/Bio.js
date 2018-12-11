@@ -3,20 +3,16 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 //
-import StyledLinkText from '../elements/StyledLinkText';
-import H1 from '../elements/H1';
+import TextLink from '../common/TextLink';
+import H1 from '../common/H1';
+import { LargeStyles, PStyles } from './Bio-styles';
 //
 const Large = styled.p`
-  font-size: ${({ theme }) => theme.type.large.fontSize};
-  margin-bottom: ${({ theme }) => theme.type.large.marginBottom};
+  ${LargeStyles}
 `;
 
 const P = styled.p`
-  margin-bottom: ${({ theme }) => theme.space.one};
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  ${PStyles}
 `;
 
 const Bio = ({ id }) => (
@@ -39,7 +35,7 @@ const Bio = ({ id }) => (
     <P>
       Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin and with Nica Iliuchina
       (now Reality Test). She is an original member of the{' '}
-      <StyledLinkText>
+      <TextLink>
         <Link
           to="https://soundcloud.com/strength_in_numbers"
           aria-label="Listen to Strength in Numbers on SoundCloud"
@@ -47,7 +43,7 @@ const Bio = ({ id }) => (
         >
           Strength in Numbers
         </Link>
-      </StyledLinkText>{' '}
+      </TextLink>{' '}
       beat collective in Berlin.
     </P>
   </section>

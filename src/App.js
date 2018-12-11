@@ -12,7 +12,7 @@ import './styles/app.css';
 import './styles/social-icons.css';
 //
 import Scroller from './components/Scroller';
-import Footer from './containers/Footer';
+import Footer from './components/Footer';
 //
 import Home from './containers/Home';
 import Shows from './containers/Shows';

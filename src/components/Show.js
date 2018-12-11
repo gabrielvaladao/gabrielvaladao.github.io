@@ -3,79 +3,45 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 //
-import H4 from '../elements/H4';
-import Button from '../elements/Button';
-import StyledLinkText from '../elements/StyledLinkText';
+import H4 from '../common/H4';
+import TextLink from '../common/TextLink';
+import Button from '../common/Button';
+import {
+  ShowStyles,
+  HostStyles,
+  WhenStyles,
+  WhereStyles,
+  CtaListStyles,
+  LiStyles,
+  CtaStyles
+} from './Show-styles';
 
 const Wrapper = styled.article`
-  font-family: ${({ theme }) => theme.type.secondary.fontFamily};
+  ${ShowStyles}
 `;
 
 const Host = styled.p`
-  font-size: ${({ theme }) => theme.type.small.fontSize};
-  font-family: ${({ theme }) => theme.type.secondary.fontFamily};
-  font-weight: ${({ theme }) => theme.type.secondary.fontWeight};
-  line-height: ${({ theme }) => theme.type.secondary.lineHeight};
-  margin-bottom: ${({ theme }) => theme.space.half};
+  ${HostStyles}
 `;
 
 const When = styled.p`
-  font-size: ${({ theme }) => theme.type.large.fontSize};
-  margin-bottom: ${({ theme }) => theme.space.quarter};
-
-  * {
-    display: inline-block;
-  }
+  ${WhenStyles}
 `;
 
 const Where = styled.div`
-  font-size: ${({ theme }) => theme.type.small.fontSize};
-  font-family: ${({ theme }) => theme.type.secondary.fontFamily};
-  font-weight: ${({ theme }) => theme.type.secondary.fontWeight};
-  line-height: ${({ theme }) => theme.type.secondary.lineHeight};
-  padding-bottom: ${({ theme }) => theme.space.half};
-  margin-bottom: ${({ theme }) => theme.space.quarter};
+  ${WhereStyles}
 `;
 
 const CtaList = styled.ol`
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  ${CtaListStyles}
 `;
 
 const Li = styled.li`
-  text-align: center;
-  display: inline-block;
-  width: 50%;
-
-  &:only-of-type {
-    width: 100%;
-  }
-
-  &:first-of-type:not(:only-of-type) {
-    button {
-      border-right: 0;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-  }
-
-  &:last-of-type:not(:only-of-type) {
-    button {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-  }
+  ${LiStyles}
 `;
 
 const Cta = styled(Button)`
-  width: 100%;
-  height: 100%;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+  ${CtaStyles}
 `;
 
 /* TODO: Show logic
@@ -108,16 +74,16 @@ class Show extends Component {
         {/* TODO: conditionally render Host */}
         <Host>
           Hosted by{' '}
-          <StyledLinkText>
+          <TextLink>
             <Link to={hostUrl}>{hostName}</Link>
-          </StyledLinkText>
+          </TextLink>
         </Host>
         <Where>
-          <StyledLinkText>
+          <TextLink>
             <Link to={venueUrl} id="venue-name">
               {venueName}
             </Link>
-          </StyledLinkText>
+          </TextLink>
           <br />
           {venueAddress}
           {venueAddress2 && (
@@ -127,11 +93,11 @@ class Show extends Component {
             </React.Fragment>
           )}
           <br />
-          <StyledLinkText>
+          <TextLink>
             <Link to={venueGMapsUrl} aria-labelledby="venue-name">
               Google Maps
             </Link>
-          </StyledLinkText>
+          </TextLink>
         </Where>
         <CtaList>
           {fbEventUrl && (

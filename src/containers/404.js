@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-static';
 //
-import StyledLinkText from '../elements/StyledLinkText';
-import H1 from '../elements/H1';
+import TextLink from '../common/TextLink';
+import H1 from '../common/H1';
 //
 const NotFound = () => (
   <div>
@@ -11,11 +11,11 @@ const NotFound = () => (
       The page you are trying to access is not of this dimension.
       <br />
       Please try another link or head{' '}
-      <StyledLinkText>
+      <TextLink>
         <Link exact to="/">
           Home
         </Link>
-      </StyledLinkText>
+      </TextLink>
     </p>
   </div>
 );

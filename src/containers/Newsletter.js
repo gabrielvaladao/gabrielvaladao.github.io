@@ -4,10 +4,70 @@ import isEmail from 'validator/lib/isEmail';
 import ReCAPTCHA from 'react-google-recaptcha';
 import styled from 'styled-components';
 //
-import H1 from '../elements/H1';
-import H2 from '../elements/H2';
-import Placeholder from '../elements/Placeholder';
-import Button from '../elements/Button';
+import H1 from '../common/H1';
+import H2 from '../common/H2';
+import P from '../common/P';
+import Placeholder from '../common/Placeholder';
+import Button from '../common/Button';
+import {
+  NewsletterStyles,
+  FormStyles,
+  LabelStyles,
+  InputStyles,
+  ReCAPTCHAPlaceholderStyles,
+  SubmitStyles,
+  ErrorMessageStyles,
+  EmailErrorMessageStyles,
+  ReCAPTCHAErrorMessageStyles,
+  GenericErrorMessageStyles,
+  ThanksStyles
+} from './Newsletter-styles';
+
+/* STYLES */
+
+const Wrapper = styled.section`
+  ${NewsletterStyles}
+`;
+
+const Form = styled.form`
+  ${FormStyles}
+`;
+
+const Label = styled.label`
+  ${LabelStyles}
+`;
+
+const Input = styled.input`
+  ${InputStyles}
+`;
+
+const StyledPlaceholder = styled(Placeholder)`
+  ${ReCAPTCHAPlaceholderStyles}
+`;
+
+const Submit = styled(Button)`
+  ${SubmitStyles}
+`;
+
+const ErrorMessage = styled.p`
+  ${ErrorMessageStyles}
+`;
+
+const EmailErrorMessage = styled(ErrorMessage)`
+  ${EmailErrorMessageStyles}
+`;
+
+const ReCAPTCHAErrorMessage = styled(ErrorMessage)`
+  ${ReCAPTCHAErrorMessageStyles}
+`;
+
+const GenericErrorMessage = styled(ErrorMessage)`
+  ${GenericErrorMessageStyles}
+`;
+
+const Thanks = styled.div`
+  ${ThanksStyles}
+`;
 
 /* UTILITIES */
 
@@ -27,99 +87,6 @@ function encode(data) {
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&');
 }
-
-/* STYLES */
-
-const Wrapper = styled.section`
-  text-align: center;
-`;
-
-const P = styled.p`
-  margin-bottom: ${({ theme }) => theme.space.one};
-`;
-
-const Form = styled.form`
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: minmax(0, min-content) minmax(0, 1fr);
-  grid-template-rows: repeat(6, min-content);
-  grid-column-gap: 1ch;
-  grid-row-gap: 0.5ch;
-
-  /* This is what Google generates automatically */
-  max-width: 304px;
-
-  @media (min-width: 576px) {
-    grid-template-columns: minmax(0, min-content) minmax(min-content, 1fr);
-    max-width: inherit;
-  }
-`;
-
-/* TODO: width is hacky. do this with box-sizing or borders */
-const Label = styled.label`
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  display: flex;
-  align-items: center;
-`;
-
-/**
- * TODO: calculate padding based on Theme
- * Use same padding for Button
- * */
-const Input = styled.input`
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  border-radius: ${({ theme }) => theme.border.radius.small};
-  border: 0;
-  letter-spacing: -0.1ch;
-  padding: 0.2rem 0.5rem;
-`;
-
-const StyledPlaceholder = styled(Placeholder)`
-  grid-column: 1 / 3;
-  grid-row: 3 / 4;
-  margin: 0 auto;
-`;
-
-const Submit = styled(Button)`
-  grid-column: 1 / 3;
-  grid-row: 5 / 6;
-  padding: ${({ theme }) => theme.space.quarter};
-`;
-
-const ErrorMessage = styled.p`
-  display: none;
-  font-size: ${({ theme }) => theme.type.small.fontSize};
-  color: ${({ theme }) => theme.color.error};
-  white-space: normal;
-`;
-
-const EmailErrorMessage = styled(ErrorMessage)`
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
-`;
-
-const ReCAPTCHAErrorMessage = styled(ErrorMessage)`
-  grid-column: 1 / 3;
-  grid-row: 4 / 5;
-`;
-
-const GenericErrorMessage = styled(ErrorMessage)`
-  grid-column: 1 / 3;
-  /* last row before submit button */
-  grid-row: 4 / 5;
-`;
-
-const Thanks = styled.div`
-  p {
-    text-align: left;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-`;
 
 class Newsletter extends React.Component {
   constructor(props) {

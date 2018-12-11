@@ -3,30 +3,24 @@ import styled from 'styled-components';
 //
 import Menu from '../components/Menu';
 import Socials from '../components/Socials';
+import { FooterStyles, FooterMenuStyles, LogoStyles, SocketStyles } from './Footer-styles';
 //
 import smWhiteLogo from '../images/logo-white-90x104.png';
 //
 const Wrapper = styled.footer`
-  padding: 0 0 ${({ theme }) => theme.space.one} 0;
+  ${FooterStyles}
 `;
 
 const StyledMenu = styled(Menu)`
-  /* border-bottom: 1px solid black;
-  border-top: solid 1px ${({ theme }) => theme.color.overlayLight}; */
-  border-bottom: 1px solid ${({ theme }) => theme.color.overlayMedium};
-  border-top: solid 1px black;
-  padding: ${({ theme }) => theme.space.one} 0 ${({ theme }) => theme.space.two} 0;
+  ${FooterMenuStyles}
 `;
 
 const Logo = styled.img`
-  margin: 0 auto;
-  display: block;
-  padding-top: ${({ theme }) => theme.space.two};
+  ${LogoStyles}
 `;
 
 const Socket = styled.p`
-  text-align: center;
-  padding-top: ${({ theme }) => theme.space.one};
+  ${SocketStyles}
 `;
 /* TODO: (C) current year */
 const Footer = () => (

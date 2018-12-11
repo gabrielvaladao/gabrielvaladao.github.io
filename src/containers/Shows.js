@@ -3,17 +3,18 @@ import PropTypes from 'prop-types';
 import { withRouteData } from 'react-static';
 import styled from 'styled-components';
 //
-import H1 from '../elements/H1';
-import H2 from '../elements/H2';
-import H3 from '../elements/H3';
+import H1 from '../common/H1';
+import H2 from '../common/H2';
+import H3 from '../common/H3';
 import Show from '../components/Show';
+import { ShowsStyles, UlStyles } from './Shows-styles';
 //
 const Section = styled.section`
-  margin-top: ${({ theme }) => theme.space.one};
+  ${ShowsStyles}
 `;
 
 const Ul = styled.ul`
-  padding-left: 0;
+  ${UlStyles}
 `;
 
 /**

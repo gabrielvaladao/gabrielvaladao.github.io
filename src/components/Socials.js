@@ -2,42 +2,18 @@ import React from 'react';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 //
+import { SocialsStyles, LiStyles, IconStyles } from './Socials-styles';
 
 const Wrapper = styled.ul`
-  padding: 0 0 ${({ theme }) => theme.space.three} 0;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: middle;
+  ${SocialsStyles}
 `;
 
 const Li = styled.li`
-  list-style-type: none;
-  text-align: center;
-  display: inline-block;
-  margin-right: 0.5ch;
+  ${LiStyles}
 `;
 
 const Icon = styled(Link)`
-  font-size: ${({ theme }) => theme.icon.fontSize};
-  text-align: center;
-  border-radius: 50%;
-  border-bottom: none;
-  padding: ${({ theme }) => theme.space.half};
-  opacity: 0.9;
-  color: ${({ theme }) => theme.color.primary};
-  text-decoration: none;
-
-  &:hover {
-    background: ${({ theme }) => theme.color.primaryOverlay};
-    color: white;
-    border-bottom: none;
-  }
-
-  &:active {
-    background: ${({ theme }) => theme.color.primaryDark};
-    color: white;
-  }
+  ${IconStyles}
 `;
 
 /* TODO: generate socials from data and include PropTypes */

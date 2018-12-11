@@ -1,8 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-//
-const Wrapper = styled.h3`
+import { css } from 'styled-components';
+
+const H3Styles = css`
   font-family: ${({ theme }) => theme.type.h3.fontFamily};
   font-weight: ${({ theme }) => theme.type.h3.fontWeight};
   line-height: ${({ theme }) => theme.type.h3.lineHeight};
@@ -14,10 +12,4 @@ const Wrapper = styled.h3`
   }
 `;
 
-const H3 = props => <Wrapper {...props}>{props.children}</Wrapper>;
-
-H3.propTypes = {
-  children: PropTypes.node.isRequired
-};
-
-export default H3;
+export default H3Styles;

@@ -3,59 +3,28 @@ import PropTypes from 'prop-types';
 import { withSiteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
-import H1 from '../elements/H1';
-import StyledLinkText from '../elements/StyledLinkText';
+import H1 from '../common/H1';
+import TextLink from '../common/TextLink';
+import { HomeStyles, SiteTitleStyles, LargeStyles, LogoStyles } from './Home-styles';
 //
 import smColorLogo from '../images/logo-color-550x620.png';
 import mdColorLogo from '../images/logo-color-665x750.png';
 import lgColorLogo from '../images/logo-color-1326x1496.png';
 //
 const Wrapper = styled.section`
-  overflow: hidden;
+  ${HomeStyles}
 `;
 
 const SiteTitle = styled(H1)`
-  padding-top: ${({ theme }) => theme.space.four};
-  padding-bottom: ${({ theme }) => theme.space.one};
-  font-family: 'raincoatregular', sans-serif;
-  letter-spacing: 0.06ch;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: ${({ theme }) => theme.type.h2.fontSize};
-
-  @media (min-width: 576px) {
-    letter-spacing: 0.12ch;
-    padding-bottom: ${({ theme }) => theme.space.two};
-  }
-
-  @media (min-width: 768px) {
-    padding-top: ${({ theme }) => theme.space.six};
-    font-size: ${({ theme }) => theme.type.h1.fontSize};
-    letter-spacing: 0.12ch;
-  }
+  ${SiteTitleStyles}
 `;
 
 const Large = styled.p`
-  font-size: ${({ theme }) => theme.type.large.fontSize};
-  text-align: center;
-  margin-bottom: ${({ theme }) => theme.type.large.marginBottom};
-  position: relative;
-  z-index: 1;
+  ${LargeStyles}
 `;
 
 const Logo = styled.img`
-  margin-top: -${({ theme }) => theme.space.three};
-  margin-left: 50%;
-  transform: translateX(-50%);
-  min-width: 140%;
-  display: block;
-  padding-top: ${({ theme }) => theme.space.one};
-  position: relative;
-  z-index: -99999;
-
-  @media (min-width: 992px) {
-    min-width: 0;
-  }
+  ${LogoStyles}
 `;
 
 const Home = ({ id }) => (
@@ -67,9 +36,9 @@ const Home = ({ id }) => (
       <br />
       <strong>Fire Loves Sugar</strong>
       <br />
-      <StyledLinkText>
+      <TextLink>
         <Link to="./#music">Listen to the teaser</Link>
-      </StyledLinkText>
+      </TextLink>
     </Large>
 
     <picture>

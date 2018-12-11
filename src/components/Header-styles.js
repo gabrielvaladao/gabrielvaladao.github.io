@@ -1,12 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable prettier/prettier */
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-//
-import MainNav from '../components/MainNav';
-import H1 from '../elements/H1';
-//
+import { css } from 'styled-components';
 
 /* Conditional styles change on scroll */
 
@@ -19,7 +12,7 @@ const opacity = ({ scrolled }) => (scrolled ? 1 : 0);
 
 const marginTop = ({ scrolled }) => (scrolled ? '0' : '-0.5em');
 
-const Wrapper = styled.header`
+const HeaderStyles = css`
   position: sticky;
   z-index: 900;
   top: 0;
@@ -37,7 +30,7 @@ const Wrapper = styled.header`
   }
 `;
 
-const SiteTitle = styled(H1)`
+const SiteTitleStyles = css`
   float: left;
   font-size: ${({ theme }) => theme.type.large.fontSize};
   font-family: 'raincoatregular', sans-serif;
@@ -55,22 +48,4 @@ const SiteTitle = styled(H1)`
   }
 `;
 
-class Header extends Component {
-  render() {
-    const { scrolled } = this.props;
-    return (
-      <Wrapper scrolled={scrolled}>
-        <SiteTitle scrolled={scrolled}>
-          <a href="#home">Labrysinthe</a>
-        </SiteTitle>
-        <MainNav />
-      </Wrapper>
-    );
-  }
-}
-
-Header.propTypes = {
-  scrolled: PropTypes.bool
-};
-
-export default Header;
+export { HeaderStyles, SiteTitleStyles };
