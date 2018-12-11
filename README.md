@@ -22,5 +22,5 @@ Dev dependencies include:
 
 Roadmapped for future releases:
 
-- [Jest](https://jestjs.io/)
+- [react-testing-library](https://github.com/kentcdodds/react-testing-library) with [Jest](https://jestjs.io/)
 - [Contentful](https://www.contentful.com/)
