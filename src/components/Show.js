@@ -34,6 +34,7 @@ const Where = styled.div`
   font-weight: ${({ theme }) => theme.type.secondary.fontWeight};
   line-height: ${({ theme }) => theme.type.secondary.lineHeight};
   padding-bottom: ${({ theme }) => theme.space.half};
+  margin-bottom: ${({ theme }) => theme.space.quarter};
 `;
 
 const CtaList = styled.ol`
