@@ -16,8 +16,7 @@ const FormStyles = css`
   max-width: 304px;
 
   @media (min-width: 576px) {
-    grid-template-columns: minmax(0, min-content) minmax(min-content, 1fr);
-    max-width: inherit;
+    grid-template-columns: minmax(0, min-content) minmax(0, 1fr);
   }
 `;
 
@@ -27,6 +26,7 @@ const LabelStyles = css`
   grid-row: 1 / 2;
   display: flex;
   align-items: center;
+  font-size: ${({ theme }) => theme.type.small.fontSize};
 `;
 
 /**
