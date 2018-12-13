@@ -3,6 +3,8 @@ import axios from 'axios';
 import Contentful from './src/Contentful';
 
 export default {
+  siteRoot: 'https://mysite.comhttps://adoring-galileo-1070ff.netlify.com/',
+  stagingSiteRoot: 'https://elated-leavitt-544c11.netlify.com/',
   /**
    *  Enable bundleAnalyzer to check the pkg size footprint
    *  of a production/staging build
@@ -86,9 +88,9 @@ export default {
         <meta property="og:description" content="Fire Loves Sugar &mdash; New EP coming soon!" />
         <meta
           property="og:image"
-          content="https://elated-leavitt-544c11.netlify.com/website-thumbnail.png"
+          content="https://adoring-galileo-1070ff.netlify.com/website-thumbnail.png"
         />
-        <meta property="og:url" content="https://elated-leavitt-544c11.netlify.com/" />
+        <meta property="og:url" content="https://adoring-galileo-1070ff.netlify.com/" />
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* Favicons */}
