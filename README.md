@@ -2,7 +2,7 @@
 
 This website is being crafted to be robust and extensible as a prototype for similar portfolio sites in future. Improvements are ongoing.
 
-It's temporarily hosted at [https://elated-leavitt-544c11.netlify.com/](https://elated-leavitt-544c11.netlify.com/)
+It's temporarily hosted at [https://adoring-galileo-1070ff.netlify.com/](https://adoring-galileo-1070ff.netlify.com/)
 
 It's built on the following tech:
 
