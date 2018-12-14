@@ -3,7 +3,7 @@ import axios from 'axios';
 import Contentful from './src/Contentful';
 
 export default {
-  siteRoot: 'https://mysite.comhttps://adoring-galileo-1070ff.netlify.com/',
+  siteRoot: 'https://adoring-galileo-1070ff.netlify.com/',
   stagingSiteRoot: 'https://elated-leavitt-544c11.netlify.com/',
   /**
    *  Enable bundleAnalyzer to check the pkg size footprint
