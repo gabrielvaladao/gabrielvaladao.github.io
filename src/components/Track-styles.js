@@ -8,6 +8,7 @@ const StyledPlaceholderStyles = css`
   height: 166px; /* same as SoundCloud embed */
   border: 1px solid ${({ theme }) => theme.color.overlayLight};
   border-radius: ${({ theme }) => theme.border.radius.small};
+  margin-bottom: ${({ theme }) => theme.space.quarter};
 `;
 
 export { TrackH3Styles, StyledPlaceholderStyles };
