@@ -71,33 +71,49 @@ class Show extends Component {
       <Wrapper aria-labelledby="show-title">
         <When>{startDate}</When>
         <H4 id="show-title">{title}</H4>
-        {/* TODO: conditionally render Host */}
-        <Host>
-          Hosted by{' '}
-          <TextLink>
-            <Link to={hostUrl}>{hostName}</Link>
-          </TextLink>
-        </Host>
+
+        {hostName && (
+          <Host>
+            Hosted by{' '}
+            {hostUrl ? (
+              <TextLink>
+                <Link to={hostUrl}>{hostName}</Link>
+              </TextLink>
+            ) : (
+              <span>{hostName}</span>
+            )}
+          </Host>
+        )}
         <Where>
-          <TextLink>
-            <Link to={venueUrl} id="venue-name">
-              {venueName}
-            </Link>
-          </TextLink>
-          <br />
-          {venueAddress}
-          {venueAddress2 && (
+          {venueUrl ? (
+            <TextLink>
+              <Link to={venueUrl} id="venue-name">
+                {venueName}
+              </Link>
+            </TextLink>
+          ) : (
+            <span>{venueName}</span>
+          )}
+          {venueAddress && (
             <React.Fragment>
               <br />
-              <span>{venueAddress2}</span>
+              <span>{venueAddress}</span>
+              {venueAddress2 && (
+                <React.Fragment>
+                  <br />
+                  <span>{venueAddress2}</span>
+                </React.Fragment>
+              )}
+              <br />
+              {venueGMapsUrl && (
+                <TextLink>
+                  <Link to={venueGMapsUrl} aria-labelledby="venue-name">
+                    Google Maps
+                  </Link>
+                </TextLink>
+              )}
             </React.Fragment>
           )}
-          <br />
-          <TextLink>
-            <Link to={venueGMapsUrl} aria-labelledby="venue-name">
-              Google Maps
-            </Link>
-          </TextLink>
         </Where>
         <CtaList>
           {fbEventUrl && (

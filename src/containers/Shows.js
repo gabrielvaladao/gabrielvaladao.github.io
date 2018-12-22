@@ -7,10 +7,14 @@ import H1 from '../common/H1';
 import H2 from '../common/H2';
 import H3 from '../common/H3';
 import Show from '../components/Show';
-import { ShowsStyles, UlStyles } from './Shows-styles';
+import { ShowsStyles, StyledH3Styles, UlStyles } from './Shows-styles';
 //
 const Section = styled.section`
   ${ShowsStyles}
+`;
+
+const StyledH3 = styled(H3)`
+  ${StyledH3Styles}
 `;
 
 const Ul = styled.ul`
@@ -33,6 +37,26 @@ const Shows = ({ id }) => (
     <Section aria-labelledby="shows-upcoming">
       <H2 id="shows-upcoming">Upcoming</H2>
       <Ul>
+        <Li key="2019-02-14">
+          <Show
+            title="Fire Loves Sugar EP Launch Party"
+            startDate="Thursday, 14 FEB"
+            startYear="2019"
+            venueName="Venue to be announced"
+            ctaText="JOIN THE NEWSLETTER FOR DETAILS"
+            ctaUrl="#newsletter"
+          />
+        </Li>
+      </Ul>
+    </Section>
+
+    {/* ...
+    I only want H2#shows-previous to be visible if there are also upcoming ones to distinguish from(which means the aria-labelledby="shows-previous" attrib on its parent section should also change).
+    */}
+    <Section aria-labelledby="shows-previous">
+      <H2 id="shows-previous">Previous</H2>
+      <StyledH3>2018</StyledH3>
+      <Ul>
         <Li key="2018-12-15">
           <Show
             title="PMS&mdash;The L-Night party"
@@ -46,19 +70,12 @@ const Shows = ({ id }) => (
             venueAddress2="Entrance through Café Liberación"
             venueGMapsUrl="https://www.google.com/maps/place/Kinzig9/@52.5137004,13.4663543,15z/data=!4m5!3m4!1s0x0:0x5eb804e91e785a6b!8m2!3d52.5137004!4d13.4663543"
             fbEventUrl="https://www.facebook.com/events/192580104960799/"
-            ctaText="TICKETS (Free&nbsp;online)"
-            ctaUrl="https://www.eventbrite.com.au/e/pms-the-l-night-party-tickets-52068345824"
           />
+          {/* ctaText="TICKETS (Free&nbsp;online)"
+            ctaUrl="https://www.eventbrite.com.au/e/pms-the-l-night-party-tickets-52068345824" */}
         </Li>
       </Ul>
-    </Section>
-
-    {/* ...
-    I only want H2#shows-previous to be visible if there are also upcoming ones to distinguish from(which means the aria-labelledby="shows-previous" attrib on its parent section should also change).
-    */}
-    <Section aria-labelledby="shows-previous">
-      <H2 id="shows-previous">Previous</H2>
-      <H3>2017</H3>
+      <StyledH3>2017</StyledH3>
       <Ul>
         <Li key="2017-11-04">
           <Show
