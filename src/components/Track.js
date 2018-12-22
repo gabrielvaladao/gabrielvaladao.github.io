@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import H3 from '../common/H3';
 import Placeholder from '../common/Placeholder';
 import TextLink from '../common/TextLink';
-import { TrackH3Styles } from './Track-styles';
+import { TrackH3Styles, StyledPlaceholderStyles } from './Track-styles';
 
 /*
   TODO: I want to use the releaseDate info
@@ -21,6 +21,10 @@ TODO: PARSE IFRAMES (a11y)
 - JSX-ify attribs, eg. frameBorder - console warning
 */
 
+const StyledPlaceholder = styled(Placeholder)`
+  ${StyledPlaceholderStyles}
+`;
+
 const TrackH3 = styled(H3)`
   ${TrackH3Styles}
 `;
@@ -29,7 +33,7 @@ const Track = ({ title, soundCloudEmbed, cta }) => (
   <article aria-labelledby="track-title">
     <TrackH3 id="track-title">{title}</TrackH3>
 
-    <Placeholder>{soundCloudEmbed}</Placeholder>
+    <StyledPlaceholder>{soundCloudEmbed}</StyledPlaceholder>
 
     {cta && (
       <TextLink>
