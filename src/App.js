@@ -60,9 +60,15 @@ const BaseStyles = styled.div`
 `;
 
 const PaddedDiv = styled.div`
-  padding: 0 2rem 2rem 2rem;
+  /* Small padding makes the ReCAPTCHA look better on tiny screens */
+  padding: 0 1rem 2rem 1rem;
   margin: 0 auto;
   max-width: ${({ theme }) => theme.space.golden};
+
+  /* Undo above padding on bigger screens */
+  @media (min-width: 380px) {
+    padding: 0 2rem 2rem 2rem;
+  }
 `;
 
 const StyledFooter = styled(Footer)`
