@@ -70,9 +70,9 @@ const Shows = ({ id }) => (
             venueAddress2="Entrance through Café Liberación"
             venueGMapsUrl="https://www.google.com/maps/place/Kinzig9/@52.5137004,13.4663543,15z/data=!4m5!3m4!1s0x0:0x5eb804e91e785a6b!8m2!3d52.5137004!4d13.4663543"
             fbEventUrl="https://www.facebook.com/events/192580104960799/"
+            ctaText="HEAR THE SET"
+            ctaUrl="#music"
           />
-          {/* ctaText="TICKETS (Free&nbsp;online)"
-            ctaUrl="https://www.eventbrite.com.au/e/pms-the-l-night-party-tickets-52068345824" */}
         </Li>
       </Ul>
       <StyledH3>2017</StyledH3>
