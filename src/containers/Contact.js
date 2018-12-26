@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-static';
+import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
 import H1 from '../common/H1';
@@ -33,4 +33,4 @@ Contact.propTypes = {
   id: PropTypes.string
 };
 
-export default Contact;
+export default withRouteData(Contact);

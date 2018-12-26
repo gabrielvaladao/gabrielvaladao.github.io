@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-static';
+import { withRouteData, Link } from 'react-static';
 import styled from 'styled-components';
 //
 import TextLink from '../common/TextLink';
@@ -53,4 +53,4 @@ Bio.propTypes = {
   id: PropTypes.string
 };
 
-export default Bio;
+export default withRouteData(Bio);

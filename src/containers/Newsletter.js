@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouteData } from 'react-static';
 import PropTypes from 'prop-types';
 import isEmail from 'validator/lib/isEmail';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -254,4 +255,4 @@ Newsletter.propTypes = {
   id: PropTypes.string
 };
 
-export default Newsletter;
+export default withRouteData(Newsletter);
