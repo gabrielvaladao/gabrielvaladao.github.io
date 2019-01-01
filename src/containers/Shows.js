@@ -43,7 +43,7 @@ const Shows = ({ id }) => (
             startDate="Thursday, 14 FEB"
             startYear="2019"
             venueName="Venue to be announced"
-            ctaText="JOIN THE NEWSLETTER FOR DETAILS"
+            ctaText="JOIN THE NEWSLETTER"
             ctaUrl="#newsletter"
           />
         </Li>
