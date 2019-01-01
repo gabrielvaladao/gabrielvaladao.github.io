@@ -33,7 +33,8 @@ const Footer = () => (
       height="104px"
       width="90px"
     />
-    <Socket role="contentinfo">&copy; 2018 Labrysinthe</Socket>
+    {/* TODO: Add year dynamically */}
+    <Socket role="contentinfo">&copy; 2019 Labrysinthe</Socket>
   </Wrapper>
 );
 
