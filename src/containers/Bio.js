@@ -33,8 +33,8 @@ const Bio = ({ id }) => (
       name nor name her spell.
     </P>
     <P>
-      Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin and with Nica Iliuchina
-      (now Reality Test). She is an original member of the{' '}
+      Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin. She is an original member
+      of the{' '}
       <TextLink>
         <Link
           to="https://soundcloud.com/strength_in_numbers"
