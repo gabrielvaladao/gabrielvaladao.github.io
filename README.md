@@ -2,9 +2,9 @@
 
 This website is being crafted to be robust and extensible as a prototype for similar portfolio sites in future. Improvements are ongoing.
 
-It's temporarily hosted at [https://adoring-galileo-1070ff.netlify.com/](https://adoring-galileo-1070ff.netlify.com/)
+See it live at [labrysinthe.com](https://www.labrysinthe.com/)
 
-It's built on the following tech:
+This site was built with:
 
 - [React Static](https://react-static.js.org) + 'basic' template
 - [Styled Components](https://www.styled-components.com/) with theming
