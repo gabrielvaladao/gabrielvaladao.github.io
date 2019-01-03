@@ -2,6 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import Contentful from './src/Contentful';
 
+const ga_tracking =
+  "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-131654117-1', { 'anonymize_ip': true });";
+
 export default {
   siteRoot: 'https://www.labrysinthe.com/',
   /**
@@ -49,10 +52,7 @@ export default {
       <Head>
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131654117-1" />
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'UA-131654117-1', {{ anonymize_ip: true }});
-        </script>
+        <script dangerouslySetInnerHTML={{ __html: ga_tracking }} />
 
         <title>Labrysinthe</title>
         <meta charSet="UTF-8" />
