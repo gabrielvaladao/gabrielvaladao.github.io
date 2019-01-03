@@ -14,49 +14,44 @@ export default {
   getSiteData: () => ({
     title: 'Labrysinthe'
   }),
-  getRoutes: async () => {
-    return [
-      {
-        path: '/',
-        component: 'src/containers/Home'
-      },
-      {
-        path: '/shows',
-        component: 'src/containers/Shows'
-      },
-      {
-        path: '/music',
-        component: 'src/containers/Music'
-      },
-      {
-        path: '/bio',
-        component: 'src/containers/Bio'
-      },
-      {
-        path: '/newsletter',
-        component: 'src/containers/Newsletter'
-      },
-      {
-        path: '/contact',
-        component: 'src/containers/Contact'
-      },
-      {
-        is404: true,
-        component: 'src/containers/404'
-      }
-    ];
-  },
+  getRoutes: async () => [
+    {
+      path: '/',
+      component: 'src/containers/Home'
+    },
+    {
+      path: '/shows',
+      component: 'src/containers/Shows'
+    },
+    {
+      path: '/music',
+      component: 'src/containers/Music'
+    },
+    {
+      path: '/bio',
+      component: 'src/containers/Bio'
+    },
+    {
+      path: '/newsletter',
+      component: 'src/containers/Newsletter'
+    },
+    {
+      path: '/contact',
+      component: 'src/containers/Contact'
+    },
+    {
+      is404: true,
+      component: 'src/containers/404'
+    }
+  ],
   Document: ({ Html, Head, Body, children }) => (
     <Html lang="en-US">
       <Head>
         {/* Global site tag (gtag.js) - Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131654117-1"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131654117-1" />
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-131654117-1', { 'anonymize_ip': true });
+          window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'UA-131654117-1', {{ anonymize_ip: true }});
         </script>
 
         <title>Labrysinthe</title>
@@ -68,10 +63,7 @@ export default {
         {/* Facebook + Twitter thumbnails */}
         <meta property="og:title" content="Labrysinthe" />
         <meta property="og:description" content="Fire Loves Sugar &mdash; New EP coming soon!" />
-        <meta
-          property="og:image"
-          content="https://www.labrysinthe.com/website-thumbnail.png"
-        />
+        <meta property="og:image" content="https://www.labrysinthe.com/website-thumbnail.png" />
         <meta property="og:url" content="https://www.labrysinthe.com/" />
         <meta name="twitter:card" content="summary_large_image" />
 
