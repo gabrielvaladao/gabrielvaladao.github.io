@@ -39,7 +39,7 @@ const Shows = ({ id }) => (
       <Ul>
         <Li key="2019-02-14">
           <Show
-            title="Fire Loves Sugar: EP Release Drinks"
+            title="Fire Loves Sugar: EP Release Hangout"
             startDate="Thursday, 14 FEB"
             startYear="2019"
             venueName="Secret venue near Warschauer Str, Berlin"
@@ -60,7 +60,7 @@ const Shows = ({ id }) => (
       <Ul>
         <Li key="2018-12-15">
           <Show
-            title="PMS&mdash;The L-Night party"
+            title="PMS&mdash;The L-Night Party"
             hostName="L-Night"
             hostUrl="https://www.meetup.com/en-AU/Lnightberlin/"
             startDate="Saturday, 15 DEC"
