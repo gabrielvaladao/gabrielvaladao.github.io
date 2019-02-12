@@ -60,6 +60,7 @@ class Show extends Component {
       startDate,
       venueUrl,
       venueName,
+      venueSecret,
       venueAddress,
       venueAddress2,
       venueGMapsUrl,
@@ -85,7 +86,15 @@ class Show extends Component {
           </Host>
         )}
         <Where>
-          {venueUrl ? (
+          {venueSecret ? (
+            <span>
+              Contact{' '}
+              <TextLink>
+                <Link to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</Link>
+              </TextLink>{' '}
+              for details
+            </span>
+          ) : venueUrl ? (
             <TextLink>
               <Link to={venueUrl} id="venue-name">
                 {venueName}

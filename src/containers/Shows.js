@@ -39,12 +39,13 @@ const Shows = ({ id }) => (
       <Ul>
         <Li key="2019-02-14">
           <Show
-            title="Fire Loves Sugar EP Launch Party"
+            title="Fire Loves Sugar: EP Release Drinks"
             startDate="Thursday, 14 FEB"
             startYear="2019"
-            venueName="Venue to be announced"
-            ctaText="JOIN THE NEWSLETTER"
-            ctaUrl="#newsletter"
+            venueName="Secret venue near Warschauer Str, Berlin"
+            venueSecret
+            ctaText="EMAIL FOR SECRET ADDRESS"
+            ctaUrl="mailto:labrysinthe@gmail.com"
           />
         </Li>
       </Ul>
@@ -65,6 +66,7 @@ const Shows = ({ id }) => (
             startDate="Saturday, 15 DEC"
             startYear="2018"
             venueName="Hausprojekt K9"
+            venueSecret={false}
             venueUrl="http://www.kinzig9.de/"
             venueAddress="Kinzigstraße 9, 10247 Berlin"
             venueAddress2="Entrance through Café Liberación"
@@ -85,6 +87,7 @@ const Shows = ({ id }) => (
             startDate="Saturday, 4 NOV"
             startYear="2017"
             venueName="Velvet Monkeys Club"
+            venueSecret={false}
             venueUrl="https://www.facebook.com/Velvet-Monkey-erlebnisgastronomie-1823655237858506/"
             venueAddress="Herzbergstraße 53b, 10365 Berlin"
             venueGMapsUrl="https://goo.gl/maps/CkDUTdspCkL2"

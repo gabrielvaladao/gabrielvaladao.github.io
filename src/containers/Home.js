@@ -32,7 +32,7 @@ const Home = ({ id }) => (
     <SiteTitle>Labrysinthe</SiteTitle>
 
     <Large>
-      New EP coming soon!
+      New EP drops 14 Feb!
       <br />
       <strong>Fire Loves Sugar</strong>
       <br />
