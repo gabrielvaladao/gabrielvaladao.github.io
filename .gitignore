@@ -3,6 +3,7 @@
 
 # development
 /snippets
+/src/contentful
 
 # testing
 /coverage
