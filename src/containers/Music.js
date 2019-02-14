@@ -67,6 +67,10 @@ const Music = ({ id }) => (
               title="Fire Loves Sugar (Teaser)"
             />
           ]}
+          cta={{
+            text: 'Download the full EP on Beatport',
+            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'
+          }}
         />
       </Li>
       <Li key="shake-the-dust-teaser">
@@ -83,6 +87,10 @@ const Music = ({ id }) => (
               title="Shake the Dust (Teaser)"
             />
           ]}
+          cta={{
+            text: 'Download the full EP on Beatport',
+            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'
+          }}
         />
       </Li>
       <Li key="delicious-monster-ep-previews">

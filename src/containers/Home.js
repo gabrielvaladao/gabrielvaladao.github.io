@@ -32,12 +32,14 @@ const Home = ({ id }) => (
     <SiteTitle>Labrysinthe</SiteTitle>
 
     <Large>
-      New EP drops 14 Feb!
+      New EP out now!
       <br />
       <strong>Fire Loves Sugar</strong>
       <br />
       <TextLink>
-        <Link to="./#music">Listen to the teaser</Link>
+        <Link to="https://www.beatport.com/release/fire-loves-sugar/2510399">
+          Download on Beatport
+        </Link>
       </TextLink>
     </Large>
 
