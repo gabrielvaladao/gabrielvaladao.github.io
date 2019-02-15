@@ -34,28 +34,26 @@ const Shows = ({ id }) => (
     <H1>Shows</H1>
     {/* Show conditionally:
     ... */}
-    {/* <Section aria-labelledby="shows-upcoming">
+    <Section aria-labelledby="shows-upcoming">
       <H2 id="shows-upcoming">Upcoming</H2>
       <Ul>
-        <Li key="2019-02-14">
+        <Li key="2019-XX-XX">
           <Show
-            title="Fire Loves Sugar: EP Release Hangout"
-            startDate="Thursday, 14 FEB"
+            title="Fire Loves Sugar: EP Release Party"
+            startDate="To be announced"
             startYear="2019"
-            venueName="Secret venue near Warschauer Str, Berlin"
-            venueSecret
-            ctaText="EMAIL FOR SECRET ADDRESS"
-            ctaUrl="mailto:labrysinthe@gmail.com"
+            ctaText="JOIN THE NEWSLETTER"
+            ctaUrl="#newsletter"
           />
         </Li>
       </Ul>
-    </Section> */}
+    </Section>
 
     {/* ...
     I only want H2#shows-previous to be visible if there are also upcoming ones to distinguish from(which means the aria-labelledby="shows-previous" attrib on its parent section should also change).
     */}
     <Section aria-labelledby="shows-previous">
-      {/* <H2 id="shows-previous">Previous</H2> */}
+      <H2 id="shows-previous">Previous</H2>
       <StyledH3>2019</StyledH3>
       <Ul>
         <Li key="2019-02-14">
