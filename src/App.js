@@ -81,7 +81,7 @@ class App extends Component {
       <Router>
         <ThemeProvider theme={theme}>
           <BaseStyles>
-            <Scroller />
+            <Scroller /> {/* contains header */}
             <main>
               <Home id="home" />
               <PaddedDiv>
@@ -92,7 +92,6 @@ class App extends Component {
                 <Contact id="contact" />
               </PaddedDiv>
             </main>
-
             <StyledFooter />
           </BaseStyles>
         </ThemeProvider>
