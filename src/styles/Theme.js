@@ -91,6 +91,7 @@ export default () => ({
     },
     h1: {
       fontFamily: primary,
+      fontWeight: bold,
       fontSize: `${ratio1 * 2}em`,
       lineHeight: `${lineHeight * 3}rem`
     },
