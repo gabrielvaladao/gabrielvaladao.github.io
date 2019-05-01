@@ -20,10 +20,12 @@ const universalOptions = {
 }
 
   const t_0 = universal(import('../src/containers/Home'), universalOptions)
-const t_1 = universal(import('../src/containers/Music'), universalOptions)
-const t_2 = universal(import('../src/containers/Bio'), universalOptions)
-const t_3 = universal(import('../src/containers/Contact'), universalOptions)
-const t_4 = universal(import('../src/containers/404'), universalOptions)
+const t_1 = universal(import('../src/containers/Shows'), universalOptions)
+const t_2 = universal(import('../src/containers/Music'), universalOptions)
+const t_3 = universal(import('../src/containers/Bio'), universalOptions)
+const t_4 = universal(import('../src/containers/Newsletter'), universalOptions)
+const t_5 = universal(import('../src/containers/Contact'), universalOptions)
+const t_6 = universal(import('../src/containers/404'), universalOptions)
 
 
 // Template Map
@@ -32,12 +34,14 @@ global.componentsByTemplateID = global.componentsByTemplateID || [
 t_1,
 t_2,
 t_3,
-t_4
+t_4,
+t_5,
+t_6
 ]
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 4
+  '404': 6
 }
 
 // Get template for given path
