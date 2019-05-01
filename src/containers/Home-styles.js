@@ -43,7 +43,7 @@ const LogoStyles = css`
   position: relative;
   z-index: -99999;
 
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   border-radius: 50%;
 

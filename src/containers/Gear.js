@@ -1,46 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withRouteData, Link } from 'react-static';
+import { withRouteData } from 'react-static';
 import styled from 'styled-components';
-//
-import TextLink from '../common/TextLink';
+
+/** Styles */
 import H1 from '../common/H1';
-import { LargeStyles, PStyles } from './Bio-styles';
-//
-const Large = styled.p`
-  ${LargeStyles}
-`;
+import { PStyles } from './Gear-styles';
 
 const P = styled.p`
   ${PStyles}
 `;
 
-/**  Gear :
--Focusrite Scarlett 2i2 audio interface
--Krk Rokit 5 monitors 
--Audio Technica Ath M50x Headphones 
--M-Audio Axiom 49 MIDI controller
--Mxl 990es condenser mic 
-
- Pc:
--Intel Core i5 2gen
- 12gb ram 1333mhz 
- Ssd Sansung evo 500gb
- Gtx680 2gb 
- Instruments :
--Esp Ltd h-1001 Deluxe W emg 81 85
--Tagima Stratocaster
--Di Giorgio Nylon Acoustic guitar 
--ukulele vogga 
-
-Plugins :
--Slate digital bundle 
--Weaves SSL
--FabFilter Pro q 
-DAW:
-Cubase Elements  */
-
-const Bio = ({ id }) => (
+const Gear = ({ id }) => (
   <section id={id}>
     <H1>Gear</H1>
     <P>
@@ -94,8 +65,8 @@ const Bio = ({ id }) => (
   </section>
 );
 
-Bio.propTypes = {
+Gear.propTypes = {
   id: PropTypes.string
 };
 
-export default withRouteData(Bio);
+export default withRouteData(Gear);

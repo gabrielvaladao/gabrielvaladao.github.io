@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import { Router } from 'react-static';
-// import Routes from 'react-static-routes';
+import Routes from 'react-static-routes';
 
 /** Styles Dependencies */
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
@@ -18,7 +18,7 @@ import Footer from './components/Footer';
 
 /** Containers */
 import Home from './containers/Home';
-// import Shows from './containers/Shows';
+import Shows from './containers/Shows';
 import Music from './containers/Music';
 import Bio from './containers/Bio';
 import Gear from './containers/Gear';
@@ -79,8 +79,6 @@ const StyledFooter = styled(Footer)`
   padding: ${({ theme }) => theme.space.one} 0 ${({ theme }) => theme.space.two};
 `;
 
-// Removed <Shows id="shows" /> from the PaddedDiv below.
-
 class App extends Component {
   render() {
     return (
@@ -92,6 +90,7 @@ class App extends Component {
               <Home id="home" />
               <PaddedDiv>
                 <Music id="music" />
+                {false && <Shows id="shows" />}
                 <Bio id="bio" />
                 <Gear id="gear" />
                 {false && <Newsletter id="newsletter" />}

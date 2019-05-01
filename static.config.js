@@ -21,10 +21,10 @@ export default {
       path: '/',
       component: 'src/containers/Home'
     },
-    /* {
+    {
       path: '/shows',
       component: 'src/containers/Shows'
-    }, */
+    },
     {
       path: '/music',
       component: 'src/containers/Music'
@@ -33,10 +33,10 @@ export default {
       path: '/bio',
       component: 'src/containers/Bio'
     },
-    /* {
+    {
       path: '/newsletter',
       component: 'src/containers/Newsletter'
-    }, */
+    },
     {
       path: '/contact',
       component: 'src/containers/Contact'

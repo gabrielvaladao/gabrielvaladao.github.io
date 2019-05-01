@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gabrielvaladao/website"
+    "url": "https://github.com/gabrielvaladao.github.io"
   },
   "main": "index.js",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
-    "deploy": "gh-pages -d dist",
+    "deploy": "node ./scripts/deploy-github",
     "lint:css": "stylelint './src/**/*.js'"
   },
   "dependencies": {
