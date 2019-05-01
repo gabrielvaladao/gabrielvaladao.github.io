@@ -1,4 +1,6 @@
-# Musician's portfolio built on React Static
+# Gabriel Valadão's portfolio built on React Static
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fe15a355-dd50-4b65-b4f4-9304f72e6171/deploy-status)](https://app.netlify.com/sites/gabrielvaladao/deploys)
 
 This website is being crafted to be robust and extensible as a prototype for similar portfolio sites in future. Improvements are ongoing.
 
