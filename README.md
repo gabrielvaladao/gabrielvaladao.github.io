@@ -4,7 +4,7 @@
 
 This website is being crafted to be robust and extensible as a prototype for similar portfolio sites in future. Improvements are ongoing.
 
-See it live at [gabrielvaladao.github.io/website](https://gabrielvaladao.github.io/website)
+See it live at [gabrielvaladao.github.io](https://gabrielvaladao.github.io)
 
 This site was built with:
 
