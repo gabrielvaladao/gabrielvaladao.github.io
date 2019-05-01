@@ -27,14 +27,14 @@ const Footer = () => (
   <Wrapper>
     <Socials />
     <StyledMenu />
-    <Logo
+    {false && <Logo
       src={smWhiteLogo}
-      alt="Labrysinthe's logo, a maze-like labrys axe."
+      alt="Gabriel Valadão's logo."
       height="104px"
       width="90px"
-    />
+    />}
     {/* TODO: Add year dynamically */}
-    <Socket role="contentinfo">&copy; 2019 Labrysinthe</Socket>
+    <Socket role="contentinfo">&copy; 2019 Gabriel Valadão</Socket>
   </Wrapper>
 );
 

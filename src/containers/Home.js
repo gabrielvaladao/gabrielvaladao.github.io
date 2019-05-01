@@ -10,6 +10,8 @@ import { HomeStyles, SiteTitleStyles, LargeStyles, LogoStyles } from './Home-sty
 import smColorLogo from '../images/logo-color-550x620.png';
 import mdColorLogo from '../images/logo-color-665x750.png';
 import lgColorLogo from '../images/logo-color-1326x1496.png';
+import studioPhoto from '../images/studio.jpg';
+import profilePhoto from '../images/profile.jpg';
 //
 const Wrapper = styled.section`
   ${HomeStyles}
@@ -29,24 +31,24 @@ const Logo = styled.img`
 
 const Home = ({ id }) => (
   <Wrapper id={id}>
-    <SiteTitle>Labrysinthe</SiteTitle>
+    <SiteTitle>Gabriel Valadão</SiteTitle>
 
     <Large>
-      New EP out now!
+      Some interesting message about me!
       <br />
-      <strong>Fire Loves Sugar</strong>
+      <strong>Another interesting message!</strong>
       <br />
       <TextLink>
-        <Link to="https://www.beatport.com/release/fire-loves-sugar/2510399">
-          Download on Beatport
+        <Link to="https://www.gabrielvaladao.github.io">
+          Fuck you bitch!
         </Link>
       </TextLink>
     </Large>
 
     <picture>
-      <source media="(min-width: 768px)" srcSet={lgColorLogo} />
-      <source media="(min-width: 576px)" srcSet={mdColorLogo} />
-      <Logo alt="" src={smColorLogo} />
+      <source media="(min-width: 768px)" srcSet={profilePhoto} />
+      <source media="(min-width: 576px)" srcSet={profilePhoto} />
+      <Logo alt="" src={profilePhoto} />
     </picture>
   </Wrapper>
 );

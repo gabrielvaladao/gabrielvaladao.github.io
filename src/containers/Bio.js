@@ -19,20 +19,15 @@ const Bio = ({ id }) => (
   <section id={id}>
     <H1>Bio</H1>
     <Large>
-      Labrysinthe is voluntarily committed to the institution of psytrance and stands for better
-      machines, brighter knowledge, bolder music, and the blissful ecstasies of the beat.
+      My name is Gabriel Valadão Moura, i'm from Lagoa Santa, Minas Gerais, Brazil.
     </Large>
     <P>
-      Labrysinthe is Natalia Lincoln, who took the scenic route to psytrance -- first through
-      classical training, then joining gothic/apocalyptic folk band Unto Ashes (NYC) as premium
-      purveyor of keyboards, vocals, and gloom.
+      I'm 22 years old and i'm looking for a job in the audio area.
     </P>
     <P>
-      Natalia moved to Berlin in 2008 to taste the delightfully twisted freakquencies of electronic
-      psychedelica, at which point Labrysinthe was born into this world that could neither spell her
-      name nor name her spell.
+      I started studying mix  one year and half ago through Urm Academy.
     </P>
-    <P>
+    {false && <P>
       Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin. She is an original member
       of the{' '}
       <TextLink>
@@ -45,7 +40,7 @@ const Bio = ({ id }) => (
         </Link>
       </TextLink>{' '}
       beat collective in Berlin.
-    </P>
+    </P>}
   </section>
 );
 

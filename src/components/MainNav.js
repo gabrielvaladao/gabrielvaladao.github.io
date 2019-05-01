@@ -55,9 +55,9 @@ const Backdrop = styled(Link)`
 const MainNav = () => (
   <Wrapper>
     <MiniMenu id="mini-menu">
-      <ResponsiveLi key="newsletter">
+      {false && <ResponsiveLi key="newsletter">
         <NavLink to="#newsletter">Newsletter</NavLink>
-      </ResponsiveLi>
+      </ResponsiveLi>}
       <Li key="open">
         <OpenLink
           to="#menu"

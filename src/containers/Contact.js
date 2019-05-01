@@ -19,12 +19,13 @@ const Contact = ({ id }) => (
   <section id={id}>
     <H1>Contact</H1>
     <Info>
-      For booking and inquiries, email{' '}
+      For booking and questions, email{' '}
       <Address>
         <TextLink>
-          <Link to="mailto:labrysinthe@gmail.com">labrysinthe@gmail.com</Link>
+          <Link to="mailto:gvaladao.audio@gmail.com">gvaladao.audio@gmail.com</Link>
         </TextLink>
       </Address>
+      <p>+55 31 998040497</p>
     </Info>
   </section>
 );

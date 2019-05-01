@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-//
 import { Router } from 'react-static';
-import Routes from 'react-static-routes';
-//
+// import Routes from 'react-static-routes';
+
+/** Styles Dependencies */
 import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import styledNormalize from 'styled-normalize';
-//
+
+/** Styles */
 import theme from './styles/Theme';
 import './styles/app.css';
 import './styles/social-icons.css';
-//
+
+/** Components */
 import Scroller from './components/Scroller';
 import Footer from './components/Footer';
-//
+
+/** Containers */
 import Home from './containers/Home';
-import Shows from './containers/Shows';
+// import Shows from './containers/Shows';
 import Music from './containers/Music';
 import Bio from './containers/Bio';
+import Gear from './containers/Gear';
 import Contact from './containers/Contact';
 import Newsletter from './containers/Newsletter';
 
@@ -75,6 +79,8 @@ const StyledFooter = styled(Footer)`
   padding: ${({ theme }) => theme.space.one} 0 ${({ theme }) => theme.space.two};
 `;
 
+// Removed <Shows id="shows" /> from the PaddedDiv below.
+
 class App extends Component {
   render() {
     return (
@@ -85,10 +91,10 @@ class App extends Component {
             <main>
               <Home id="home" />
               <PaddedDiv>
-                <Shows id="shows" />
                 <Music id="music" />
                 <Bio id="bio" />
-                <Newsletter id="newsletter" />
+                <Gear id="gear" />
+                {false && <Newsletter id="newsletter" />}
                 <Contact id="contact" />
               </PaddedDiv>
             </main>

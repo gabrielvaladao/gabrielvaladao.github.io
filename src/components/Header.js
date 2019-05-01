@@ -23,7 +23,7 @@ class Header extends Component {
     return (
       <Wrapper scrolled={scrolled}>
         <SiteTitle scrolled={scrolled}>
-          <a href="#home">Labrysinthe</a>
+          <a href="#home">Gabriel Valadão</a>
         </SiteTitle>
         <MainNav />
       </Wrapper>

@@ -18,12 +18,12 @@ const PressRelease = ({ pressRelease }) => (
       max-height="500px"
       width="500px"
       max-width="100%"
-      alt="Cover art showing a swirling psychedelic vortex behind Labrysinthe's logo, a maze-like labrys axe."
+      alt="Cover art."
     />
-    <H2 id="headline">Labrysinthe launches psytrance EP (title) on (date) at (party) at (venue)</H2>
+    <H2 id="headline">Gabriel Valadão launches psytrance EP (title) on (date) at (party) at (venue)</H2>
     <span className="release-date">Date</span>
     <Large>
-      Psy-sorceress Labrysinthe will play (date) at (party) at (venue), (part of town) to conincide
+      Psy-sorceress Gabriel Valadão will play (date) at (party) at (venue), (part of town) to conincide
       with the release of (EP).
     </Large>
 

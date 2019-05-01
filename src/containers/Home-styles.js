@@ -7,7 +7,7 @@ const HomeStyles = css`
 const SiteTitleStyles = css`
   padding-top: ${({ theme }) => theme.space.four};
   padding-bottom: ${({ theme }) => theme.space.one};
-  font-family: 'raincoatregular', sans-serif;
+  font-family: ${({ theme }) => theme.type.large.fontSize};
   letter-spacing: 0.06ch;
   text-transform: uppercase;
   text-align: center;
@@ -34,7 +34,7 @@ const LargeStyles = css`
 `;
 
 const LogoStyles = css`
-  margin-top: -${({ theme }) => theme.space.three};
+  margin-top: -${({ theme }) => theme.space.one};
   margin-left: 50%;
   transform: translateX(-50%);
   min-width: 140%;
@@ -42,6 +42,10 @@ const LogoStyles = css`
   padding-top: ${({ theme }) => theme.space.one};
   position: relative;
   z-index: -99999;
+
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  border-radius: 50%;
 
   @media (min-width: 992px) {
     min-width: 0;

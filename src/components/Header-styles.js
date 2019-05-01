@@ -33,7 +33,7 @@ const HeaderStyles = css`
 const SiteTitleStyles = css`
   float: left;
   font-size: ${({ theme }) => theme.type.large.fontSize};
-  font-family: 'raincoatregular', sans-serif;
+  font-family: ${({ theme }) => theme.type.large.fontSize};
   letter-spacing: 0.06ch;
   text-transform: uppercase;
   text-align: left;

@@ -19,7 +19,7 @@ const Icon = styled(Link)`
 /* TODO: generate socials from data and include PropTypes */
 const Socials = () => (
   <Wrapper>
-    <Li key="beatport">
+    {false && <Li key="beatport">
       <Icon
         to="https://www.beatport.com/artist/labrysinthe/640674"
         title="Beatport"
@@ -27,8 +27,8 @@ const Socials = () => (
         role="img"
         aria-label="Beaport"
       />
-    </Li>
-    <Li key="soundcloud">
+    </Li>}
+    {false && <Li key="soundcloud">
       <Icon
         to="https://soundcloud.com/labrysinthe"
         title="SoundCloud"
@@ -36,8 +36,8 @@ const Socials = () => (
         role="img"
         aria-label="SoundCloud"
       />
-    </Li>
-    <Li key="spotify">
+    </Li>}
+    {false && <Li key="spotify">
       <Icon
         to="https://open.spotify.com/artist/4YkYhnarkLP5K1l55l5Y3e"
         title="Spotify"
@@ -45,17 +45,17 @@ const Socials = () => (
         role="img"
         aria-label="Spotify"
       />
-    </Li>
+    </Li>}
     <Li key="facebook">
       <Icon
-        to="https://www.facebook.com/labrysinthe/"
+        to="https://www.facebook.com/gabriel.valadao.10"
         title="Facebook"
         className="icon-facebook"
         role="img"
         aria-label="Facebook"
       />
     </Li>
-    <Li key="twitter">
+    {false && <Li key="twitter">
       <Icon
         to="https://twitter.com/labrysinthe"
         title="Twitter"
@@ -63,16 +63,16 @@ const Socials = () => (
         role="img"
         aria-label="Twitter"
       />
-    </Li>
-    {/* <Li key="instagram">
+    </Li>}
+    <Li key="instagram">
       <Icon
-        to="https://www.instagram.com/labrysinthe/"
+        to="https://www.instagram.com/gvaladao1/"
         title="Instagram"
         className="icon-instagram"
         role="img"
         aria-label="Instagram"
       />
-    </Li> */}
+    </Li>
   </Wrapper>
 );
 

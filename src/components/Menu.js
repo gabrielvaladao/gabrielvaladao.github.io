@@ -36,18 +36,18 @@ const Menu = ({ className }) => (
     <Li key="home">
       <A href="/#home">Home</A>
     </Li>
-    <Li key="shows">
+    {false && <Li key="shows">
       <A href="/#shows">Shows</A>
-    </Li>
+    </Li>}
     <Li key="music">
       <A href="/#music">Music</A>
     </Li>
     <Li key="bio">
       <A href="/#bio">Bio</A>
     </Li>
-    <Li key="newsletter">
+    {false && <Li key="newsletter">
       <A href="/#newsletter">Newsletter</A>
-    </Li>
+    </Li>}
     <Li key="contact">
       <A href="/#contact">Contact</A>
     </Li>

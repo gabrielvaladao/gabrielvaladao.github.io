@@ -5,7 +5,7 @@ const ga_tracking =
   "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-131654117-1', { 'anonymize_ip': true });";
 
 export default {
-  siteRoot: 'https://www.labrysinthe.com/',
+  siteRoot: 'https://www.gabrielvaladao.github.io/',
   /**
    *  Enable bundleAnalyzer to check the pkg size footprint
    *  of a production/staging build
@@ -14,17 +14,17 @@ export default {
 
   plugins: ['react-static-plugin-styled-components'],
   getSiteData: () => ({
-    title: 'Labrysinthe'
+    title: 'Gabriel Valadão'
   }),
   getRoutes: async () => [
     {
       path: '/',
       component: 'src/containers/Home'
     },
-    {
+    /* {
       path: '/shows',
       component: 'src/containers/Shows'
-    },
+    }, */
     {
       path: '/music',
       component: 'src/containers/Music'
@@ -33,10 +33,10 @@ export default {
       path: '/bio',
       component: 'src/containers/Bio'
     },
-    {
+    /* {
       path: '/newsletter',
       component: 'src/containers/Newsletter'
-    },
+    }, */
     {
       path: '/contact',
       component: 'src/containers/Contact'
@@ -53,17 +53,17 @@ export default {
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131654117-1" />
         <script dangerouslySetInnerHTML={{ __html: ga_tracking }} />
 
-        <title>Labrysinthe</title>
+        <title>Gabriel Valadão</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
         />
         {/* Facebook + Twitter thumbnails */}
-        <meta property="og:title" content="Labrysinthe" />
-        <meta property="og:description" content="Fire Loves Sugar &mdash; New EP coming soon!" />
-        <meta property="og:image" content="https://www.labrysinthe.com/website-thumbnail.png" />
-        <meta property="og:url" content="https://www.labrysinthe.com/" />
+        <meta property="og:title" content="Gabriel Valadão" />
+        <meta property="og:description" content="=)" />
+        <meta property="og:image" content="https://www.gabrielvaladao.github.io/website-thumbnail.png" />
+        <meta property="og:url" content="https://www.gabrielvaladao.github.io/" />
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* Favicons */}

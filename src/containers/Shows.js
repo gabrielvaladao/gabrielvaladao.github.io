@@ -64,7 +64,7 @@ const Shows = ({ id }) => (
             venueName="Secret venue near Warschauer Str, Berlin"
             venueSecret
             ctaText="EMAIL FOR SECRET ADDRESS"
-            ctaUrl="mailto:labrysinthe@gmail.com"
+            ctaUrl="mailto:gvaladao.audio@gmail.com"
           />
         </Li>
       </Ul>
