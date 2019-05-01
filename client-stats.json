@@ -2,15 +2,15 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "a7d844fbfa9083458c6b",
-  "time": 13830,
+  "hash": "a1ae43a8e3a714a7d364",
+  "time": 15161,
   "publicPath": "https://gabrielvaladao.github.io/",
   "assetsByChunkName": {
     "main": [
-      "main.73ad6a34.js",
-      "styles.a7d844fb.css",
-      "main.73ad6a34.js.map",
-      "styles.a7d844fb.css.map"
+      "main.06209015.js",
+      "styles.a1ae43a8.css",
+      "main.06209015.js.map",
+      "styles.a1ae43a8.css.map"
     ],
     "bootstrap": [
       "bootstrap.56bcab13.js",
@@ -73,8 +73,8 @@
       "emitted": true
     },
     {
-      "name": "main.73ad6a34.js",
-      "size": 397998,
+      "name": "main.06209015.js",
+      "size": 398006,
       "chunks": [
         0
       ],
@@ -96,7 +96,7 @@
       "emitted": true
     },
     {
-      "name": "styles.a7d844fb.css",
+      "name": "styles.a1ae43a8.css",
       "size": 46282,
       "chunks": [
         0
@@ -107,8 +107,8 @@
       "emitted": true
     },
     {
-      "name": "main.73ad6a34.js.map",
-      "size": 2101085,
+      "name": "main.06209015.js.map",
+      "size": 2101101,
       "chunks": [
         0
       ],
@@ -118,7 +118,7 @@
       "emitted": true
     },
     {
-      "name": "styles.a7d844fb.css.map",
+      "name": "styles.a1ae43a8.css.map",
       "size": 96,
       "chunks": [
         0
@@ -150,10 +150,10 @@
       "assets": [
         "bootstrap.56bcab13.js",
         "bootstrap.56bcab13.js.map",
-        "main.73ad6a34.js",
-        "styles.a7d844fb.css",
-        "main.73ad6a34.js.map",
-        "styles.a7d844fb.css.map"
+        "main.06209015.js",
+        "styles.a1ae43a8.css",
+        "main.06209015.js.map",
+        "styles.a1ae43a8.css.map"
       ],
       "isOverSizeLimit": true
     }
@@ -165,17 +165,17 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 769186,
+      "size": 769194,
       "names": [
         "main"
       ],
       "files": [
-        "main.73ad6a34.js",
-        "styles.a7d844fb.css",
-        "main.73ad6a34.js.map",
-        "styles.a7d844fb.css.map"
+        "main.06209015.js",
+        "styles.a1ae43a8.css",
+        "main.06209015.js.map",
+        "styles.a1ae43a8.css.map"
       ],
-      "hash": "73ad6a34f9d42d21910b",
+      "hash": "0620901523f6d244141c",
       "parents": [
         1
       ],
@@ -1896,9 +1896,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": 66,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": 72,
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2201,9 +2201,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/Prefetch.js",
-          "issuerId": 122,
-          "issuerName": "./node_modules/react-static/lib/client/components/Prefetch.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/SiteData.js",
+          "issuerId": 119,
+          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2293,9 +2293,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Music.js",
-          "issuerId": 169,
-          "issuerName": "./src/containers/Music.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Home.js",
+          "issuerId": 161,
+          "issuerName": "./src/containers/Home.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2483,9 +2483,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": 66,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": 72,
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2581,9 +2581,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/Router.js",
-          "issuerId": 123,
-          "issuerName": "./node_modules/react-static/lib/client/components/Router.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/RouteData.js",
+          "issuerId": 97,
+          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2747,9 +2747,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Music.js",
-          "issuerId": 169,
-          "issuerName": "./src/containers/Music.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Home.js",
+          "issuerId": 161,
+          "issuerName": "./src/containers/Home.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3851,9 +3851,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createHashHistory.js",
-          "issuerId": 70,
-          "issuerName": "./node_modules/history/es/createHashHistory.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createBrowserHistory.js",
+          "issuerId": 69,
+          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4069,9 +4069,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/generatePath.js",
-          "issuerId": 38,
-          "issuerName": "./node_modules/react-router/es/generatePath.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/matchPath.js",
+          "issuerId": 25,
+          "issuerName": "./node_modules/react-router/es/matchPath.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -9065,7 +9065,7 @@
           "name": "./src/containers/Home.js",
           "index": 155,
           "index2": 161,
-          "size": 3219,
+          "size": 3227,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9095,7 +9095,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _HomeStyles = require('./Home-styles');\n\nvar _logoColor550x = require('../images/logo-color-550x620.png');\n\nvar _logoColor550x2 = _interopRequireDefault(_logoColor550x);\n\nvar _logoColor665x = require('../images/logo-color-665x750.png');\n\nvar _logoColor665x2 = _interopRequireDefault(_logoColor665x);\n\nvar _logoColor1326x = require('../images/logo-color-1326x1496.png');\n\nvar _logoColor1326x2 = _interopRequireDefault(_logoColor1326x);\n\nvar _studio = require('../images/studio.jpg');\n\nvar _studio2 = _interopRequireDefault(_studio);\n\nvar _profile = require('../images/profile.jpg');\n\nvar _profile2 = _interopRequireDefault(_profile);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.section(_templateObject, _HomeStyles.HomeStyles);\n\nvar SiteTitle = (0, _styledComponents2.default)(_H2.default)(_templateObject, _HomeStyles.SiteTitleStyles);\n\nvar Large = _styledComponents2.default.p(_templateObject, _HomeStyles.LargeStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _HomeStyles.LogoStyles);\n\nvar Home = function Home(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    Wrapper,\n    { id: id },\n    _react2.default.createElement(\n      SiteTitle,\n      null,\n      'Gabriel Valad\\xE3o'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'Some interesting message about me!',\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        'strong',\n        null,\n        'Another interesting message!'\n      ),\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://gabrielvaladao.github.io' },\n          'Fuck you bitch!'\n        )\n      )\n    ),\n    _react2.default.createElement(\n      'picture',\n      null,\n      _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n      _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n      _react2.default.createElement(Logo, { alt: '', src: _profile2.default })\n    )\n  );\n};\n\nHome.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withSiteData)(Home);"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _HomeStyles = require('./Home-styles');\n\nvar _logoColor550x = require('../images/logo-color-550x620.png');\n\nvar _logoColor550x2 = _interopRequireDefault(_logoColor550x);\n\nvar _logoColor665x = require('../images/logo-color-665x750.png');\n\nvar _logoColor665x2 = _interopRequireDefault(_logoColor665x);\n\nvar _logoColor1326x = require('../images/logo-color-1326x1496.png');\n\nvar _logoColor1326x2 = _interopRequireDefault(_logoColor1326x);\n\nvar _studio = require('../images/studio.jpg');\n\nvar _studio2 = _interopRequireDefault(_studio);\n\nvar _profile = require('../images/profile.jpg');\n\nvar _profile2 = _interopRequireDefault(_profile);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.section(_templateObject, _HomeStyles.HomeStyles);\n\nvar SiteTitle = (0, _styledComponents2.default)(_H2.default)(_templateObject, _HomeStyles.SiteTitleStyles);\n\nvar Large = _styledComponents2.default.p(_templateObject, _HomeStyles.LargeStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _HomeStyles.LogoStyles);\n\nvar Home = function Home(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    Wrapper,\n    { id: id },\n    _react2.default.createElement(\n      SiteTitle,\n      null,\n      'Gabriel Valad\\xE3o'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'Some interesting message about me!',\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        'strong',\n        null,\n        'Another interesting message!'\n      ),\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://gabrielvaladao.github.io/website' },\n          'Fuck you bitch!'\n        )\n      )\n    ),\n    _react2.default.createElement(\n      'picture',\n      null,\n      _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n      _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n      _react2.default.createElement(Logo, { alt: '', src: _profile2.default })\n    )\n  );\n};\n\nHome.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withSiteData)(Home);"
         },
         {
           "id": 162,
@@ -12160,9 +12160,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 66,
-      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": 72,
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12465,9 +12465,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/Prefetch.js",
-      "issuerId": 122,
-      "issuerName": "./node_modules/react-static/lib/client/components/Prefetch.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/SiteData.js",
+      "issuerId": 119,
+      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12557,9 +12557,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Music.js",
-      "issuerId": 169,
-      "issuerName": "./src/containers/Music.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Home.js",
+      "issuerId": 161,
+      "issuerName": "./src/containers/Home.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12747,9 +12747,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 66,
-      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": 72,
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12845,9 +12845,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/Router.js",
-      "issuerId": 123,
-      "issuerName": "./node_modules/react-static/lib/client/components/Router.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/RouteData.js",
+      "issuerId": 97,
+      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13011,9 +13011,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Music.js",
-      "issuerId": 169,
-      "issuerName": "./src/containers/Music.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Home.js",
+      "issuerId": 161,
+      "issuerName": "./src/containers/Home.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14115,9 +14115,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createHashHistory.js",
-      "issuerId": 70,
-      "issuerName": "./node_modules/history/es/createHashHistory.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createBrowserHistory.js",
+      "issuerId": 69,
+      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14333,9 +14333,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/generatePath.js",
-      "issuerId": 38,
-      "issuerName": "./node_modules/react-router/es/generatePath.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/matchPath.js",
+      "issuerId": 25,
+      "issuerName": "./node_modules/react-router/es/matchPath.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -19329,7 +19329,7 @@
       "name": "./src/containers/Home.js",
       "index": 155,
       "index2": 161,
-      "size": 3219,
+      "size": 3227,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -19359,7 +19359,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _HomeStyles = require('./Home-styles');\n\nvar _logoColor550x = require('../images/logo-color-550x620.png');\n\nvar _logoColor550x2 = _interopRequireDefault(_logoColor550x);\n\nvar _logoColor665x = require('../images/logo-color-665x750.png');\n\nvar _logoColor665x2 = _interopRequireDefault(_logoColor665x);\n\nvar _logoColor1326x = require('../images/logo-color-1326x1496.png');\n\nvar _logoColor1326x2 = _interopRequireDefault(_logoColor1326x);\n\nvar _studio = require('../images/studio.jpg');\n\nvar _studio2 = _interopRequireDefault(_studio);\n\nvar _profile = require('../images/profile.jpg');\n\nvar _profile2 = _interopRequireDefault(_profile);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.section(_templateObject, _HomeStyles.HomeStyles);\n\nvar SiteTitle = (0, _styledComponents2.default)(_H2.default)(_templateObject, _HomeStyles.SiteTitleStyles);\n\nvar Large = _styledComponents2.default.p(_templateObject, _HomeStyles.LargeStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _HomeStyles.LogoStyles);\n\nvar Home = function Home(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    Wrapper,\n    { id: id },\n    _react2.default.createElement(\n      SiteTitle,\n      null,\n      'Gabriel Valad\\xE3o'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'Some interesting message about me!',\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        'strong',\n        null,\n        'Another interesting message!'\n      ),\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://gabrielvaladao.github.io' },\n          'Fuck you bitch!'\n        )\n      )\n    ),\n    _react2.default.createElement(\n      'picture',\n      null,\n      _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n      _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n      _react2.default.createElement(Logo, { alt: '', src: _profile2.default })\n    )\n  );\n};\n\nHome.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withSiteData)(Home);"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _HomeStyles = require('./Home-styles');\n\nvar _logoColor550x = require('../images/logo-color-550x620.png');\n\nvar _logoColor550x2 = _interopRequireDefault(_logoColor550x);\n\nvar _logoColor665x = require('../images/logo-color-665x750.png');\n\nvar _logoColor665x2 = _interopRequireDefault(_logoColor665x);\n\nvar _logoColor1326x = require('../images/logo-color-1326x1496.png');\n\nvar _logoColor1326x2 = _interopRequireDefault(_logoColor1326x);\n\nvar _studio = require('../images/studio.jpg');\n\nvar _studio2 = _interopRequireDefault(_studio);\n\nvar _profile = require('../images/profile.jpg');\n\nvar _profile2 = _interopRequireDefault(_profile);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.section(_templateObject, _HomeStyles.HomeStyles);\n\nvar SiteTitle = (0, _styledComponents2.default)(_H2.default)(_templateObject, _HomeStyles.SiteTitleStyles);\n\nvar Large = _styledComponents2.default.p(_templateObject, _HomeStyles.LargeStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _HomeStyles.LogoStyles);\n\nvar Home = function Home(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    Wrapper,\n    { id: id },\n    _react2.default.createElement(\n      SiteTitle,\n      null,\n      'Gabriel Valad\\xE3o'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'Some interesting message about me!',\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        'strong',\n        null,\n        'Another interesting message!'\n      ),\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://gabrielvaladao.github.io/website' },\n          'Fuck you bitch!'\n        )\n      )\n    ),\n    _react2.default.createElement(\n      'picture',\n      null,\n      _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n      _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n      _react2.default.createElement(Logo, { alt: '', src: _profile2.default })\n    )\n  );\n};\n\nHome.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withSiteData)(Home);"
     },
     {
       "id": 162,

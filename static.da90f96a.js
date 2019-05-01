@@ -2031,7 +2031,7 @@ var Home = function Home(_ref) {
         null,
         _react2.default.createElement(
           _reactStatic.Link,
-          { to: 'https://gabrielvaladao.github.io' },
+          { to: 'https://gabrielvaladao.github.io/website' },
           'Fuck you bitch!'
         )
       )
@@ -3858,4 +3858,4 @@ exports.ThanksStyles = ThanksStyles;
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.534a567b.js.map
+//# sourceMappingURL=static.da90f96a.js.map
