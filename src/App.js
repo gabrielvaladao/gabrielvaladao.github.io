@@ -72,7 +72,7 @@ const PaddedDiv = styled.div`
   /* Undo above padding on bigger screens */
   @media (min-width: 380px) {
     padding: 0 2rem 2rem 2rem;
-  }
+  } 
 `;
 
 const StyledFooter = styled(Footer)`
