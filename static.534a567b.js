@@ -67,7 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://www.gabrielvaladao.github.io/";
+/******/ 	__webpack_require__.p = "https://gabrielvaladao.github.io/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 12);
@@ -2031,7 +2031,7 @@ var Home = function Home(_ref) {
         null,
         _react2.default.createElement(
           _reactStatic.Link,
-          { to: 'https://www.gabrielvaladao.github.io' },
+          { to: 'https://gabrielvaladao.github.io' },
           'Fuck you bitch!'
         )
       )
@@ -3858,4 +3858,4 @@ exports.ThanksStyles = ThanksStyles;
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.0c5e83fe.js.map
+//# sourceMappingURL=static.534a567b.js.map
