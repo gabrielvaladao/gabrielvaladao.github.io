@@ -5,7 +5,7 @@ const ga_tracking =
   "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-131654117-1', { 'anonymize_ip': true });";
 
 export default {
-  siteRoot: 'https://www.gabrielvaladao.github.io/',
+  siteRoot: 'https://gabrielvaladao.github.io/',
   /**
    *  Enable bundleAnalyzer to check the pkg size footprint
    *  of a production/staging build
@@ -62,8 +62,8 @@ export default {
         {/* Facebook + Twitter thumbnails */}
         <meta property="og:title" content="Gabriel Valadão" />
         <meta property="og:description" content="=)" />
-        <meta property="og:image" content="https://www.gabrielvaladao.github.io/website-thumbnail.png" />
-        <meta property="og:url" content="https://www.gabrielvaladao.github.io/" />
+        <meta property="og:image" content="https://gabrielvaladao.github.io/website-thumbnail.png" />
+        <meta property="og:url" content="https://gabrielvaladao.github.io/" />
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* Favicons */}

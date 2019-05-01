@@ -12,12 +12,14 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
+    "deploy": "gh-pages -d dist",
     "lint:css": "stylelint './src/**/*.js'"
   },
   "dependencies": {
     "ajv": "^6.5.5",
     "axios": "^0.16.2",
     "contentful": "^7.0.5",
+    "gh-pages": "^2.0.1",
     "polished": "^2.3.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.1",

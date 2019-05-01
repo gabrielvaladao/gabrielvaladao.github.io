@@ -39,7 +39,7 @@ const Home = ({ id }) => (
       <strong>Another interesting message!</strong>
       <br />
       <TextLink>
-        <Link to="https://www.gabrielvaladao.github.io">
+        <Link to="https://gabrielvaladao.github.io">
           Fuck you bitch!
         </Link>
       </TextLink>
