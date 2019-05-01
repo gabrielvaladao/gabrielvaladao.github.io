@@ -4,7 +4,7 @@ import { Router } from 'react-static';
 // import Routes from 'react-static-routes';
 
 /** Styles Dependencies */
-import styled, { injectGlobal, ThemeProvider } from 'styled-components';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import styledNormalize from 'styled-normalize';
 
 /** Styles */
@@ -37,7 +37,7 @@ import Newsletter from './containers/Newsletter';
  */
 
 /* eslint-disable-next-line */
-injectGlobal`
+createGlobalStyle`
   * { padding: 0; margin: 0; }
   ${styledNormalize}
   html {
