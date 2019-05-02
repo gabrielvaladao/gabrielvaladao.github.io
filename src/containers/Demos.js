@@ -48,7 +48,7 @@ const Demos = ({ id }) => (
     <H1>Local Production</H1>
     This is the first local artist that I produced, called Erick Bless. I made the instrumental,
     production, mix and master. He didn't release his EP yet but is already done, here's some material:
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w6hJNgZX_tM?showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w6hJNgZX_tM?controls=0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     <AWSSoundPlayer streamUrl={bless1Audio} trackTitle='Erick Bless' preloadType="auto" />
     <AWSSoundPlayer streamUrl={bless2Audio} trackTitle='Erick Bless' preloadType="auto" />
     <H1>NTM</H1>
