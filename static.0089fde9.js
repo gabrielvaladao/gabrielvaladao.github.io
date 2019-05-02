@@ -335,6 +335,7 @@ var Home = function Home(_ref) {
         )
       )
     ),
+    _react2.default.createElement('div', { className: 'parallax-2' }),
     false && _react2.default.createElement(
       'div',
       { className: 'losange' },
@@ -346,7 +347,7 @@ var Home = function Home(_ref) {
         _react2.default.createElement(PlainLogo, { alt: '', src: _profile2.default })
       )
     ),
-    _react2.default.createElement(
+    false && _react2.default.createElement(
       'picture',
       null,
       _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),
@@ -669,6 +670,7 @@ var Demos = function Demos(_ref) {
       'Local Production'
     ),
     'This is the first local artist that I produced, called Erick Bless. I made the instrumental, production, mix and master. He didn\'t release his EP yet but is already done, here\'s some material:',
+    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube-nocookie.com/embed/w6hJNgZX_tM?showinfo=0&controls=0', frameborder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen: true }),
     _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless2.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),
     _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless4.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),
     _react2.default.createElement(
@@ -5838,4 +5840,4 @@ exports.PStyles = PStyles;
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.96853c4e.js.map
+//# sourceMappingURL=static.0089fde9.js.map
