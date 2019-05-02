@@ -31,7 +31,7 @@
 /** Panorama **/
 .parallax {
   background-image: url("../images/studio.jpg");
-  height: 500px; 
+  height: 600px; 
   width: 100%;
 
   /* Create the parallax scrolling effect */
@@ -46,8 +46,8 @@
   margin: 0 auto;
   transform-origin: 50% 50%;
   overflow: hidden;
-  width: 650px;
-  height: 650px;
+  width: 550px;
+  height: 550px;
 }
 .losange {
   transform: rotate(45deg) translateY(10px);
