@@ -27,3 +27,37 @@
   border: 0;
   clip: rect(0,0,0,0);
 }
+
+/** Panorama **/
+.parallax {
+  background-image: url("../images/studio.jpg");
+  height: 500px; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/** Losange Image */
+.losange, .losange div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 650px;
+  height: 650px;
+}
+.losange {
+  transform: rotate(45deg) translateY(10px);
+}
+.losange .los1 {
+  width: 855px;
+  height: 855px;
+  transform: rotate(-45deg) translateY(-74px);
+}
+.losange .los1 img {
+  width: 100%;
+  height: auto;
+}

@@ -10,7 +10,6 @@ import { LargeStyles, PStyles } from './Bio-styles';
 const Large = styled.p`
   ${LargeStyles}
 `;
-
 const P = styled.p`
   ${PStyles}
 `;

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 //
 import H1 from '../common/H1';
 import TextLink from '../common/TextLink';
-import { HomeStyles, SiteTitleStyles, LargeStyles, LogoStyles } from './Home-styles';
+import { HomeStyles, SiteTitleStyles, LargeStyles, LogoStyles, PlainLogoStyles } from './Home-styles';
 //
 import smColorLogo from '../images/logo-color-550x620.png';
 import mdColorLogo from '../images/logo-color-665x750.png';
@@ -29,6 +29,10 @@ const Logo = styled.img`
   ${LogoStyles}
 `;
 
+const PlainLogo = styled.img`
+  ${PlainLogoStyles}
+`;
+
 const Home = ({ id }) => (
   <Wrapper id={id}>
     <SiteTitle>Gabriel Valadão</SiteTitle>
@@ -44,6 +48,14 @@ const Home = ({ id }) => (
         </Link>
       </TextLink>
     </Large>
+
+    {false && <div className="losange">
+      <div className="los1">
+        <source media="(min-width: 768px)" srcSet={profilePhoto} />
+        <source media="(min-width: 576px)" srcSet={profilePhoto} />
+        <PlainLogo alt="" src={profilePhoto} />
+      </div>
+    </div>}
 
     <picture>
       <source media="(min-width: 768px)" srcSet={profilePhoto} />

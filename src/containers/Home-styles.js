@@ -33,6 +33,23 @@ const LargeStyles = css`
   z-index: 1;
 `;
 
+const PlainLogoStyles = css`
+  margin-top: -${({ theme }) => theme.space.one};
+  margin-left: 50%;
+  transform: translateX(-50%);
+  min-width: 140%;
+  display: block;
+  padding-top: ${({ theme }) => theme.space.one};
+  position: relative;
+  z-index: -99999;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+  @media (min-width: 992px) {
+    min-width: 0;
+  }
+`;
+
 const LogoStyles = css`
   margin-top: -${({ theme }) => theme.space.one};
   margin-left: 50%;
@@ -52,4 +69,4 @@ const LogoStyles = css`
   }
 `;
 
-export { HomeStyles, SiteTitleStyles, LargeStyles, LogoStyles };
+export { HomeStyles, SiteTitleStyles, LargeStyles, LogoStyles, PlainLogoStyles };

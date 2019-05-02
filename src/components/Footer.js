@@ -3,6 +3,7 @@ import styled from 'styled-components';
 //
 import Menu from '../components/Menu';
 import Socials from '../components/Socials';
+import Parallax from '../containers/Parallax';
 import { FooterStyles, FooterMenuStyles, LogoStyles, SocketStyles } from './Footer-styles';
 //
 import smWhiteLogo from '../images/logo-white-90x104.png';
@@ -26,6 +27,7 @@ const Socket = styled.p`
 const Footer = () => (
   <Wrapper>
     <Socials />
+    <Parallax />
     <StyledMenu />
     {false && <Logo
       src={smWhiteLogo}
