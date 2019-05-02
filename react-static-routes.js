@@ -21,7 +21,7 @@ const universalOptions = {
 
   const t_0 = universal(import('../src/containers/Home'), universalOptions)
 const t_1 = universal(import('../src/containers/Shows'), universalOptions)
-const t_2 = universal(import('../src/containers/Music'), universalOptions)
+const t_2 = universal(import('../src/containers/Demos'), universalOptions)
 const t_3 = universal(import('../src/containers/Bio'), universalOptions)
 const t_4 = universal(import('../src/containers/Newsletter'), universalOptions)
 const t_5 = universal(import('../src/containers/Contact'), universalOptions)
