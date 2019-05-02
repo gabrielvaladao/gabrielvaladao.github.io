@@ -49,6 +49,8 @@ const Home = ({ id }) => (
       </TextLink>
     </Large>
 
+    <div className="parallax-2"></div>
+
     {false && <div className="losange">
       <div className="los1">
         <source media="(min-width: 768px)" srcSet={profilePhoto} />
@@ -57,11 +59,11 @@ const Home = ({ id }) => (
       </div>
     </div>}
 
-    <picture>
+    {false && <picture>
       <source media="(min-width: 768px)" srcSet={profilePhoto} />
       <source media="(min-width: 576px)" srcSet={profilePhoto} />
       <Logo alt="" src={profilePhoto} />
-    </picture>
+    </picture>}
   </Wrapper>
 );
 
