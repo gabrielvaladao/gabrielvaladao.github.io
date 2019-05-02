@@ -20,7 +20,7 @@ import Footer from './components/Footer';
 /** Containers */
 import Home from './containers/Home';
 import Shows from './containers/Shows';
-import Music from './containers/Music';
+import Demos from './containers/Demos';
 import Bio from './containers/Bio';
 import Gear from './containers/Gear';
 import Contact from './containers/Contact';
@@ -90,9 +90,9 @@ class App extends Component {
             <main>
               <Home id="home" />
               <PaddedDiv>
-                <Music id="music" />
-                {false && <Shows id="shows" />}
                 <Bio id="bio" />
+                <Demos id="demos" />
+                {false && <Shows id="shows" />}
                 <Gear id="gear" />
                 {false && <Newsletter id="newsletter" />}
                 <Contact id="contact" />

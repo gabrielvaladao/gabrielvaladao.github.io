@@ -26,8 +26,8 @@ export default {
       component: 'src/containers/Shows'
     },
     {
-      path: '/music',
-      component: 'src/containers/Music'
+      path: '/demos',
+      component: 'src/containers/Demos'
     },
     {
       path: '/bio',

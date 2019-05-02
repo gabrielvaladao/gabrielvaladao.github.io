@@ -34,13 +34,13 @@ const Home = ({ id }) => (
     <SiteTitle>Gabriel Valadão</SiteTitle>
 
     <Large>
-      Some interesting message about me!
+      Mixing, 
       <br />
-      <strong>Another interesting message!</strong>
+      <strong>mastering</strong>
       <br />
       <TextLink>
         <Link to="https://gabrielvaladao.github.io/">
-          Fuck you bitch!
+          and recording/production
         </Link>
       </TextLink>
     </Large>

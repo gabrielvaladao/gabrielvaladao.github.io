@@ -85,7 +85,7 @@ const Shows = ({ id }) => (
             venueGMapsUrl="https://www.google.com/maps/place/Kinzig9/@52.5137004,13.4663543,15z/data=!4m5!3m4!1s0x0:0x5eb804e91e785a6b!8m2!3d52.5137004!4d13.4663543"
             fbEventUrl="https://www.facebook.com/events/192580104960799/"
             ctaText="HEAR THE SET"
-            ctaUrl="#music"
+            ctaUrl="#demos"
           />
         </Li>
       </Ul>

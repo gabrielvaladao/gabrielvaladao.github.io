@@ -29,12 +29,6 @@ const Gear = ({ id }) => (
     <P>
       Mxl 990es condenser mic 
     </P>
-    <P>
-      Focusrite Scarlett 2i2 audio interface
-    </P>
-    <P>
-      Focusrite Scarlett 2i2 audio interface
-    </P>
     <H1>PC</H1>
     <P>
       Intel Core i5 2gen
@@ -48,6 +42,11 @@ const Gear = ({ id }) => (
     <P>
       Gtx680 2gb 
     </P>
+    <H1>Instruments</H1>
+    <P>Esp Ltd h-1001 Deluxe W emg 81 85</P>
+    <P>Tagima Stratocaster</P>
+    <P>Di Giorgio Nylon Acoustic guitar</P>
+    <P>Vogga Ukulele</P>
     <H1>Plugins</H1>
     <P>
       Slate digital bundle 

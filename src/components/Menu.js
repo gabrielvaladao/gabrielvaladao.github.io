@@ -39,8 +39,8 @@ const Menu = ({ className }) => (
     {false && <Li key="shows">
       <A href="/#shows">Shows</A>
     </Li>}
-    <Li key="music">
-      <A href="/#music">Music</A>
+    <Li key="demos">
+      <A href="/#demos">Demos</A>
     </Li>
     <Li key="bio">
       <A href="/#bio">Bio</A>
