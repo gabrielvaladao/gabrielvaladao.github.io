@@ -4,12 +4,13 @@ import { Router } from 'react-static';
 import Routes from 'react-static-routes';
 
 /** Styles Dependencies */
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import styledNormalize from 'styled-normalize';
 
 /** Styles */
 import theme from './styles/Theme';
 import './styles/app.css';
+import './styles/react-soundplayer.css';
 import './styles/social-icons.css';
 
 /** Components */
@@ -37,7 +38,7 @@ import Newsletter from './containers/Newsletter';
  */
 
 /* eslint-disable-next-line */
-createGlobalStyle`
+injectGlobal`
   * { padding: 0; margin: 0; }
   ${styledNormalize}
   html {

@@ -27,10 +27,11 @@
     "react-google-recaptcha": "^1.0.5",
     "react-hot-loader": "^4.3.12",
     "react-router": "^4.2.0",
+    "react-soundplayer": "^1.0.4",
     "react-static": "^5.9.12",
     "react-static-plugin-styled-components": "^1.0.6",
     "react-waypoint": "^8.1.0",
-    "styled-components": "^4.2.0",
+    "styled-components": "^3.4.10",
     "styled-normalize": "^8.0.3",
     "validator": "^10.9.0"
   },

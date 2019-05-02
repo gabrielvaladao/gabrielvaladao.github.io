@@ -16,6 +16,29 @@ const Li = styled.li`
   ${LiStyles}
 `;
 
+/** Demos */
+import sharkAudio from '../audios/demos/shark.mp3';
+import mstAudio from '../audios/demos/mst.mp3';
+
+/** Local Production */
+import bless1Audio from '../audios/local/bless-1.mp3';
+import bless2Audio from '../audios/local/bless-2.mp3';
+
+import { PlayButton, Timer } from 'react-soundplayer/components';
+import { withSoundCloudAudio } from 'react-soundplayer/addons';
+
+const AWSSoundPlayer = withSoundCloudAudio(props => {
+  const { trackTitle } = props;
+
+  return (
+    <div>
+      <PlayButton {...props} />
+      <h2>{trackTitle}</h2>
+      <Timer {...props} />
+    </div>
+  );
+});
+
 /* Known bug with SoundCloud embeds: unique key prop error */
 
 /**
@@ -29,7 +52,28 @@ const Li = styled.li`
  */
 const Music = ({ id }) => (
   <section id={id}>
-    <H1>Music (Work in Progress)</H1>
+    <H1>Demos</H1>
+    This is some demos that I wrote and recorded by myself:
+    <AWSSoundPlayer
+      streamUrl={sharkAudio}
+      trackTitle='Gabriel Valadão'
+      preloadType="auto" />
+    <AWSSoundPlayer
+      streamUrl={mstAudio}
+      trackTitle='Gabriel Valadão'
+      preloadType="auto" />
+    <H1>Local Production</H1>
+    This is the first artist that is produced, called Erick Bless, local here, I made the instrumental, production, mix and master, he didn't release his EP yet but is already done, here is some material:
+    <AWSSoundPlayer
+      streamUrl={bless1Audio}
+      trackTitle='Erick Bless'
+      preloadType="auto" />
+    <AWSSoundPlayer
+      streamUrl={bless2Audio}
+      trackTitle='Erick Bless'
+      preloadType="auto" />
+    <H1>NTM</H1>
+    I got first place at the The Story So Far Nailthemix secondary pool.
     {false && <p>
       Select downloads are available on{' '}
       <TextLink>
