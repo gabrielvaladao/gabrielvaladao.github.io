@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "96ca54df1fc0cc952494",
-  "time": 23732,
+  "hash": "e837b29c3e103faeaff1",
+  "time": 14239,
   "publicPath": "https://gabrielvaladao.github.io/",
   "assetsByChunkName": {
     "src/containers/404": [
@@ -11,10 +11,10 @@
       "templates/src/containers/404.cc242554.js.map"
     ],
     "main": [
-      "main.2db425dc.js",
-      "styles.96ca54df.css",
-      "main.2db425dc.js.map",
-      "styles.96ca54df.css.map"
+      "main.b46b68c5.js",
+      "styles.e837b29c.css",
+      "main.b46b68c5.js.map",
+      "styles.e837b29c.css.map"
     ],
     "bootstrap": [
       "bootstrap.95b4b488.js",
@@ -36,6 +36,14 @@
       "chunks": [],
       "chunkNames": [],
       "emitted": true
+    },
+    {
+      "name": "static/profile.e8e24e85.jpg",
+      "size": 253217,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true,
+      "isOverSizeLimit": true
     },
     {
       "name": "static/studio.c8034f1d.jpg",
@@ -64,14 +72,6 @@
     {
       "name": "static/logo-color-1326x1496.95a0ad1a.png",
       "size": 1890990,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true,
-      "isOverSizeLimit": true
-    },
-    {
-      "name": "static/profile.e8e24e85.jpg",
-      "size": 253217,
       "chunks": [],
       "chunkNames": [],
       "emitted": true,
@@ -128,8 +128,8 @@
       "emitted": true
     },
     {
-      "name": "main.2db425dc.js",
-      "size": 474239,
+      "name": "main.b46b68c5.js",
+      "size": 474228,
       "chunks": [
         1
       ],
@@ -151,8 +151,8 @@
       "emitted": true
     },
     {
-      "name": "styles.96ca54df.css",
-      "size": 50804,
+      "name": "styles.e837b29c.css",
+      "size": 50975,
       "chunks": [
         1
       ],
@@ -173,8 +173,8 @@
       "emitted": true
     },
     {
-      "name": "main.2db425dc.js.map",
-      "size": 2553039,
+      "name": "main.b46b68c5.js.map",
+      "size": 2553017,
       "chunks": [
         1
       ],
@@ -184,7 +184,7 @@
       "emitted": true
     },
     {
-      "name": "styles.96ca54df.css.map",
+      "name": "styles.e837b29c.css.map",
       "size": 96,
       "chunks": [
         1
@@ -216,10 +216,10 @@
       "assets": [
         "bootstrap.95b4b488.js",
         "bootstrap.95b4b488.js.map",
-        "main.2db425dc.js",
-        "styles.96ca54df.css",
-        "main.2db425dc.js.map",
-        "styles.96ca54df.css.map"
+        "main.b46b68c5.js",
+        "styles.e837b29c.css",
+        "main.b46b68c5.js.map",
+        "styles.e837b29c.css.map"
       ],
       "isOverSizeLimit": true
     }
@@ -311,17 +311,17 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 944318,
+      "size": 944307,
       "names": [
         "main"
       ],
       "files": [
-        "main.2db425dc.js",
-        "styles.96ca54df.css",
-        "main.2db425dc.js.map",
-        "styles.96ca54df.css.map"
+        "main.b46b68c5.js",
+        "styles.e837b29c.css",
+        "main.b46b68c5.js.map",
+        "styles.e837b29c.css.map"
       ],
-      "hash": "2db425dc6207ac0c98a1",
+      "hash": "b46b68c53ad90f4307d7",
       "parents": [
         2
       ],
@@ -2316,9 +2316,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createBrowserHistory.js",
-          "issuerId": 139,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createHashHistory.js",
+          "issuerId": 141,
+          "issuerName": "./node_modules/history/createHashHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3159,9 +3159,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/NextButton.js",
-          "issuerId": 185,
-          "issuerName": "./node_modules/react-soundplayer/lib/components/NextButton.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/PlayButton.js",
+          "issuerId": 184,
+          "issuerName": "./node_modules/react-soundplayer/lib/components/PlayButton.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3251,9 +3251,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/NextButton.js",
-          "issuerId": 185,
-          "issuerName": "./node_modules/react-soundplayer/lib/components/NextButton.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/PlayButton.js",
+          "issuerId": 184,
+          "issuerName": "./node_modules/react-soundplayer/lib/components/PlayButton.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4817,7 +4817,7 @@
           "name": "./src/containers/Demos.js",
           "index": 162,
           "index2": 187,
-          "size": 9268,
+          "size": 9257,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -4865,7 +4865,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _Track = require('../components/Track');\n\nvar _Track2 = _interopRequireDefault(_Track);\n\nvar _DemosStyles = require('./Demos-styles');\n\nvar _AWSSoundPlayer = require('../components/AWSSoundPlayer');\n\nvar _AWSSoundPlayer2 = _interopRequireDefault(_AWSSoundPlayer);\n\nvar _shark = require('../audios/demos/shark.mp3');\n\nvar _shark2 = _interopRequireDefault(_shark);\n\nvar _mst = require('../audios/demos/mst.mp3');\n\nvar _mst2 = _interopRequireDefault(_mst);\n\nvar _bless = require('../audios/local/bless-1.mp3');\n\nvar _bless2 = _interopRequireDefault(_bless);\n\nvar _bless3 = require('../audios/local/bless-2.mp3');\n\nvar _bless4 = _interopRequireDefault(_bless3);\n\nvar _place = require('../audios/ntm/place.mp3');\n\nvar _place2 = _interopRequireDefault(_place);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n\nvar Ul = _styledComponents2.default.ul(_templateObject, _DemosStyles.UlStyles);\n\nvar Li = _styledComponents2.default.li(_templateObject, _DemosStyles.LiStyles);\n\n/** Demos */\n\n\n/** Local Production */\n\n\n/** Local Production */\n\n\n/* Known bug with SoundCloud embeds: unique key prop error */\n\n/**\n * TODO: Create iframe Component from track ID.\n * For user-friendliness, let client paste in a full embed code.\n * App should extract the track ID and apply brand color to play button.\n */\n\n/**\n * TODO: iframe title attribs have been added by hand to satisfy eslint a11y error. generate these.\n */\nvar Demos = function Demos(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Demos'\n    ),\n    'This is some demos that I wrote and recorded myself:',\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _shark2.default, trackTitle: 'Gabriel Valad\\xE3o', preloadType: 'auto' }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _mst2.default, trackTitle: 'Gabriel Valad\\xE3o', preloadType: 'auto' }),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Local Production'\n    ),\n    'This is the first local artist that I produced, called Erick Bless. I made the instrumental, production, mix and master. He didn\\'t release his EP yet but is already done, here\\'s some material:',\n    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube-nocookie.com/embed/w6hJNgZX_tM?showinfo=0&controls=0', frameborder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen: true }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless2.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless4.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'NTM'\n    ),\n    'I got first place at the The Story So Far Nailthemix secondary pool.',\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'NTM portfolio builder'\n    ),\n    'This is a song that it\\'s already out. URM academy let us do our own mix to put on our portfolio:',\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _place2.default, trackTitle: '', preloadType: 'auto' }),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Producer: Vasco Ramos'\n    ),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Engineer: Tiago Canadas'\n    ),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Original Mix and Mastering: Marco Cipriano'\n    ),\n    false && _react2.default.createElement(\n      'p',\n      null,\n      'Select downloads are available on',\n      ' ',\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://www.beatport.com/artist/labrysinthe/640674/tracks' },\n          'Beatport'\n        )\n      )\n    ),\n    false && _react2.default.createElement(\n      Ul,\n      null,\n      _react2.default.createElement(\n        Li,\n        { key: 'live-dj-set-pms-the-l-night-party-kinzig9' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Live/DJ set @ PMS - The L-Night party / Kinzig9',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/546185124&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Live/DJ set @ PMS - The L-Night party / Kinzig9'\n          })]\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'fire-loves-sugar-teaser' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Fire Loves Sugar (Teaser)',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/489549831&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Fire Loves Sugar (Teaser)'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'shake-the-dust-teaser' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Shake the Dust (Teaser)',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/368663576&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Shake the Dust (Teaser)'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'delicious-monster-ep-previews' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Delicious Monster EP - Previews',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343832514&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Delicious Monster EP - Previews'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/delicious-monster/2106224'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'far-and-away' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Far and Away',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/342470222&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Far and Away'\n          })]\n        })\n      )\n    )\n  );\n};\n\nDemos.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Demos);"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _Track = require('../components/Track');\n\nvar _Track2 = _interopRequireDefault(_Track);\n\nvar _DemosStyles = require('./Demos-styles');\n\nvar _AWSSoundPlayer = require('../components/AWSSoundPlayer');\n\nvar _AWSSoundPlayer2 = _interopRequireDefault(_AWSSoundPlayer);\n\nvar _shark = require('../audios/demos/shark.mp3');\n\nvar _shark2 = _interopRequireDefault(_shark);\n\nvar _mst = require('../audios/demos/mst.mp3');\n\nvar _mst2 = _interopRequireDefault(_mst);\n\nvar _bless = require('../audios/local/bless-1.mp3');\n\nvar _bless2 = _interopRequireDefault(_bless);\n\nvar _bless3 = require('../audios/local/bless-2.mp3');\n\nvar _bless4 = _interopRequireDefault(_bless3);\n\nvar _place = require('../audios/ntm/place.mp3');\n\nvar _place2 = _interopRequireDefault(_place);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n\nvar Ul = _styledComponents2.default.ul(_templateObject, _DemosStyles.UlStyles);\n\nvar Li = _styledComponents2.default.li(_templateObject, _DemosStyles.LiStyles);\n\n/** Demos */\n\n\n/** Local Production */\n\n\n/** Local Production */\n\n\n/* Known bug with SoundCloud embeds: unique key prop error */\n\n/**\n * TODO: Create iframe Component from track ID.\n * For user-friendliness, let client paste in a full embed code.\n * App should extract the track ID and apply brand color to play button.\n */\n\n/**\n * TODO: iframe title attribs have been added by hand to satisfy eslint a11y error. generate these.\n */\nvar Demos = function Demos(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Demos'\n    ),\n    'This is some demos that I wrote and recorded myself:',\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _shark2.default, trackTitle: 'Gabriel Valad\\xE3o', preloadType: 'auto' }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _mst2.default, trackTitle: 'Gabriel Valad\\xE3o', preloadType: 'auto' }),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Local Production'\n    ),\n    'This is the first local artist that I produced, called Erick Bless. I made the instrumental, production, mix and master. He didn\\'t release his EP yet but is already done, here\\'s some material:',\n    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube-nocookie.com/embed/w6hJNgZX_tM?controls=0', frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless2.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless4.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'NTM'\n    ),\n    'I got first place at the The Story So Far Nailthemix secondary pool.',\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'NTM portfolio builder'\n    ),\n    'This is a song that it\\'s already out. URM academy let us do our own mix to put on our portfolio:',\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _place2.default, trackTitle: '', preloadType: 'auto' }),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Producer: Vasco Ramos'\n    ),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Engineer: Tiago Canadas'\n    ),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Original Mix and Mastering: Marco Cipriano'\n    ),\n    false && _react2.default.createElement(\n      'p',\n      null,\n      'Select downloads are available on',\n      ' ',\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://www.beatport.com/artist/labrysinthe/640674/tracks' },\n          'Beatport'\n        )\n      )\n    ),\n    false && _react2.default.createElement(\n      Ul,\n      null,\n      _react2.default.createElement(\n        Li,\n        { key: 'live-dj-set-pms-the-l-night-party-kinzig9' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Live/DJ set @ PMS - The L-Night party / Kinzig9',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/546185124&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Live/DJ set @ PMS - The L-Night party / Kinzig9'\n          })]\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'fire-loves-sugar-teaser' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Fire Loves Sugar (Teaser)',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/489549831&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Fire Loves Sugar (Teaser)'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'shake-the-dust-teaser' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Shake the Dust (Teaser)',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/368663576&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Shake the Dust (Teaser)'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'delicious-monster-ep-previews' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Delicious Monster EP - Previews',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343832514&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Delicious Monster EP - Previews'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/delicious-monster/2106224'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'far-and-away' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Far and Away',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/342470222&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Far and Away'\n          })]\n        })\n      )\n    )\n  );\n};\n\nDemos.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Demos);"
         },
         {
           "id": 38,
@@ -5148,9 +5148,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createHashHistory.js",
-          "issuerId": 86,
-          "issuerName": "./node_modules/history/es/createHashHistory.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createBrowserHistory.js",
+          "issuerId": 85,
+          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5366,9 +5366,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/generatePath.js",
-          "issuerId": 48,
-          "issuerName": "./node_modules/react-router/es/generatePath.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/matchPath.js",
+          "issuerId": 30,
+          "issuerName": "./node_modules/react-router/es/matchPath.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5889,9 +5889,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createBrowserHistory.js",
-          "issuerId": 139,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createHashHistory.js",
+          "issuerId": 141,
+          "issuerName": "./node_modules/history/createHashHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -14834,9 +14834,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createBrowserHistory.js",
-      "issuerId": 139,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createHashHistory.js",
+      "issuerId": 141,
+      "issuerName": "./node_modules/history/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -15677,9 +15677,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/NextButton.js",
-      "issuerId": 185,
-      "issuerName": "./node_modules/react-soundplayer/lib/components/NextButton.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/PlayButton.js",
+      "issuerId": 184,
+      "issuerName": "./node_modules/react-soundplayer/lib/components/PlayButton.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -15769,9 +15769,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/NextButton.js",
-      "issuerId": 185,
-      "issuerName": "./node_modules/react-soundplayer/lib/components/NextButton.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/PlayButton.js",
+      "issuerId": 184,
+      "issuerName": "./node_modules/react-soundplayer/lib/components/PlayButton.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -17335,7 +17335,7 @@
       "name": "./src/containers/Demos.js",
       "index": 162,
       "index2": 187,
-      "size": 9268,
+      "size": 9257,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -17383,7 +17383,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _Track = require('../components/Track');\n\nvar _Track2 = _interopRequireDefault(_Track);\n\nvar _DemosStyles = require('./Demos-styles');\n\nvar _AWSSoundPlayer = require('../components/AWSSoundPlayer');\n\nvar _AWSSoundPlayer2 = _interopRequireDefault(_AWSSoundPlayer);\n\nvar _shark = require('../audios/demos/shark.mp3');\n\nvar _shark2 = _interopRequireDefault(_shark);\n\nvar _mst = require('../audios/demos/mst.mp3');\n\nvar _mst2 = _interopRequireDefault(_mst);\n\nvar _bless = require('../audios/local/bless-1.mp3');\n\nvar _bless2 = _interopRequireDefault(_bless);\n\nvar _bless3 = require('../audios/local/bless-2.mp3');\n\nvar _bless4 = _interopRequireDefault(_bless3);\n\nvar _place = require('../audios/ntm/place.mp3');\n\nvar _place2 = _interopRequireDefault(_place);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n\nvar Ul = _styledComponents2.default.ul(_templateObject, _DemosStyles.UlStyles);\n\nvar Li = _styledComponents2.default.li(_templateObject, _DemosStyles.LiStyles);\n\n/** Demos */\n\n\n/** Local Production */\n\n\n/** Local Production */\n\n\n/* Known bug with SoundCloud embeds: unique key prop error */\n\n/**\n * TODO: Create iframe Component from track ID.\n * For user-friendliness, let client paste in a full embed code.\n * App should extract the track ID and apply brand color to play button.\n */\n\n/**\n * TODO: iframe title attribs have been added by hand to satisfy eslint a11y error. generate these.\n */\nvar Demos = function Demos(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Demos'\n    ),\n    'This is some demos that I wrote and recorded myself:',\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _shark2.default, trackTitle: 'Gabriel Valad\\xE3o', preloadType: 'auto' }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _mst2.default, trackTitle: 'Gabriel Valad\\xE3o', preloadType: 'auto' }),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Local Production'\n    ),\n    'This is the first local artist that I produced, called Erick Bless. I made the instrumental, production, mix and master. He didn\\'t release his EP yet but is already done, here\\'s some material:',\n    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube-nocookie.com/embed/w6hJNgZX_tM?showinfo=0&controls=0', frameborder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen: true }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless2.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless4.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'NTM'\n    ),\n    'I got first place at the The Story So Far Nailthemix secondary pool.',\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'NTM portfolio builder'\n    ),\n    'This is a song that it\\'s already out. URM academy let us do our own mix to put on our portfolio:',\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _place2.default, trackTitle: '', preloadType: 'auto' }),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Producer: Vasco Ramos'\n    ),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Engineer: Tiago Canadas'\n    ),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Original Mix and Mastering: Marco Cipriano'\n    ),\n    false && _react2.default.createElement(\n      'p',\n      null,\n      'Select downloads are available on',\n      ' ',\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://www.beatport.com/artist/labrysinthe/640674/tracks' },\n          'Beatport'\n        )\n      )\n    ),\n    false && _react2.default.createElement(\n      Ul,\n      null,\n      _react2.default.createElement(\n        Li,\n        { key: 'live-dj-set-pms-the-l-night-party-kinzig9' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Live/DJ set @ PMS - The L-Night party / Kinzig9',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/546185124&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Live/DJ set @ PMS - The L-Night party / Kinzig9'\n          })]\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'fire-loves-sugar-teaser' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Fire Loves Sugar (Teaser)',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/489549831&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Fire Loves Sugar (Teaser)'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'shake-the-dust-teaser' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Shake the Dust (Teaser)',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/368663576&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Shake the Dust (Teaser)'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'delicious-monster-ep-previews' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Delicious Monster EP - Previews',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343832514&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Delicious Monster EP - Previews'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/delicious-monster/2106224'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'far-and-away' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Far and Away',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/342470222&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Far and Away'\n          })]\n        })\n      )\n    )\n  );\n};\n\nDemos.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Demos);"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _Track = require('../components/Track');\n\nvar _Track2 = _interopRequireDefault(_Track);\n\nvar _DemosStyles = require('./Demos-styles');\n\nvar _AWSSoundPlayer = require('../components/AWSSoundPlayer');\n\nvar _AWSSoundPlayer2 = _interopRequireDefault(_AWSSoundPlayer);\n\nvar _shark = require('../audios/demos/shark.mp3');\n\nvar _shark2 = _interopRequireDefault(_shark);\n\nvar _mst = require('../audios/demos/mst.mp3');\n\nvar _mst2 = _interopRequireDefault(_mst);\n\nvar _bless = require('../audios/local/bless-1.mp3');\n\nvar _bless2 = _interopRequireDefault(_bless);\n\nvar _bless3 = require('../audios/local/bless-2.mp3');\n\nvar _bless4 = _interopRequireDefault(_bless3);\n\nvar _place = require('../audios/ntm/place.mp3');\n\nvar _place2 = _interopRequireDefault(_place);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n\nvar Ul = _styledComponents2.default.ul(_templateObject, _DemosStyles.UlStyles);\n\nvar Li = _styledComponents2.default.li(_templateObject, _DemosStyles.LiStyles);\n\n/** Demos */\n\n\n/** Local Production */\n\n\n/** Local Production */\n\n\n/* Known bug with SoundCloud embeds: unique key prop error */\n\n/**\n * TODO: Create iframe Component from track ID.\n * For user-friendliness, let client paste in a full embed code.\n * App should extract the track ID and apply brand color to play button.\n */\n\n/**\n * TODO: iframe title attribs have been added by hand to satisfy eslint a11y error. generate these.\n */\nvar Demos = function Demos(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Demos'\n    ),\n    'This is some demos that I wrote and recorded myself:',\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _shark2.default, trackTitle: 'Gabriel Valad\\xE3o', preloadType: 'auto' }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _mst2.default, trackTitle: 'Gabriel Valad\\xE3o', preloadType: 'auto' }),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Local Production'\n    ),\n    'This is the first local artist that I produced, called Erick Bless. I made the instrumental, production, mix and master. He didn\\'t release his EP yet but is already done, here\\'s some material:',\n    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube-nocookie.com/embed/w6hJNgZX_tM?controls=0', frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless2.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _bless4.default, trackTitle: 'Erick Bless', preloadType: 'auto' }),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'NTM'\n    ),\n    'I got first place at the The Story So Far Nailthemix secondary pool.',\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'NTM portfolio builder'\n    ),\n    'This is a song that it\\'s already out. URM academy let us do our own mix to put on our portfolio:',\n    _react2.default.createElement(_AWSSoundPlayer2.default, { streamUrl: _place2.default, trackTitle: '', preloadType: 'auto' }),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Producer: Vasco Ramos'\n    ),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Engineer: Tiago Canadas'\n    ),\n    _react2.default.createElement(\n      'p',\n      null,\n      'Original Mix and Mastering: Marco Cipriano'\n    ),\n    false && _react2.default.createElement(\n      'p',\n      null,\n      'Select downloads are available on',\n      ' ',\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://www.beatport.com/artist/labrysinthe/640674/tracks' },\n          'Beatport'\n        )\n      )\n    ),\n    false && _react2.default.createElement(\n      Ul,\n      null,\n      _react2.default.createElement(\n        Li,\n        { key: 'live-dj-set-pms-the-l-night-party-kinzig9' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Live/DJ set @ PMS - The L-Night party / Kinzig9',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/546185124&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Live/DJ set @ PMS - The L-Night party / Kinzig9'\n          })]\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'fire-loves-sugar-teaser' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Fire Loves Sugar (Teaser)',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/489549831&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Fire Loves Sugar (Teaser)'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'shake-the-dust-teaser' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Shake the Dust (Teaser)',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/368663576&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Shake the Dust (Teaser)'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/fire-loves-sugar/2510399'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'delicious-monster-ep-previews' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Delicious Monster EP - Previews',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343832514&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Delicious Monster EP - Previews'\n          })],\n          cta: {\n            text: 'Download the full EP on Beatport',\n            url: 'https://www.beatport.com/release/delicious-monster/2106224'\n          }\n        })\n      ),\n      _react2.default.createElement(\n        Li,\n        { key: 'far-and-away' },\n        _react2.default.createElement(_Track2.default, {\n          title: 'Far and Away',\n          soundCloudEmbed: [_react2.default.createElement('iframe', {\n            width: '100%',\n            height: '166',\n            scrolling: 'no',\n            frameBorder: 'no',\n            allow: 'autoplay',\n            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/342470222&color=%236fdfdf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',\n            title: 'Far and Away'\n          })]\n        })\n      )\n    )\n  );\n};\n\nDemos.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Demos);"
     },
     {
       "id": 38,
@@ -17666,9 +17666,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createHashHistory.js",
-      "issuerId": 86,
-      "issuerName": "./node_modules/history/es/createHashHistory.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createBrowserHistory.js",
+      "issuerId": 85,
+      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -17884,9 +17884,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/generatePath.js",
-      "issuerId": 48,
-      "issuerName": "./node_modules/react-router/es/generatePath.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/matchPath.js",
+      "issuerId": 30,
+      "issuerName": "./node_modules/react-router/es/matchPath.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -18407,9 +18407,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createBrowserHistory.js",
-      "issuerId": 139,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createHashHistory.js",
+      "issuerId": 141,
+      "issuerName": "./node_modules/history/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -26239,6 +26239,12 @@
           "emitted": true
         },
         {
+          "name": "static/profile.e8e24e85.jpg",
+          "size": 253217,
+          "chunks": [],
+          "chunkNames": []
+        },
+        {
           "name": "static/studio.c8034f1d.jpg",
           "size": 6245320,
           "chunks": [],
@@ -26263,12 +26269,12 @@
           "initial": true,
           "entry": true,
           "extraAsync": false,
-          "size": 4356,
+          "size": 4588,
           "names": [],
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "c3c87e9fc6ee63e15bba",
+          "hash": "3e12b89841cab77251fe",
           "parents": [],
           "modules": [
             {
@@ -26276,8 +26282,8 @@
               "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
               "name": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
               "index": 0,
-              "index2": 5,
-              "size": 1367,
+              "index2": 6,
+              "size": 1526,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -26297,7 +26303,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 0,
-              "source": "var escape = require(\"../../node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"@font-face{font-family:raincoatregular;src:url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff2\")) + \") format(\\\"woff2\\\"),url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff\")) + \") format(\\\"woff\\\");font-weight:400;font-style:normal}.sr-only{position:absolute;overflow:hidden;height:1px;width:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}.parallax{background-image:url(\" + escape(require(\"../images/studio.jpg\")) + \");height:600px;width:100%;background-attachment:fixed;background-position:50%;background-repeat:no-repeat;background-size:cover}.losange,.losange div{margin:0 auto;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;overflow:hidden;width:550px;height:550px}.losange{-webkit-transform:rotate(45deg) translateY(10px);-ms-transform:rotate(45deg) translateY(10px);transform:rotate(45deg) translateY(10px)}.losange .los1{width:855px;height:855px;-webkit-transform:rotate(-45deg) translateY(-74px);-ms-transform:rotate(-45deg) translateY(-74px);transform:rotate(-45deg) translateY(-74px)}.losange .los1 img{width:100%;height:auto}\", \"\"]);\n\n// exports\n"
+              "source": "var escape = require(\"../../node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"@font-face{font-family:raincoatregular;src:url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff2\")) + \") format(\\\"woff2\\\"),url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff\")) + \") format(\\\"woff\\\");font-weight:400;font-style:normal}.sr-only{position:absolute;overflow:hidden;height:1px;width:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}.parallax-2{background-image:url(\" + escape(require(\"../images/profile.jpg\")) + \");-webkit-filter:grayscale(100%);filter:grayscale(100%)}.parallax,.parallax-2{height:600px;width:100%;background-position:50%;background-repeat:no-repeat;background-size:cover}.parallax{background-image:url(\" + escape(require(\"../images/studio.jpg\")) + \");background-attachment:fixed}.losange,.losange div{margin:0 auto;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;overflow:hidden;width:550px;height:550px}.losange{-webkit-transform:rotate(45deg) translateY(10px);-ms-transform:rotate(45deg) translateY(10px);transform:rotate(45deg) translateY(10px)}.losange .los1{width:855px;height:855px;-webkit-transform:rotate(-45deg) translateY(-74px);-ms-transform:rotate(-45deg) translateY(-74px);transform:rotate(-45deg) translateY(-74px)}.losange .los1 img{width:100%;height:auto}\", \"\"]);\n\n// exports\n"
             },
             {
               "id": 1,
@@ -26457,10 +26463,50 @@
             },
             {
               "id": 5,
-              "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/studio.jpg",
-              "name": "./src/images/studio.jpg",
+              "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/profile.jpg",
+              "name": "./src/images/profile.jpg",
               "index": 5,
               "index2": 4,
+              "size": 73,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "assets": [
+                "static/profile.e8e24e85.jpg"
+              ],
+              "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
+              "issuerId": 0,
+              "issuerName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "reasons": [
+                {
+                  "moduleId": 0,
+                  "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
+                  "module": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+                  "moduleName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+                  "type": "cjs require",
+                  "userRequest": "../images/profile.jpg",
+                  "loc": "7:465-497"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [],
+              "depth": 1,
+              "source": "module.exports = __webpack_public_path__ + \"static/profile.e8e24e85.jpg\";"
+            },
+            {
+              "id": 6,
+              "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/studio.jpg",
+              "name": "./src/images/studio.jpg",
+              "index": 6,
+              "index2": 5,
               "size": 72,
               "cacheable": true,
               "built": true,
@@ -26486,7 +26532,7 @@
                   "moduleName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
                   "type": "cjs require",
                   "userRequest": "../images/studio.jpg",
-                  "loc": "7:463-494"
+                  "loc": "7:720-751"
                 }
               ],
               "usedExports": true,
@@ -26515,8 +26561,8 @@
           "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
           "name": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
           "index": 0,
-          "index2": 5,
-          "size": 1367,
+          "index2": 6,
+          "size": 1526,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -26536,7 +26582,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 0,
-          "source": "var escape = require(\"../../node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"@font-face{font-family:raincoatregular;src:url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff2\")) + \") format(\\\"woff2\\\"),url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff\")) + \") format(\\\"woff\\\");font-weight:400;font-style:normal}.sr-only{position:absolute;overflow:hidden;height:1px;width:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}.parallax{background-image:url(\" + escape(require(\"../images/studio.jpg\")) + \");height:600px;width:100%;background-attachment:fixed;background-position:50%;background-repeat:no-repeat;background-size:cover}.losange,.losange div{margin:0 auto;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;overflow:hidden;width:550px;height:550px}.losange{-webkit-transform:rotate(45deg) translateY(10px);-ms-transform:rotate(45deg) translateY(10px);transform:rotate(45deg) translateY(10px)}.losange .los1{width:855px;height:855px;-webkit-transform:rotate(-45deg) translateY(-74px);-ms-transform:rotate(-45deg) translateY(-74px);transform:rotate(-45deg) translateY(-74px)}.losange .los1 img{width:100%;height:auto}\", \"\"]);\n\n// exports\n"
+          "source": "var escape = require(\"../../node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"@font-face{font-family:raincoatregular;src:url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff2\")) + \") format(\\\"woff2\\\"),url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff\")) + \") format(\\\"woff\\\");font-weight:400;font-style:normal}.sr-only{position:absolute;overflow:hidden;height:1px;width:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}.parallax-2{background-image:url(\" + escape(require(\"../images/profile.jpg\")) + \");-webkit-filter:grayscale(100%);filter:grayscale(100%)}.parallax,.parallax-2{height:600px;width:100%;background-position:50%;background-repeat:no-repeat;background-size:cover}.parallax{background-image:url(\" + escape(require(\"../images/studio.jpg\")) + \");background-attachment:fixed}.losange,.losange div{margin:0 auto;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;overflow:hidden;width:550px;height:550px}.losange{-webkit-transform:rotate(45deg) translateY(10px);-ms-transform:rotate(45deg) translateY(10px);transform:rotate(45deg) translateY(10px)}.losange .los1{width:855px;height:855px;-webkit-transform:rotate(-45deg) translateY(-74px);-ms-transform:rotate(-45deg) translateY(-74px);transform:rotate(-45deg) translateY(-74px)}.losange .los1 img{width:100%;height:auto}\", \"\"]);\n\n// exports\n"
         },
         {
           "id": 1,
@@ -26696,10 +26742,50 @@
         },
         {
           "id": 5,
-          "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/studio.jpg",
-          "name": "./src/images/studio.jpg",
+          "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/profile.jpg",
+          "name": "./src/images/profile.jpg",
           "index": 5,
           "index2": 4,
+          "size": 73,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "static/profile.e8e24e85.jpg"
+          ],
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
+          "issuerId": 0,
+          "issuerName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
+              "module": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+              "moduleName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+              "type": "cjs require",
+              "userRequest": "../images/profile.jpg",
+              "loc": "7:465-497"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "module.exports = __webpack_public_path__ + \"static/profile.e8e24e85.jpg\";"
+        },
+        {
+          "id": 6,
+          "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/studio.jpg",
+          "name": "./src/images/studio.jpg",
+          "index": 6,
+          "index2": 5,
           "size": 72,
           "cacheable": true,
           "built": true,
@@ -26725,7 +26811,7 @@
               "moduleName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
               "type": "cjs require",
               "userRequest": "../images/studio.jpg",
-              "loc": "7:463-494"
+              "loc": "7:720-751"
             }
           ],
           "usedExports": true,
