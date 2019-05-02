@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "db664923dd2baebfadcf",
-  "time": 13720,
+  "hash": "c3a4e1dd0ee7e1eb5e98",
+  "time": 16415,
   "publicPath": "https://gabrielvaladao.github.io/",
   "assetsByChunkName": {
     "src/containers/404": [
@@ -11,10 +11,10 @@
       "templates/src/containers/404.cc242554.js.map"
     ],
     "main": [
-      "main.dd1e7125.js",
-      "styles.db664923.css",
-      "main.dd1e7125.js.map",
-      "styles.db664923.css.map"
+      "main.969ebb50.js",
+      "styles.c3a4e1dd.css",
+      "main.969ebb50.js.map",
+      "styles.c3a4e1dd.css.map"
     ],
     "bootstrap": [
       "bootstrap.95b4b488.js",
@@ -38,6 +38,14 @@
       "emitted": true
     },
     {
+      "name": "static/studio.c8034f1d.jpg",
+      "size": 6245320,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true,
+      "isOverSizeLimit": true
+    },
+    {
       "name": "static/logo-color-550x620.17f3274d.png",
       "size": 455126,
       "chunks": [],
@@ -56,14 +64,6 @@
     {
       "name": "static/logo-color-1326x1496.95a0ad1a.png",
       "size": 1890990,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true,
-      "isOverSizeLimit": true
-    },
-    {
-      "name": "static/studio.c8034f1d.jpg",
-      "size": 6245320,
       "chunks": [],
       "chunkNames": [],
       "emitted": true,
@@ -128,8 +128,8 @@
       "emitted": true
     },
     {
-      "name": "main.dd1e7125.js",
-      "size": 464503,
+      "name": "main.969ebb50.js",
+      "size": 465511,
       "chunks": [
         1
       ],
@@ -151,8 +151,8 @@
       "emitted": true
     },
     {
-      "name": "styles.db664923.css",
-      "size": 50055,
+      "name": "styles.c3a4e1dd.css",
+      "size": 50804,
       "chunks": [
         1
       ],
@@ -173,8 +173,8 @@
       "emitted": true
     },
     {
-      "name": "main.dd1e7125.js.map",
-      "size": 2517894,
+      "name": "main.969ebb50.js.map",
+      "size": 2522082,
       "chunks": [
         1
       ],
@@ -184,7 +184,7 @@
       "emitted": true
     },
     {
-      "name": "styles.db664923.css.map",
+      "name": "styles.c3a4e1dd.css.map",
       "size": 96,
       "chunks": [
         1
@@ -216,10 +216,10 @@
       "assets": [
         "bootstrap.95b4b488.js",
         "bootstrap.95b4b488.js.map",
-        "main.dd1e7125.js",
-        "styles.db664923.css",
-        "main.dd1e7125.js.map",
-        "styles.db664923.css.map"
+        "main.969ebb50.js",
+        "styles.c3a4e1dd.css",
+        "main.969ebb50.js.map",
+        "styles.c3a4e1dd.css.map"
       ],
       "isOverSizeLimit": true
     }
@@ -311,17 +311,17 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 933144,
+      "size": 935235,
       "names": [
         "main"
       ],
       "files": [
-        "main.dd1e7125.js",
-        "styles.db664923.css",
-        "main.dd1e7125.js.map",
-        "styles.db664923.css.map"
+        "main.969ebb50.js",
+        "styles.c3a4e1dd.css",
+        "main.969ebb50.js.map",
+        "styles.c3a4e1dd.css.map"
       ],
-      "hash": "dd1e71252d4811c3cabb",
+      "hash": "969ebb505e9f8575ec19",
       "parents": [
         2
       ],
@@ -1015,7 +1015,16 @@
               "loc": "9:13-29"
             },
             {
-              "moduleId": 232,
+              "moduleId": 230,
+              "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Parallax.js",
+              "module": "./src/containers/Parallax.js",
+              "moduleName": "./src/containers/Parallax.js",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "7:13-29"
+            },
+            {
+              "moduleId": 233,
               "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
               "module": "./src/containers/Gear.js",
               "moduleName": "./src/containers/Gear.js",
@@ -1521,7 +1530,7 @@
               "loc": "15:17-38"
             },
             {
-              "moduleId": 232,
+              "moduleId": 233,
               "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
               "module": "./src/containers/Gear.js",
               "moduleName": "./src/containers/Gear.js",
@@ -1709,7 +1718,7 @@
               "moduleName": "./src/containers/Home-styles.js",
               "type": "cjs require",
               "userRequest": "styled-components",
-              "loc": "13:24-52"
+              "loc": "14:24-52"
             },
             {
               "moduleId": 168,
@@ -1946,7 +1955,7 @@
               "loc": "12:24-52"
             },
             {
-              "moduleId": 230,
+              "moduleId": 231,
               "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer-styles.js",
               "module": "./src/components/Footer-styles.js",
               "moduleName": "./src/components/Footer-styles.js",
@@ -1955,7 +1964,7 @@
               "loc": "13:24-52"
             },
             {
-              "moduleId": 232,
+              "moduleId": 233,
               "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
               "module": "./src/containers/Gear.js",
               "moduleName": "./src/containers/Gear.js",
@@ -1964,7 +1973,7 @@
               "loc": "19:24-52"
             },
             {
-              "moduleId": 233,
+              "moduleId": 234,
               "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear-styles.js",
               "module": "./src/containers/Gear-styles.js",
               "moduleName": "./src/containers/Gear-styles.js",
@@ -2131,7 +2140,16 @@
               "loc": "13:19-42"
             },
             {
-              "moduleId": 232,
+              "moduleId": 230,
+              "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Parallax.js",
+              "module": "./src/containers/Parallax.js",
+              "moduleName": "./src/containers/Parallax.js",
+              "type": "cjs require",
+              "userRequest": "react-static",
+              "loc": "11:19-42"
+            },
+            {
+              "moduleId": 233,
               "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
               "module": "./src/containers/Gear.js",
               "moduleName": "./src/containers/Gear.js",
@@ -2298,9 +2316,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createHashHistory.js",
-          "issuerId": 141,
-          "issuerName": "./node_modules/history/createHashHistory.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createBrowserHistory.js",
+          "issuerId": 139,
+          "issuerName": "./node_modules/history/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2426,9 +2444,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Home.js",
-          "issuerId": 35,
-          "issuerName": "./src/containers/Home.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Shows.js",
+          "issuerId": 36,
+          "issuerName": "./src/containers/Shows.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2506,7 +2524,7 @@
               "loc": "27:9-32"
             },
             {
-              "moduleId": 232,
+              "moduleId": 233,
               "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
               "module": "./src/containers/Gear.js",
               "moduleName": "./src/containers/Gear.js",
@@ -2948,9 +2966,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/RouteData.js",
-          "issuerId": 112,
-          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/dist/react-static-routes.js",
+          "issuerId": 148,
+          "issuerName": "./dist/react-static-routes.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3224,9 +3242,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/VolumeControl.js",
-          "issuerId": 183,
-          "issuerName": "./node_modules/react-soundplayer/lib/components/VolumeControl.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/NextButton.js",
+          "issuerId": 185,
+          "issuerName": "./node_modules/react-soundplayer/lib/components/NextButton.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4678,7 +4696,7 @@
           "name": "./src/containers/Home.js",
           "index": 131,
           "index2": 146,
-          "size": 3183,
+          "size": 3769,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -4726,7 +4744,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _HomeStyles = require('./Home-styles');\n\nvar _logoColor550x = require('../images/logo-color-550x620.png');\n\nvar _logoColor550x2 = _interopRequireDefault(_logoColor550x);\n\nvar _logoColor665x = require('../images/logo-color-665x750.png');\n\nvar _logoColor665x2 = _interopRequireDefault(_logoColor665x);\n\nvar _logoColor1326x = require('../images/logo-color-1326x1496.png');\n\nvar _logoColor1326x2 = _interopRequireDefault(_logoColor1326x);\n\nvar _studio = require('../images/studio.jpg');\n\nvar _studio2 = _interopRequireDefault(_studio);\n\nvar _profile = require('../images/profile.jpg');\n\nvar _profile2 = _interopRequireDefault(_profile);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.section(_templateObject, _HomeStyles.HomeStyles);\n\nvar SiteTitle = (0, _styledComponents2.default)(_H2.default)(_templateObject, _HomeStyles.SiteTitleStyles);\n\nvar Large = _styledComponents2.default.p(_templateObject, _HomeStyles.LargeStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _HomeStyles.LogoStyles);\n\nvar Home = function Home(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    Wrapper,\n    { id: id },\n    _react2.default.createElement(\n      SiteTitle,\n      null,\n      'Gabriel Valad\\xE3o'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'Mixing,',\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        'strong',\n        null,\n        'mastering'\n      ),\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://gabrielvaladao.github.io/' },\n          'and recording/production'\n        )\n      )\n    ),\n    _react2.default.createElement(\n      'picture',\n      null,\n      _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n      _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n      _react2.default.createElement(Logo, { alt: '', src: _profile2.default })\n    )\n  );\n};\n\nHome.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withSiteData)(Home);"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _HomeStyles = require('./Home-styles');\n\nvar _logoColor550x = require('../images/logo-color-550x620.png');\n\nvar _logoColor550x2 = _interopRequireDefault(_logoColor550x);\n\nvar _logoColor665x = require('../images/logo-color-665x750.png');\n\nvar _logoColor665x2 = _interopRequireDefault(_logoColor665x);\n\nvar _logoColor1326x = require('../images/logo-color-1326x1496.png');\n\nvar _logoColor1326x2 = _interopRequireDefault(_logoColor1326x);\n\nvar _studio = require('../images/studio.jpg');\n\nvar _studio2 = _interopRequireDefault(_studio);\n\nvar _profile = require('../images/profile.jpg');\n\nvar _profile2 = _interopRequireDefault(_profile);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.section(_templateObject, _HomeStyles.HomeStyles);\n\nvar SiteTitle = (0, _styledComponents2.default)(_H2.default)(_templateObject, _HomeStyles.SiteTitleStyles);\n\nvar Large = _styledComponents2.default.p(_templateObject, _HomeStyles.LargeStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _HomeStyles.LogoStyles);\n\nvar PlainLogo = _styledComponents2.default.img(_templateObject, _HomeStyles.PlainLogoStyles);\n\nvar Home = function Home(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    Wrapper,\n    { id: id },\n    _react2.default.createElement(\n      SiteTitle,\n      null,\n      'Gabriel Valad\\xE3o'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'Mixing,',\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        'strong',\n        null,\n        'mastering'\n      ),\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://gabrielvaladao.github.io/' },\n          'and recording/production'\n        )\n      )\n    ),\n    false && _react2.default.createElement(\n      'div',\n      { className: 'losange' },\n      _react2.default.createElement(\n        'div',\n        { className: 'los1' },\n        _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n        _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n        _react2.default.createElement(PlainLogo, { alt: '', src: _profile2.default })\n      )\n    ),\n    _react2.default.createElement(\n      'picture',\n      null,\n      _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n      _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n      _react2.default.createElement(Logo, { alt: '', src: _profile2.default })\n    )\n  );\n};\n\nHome.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withSiteData)(Home);"
         },
         {
           "id": 36,
@@ -4846,7 +4864,7 @@
           "name": "./src/containers/Bio.js",
           "index": 191,
           "index2": 189,
-          "size": 2518,
+          "size": 2517,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -4894,7 +4912,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _BioStyles = require('./Bio-styles');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n\n//\nvar Large = _styledComponents2.default.p(_templateObject, _BioStyles.LargeStyles);\n\nvar P = _styledComponents2.default.p(_templateObject, _BioStyles.PStyles);\n\nvar Bio = function Bio(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Bio'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'My name is Gabriel Valad\\xE3o Moura, i\\'m from Lagoa Santa, Minas Gerais, Brazil.'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'I\\'m 22 years old and i\\'m looking for a job in the audio area.'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'I started studying mix  one year and half ago through Urm Academy.'\n    ),\n    false && _react2.default.createElement(\n      P,\n      null,\n      'Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin. She is an original member of the',\n      ' ',\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          {\n            to: 'https://soundcloud.com/strength_in_numbers',\n            'aria-label': 'Listen to Strength in Numbers on SoundCloud',\n            title: 'SoundCloud'\n          },\n          'Strength in Numbers'\n        )\n      ),\n      ' ',\n      'beat collective in Berlin.'\n    )\n  );\n};\n\nBio.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Bio);"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _BioStyles = require('./Bio-styles');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n\n//\nvar Large = _styledComponents2.default.p(_templateObject, _BioStyles.LargeStyles);\nvar P = _styledComponents2.default.p(_templateObject, _BioStyles.PStyles);\n\nvar Bio = function Bio(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Bio'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'My name is Gabriel Valad\\xE3o Moura, i\\'m from Lagoa Santa, Minas Gerais, Brazil.'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'I\\'m 22 years old and i\\'m looking for a job in the audio area.'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'I started studying mix  one year and half ago through Urm Academy.'\n    ),\n    false && _react2.default.createElement(\n      P,\n      null,\n      'Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin. She is an original member of the',\n      ' ',\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          {\n            to: 'https://soundcloud.com/strength_in_numbers',\n            'aria-label': 'Listen to Strength in Numbers on SoundCloud',\n            title: 'SoundCloud'\n          },\n          'Strength in Numbers'\n        )\n      ),\n      ' ',\n      'beat collective in Berlin.'\n    )\n  );\n};\n\nBio.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Bio);"
         },
         {
           "id": 39,
@@ -5121,9 +5139,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createBrowserHistory.js",
-          "issuerId": 85,
-          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createHashHistory.js",
+          "issuerId": 86,
+          "issuerName": "./node_modules/history/es/createHashHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5339,9 +5357,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/matchPath.js",
-          "issuerId": 30,
-          "issuerName": "./node_modules/react-router/es/matchPath.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/generatePath.js",
+          "issuerId": 48,
+          "issuerName": "./node_modules/react-router/es/generatePath.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5862,9 +5880,9 @@
             1
           ],
           "assets": [],
-          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createHashHistory.js",
-          "issuerId": 141,
-          "issuerName": "./node_modules/history/createHashHistory.js",
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createBrowserHistory.js",
+          "issuerId": 139,
+          "issuerName": "./node_modules/history/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -6514,7 +6532,7 @@
           "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/index.js",
           "name": "./src/index.js",
           "index": 0,
-          "index2": 233,
+          "index2": 234,
           "size": 907,
           "cacheable": true,
           "built": true,
@@ -6732,7 +6750,7 @@
           "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/App.js",
           "name": "./src/App.js",
           "index": 8,
-          "index2": 232,
+          "index2": 233,
           "size": 8080,
           "cacheable": true,
           "built": true,
@@ -9976,7 +9994,7 @@
           "name": "./src/containers/Home-styles.js",
           "index": 144,
           "index2": 140,
-          "size": 3570,
+          "size": 4433,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -10006,7 +10024,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.LogoStyles = exports.LargeStyles = exports.SiteTitleStyles = exports.HomeStyles = undefined;\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  overflow: hidden;\\n'], ['\\n  overflow: hidden;\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  padding-top: ', ';\\n  padding-bottom: ', ';\\n  font-family: ', ';\\n  letter-spacing: 0.06ch;\\n  text-transform: uppercase;\\n  text-align: center;\\n  font-size: ', ';\\n\\n  @media (min-width: 576px) {\\n    letter-spacing: 0.12ch;\\n    padding-bottom: ', ';\\n  }\\n\\n  @media (min-width: 768px) {\\n    padding-top: ', ';\\n    font-size: ', ';\\n    letter-spacing: 0.12ch;\\n  }\\n'], ['\\n  padding-top: ', ';\\n  padding-bottom: ', ';\\n  font-family: ', ';\\n  letter-spacing: 0.06ch;\\n  text-transform: uppercase;\\n  text-align: center;\\n  font-size: ', ';\\n\\n  @media (min-width: 576px) {\\n    letter-spacing: 0.12ch;\\n    padding-bottom: ', ';\\n  }\\n\\n  @media (min-width: 768px) {\\n    padding-top: ', ';\\n    font-size: ', ';\\n    letter-spacing: 0.12ch;\\n  }\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  font-size: ', ';\\n  text-align: center;\\n  margin-bottom: ', ';\\n  position: relative;\\n  z-index: 1;\\n'], ['\\n  font-size: ', ';\\n  text-align: center;\\n  margin-bottom: ', ';\\n  position: relative;\\n  z-index: 1;\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  position: relative;\\n  z-index: -99999;\\n\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n  border-radius: 50%;\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n'], ['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  position: relative;\\n  z-index: -99999;\\n\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n  border-radius: 50%;\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n']);\n\nvar _styledComponents = require('styled-components');\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar HomeStyles = (0, _styledComponents.css)(_templateObject);\n\nvar SiteTitleStyles = (0, _styledComponents.css)(_templateObject2, function (_ref) {\n  var theme = _ref.theme;\n  return theme.space.four;\n}, function (_ref2) {\n  var theme = _ref2.theme;\n  return theme.space.one;\n}, function (_ref3) {\n  var theme = _ref3.theme;\n  return theme.type.large.fontSize;\n}, function (_ref4) {\n  var theme = _ref4.theme;\n  return theme.type.h2.fontSize;\n}, function (_ref5) {\n  var theme = _ref5.theme;\n  return theme.space.two;\n}, function (_ref6) {\n  var theme = _ref6.theme;\n  return theme.space.six;\n}, function (_ref7) {\n  var theme = _ref7.theme;\n  return theme.type.h1.fontSize;\n});\n\nvar LargeStyles = (0, _styledComponents.css)(_templateObject3, function (_ref8) {\n  var theme = _ref8.theme;\n  return theme.type.large.fontSize;\n}, function (_ref9) {\n  var theme = _ref9.theme;\n  return theme.type.large.marginBottom;\n});\n\nvar LogoStyles = (0, _styledComponents.css)(_templateObject4, function (_ref10) {\n  var theme = _ref10.theme;\n  return theme.space.one;\n}, function (_ref11) {\n  var theme = _ref11.theme;\n  return theme.space.one;\n});\n\nexports.HomeStyles = HomeStyles;\nexports.SiteTitleStyles = SiteTitleStyles;\nexports.LargeStyles = LargeStyles;\nexports.LogoStyles = LogoStyles;"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.PlainLogoStyles = exports.LogoStyles = exports.LargeStyles = exports.SiteTitleStyles = exports.HomeStyles = undefined;\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  overflow: hidden;\\n'], ['\\n  overflow: hidden;\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  padding-top: ', ';\\n  padding-bottom: ', ';\\n  font-family: ', ';\\n  letter-spacing: 0.06ch;\\n  text-transform: uppercase;\\n  text-align: center;\\n  font-size: ', ';\\n\\n  @media (min-width: 576px) {\\n    letter-spacing: 0.12ch;\\n    padding-bottom: ', ';\\n  }\\n\\n  @media (min-width: 768px) {\\n    padding-top: ', ';\\n    font-size: ', ';\\n    letter-spacing: 0.12ch;\\n  }\\n'], ['\\n  padding-top: ', ';\\n  padding-bottom: ', ';\\n  font-family: ', ';\\n  letter-spacing: 0.06ch;\\n  text-transform: uppercase;\\n  text-align: center;\\n  font-size: ', ';\\n\\n  @media (min-width: 576px) {\\n    letter-spacing: 0.12ch;\\n    padding-bottom: ', ';\\n  }\\n\\n  @media (min-width: 768px) {\\n    padding-top: ', ';\\n    font-size: ', ';\\n    letter-spacing: 0.12ch;\\n  }\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  font-size: ', ';\\n  text-align: center;\\n  margin-bottom: ', ';\\n  position: relative;\\n  z-index: 1;\\n'], ['\\n  font-size: ', ';\\n  text-align: center;\\n  margin-bottom: ', ';\\n  position: relative;\\n  z-index: 1;\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  position: relative;\\n  z-index: -99999;\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n'], ['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  position: relative;\\n  z-index: -99999;\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n']),\n    _templateObject5 = _taggedTemplateLiteral(['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  z-index: -99999;\\n\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n'], ['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  z-index: -99999;\\n\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n']);\n\nvar _styledComponents = require('styled-components');\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar HomeStyles = (0, _styledComponents.css)(_templateObject);\n\nvar SiteTitleStyles = (0, _styledComponents.css)(_templateObject2, function (_ref) {\n  var theme = _ref.theme;\n  return theme.space.four;\n}, function (_ref2) {\n  var theme = _ref2.theme;\n  return theme.space.one;\n}, function (_ref3) {\n  var theme = _ref3.theme;\n  return theme.type.large.fontSize;\n}, function (_ref4) {\n  var theme = _ref4.theme;\n  return theme.type.h2.fontSize;\n}, function (_ref5) {\n  var theme = _ref5.theme;\n  return theme.space.two;\n}, function (_ref6) {\n  var theme = _ref6.theme;\n  return theme.space.six;\n}, function (_ref7) {\n  var theme = _ref7.theme;\n  return theme.type.h1.fontSize;\n});\n\nvar LargeStyles = (0, _styledComponents.css)(_templateObject3, function (_ref8) {\n  var theme = _ref8.theme;\n  return theme.type.large.fontSize;\n}, function (_ref9) {\n  var theme = _ref9.theme;\n  return theme.type.large.marginBottom;\n});\n\nvar PlainLogoStyles = (0, _styledComponents.css)(_templateObject4, function (_ref10) {\n  var theme = _ref10.theme;\n  return theme.space.one;\n}, function (_ref11) {\n  var theme = _ref11.theme;\n  return theme.space.one;\n});\n\nvar LogoStyles = (0, _styledComponents.css)(_templateObject5, function (_ref12) {\n  var theme = _ref12.theme;\n  return theme.space.one;\n}, function (_ref13) {\n  var theme = _ref13.theme;\n  return theme.space.one;\n});\n\nexports.HomeStyles = HomeStyles;\nexports.SiteTitleStyles = SiteTitleStyles;\nexports.LargeStyles = LargeStyles;\nexports.LogoStyles = LogoStyles;\nexports.PlainLogoStyles = PlainLogoStyles;"
         },
         {
           "id": 163,
@@ -12482,8 +12500,8 @@
           "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer.js",
           "name": "./src/components/Footer.js",
           "index": 227,
-          "index2": 229,
-          "size": 1943,
+          "index2": 230,
+          "size": 2109,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -12513,7 +12531,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _Menu = require('../components/Menu');\n\nvar _Menu2 = _interopRequireDefault(_Menu);\n\nvar _Socials = require('../components/Socials');\n\nvar _Socials2 = _interopRequireDefault(_Socials);\n\nvar _FooterStyles = require('./Footer-styles');\n\nvar _logoWhite90x = require('../images/logo-white-90x104.png');\n\nvar _logoWhite90x2 = _interopRequireDefault(_logoWhite90x);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.footer(_templateObject, _FooterStyles.FooterStyles);\n\nvar StyledMenu = (0, _styledComponents2.default)(_Menu2.default)(_templateObject, _FooterStyles.FooterMenuStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _FooterStyles.LogoStyles);\n\nvar Socket = _styledComponents2.default.p(_templateObject, _FooterStyles.SocketStyles);\n/* TODO: (C) current year */\nvar Footer = function Footer() {\n  return _react2.default.createElement(\n    Wrapper,\n    null,\n    _react2.default.createElement(_Socials2.default, null),\n    _react2.default.createElement(StyledMenu, null),\n    false && _react2.default.createElement(Logo, {\n      src: _logoWhite90x2.default,\n      alt: 'Gabriel Valad\\xE3o\\'s logo.',\n      height: '104px',\n      width: '90px'\n    }),\n    _react2.default.createElement(\n      Socket,\n      { role: 'contentinfo' },\n      '\\xA9 2019 Gabriel Valad\\xE3o'\n    )\n  );\n};\n\nexports.default = Footer;"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _Menu = require('../components/Menu');\n\nvar _Menu2 = _interopRequireDefault(_Menu);\n\nvar _Socials = require('../components/Socials');\n\nvar _Socials2 = _interopRequireDefault(_Socials);\n\nvar _Parallax = require('../containers/Parallax');\n\nvar _Parallax2 = _interopRequireDefault(_Parallax);\n\nvar _FooterStyles = require('./Footer-styles');\n\nvar _logoWhite90x = require('../images/logo-white-90x104.png');\n\nvar _logoWhite90x2 = _interopRequireDefault(_logoWhite90x);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.footer(_templateObject, _FooterStyles.FooterStyles);\n\nvar StyledMenu = (0, _styledComponents2.default)(_Menu2.default)(_templateObject, _FooterStyles.FooterMenuStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _FooterStyles.LogoStyles);\n\nvar Socket = _styledComponents2.default.p(_templateObject, _FooterStyles.SocketStyles);\n/* TODO: (C) current year */\nvar Footer = function Footer() {\n  return _react2.default.createElement(\n    Wrapper,\n    null,\n    _react2.default.createElement(_Socials2.default, null),\n    _react2.default.createElement(_Parallax2.default, null),\n    _react2.default.createElement(StyledMenu, null),\n    false && _react2.default.createElement(Logo, {\n      src: _logoWhite90x2.default,\n      alt: 'Gabriel Valad\\xE3o\\'s logo.',\n      height: '104px',\n      width: '90px'\n    }),\n    _react2.default.createElement(\n      Socket,\n      { role: 'contentinfo' },\n      '\\xA9 2019 Gabriel Valad\\xE3o'\n    )\n  );\n};\n\nexports.default = Footer;"
         },
         {
           "id": 228,
@@ -12593,10 +12611,48 @@
         },
         {
           "id": 230,
-          "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer-styles.js",
-          "name": "./src/components/Footer-styles.js",
+          "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Parallax.js",
+          "name": "./src/containers/Parallax.js",
           "index": 230,
           "index2": 227,
+          "size": 477,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer.js",
+          "issuerId": 227,
+          "issuerName": "./src/components/Footer.js",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 227,
+              "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer.js",
+              "module": "./src/components/Footer.js",
+              "moduleName": "./src/components/Footer.js",
+              "type": "cjs require",
+              "userRequest": "../containers/Parallax",
+              "loc": "25:16-49"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 3,
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Parallax = function Parallax() {\n  return _react2.default.createElement('div', { className: 'parallax' });\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Parallax);"
+        },
+        {
+          "id": 231,
+          "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer-styles.js",
+          "name": "./src/components/Footer-styles.js",
+          "index": 231,
+          "index2": 228,
           "size": 2325,
           "cacheable": true,
           "built": true,
@@ -12620,7 +12676,7 @@
               "moduleName": "./src/components/Footer.js",
               "type": "cjs require",
               "userRequest": "./Footer-styles",
-              "loc": "25:20-46"
+              "loc": "29:20-46"
             }
           ],
           "usedExports": true,
@@ -12630,11 +12686,11 @@
           "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.SocketStyles = exports.LogoStyles = exports.FooterMenuStyles = exports.FooterStyles = undefined;\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  padding: 0 0 ', ' 0;\\n'], ['\\n  padding: 0 0 ', ' 0;\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  /* border-bottom: 1px solid black;\\n  border-top: solid 1px ', '; */\\n  background-color: ', ';\\n  border-bottom: 1px solid ', ';\\n  border-top: solid 1px black;\\n  padding: ', ' 0 ', ' 0;\\n'], ['\\n  /* border-bottom: 1px solid black;\\n  border-top: solid 1px ', '; */\\n  background-color: ', ';\\n  border-bottom: 1px solid ', ';\\n  border-top: solid 1px black;\\n  padding: ', ' 0 ', ' 0;\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  margin: 0 auto;\\n  display: block;\\n  padding-top: ', ';\\n'], ['\\n  margin: 0 auto;\\n  display: block;\\n  padding-top: ', ';\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  text-align: center;\\n  padding-top: ', ';\\n'], ['\\n  text-align: center;\\n  padding-top: ', ';\\n']);\n\nvar _styledComponents = require('styled-components');\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar FooterStyles = (0, _styledComponents.css)(_templateObject, function (_ref) {\n  var theme = _ref.theme;\n  return theme.space.one;\n});\n\nvar FooterMenuStyles = (0, _styledComponents.css)(_templateObject2, function (_ref2) {\n  var theme = _ref2.theme;\n  return theme.color.overlayLight;\n}, function (_ref3) {\n  var theme = _ref3.theme;\n  return theme.color.overlayMedium;\n}, function (_ref4) {\n  var theme = _ref4.theme;\n  return theme.color.overlayMedium;\n}, function (_ref5) {\n  var theme = _ref5.theme;\n  return theme.space.one;\n}, function (_ref6) {\n  var theme = _ref6.theme;\n  return theme.space.two;\n});\n\nvar LogoStyles = (0, _styledComponents.css)(_templateObject3, function (_ref7) {\n  var theme = _ref7.theme;\n  return theme.space.two;\n});\n\nvar SocketStyles = (0, _styledComponents.css)(_templateObject4, function (_ref8) {\n  var theme = _ref8.theme;\n  return theme.space.one;\n});\n\nexports.FooterStyles = FooterStyles;\nexports.FooterMenuStyles = FooterMenuStyles;\nexports.LogoStyles = LogoStyles;\nexports.SocketStyles = SocketStyles;"
         },
         {
-          "id": 231,
+          "id": 232,
           "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/logo-white-90x104.png",
           "name": "./src/images/logo-white-90x104.png",
-          "index": 231,
-          "index2": 228,
+          "index": 232,
+          "index2": 229,
           "size": 11189,
           "cacheable": true,
           "built": true,
@@ -12658,7 +12714,7 @@
               "moduleName": "./src/components/Footer.js",
               "type": "cjs require",
               "userRequest": "../images/logo-white-90x104.png",
-              "loc": "27:20-62"
+              "loc": "31:20-62"
             }
           ],
           "usedExports": true,
@@ -12668,11 +12724,11 @@
           "source": "module.exports = \"data:image/png;base64,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\""
         },
         {
-          "id": 232,
+          "id": 233,
           "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
           "name": "./src/containers/Gear.js",
-          "index": 232,
-          "index2": 231,
+          "index": 233,
+          "index2": 232,
           "size": 3234,
           "cacheable": true,
           "built": true,
@@ -12706,11 +12762,11 @@
           "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _GearStyles = require('./Gear-styles');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n/** Styles */\n\n\nvar P = _styledComponents2.default.p(_templateObject, _GearStyles.PStyles);\n\nvar Gear = function Gear(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Gear'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Focusrite Scarlett 2i2 audio interface'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Krk Rokit 5 monitors'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Audio Technica Ath M50x Headphones'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'M-Audio Axiom 49 MIDI controller'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Mxl 990es condenser mic'\n    ),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'PC'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Intel Core i5 2gen'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      '12gb ram 1333mhz'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Ssd Sansung evo 500gb'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Gtx680 2gb'\n    ),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Instruments'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Esp Ltd h-1001 Deluxe W emg 81 85'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Tagima Stratocaster'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Di Giorgio Nylon Acoustic guitar'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Vogga Ukulele'\n    ),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Plugins'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Slate digital bundle'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Weaves SSL'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'FabFilter Pro q'\n    ),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'DAW'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Cubase Elements'\n    )\n  );\n};\n\nGear.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Gear);"
         },
         {
-          "id": 233,
+          "id": 234,
           "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear-styles.js",
           "name": "./src/containers/Gear-styles.js",
-          "index": 233,
-          "index2": 230,
+          "index": 234,
+          "index2": 231,
           "size": 701,
           "cacheable": true,
           "built": true,
@@ -12721,14 +12777,14 @@
           ],
           "assets": [],
           "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
-          "issuerId": 232,
+          "issuerId": 233,
           "issuerName": "./src/containers/Gear.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
             {
-              "moduleId": 232,
+              "moduleId": 233,
               "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
               "module": "./src/containers/Gear.js",
               "moduleName": "./src/containers/Gear.js",
@@ -13468,7 +13524,16 @@
           "loc": "9:13-29"
         },
         {
-          "moduleId": 232,
+          "moduleId": 230,
+          "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Parallax.js",
+          "module": "./src/containers/Parallax.js",
+          "moduleName": "./src/containers/Parallax.js",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "7:13-29"
+        },
+        {
+          "moduleId": 233,
           "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
           "module": "./src/containers/Gear.js",
           "moduleName": "./src/containers/Gear.js",
@@ -13974,7 +14039,7 @@
           "loc": "15:17-38"
         },
         {
-          "moduleId": 232,
+          "moduleId": 233,
           "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
           "module": "./src/containers/Gear.js",
           "moduleName": "./src/containers/Gear.js",
@@ -14162,7 +14227,7 @@
           "moduleName": "./src/containers/Home-styles.js",
           "type": "cjs require",
           "userRequest": "styled-components",
-          "loc": "13:24-52"
+          "loc": "14:24-52"
         },
         {
           "moduleId": 168,
@@ -14399,7 +14464,7 @@
           "loc": "12:24-52"
         },
         {
-          "moduleId": 230,
+          "moduleId": 231,
           "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer-styles.js",
           "module": "./src/components/Footer-styles.js",
           "moduleName": "./src/components/Footer-styles.js",
@@ -14408,7 +14473,7 @@
           "loc": "13:24-52"
         },
         {
-          "moduleId": 232,
+          "moduleId": 233,
           "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
           "module": "./src/containers/Gear.js",
           "moduleName": "./src/containers/Gear.js",
@@ -14417,7 +14482,7 @@
           "loc": "19:24-52"
         },
         {
-          "moduleId": 233,
+          "moduleId": 234,
           "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear-styles.js",
           "module": "./src/containers/Gear-styles.js",
           "moduleName": "./src/containers/Gear-styles.js",
@@ -14584,7 +14649,16 @@
           "loc": "13:19-42"
         },
         {
-          "moduleId": 232,
+          "moduleId": 230,
+          "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Parallax.js",
+          "module": "./src/containers/Parallax.js",
+          "moduleName": "./src/containers/Parallax.js",
+          "type": "cjs require",
+          "userRequest": "react-static",
+          "loc": "11:19-42"
+        },
+        {
+          "moduleId": 233,
           "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
           "module": "./src/containers/Gear.js",
           "moduleName": "./src/containers/Gear.js",
@@ -14751,9 +14825,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createHashHistory.js",
-      "issuerId": 141,
-      "issuerName": "./node_modules/history/createHashHistory.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createBrowserHistory.js",
+      "issuerId": 139,
+      "issuerName": "./node_modules/history/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14879,9 +14953,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Home.js",
-      "issuerId": 35,
-      "issuerName": "./src/containers/Home.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Shows.js",
+      "issuerId": 36,
+      "issuerName": "./src/containers/Shows.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14959,7 +15033,7 @@
           "loc": "27:9-32"
         },
         {
-          "moduleId": 232,
+          "moduleId": 233,
           "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
           "module": "./src/containers/Gear.js",
           "moduleName": "./src/containers/Gear.js",
@@ -15401,9 +15475,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-static/lib/client/components/RouteData.js",
-      "issuerId": 112,
-      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/dist/react-static-routes.js",
+      "issuerId": 148,
+      "issuerName": "./dist/react-static-routes.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -15677,9 +15751,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/VolumeControl.js",
-      "issuerId": 183,
-      "issuerName": "./node_modules/react-soundplayer/lib/components/VolumeControl.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-soundplayer/lib/components/NextButton.js",
+      "issuerId": 185,
+      "issuerName": "./node_modules/react-soundplayer/lib/components/NextButton.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -17131,7 +17205,7 @@
       "name": "./src/containers/Home.js",
       "index": 131,
       "index2": 146,
-      "size": 3183,
+      "size": 3769,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -17179,7 +17253,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _HomeStyles = require('./Home-styles');\n\nvar _logoColor550x = require('../images/logo-color-550x620.png');\n\nvar _logoColor550x2 = _interopRequireDefault(_logoColor550x);\n\nvar _logoColor665x = require('../images/logo-color-665x750.png');\n\nvar _logoColor665x2 = _interopRequireDefault(_logoColor665x);\n\nvar _logoColor1326x = require('../images/logo-color-1326x1496.png');\n\nvar _logoColor1326x2 = _interopRequireDefault(_logoColor1326x);\n\nvar _studio = require('../images/studio.jpg');\n\nvar _studio2 = _interopRequireDefault(_studio);\n\nvar _profile = require('../images/profile.jpg');\n\nvar _profile2 = _interopRequireDefault(_profile);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.section(_templateObject, _HomeStyles.HomeStyles);\n\nvar SiteTitle = (0, _styledComponents2.default)(_H2.default)(_templateObject, _HomeStyles.SiteTitleStyles);\n\nvar Large = _styledComponents2.default.p(_templateObject, _HomeStyles.LargeStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _HomeStyles.LogoStyles);\n\nvar Home = function Home(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    Wrapper,\n    { id: id },\n    _react2.default.createElement(\n      SiteTitle,\n      null,\n      'Gabriel Valad\\xE3o'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'Mixing,',\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        'strong',\n        null,\n        'mastering'\n      ),\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://gabrielvaladao.github.io/' },\n          'and recording/production'\n        )\n      )\n    ),\n    _react2.default.createElement(\n      'picture',\n      null,\n      _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n      _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n      _react2.default.createElement(Logo, { alt: '', src: _profile2.default })\n    )\n  );\n};\n\nHome.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withSiteData)(Home);"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _HomeStyles = require('./Home-styles');\n\nvar _logoColor550x = require('../images/logo-color-550x620.png');\n\nvar _logoColor550x2 = _interopRequireDefault(_logoColor550x);\n\nvar _logoColor665x = require('../images/logo-color-665x750.png');\n\nvar _logoColor665x2 = _interopRequireDefault(_logoColor665x);\n\nvar _logoColor1326x = require('../images/logo-color-1326x1496.png');\n\nvar _logoColor1326x2 = _interopRequireDefault(_logoColor1326x);\n\nvar _studio = require('../images/studio.jpg');\n\nvar _studio2 = _interopRequireDefault(_studio);\n\nvar _profile = require('../images/profile.jpg');\n\nvar _profile2 = _interopRequireDefault(_profile);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.section(_templateObject, _HomeStyles.HomeStyles);\n\nvar SiteTitle = (0, _styledComponents2.default)(_H2.default)(_templateObject, _HomeStyles.SiteTitleStyles);\n\nvar Large = _styledComponents2.default.p(_templateObject, _HomeStyles.LargeStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _HomeStyles.LogoStyles);\n\nvar PlainLogo = _styledComponents2.default.img(_templateObject, _HomeStyles.PlainLogoStyles);\n\nvar Home = function Home(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    Wrapper,\n    { id: id },\n    _react2.default.createElement(\n      SiteTitle,\n      null,\n      'Gabriel Valad\\xE3o'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'Mixing,',\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        'strong',\n        null,\n        'mastering'\n      ),\n      _react2.default.createElement('br', null),\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: 'https://gabrielvaladao.github.io/' },\n          'and recording/production'\n        )\n      )\n    ),\n    false && _react2.default.createElement(\n      'div',\n      { className: 'losange' },\n      _react2.default.createElement(\n        'div',\n        { className: 'los1' },\n        _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n        _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n        _react2.default.createElement(PlainLogo, { alt: '', src: _profile2.default })\n      )\n    ),\n    _react2.default.createElement(\n      'picture',\n      null,\n      _react2.default.createElement('source', { media: '(min-width: 768px)', srcSet: _profile2.default }),\n      _react2.default.createElement('source', { media: '(min-width: 576px)', srcSet: _profile2.default }),\n      _react2.default.createElement(Logo, { alt: '', src: _profile2.default })\n    )\n  );\n};\n\nHome.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withSiteData)(Home);"
     },
     {
       "id": 36,
@@ -17299,7 +17373,7 @@
       "name": "./src/containers/Bio.js",
       "index": 191,
       "index2": 189,
-      "size": 2518,
+      "size": 2517,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -17347,7 +17421,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _BioStyles = require('./Bio-styles');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n\n//\nvar Large = _styledComponents2.default.p(_templateObject, _BioStyles.LargeStyles);\n\nvar P = _styledComponents2.default.p(_templateObject, _BioStyles.PStyles);\n\nvar Bio = function Bio(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Bio'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'My name is Gabriel Valad\\xE3o Moura, i\\'m from Lagoa Santa, Minas Gerais, Brazil.'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'I\\'m 22 years old and i\\'m looking for a job in the audio area.'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'I started studying mix  one year and half ago through Urm Academy.'\n    ),\n    false && _react2.default.createElement(\n      P,\n      null,\n      'Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin. She is an original member of the',\n      ' ',\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          {\n            to: 'https://soundcloud.com/strength_in_numbers',\n            'aria-label': 'Listen to Strength in Numbers on SoundCloud',\n            title: 'SoundCloud'\n          },\n          'Strength in Numbers'\n        )\n      ),\n      ' ',\n      'beat collective in Berlin.'\n    )\n  );\n};\n\nBio.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Bio);"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _TextLink = require('../common/TextLink');\n\nvar _TextLink2 = _interopRequireDefault(_TextLink);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _BioStyles = require('./Bio-styles');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n\n//\nvar Large = _styledComponents2.default.p(_templateObject, _BioStyles.LargeStyles);\nvar P = _styledComponents2.default.p(_templateObject, _BioStyles.PStyles);\n\nvar Bio = function Bio(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Bio'\n    ),\n    _react2.default.createElement(\n      Large,\n      null,\n      'My name is Gabriel Valad\\xE3o Moura, i\\'m from Lagoa Santa, Minas Gerais, Brazil.'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'I\\'m 22 years old and i\\'m looking for a job in the audio area.'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'I started studying mix  one year and half ago through Urm Academy.'\n    ),\n    false && _react2.default.createElement(\n      P,\n      null,\n      'Since then, she-who-must-be-Labrysinthe studied at dBs Music Berlin. She is an original member of the',\n      ' ',\n      _react2.default.createElement(\n        _TextLink2.default,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          {\n            to: 'https://soundcloud.com/strength_in_numbers',\n            'aria-label': 'Listen to Strength in Numbers on SoundCloud',\n            title: 'SoundCloud'\n          },\n          'Strength in Numbers'\n        )\n      ),\n      ' ',\n      'beat collective in Berlin.'\n    )\n  );\n};\n\nBio.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Bio);"
     },
     {
       "id": 39,
@@ -17574,9 +17648,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createBrowserHistory.js",
-      "issuerId": 85,
-      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/es/createHashHistory.js",
+      "issuerId": 86,
+      "issuerName": "./node_modules/history/es/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -17792,9 +17866,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/matchPath.js",
-      "issuerId": 30,
-      "issuerName": "./node_modules/react-router/es/matchPath.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/react-router/es/generatePath.js",
+      "issuerId": 48,
+      "issuerName": "./node_modules/react-router/es/generatePath.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -18315,9 +18389,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createHashHistory.js",
-      "issuerId": 141,
-      "issuerName": "./node_modules/history/createHashHistory.js",
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/history/createBrowserHistory.js",
+      "issuerId": 139,
+      "issuerName": "./node_modules/history/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -19014,7 +19088,7 @@
       "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/index.js",
       "name": "./src/index.js",
       "index": 0,
-      "index2": 233,
+      "index2": 234,
       "size": 907,
       "cacheable": true,
       "built": true,
@@ -19232,7 +19306,7 @@
       "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/App.js",
       "name": "./src/App.js",
       "index": 8,
-      "index2": 232,
+      "index2": 233,
       "size": 8080,
       "cacheable": true,
       "built": true,
@@ -22476,7 +22550,7 @@
       "name": "./src/containers/Home-styles.js",
       "index": 144,
       "index2": 140,
-      "size": 3570,
+      "size": 4433,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -22506,7 +22580,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.LogoStyles = exports.LargeStyles = exports.SiteTitleStyles = exports.HomeStyles = undefined;\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  overflow: hidden;\\n'], ['\\n  overflow: hidden;\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  padding-top: ', ';\\n  padding-bottom: ', ';\\n  font-family: ', ';\\n  letter-spacing: 0.06ch;\\n  text-transform: uppercase;\\n  text-align: center;\\n  font-size: ', ';\\n\\n  @media (min-width: 576px) {\\n    letter-spacing: 0.12ch;\\n    padding-bottom: ', ';\\n  }\\n\\n  @media (min-width: 768px) {\\n    padding-top: ', ';\\n    font-size: ', ';\\n    letter-spacing: 0.12ch;\\n  }\\n'], ['\\n  padding-top: ', ';\\n  padding-bottom: ', ';\\n  font-family: ', ';\\n  letter-spacing: 0.06ch;\\n  text-transform: uppercase;\\n  text-align: center;\\n  font-size: ', ';\\n\\n  @media (min-width: 576px) {\\n    letter-spacing: 0.12ch;\\n    padding-bottom: ', ';\\n  }\\n\\n  @media (min-width: 768px) {\\n    padding-top: ', ';\\n    font-size: ', ';\\n    letter-spacing: 0.12ch;\\n  }\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  font-size: ', ';\\n  text-align: center;\\n  margin-bottom: ', ';\\n  position: relative;\\n  z-index: 1;\\n'], ['\\n  font-size: ', ';\\n  text-align: center;\\n  margin-bottom: ', ';\\n  position: relative;\\n  z-index: 1;\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  position: relative;\\n  z-index: -99999;\\n\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n  border-radius: 50%;\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n'], ['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  position: relative;\\n  z-index: -99999;\\n\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n  border-radius: 50%;\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n']);\n\nvar _styledComponents = require('styled-components');\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar HomeStyles = (0, _styledComponents.css)(_templateObject);\n\nvar SiteTitleStyles = (0, _styledComponents.css)(_templateObject2, function (_ref) {\n  var theme = _ref.theme;\n  return theme.space.four;\n}, function (_ref2) {\n  var theme = _ref2.theme;\n  return theme.space.one;\n}, function (_ref3) {\n  var theme = _ref3.theme;\n  return theme.type.large.fontSize;\n}, function (_ref4) {\n  var theme = _ref4.theme;\n  return theme.type.h2.fontSize;\n}, function (_ref5) {\n  var theme = _ref5.theme;\n  return theme.space.two;\n}, function (_ref6) {\n  var theme = _ref6.theme;\n  return theme.space.six;\n}, function (_ref7) {\n  var theme = _ref7.theme;\n  return theme.type.h1.fontSize;\n});\n\nvar LargeStyles = (0, _styledComponents.css)(_templateObject3, function (_ref8) {\n  var theme = _ref8.theme;\n  return theme.type.large.fontSize;\n}, function (_ref9) {\n  var theme = _ref9.theme;\n  return theme.type.large.marginBottom;\n});\n\nvar LogoStyles = (0, _styledComponents.css)(_templateObject4, function (_ref10) {\n  var theme = _ref10.theme;\n  return theme.space.one;\n}, function (_ref11) {\n  var theme = _ref11.theme;\n  return theme.space.one;\n});\n\nexports.HomeStyles = HomeStyles;\nexports.SiteTitleStyles = SiteTitleStyles;\nexports.LargeStyles = LargeStyles;\nexports.LogoStyles = LogoStyles;"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.PlainLogoStyles = exports.LogoStyles = exports.LargeStyles = exports.SiteTitleStyles = exports.HomeStyles = undefined;\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  overflow: hidden;\\n'], ['\\n  overflow: hidden;\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  padding-top: ', ';\\n  padding-bottom: ', ';\\n  font-family: ', ';\\n  letter-spacing: 0.06ch;\\n  text-transform: uppercase;\\n  text-align: center;\\n  font-size: ', ';\\n\\n  @media (min-width: 576px) {\\n    letter-spacing: 0.12ch;\\n    padding-bottom: ', ';\\n  }\\n\\n  @media (min-width: 768px) {\\n    padding-top: ', ';\\n    font-size: ', ';\\n    letter-spacing: 0.12ch;\\n  }\\n'], ['\\n  padding-top: ', ';\\n  padding-bottom: ', ';\\n  font-family: ', ';\\n  letter-spacing: 0.06ch;\\n  text-transform: uppercase;\\n  text-align: center;\\n  font-size: ', ';\\n\\n  @media (min-width: 576px) {\\n    letter-spacing: 0.12ch;\\n    padding-bottom: ', ';\\n  }\\n\\n  @media (min-width: 768px) {\\n    padding-top: ', ';\\n    font-size: ', ';\\n    letter-spacing: 0.12ch;\\n  }\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  font-size: ', ';\\n  text-align: center;\\n  margin-bottom: ', ';\\n  position: relative;\\n  z-index: 1;\\n'], ['\\n  font-size: ', ';\\n  text-align: center;\\n  margin-bottom: ', ';\\n  position: relative;\\n  z-index: 1;\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  position: relative;\\n  z-index: -99999;\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n'], ['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  position: relative;\\n  z-index: -99999;\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n']),\n    _templateObject5 = _taggedTemplateLiteral(['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  z-index: -99999;\\n\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n'], ['\\n  margin-top: -', ';\\n  margin-left: 50%;\\n  transform: translateX(-50%);\\n  min-width: 140%;\\n  display: block;\\n  padding-top: ', ';\\n  z-index: -99999;\\n\\n  -webkit-filter: grayscale(100%);\\n  filter: grayscale(100%);\\n\\n  @media (min-width: 992px) {\\n    min-width: 0;\\n  }\\n']);\n\nvar _styledComponents = require('styled-components');\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar HomeStyles = (0, _styledComponents.css)(_templateObject);\n\nvar SiteTitleStyles = (0, _styledComponents.css)(_templateObject2, function (_ref) {\n  var theme = _ref.theme;\n  return theme.space.four;\n}, function (_ref2) {\n  var theme = _ref2.theme;\n  return theme.space.one;\n}, function (_ref3) {\n  var theme = _ref3.theme;\n  return theme.type.large.fontSize;\n}, function (_ref4) {\n  var theme = _ref4.theme;\n  return theme.type.h2.fontSize;\n}, function (_ref5) {\n  var theme = _ref5.theme;\n  return theme.space.two;\n}, function (_ref6) {\n  var theme = _ref6.theme;\n  return theme.space.six;\n}, function (_ref7) {\n  var theme = _ref7.theme;\n  return theme.type.h1.fontSize;\n});\n\nvar LargeStyles = (0, _styledComponents.css)(_templateObject3, function (_ref8) {\n  var theme = _ref8.theme;\n  return theme.type.large.fontSize;\n}, function (_ref9) {\n  var theme = _ref9.theme;\n  return theme.type.large.marginBottom;\n});\n\nvar PlainLogoStyles = (0, _styledComponents.css)(_templateObject4, function (_ref10) {\n  var theme = _ref10.theme;\n  return theme.space.one;\n}, function (_ref11) {\n  var theme = _ref11.theme;\n  return theme.space.one;\n});\n\nvar LogoStyles = (0, _styledComponents.css)(_templateObject5, function (_ref12) {\n  var theme = _ref12.theme;\n  return theme.space.one;\n}, function (_ref13) {\n  var theme = _ref13.theme;\n  return theme.space.one;\n});\n\nexports.HomeStyles = HomeStyles;\nexports.SiteTitleStyles = SiteTitleStyles;\nexports.LargeStyles = LargeStyles;\nexports.LogoStyles = LogoStyles;\nexports.PlainLogoStyles = PlainLogoStyles;"
     },
     {
       "id": 163,
@@ -24982,8 +25056,8 @@
       "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer.js",
       "name": "./src/components/Footer.js",
       "index": 227,
-      "index2": 229,
-      "size": 1943,
+      "index2": 230,
+      "size": 2109,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -25013,7 +25087,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _Menu = require('../components/Menu');\n\nvar _Menu2 = _interopRequireDefault(_Menu);\n\nvar _Socials = require('../components/Socials');\n\nvar _Socials2 = _interopRequireDefault(_Socials);\n\nvar _FooterStyles = require('./Footer-styles');\n\nvar _logoWhite90x = require('../images/logo-white-90x104.png');\n\nvar _logoWhite90x2 = _interopRequireDefault(_logoWhite90x);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.footer(_templateObject, _FooterStyles.FooterStyles);\n\nvar StyledMenu = (0, _styledComponents2.default)(_Menu2.default)(_templateObject, _FooterStyles.FooterMenuStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _FooterStyles.LogoStyles);\n\nvar Socket = _styledComponents2.default.p(_templateObject, _FooterStyles.SocketStyles);\n/* TODO: (C) current year */\nvar Footer = function Footer() {\n  return _react2.default.createElement(\n    Wrapper,\n    null,\n    _react2.default.createElement(_Socials2.default, null),\n    _react2.default.createElement(StyledMenu, null),\n    false && _react2.default.createElement(Logo, {\n      src: _logoWhite90x2.default,\n      alt: 'Gabriel Valad\\xE3o\\'s logo.',\n      height: '104px',\n      width: '90px'\n    }),\n    _react2.default.createElement(\n      Socket,\n      { role: 'contentinfo' },\n      '\\xA9 2019 Gabriel Valad\\xE3o'\n    )\n  );\n};\n\nexports.default = Footer;"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _Menu = require('../components/Menu');\n\nvar _Menu2 = _interopRequireDefault(_Menu);\n\nvar _Socials = require('../components/Socials');\n\nvar _Socials2 = _interopRequireDefault(_Socials);\n\nvar _Parallax = require('../containers/Parallax');\n\nvar _Parallax2 = _interopRequireDefault(_Parallax);\n\nvar _FooterStyles = require('./Footer-styles');\n\nvar _logoWhite90x = require('../images/logo-white-90x104.png');\n\nvar _logoWhite90x2 = _interopRequireDefault(_logoWhite90x);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n//\n\n//\n\n\n//\nvar Wrapper = _styledComponents2.default.footer(_templateObject, _FooterStyles.FooterStyles);\n\nvar StyledMenu = (0, _styledComponents2.default)(_Menu2.default)(_templateObject, _FooterStyles.FooterMenuStyles);\n\nvar Logo = _styledComponents2.default.img(_templateObject, _FooterStyles.LogoStyles);\n\nvar Socket = _styledComponents2.default.p(_templateObject, _FooterStyles.SocketStyles);\n/* TODO: (C) current year */\nvar Footer = function Footer() {\n  return _react2.default.createElement(\n    Wrapper,\n    null,\n    _react2.default.createElement(_Socials2.default, null),\n    _react2.default.createElement(_Parallax2.default, null),\n    _react2.default.createElement(StyledMenu, null),\n    false && _react2.default.createElement(Logo, {\n      src: _logoWhite90x2.default,\n      alt: 'Gabriel Valad\\xE3o\\'s logo.',\n      height: '104px',\n      width: '90px'\n    }),\n    _react2.default.createElement(\n      Socket,\n      { role: 'contentinfo' },\n      '\\xA9 2019 Gabriel Valad\\xE3o'\n    )\n  );\n};\n\nexports.default = Footer;"
     },
     {
       "id": 228,
@@ -25093,10 +25167,48 @@
     },
     {
       "id": 230,
-      "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer-styles.js",
-      "name": "./src/components/Footer-styles.js",
+      "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Parallax.js",
+      "name": "./src/containers/Parallax.js",
       "index": 230,
       "index2": 227,
+      "size": 477,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer.js",
+      "issuerId": 227,
+      "issuerName": "./src/components/Footer.js",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 227,
+          "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer.js",
+          "module": "./src/components/Footer.js",
+          "moduleName": "./src/components/Footer.js",
+          "type": "cjs require",
+          "userRequest": "../containers/Parallax",
+          "loc": "25:16-49"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 3,
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Parallax = function Parallax() {\n  return _react2.default.createElement('div', { className: 'parallax' });\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Parallax);"
+    },
+    {
+      "id": 231,
+      "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/components/Footer-styles.js",
+      "name": "./src/components/Footer-styles.js",
+      "index": 231,
+      "index2": 228,
       "size": 2325,
       "cacheable": true,
       "built": true,
@@ -25120,7 +25232,7 @@
           "moduleName": "./src/components/Footer.js",
           "type": "cjs require",
           "userRequest": "./Footer-styles",
-          "loc": "25:20-46"
+          "loc": "29:20-46"
         }
       ],
       "usedExports": true,
@@ -25130,11 +25242,11 @@
       "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.SocketStyles = exports.LogoStyles = exports.FooterMenuStyles = exports.FooterStyles = undefined;\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  padding: 0 0 ', ' 0;\\n'], ['\\n  padding: 0 0 ', ' 0;\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  /* border-bottom: 1px solid black;\\n  border-top: solid 1px ', '; */\\n  background-color: ', ';\\n  border-bottom: 1px solid ', ';\\n  border-top: solid 1px black;\\n  padding: ', ' 0 ', ' 0;\\n'], ['\\n  /* border-bottom: 1px solid black;\\n  border-top: solid 1px ', '; */\\n  background-color: ', ';\\n  border-bottom: 1px solid ', ';\\n  border-top: solid 1px black;\\n  padding: ', ' 0 ', ' 0;\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  margin: 0 auto;\\n  display: block;\\n  padding-top: ', ';\\n'], ['\\n  margin: 0 auto;\\n  display: block;\\n  padding-top: ', ';\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  text-align: center;\\n  padding-top: ', ';\\n'], ['\\n  text-align: center;\\n  padding-top: ', ';\\n']);\n\nvar _styledComponents = require('styled-components');\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar FooterStyles = (0, _styledComponents.css)(_templateObject, function (_ref) {\n  var theme = _ref.theme;\n  return theme.space.one;\n});\n\nvar FooterMenuStyles = (0, _styledComponents.css)(_templateObject2, function (_ref2) {\n  var theme = _ref2.theme;\n  return theme.color.overlayLight;\n}, function (_ref3) {\n  var theme = _ref3.theme;\n  return theme.color.overlayMedium;\n}, function (_ref4) {\n  var theme = _ref4.theme;\n  return theme.color.overlayMedium;\n}, function (_ref5) {\n  var theme = _ref5.theme;\n  return theme.space.one;\n}, function (_ref6) {\n  var theme = _ref6.theme;\n  return theme.space.two;\n});\n\nvar LogoStyles = (0, _styledComponents.css)(_templateObject3, function (_ref7) {\n  var theme = _ref7.theme;\n  return theme.space.two;\n});\n\nvar SocketStyles = (0, _styledComponents.css)(_templateObject4, function (_ref8) {\n  var theme = _ref8.theme;\n  return theme.space.one;\n});\n\nexports.FooterStyles = FooterStyles;\nexports.FooterMenuStyles = FooterMenuStyles;\nexports.LogoStyles = LogoStyles;\nexports.SocketStyles = SocketStyles;"
     },
     {
-      "id": 231,
+      "id": 232,
       "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/logo-white-90x104.png",
       "name": "./src/images/logo-white-90x104.png",
-      "index": 231,
-      "index2": 228,
+      "index": 232,
+      "index2": 229,
       "size": 11189,
       "cacheable": true,
       "built": true,
@@ -25158,7 +25270,7 @@
           "moduleName": "./src/components/Footer.js",
           "type": "cjs require",
           "userRequest": "../images/logo-white-90x104.png",
-          "loc": "27:20-62"
+          "loc": "31:20-62"
         }
       ],
       "usedExports": true,
@@ -25168,11 +25280,11 @@
       "source": "module.exports = \"data:image/png;base64,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\""
     },
     {
-      "id": 232,
+      "id": 233,
       "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
       "name": "./src/containers/Gear.js",
-      "index": 232,
-      "index2": 231,
+      "index": 233,
+      "index2": 232,
       "size": 3234,
       "cacheable": true,
       "built": true,
@@ -25206,11 +25318,11 @@
       "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  ', '\\n'], ['\\n  ', '\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _H = require('../common/H1');\n\nvar _H2 = _interopRequireDefault(_H);\n\nvar _GearStyles = require('./Gear-styles');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n/** Styles */\n\n\nvar P = _styledComponents2.default.p(_templateObject, _GearStyles.PStyles);\n\nvar Gear = function Gear(_ref) {\n  var id = _ref.id;\n  return _react2.default.createElement(\n    'section',\n    { id: id },\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Gear'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Focusrite Scarlett 2i2 audio interface'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Krk Rokit 5 monitors'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Audio Technica Ath M50x Headphones'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'M-Audio Axiom 49 MIDI controller'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Mxl 990es condenser mic'\n    ),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'PC'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Intel Core i5 2gen'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      '12gb ram 1333mhz'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Ssd Sansung evo 500gb'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Gtx680 2gb'\n    ),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Instruments'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Esp Ltd h-1001 Deluxe W emg 81 85'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Tagima Stratocaster'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Di Giorgio Nylon Acoustic guitar'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Vogga Ukulele'\n    ),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'Plugins'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Slate digital bundle'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Weaves SSL'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'FabFilter Pro q'\n    ),\n    _react2.default.createElement(\n      _H2.default,\n      null,\n      'DAW'\n    ),\n    _react2.default.createElement(\n      P,\n      null,\n      'Cubase Elements'\n    )\n  );\n};\n\nGear.propTypes = {\n  id: _propTypes2.default.string\n};\n\nexports.default = (0, _reactStatic.withRouteData)(Gear);"
     },
     {
-      "id": 233,
+      "id": 234,
       "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear-styles.js",
       "name": "./src/containers/Gear-styles.js",
-      "index": 233,
-      "index2": 230,
+      "index": 234,
+      "index2": 231,
       "size": 701,
       "cacheable": true,
       "built": true,
@@ -25221,14 +25333,14 @@
       ],
       "assets": [],
       "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
-      "issuerId": 232,
+      "issuerId": 233,
       "issuerName": "./src/containers/Gear.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 232,
+          "moduleId": 233,
           "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/containers/Gear.js",
           "module": "./src/containers/Gear.js",
           "moduleName": "./src/containers/Gear.js",
@@ -26107,6 +26219,12 @@
           "chunks": [],
           "chunkNames": [],
           "emitted": true
+        },
+        {
+          "name": "static/studio.c8034f1d.jpg",
+          "size": 6245320,
+          "chunks": [],
+          "chunkNames": []
         }
       ],
       "filteredAssets": 0,
@@ -26127,12 +26245,12 @@
           "initial": true,
           "entry": true,
           "extraAsync": false,
-          "size": 3547,
+          "size": 4356,
           "names": [],
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "ff08246da2098b93696e",
+          "hash": "c3c87e9fc6ee63e15bba",
           "parents": [],
           "modules": [
             {
@@ -26140,8 +26258,8 @@
               "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
               "name": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
               "index": 0,
-              "index2": 4,
-              "size": 630,
+              "index2": 5,
+              "size": 1367,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -26161,7 +26279,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 0,
-              "source": "var escape = require(\"../../node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"@font-face{font-family:raincoatregular;src:url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff2\")) + \") format(\\\"woff2\\\"),url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff\")) + \") format(\\\"woff\\\");font-weight:400;font-style:normal}.sr-only{position:absolute;overflow:hidden;height:1px;width:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}\", \"\"]);\n\n// exports\n"
+              "source": "var escape = require(\"../../node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"@font-face{font-family:raincoatregular;src:url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff2\")) + \") format(\\\"woff2\\\"),url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff\")) + \") format(\\\"woff\\\");font-weight:400;font-style:normal}.sr-only{position:absolute;overflow:hidden;height:1px;width:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}.parallax{background-image:url(\" + escape(require(\"../images/studio.jpg\")) + \");height:600px;width:100%;background-attachment:fixed;background-position:50%;background-repeat:no-repeat;background-size:cover}.losange,.losange div{margin:0 auto;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;overflow:hidden;width:550px;height:550px}.losange{-webkit-transform:rotate(45deg) translateY(10px);-ms-transform:rotate(45deg) translateY(10px);transform:rotate(45deg) translateY(10px)}.losange .los1{width:855px;height:855px;-webkit-transform:rotate(-45deg) translateY(-74px);-ms-transform:rotate(-45deg) translateY(-74px);transform:rotate(-45deg) translateY(-74px)}.losange .los1 img{width:100%;height:auto}\", \"\"]);\n\n// exports\n"
             },
             {
               "id": 1,
@@ -26318,6 +26436,46 @@
               "optimizationBailout": [],
               "depth": 1,
               "source": "module.exports = __webpack_public_path__ + \"static/typodermic_-_raincoat-regular-webfont.ca4cc3d4.woff\";"
+            },
+            {
+              "id": 5,
+              "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/studio.jpg",
+              "name": "./src/images/studio.jpg",
+              "index": 5,
+              "index2": 4,
+              "size": 72,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "assets": [
+                "static/studio.c8034f1d.jpg"
+              ],
+              "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
+              "issuerId": 0,
+              "issuerName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "reasons": [
+                {
+                  "moduleId": 0,
+                  "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
+                  "module": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+                  "moduleName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+                  "type": "cjs require",
+                  "userRequest": "../images/studio.jpg",
+                  "loc": "7:463-494"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [],
+              "depth": 1,
+              "source": "module.exports = __webpack_public_path__ + \"static/studio.c8034f1d.jpg\";"
             }
           ],
           "filteredModules": 0,
@@ -26339,8 +26497,8 @@
           "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
           "name": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
           "index": 0,
-          "index2": 4,
-          "size": 630,
+          "index2": 5,
+          "size": 1367,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -26360,7 +26518,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 0,
-          "source": "var escape = require(\"../../node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"@font-face{font-family:raincoatregular;src:url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff2\")) + \") format(\\\"woff2\\\"),url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff\")) + \") format(\\\"woff\\\");font-weight:400;font-style:normal}.sr-only{position:absolute;overflow:hidden;height:1px;width:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}\", \"\"]);\n\n// exports\n"
+          "source": "var escape = require(\"../../node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"@font-face{font-family:raincoatregular;src:url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff2\")) + \") format(\\\"woff2\\\"),url(\" + escape(require(\"../fonts/typodermic_-_raincoat-regular-webfont.woff\")) + \") format(\\\"woff\\\");font-weight:400;font-style:normal}.sr-only{position:absolute;overflow:hidden;height:1px;width:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}.parallax{background-image:url(\" + escape(require(\"../images/studio.jpg\")) + \");height:600px;width:100%;background-attachment:fixed;background-position:50%;background-repeat:no-repeat;background-size:cover}.losange,.losange div{margin:0 auto;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;overflow:hidden;width:550px;height:550px}.losange{-webkit-transform:rotate(45deg) translateY(10px);-ms-transform:rotate(45deg) translateY(10px);transform:rotate(45deg) translateY(10px)}.losange .los1{width:855px;height:855px;-webkit-transform:rotate(-45deg) translateY(-74px);-ms-transform:rotate(-45deg) translateY(-74px);transform:rotate(-45deg) translateY(-74px)}.losange .los1 img{width:100%;height:auto}\", \"\"]);\n\n// exports\n"
         },
         {
           "id": 1,
@@ -26517,6 +26675,46 @@
           "optimizationBailout": [],
           "depth": 1,
           "source": "module.exports = __webpack_public_path__ + \"static/typodermic_-_raincoat-regular-webfont.ca4cc3d4.woff\";"
+        },
+        {
+          "id": 5,
+          "identifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/url-loader/index.js??ref--0-oneOf-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/images/studio.jpg",
+          "name": "./src/images/studio.jpg",
+          "index": 5,
+          "index2": 4,
+          "size": 72,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "static/studio.c8034f1d.jpg"
+          ],
+          "issuer": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
+          "issuerId": 0,
+          "issuerName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/node_modules/postcss-loader/lib/index.js??postcss!/Users/igoroctaviano/Desktop/workspace/gabrielvaladao.github.io/src/styles/app.css",
+              "module": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+              "moduleName": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/styles/app.css",
+              "type": "cjs require",
+              "userRequest": "../images/studio.jpg",
+              "loc": "7:463-494"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "module.exports = __webpack_public_path__ + \"static/studio.c8034f1d.jpg\";"
         }
       ],
       "filteredModules": 0,
